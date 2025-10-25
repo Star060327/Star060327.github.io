@@ -1,0 +1,80 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  // 白天模式
+  --color-soft-bg1: #fff;
+  --color-soft-bg2: #f5f9fb;
+  --color-soft-text1: #2c3e50;
+  //夜间模式
+  --color-dark-bg1: #2d3748;
+  --color-dark-bg2: #1a202c;
+  --color-dark-text1: #fafafa;
+  // 字体颜色
+  --color-font-white: var(--color-dark-text1);
+  --color-font-dark: var(--color-soft-text1);
+  // 字体
+  --font-size-base: 16px;
+  --font-weight-bold: 700;
+  // 激活文字
+  --color-active: #87ceeb;
+
+  //主题颜色
+  --vt-theme-color1: #bbffff;
+  --vt-theme-color2: var(--color-active);
+  --vt-theme-color3: #00bfff;
+  --vt-theme-color4: #ffe1ff;
+  --vt-theme-color5: #eed2ee;
+  --vt-theme-color6: #cdb5cd;
+}
+
+/* semantic color variables for this project */
+
+/*@media (prefers-color-scheme: dark) {*/
+/*  :root {*/
+/*    --color-background: var(--vt-c-black);*/
+/*    --color-background-soft: var(--vt-c-black-soft);*/
+/*    --color-background-mute: var(--vt-c-black-mute);*/
+
+/*    --color-border: var(--vt-c-divider-dark-2);*/
+/*    --color-border-hover: var(--vt-c-divider-dark-1);*/
+
+/*    --color-heading: var(--vt-c-text-dark-1);*/
+/*    --color-text: var(--vt-c-text-dark-2);*/
+/*  }*/
+/*}*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+body {
+  width: 100vw;
+  min-width: 1200px;
+  color: black;
+  background: white;
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  line-height: 1.6;
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

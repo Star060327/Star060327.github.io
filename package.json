@@ -13,8 +13,10 @@
   },
   "homepage": "https://Star060327.github.io/<仓库名>",
   "dependencies": {
+    "classnames": "^2.5.1",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
+    "react-router-dom": "^7.9.4",
     "sass": "^1.93.2"
   },
   "devDependencies": {
