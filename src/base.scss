@@ -2,7 +2,7 @@
 :root {
   // 白天模式
   --color-soft-bg1: #fff;
-  --color-soft-bg2: #f5f9fb;
+  --color-soft-bg2: #f0f5f9;
   --color-soft-text1: #2c3e50;
   //夜间模式
   --color-dark-bg1: #2d3748;
@@ -53,7 +53,7 @@
 
 body {
   width: 100vw;
-  min-width: 1200px;
+  overflow-x: hidden;  // 做响应式
   color: black;
   background: white;
   transition:
