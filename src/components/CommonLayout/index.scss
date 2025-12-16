@@ -58,25 +58,23 @@
     }
     // 移动端导航
     .mobile-navigate { 
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      margin-right: 1.25rem;
-      li {
-        width: 2.2rem;
-        text-align: center;
-      }
+      width: 3.125rem;
+      height: 3.125rem;
+      margin-top: 1rem;
+      margin-right: 1rem;
     }
   }
   .content {
     width: 100%;
     background-color: var(--color-soft-bg2);
+    min-height: 100vh;
   }
   .footer {
     width: 100%;
-    height: 4.5rem;
+    height: 3.8rem;
     background-color: var(--color-soft-bg2);
     text-align: center;
+    line-height: 3.8rem;
   }
 }
 h1 {

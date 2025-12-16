@@ -2,14 +2,8 @@ import './index.scss';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useState, useEffect,useLayoutEffect } from 'react';
 import classNames from 'classnames';
-import homeBlack from '../../assets/svgs/homeBlack.svg';
-import homeAct from '../../assets/svgs/homeAct.svg';
-import growthBlack from '../../assets/svgs/growthBlack.svg';
-import growthAct from '../../assets/svgs/growthAct.svg';
-import blogBlack from '../../assets/svgs/blogBlack.svg';
-import blogAct from '../../assets/svgs/blogAct.svg';
-import sun from '../../assets/svgs/sun.svg';
-
+import { BsBorderWidth } from "react-icons/bs";
+import Drawer from '../Drawer/index.tsx';
 type Props = {
   children: React.ReactNode;
 };
@@ -20,6 +14,8 @@ export default function CommonLayout(props: Props) {
   const [isWeb,setIsWeb]=useState<boolean>(true);
   const navigate = useNavigate();
   const routes = ['/', '/growth', '/article'];
+  const [visible,setVisible] = useState<boolean>(false);
+
   // 页面每次更新时重置id
   useEffect(() => {
     if (location.pathname === '/') {
@@ -62,7 +58,7 @@ export default function CommonLayout(props: Props) {
             </li>
             <li className={classNames({ 'active-li': id === 1 })}>
               <a onClick={() => handleClick(1)} className={classNames({ 'active-a': id === 1 })}>
-                成长
+                个人
               </a>
             </li>
             <li className={classNames({ 'active-li': id === 2 })}>
@@ -75,18 +71,24 @@ export default function CommonLayout(props: Props) {
             </li>
           </ul>}
           {/* 移动端到导航 */}
-            {!isWeb&&<ul className="mobile-navigate">
+            {/* {!isWeb&&<ul className="mobile-navigate">
               <li><a onClick={() => handleClick(0)}><img src={id===0?homeAct:homeBlack} alt="首页" /></a></li>
               <li><a onClick={() => handleClick(1)}><img src={id===1?growthAct:growthBlack} alt="成长" /></a></li>
               <li><a onClick={() => handleClick(2)}><img src={id===2?blogAct:blogBlack} alt="博客" /></a></li>
               <li><a><img src={sun} alt="切换模式" /></a></li>
-            </ul>}
+            </ul>} */}
+            {
+              !isWeb && <div className="mobile-navigate">
+                <BsBorderWidth size={32} color='#2c3e50' onClick={()=>setVisible(true)}/>
+              </div>
+            }
         </header>
         <div className="content">{children}</div>
         <footer className="footer">
           <p>Copyright © 2025 星星</p>
         </footer>
       </div>
+        <Drawer visible={visible} onClose={()=>setVisible(false)}>123</Drawer>
     </>
   );
 }
