@@ -1,9 +1,10 @@
+import styles from './index.module.scss';
 import CommonLayout from '../../components/CommonLayout';
-export default function Article() {
+export default function File() {
   return (
     <>
       <CommonLayout>
-        <h1>Growth</h1>
+        <div className={styles.file}>文件</div>
       </CommonLayout>
     </>
   );

@@ -1,11 +1,10 @@
 import styles from './index.module.scss';
-import React from 'react';
 import CommonLayout from '../../components/CommonLayout';
-export default function Layout(): React.ReactNode {
+export default function About() {
   return (
     <>
       <CommonLayout>
-        <div className={styles.layout}>123</div>
+        <div className={styles.about}>关于</div>
       </CommonLayout>
     </>
   );

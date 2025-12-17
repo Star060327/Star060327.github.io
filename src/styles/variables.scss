@@ -1,0 +1,4 @@
+// 将 CSS 变量封装为 SCSS 函数
+@function color($key) {
+  @return var(--color-#{$key});
+}

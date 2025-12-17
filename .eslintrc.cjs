@@ -10,7 +10,8 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:jsx-a11y/recommended',
     'plugin:react-hooks/recommended',
-    'prettier'
+    'prettier',
+    'plugin:auto-import/recommended'
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -20,7 +21,7 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module'
   },
-  plugins: ['react', '@typescript-eslint'],
+  plugins: ['react', '@typescript-eslint', 'auto-import'],
   rules: {
     'react/react-in-jsx-scope': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',

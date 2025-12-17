@@ -1,8 +1,8 @@
 import { createBrowserRouter } from 'react-router-dom';
 import { lazy, Suspense } from 'react';
 const Layout = lazy(() => import('../pages/Layout/index.tsx'));
-const Article = lazy(() => import('../pages/Article/index.tsx'));
-const Growth = lazy(() => import('../pages/Growth/index.tsx'));
+const About = lazy(() => import('../pages/About/index.tsx'));
+const File = lazy(() => import('../pages/File/index.tsx'));
 const routes = [
   {
     path: '/',
@@ -13,18 +13,18 @@ const routes = [
     )
   },
   {
-    path: 'article',
+    path: 'about',
     element: (
       <Suspense fallback={'加载中'}>
-        <Article></Article>
+        <About></About>
       </Suspense>
     )
   },
   {
-    path: 'growth',
+    path: 'file',
     element: (
       <Suspense fallback={'加载中'}>
-        <Growth></Growth>
+        <File></File>
       </Suspense>
     )
   }

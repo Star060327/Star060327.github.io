@@ -13,6 +13,8 @@
   },
   "homepage": "https://Star060327.github.io/<仓库名>",
   "dependencies": {
+    "@ant-design/icons": "~6.1.0",
+    "antd": "^6.1.1",
     "classnames": "^2.5.1",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
@@ -21,6 +23,7 @@
     "sass": "^1.93.2"
   },
   "devDependencies": {
+    "@bit-ocean/auto-import": "^0.0.54",
     "@eslint/js": "^9.36.0",
     "@types/node": "^24.6.0",
     "@types/react": "^19.1.16",
@@ -28,6 +31,7 @@
     "@vitejs/plugin-react": "^5.0.4",
     "eslint": "^9.36.0",
     "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-auto-import": "^0.1.1",
     "eslint-plugin-prettier": "^5.5.4",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.22",
@@ -39,6 +43,8 @@
     "prettier": "^3.6.2",
     "typescript": "~5.9.3",
     "typescript-eslint": "^8.45.0",
+    "unplugin-auto-import": "^20.3.0",
+    "unplugin-auto-import-antd": "^0.0.2",
     "vite": "^7.1.7"
   },
   "lint-staged": {

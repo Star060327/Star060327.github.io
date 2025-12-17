@@ -1,0 +1,74 @@
+//设备宽度小于768px时，执行以下样式
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+//设备宽度大于768px时，执行以下样式
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+.commonLayout {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  .top {
+    width: 100%;
+    height: 3.75rem;
+    background-color: var(--color-bg-primary);
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    display: flex;
+    justify-content: space-between;
+    .left {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      margin-left: 1.25rem;
+      img {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-right: 0.5rem;
+      }
+      h2 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: var(--color-text-primary);
+      }
+    }
+    .right {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      row-gap: 1.25rem;
+      li {
+        font-size: 1.25rem;
+        margin-right: 1.25rem;
+        cursor: pointer;
+        a {
+          text-align: center;
+          color: var(--color-text-primary);
+          font-weight: bold;
+          padding-bottom: 0.2rem;
+        }
+      }
+    }
+  }
+  .main {
+    flex: 1;
+  }
+  .bottom {
+  }
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.active {
+  color: var(--color-primary-hover) !important;
+  border-bottom: 0.125rem solid var(--color-primary-hover);
+}
