@@ -165,7 +165,10 @@ export default function CommonLayout(props: Props) {
           )}
         </header>
         <main className={styles.main}>{props.children}</main>
-        <footer className={styles.bottom}></footer>
+        <footer className={styles.bottom}>
+          <p>© 2025-2026 Star | 分享前端知识</p>
+          <p>本站由 React + Vite + TypeScript + SCSS 构建</p>
+        </footer>
       </div>
     </>
   );

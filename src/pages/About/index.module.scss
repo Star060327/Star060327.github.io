@@ -1,4 +1,130 @@
+@media screen and (min-width: 768px) {
+  .self,
+  .contact {
+    width: 45% !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  .self,
+  .contact {
+    width: 80% !important;
+  }
+}
+
 .about {
-  padding: 0;
-  font-weight: normal;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--color-text-primary);
+  // 公共样式
+  .self,
+  .contact {
+    margin: 3.125rem 0 1.25rem;
+    background-color: var(--color-bg-secondary);
+    padding: 2rem;
+    border-radius: 1.2rem;
+    box-shadow:
+      0.3125rem 0.3125rem 0.8rem rgba(0, 0, 0, 0.03),
+      -0.3125rem -0.3125rem 0.8rem rgba(0, 0, 0, 0.03),
+      0.3125rem -0.3125rem 0.8rem rgba(0, 0, 0, 0.03),
+      -0.3125rem 0.3125rem 0.8rem rgba(0, 0, 0, 0.03);
+  }
+  // 个人介绍
+  .self {
+    .selfTop {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .img {
+        width: 6.25rem;
+        height: 6.25rem;
+        border-radius: 50%;
+        img {
+          width: 100%;
+          border-radius: 50%;
+        }
+      }
+    }
+    .selfMain {
+      width: 100%;
+      h3 {
+        margin: 1.25rem 0 0.5rem;
+      }
+      .selfMainList {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 1rem;
+        li {
+          width: 10rem;
+          height: 2.5rem;
+          line-height: 2.5rem;
+          background-color: var(--color-bg-third);
+          border-radius: 0.5rem;
+          text-align: center;
+          cursor: pointer;
+          &:hover {
+            transform: scale(1.06);
+            transition: all 0.3s;
+          }
+        }
+      }
+    }
+  }
+  // 联系我
+  .contact {
+    h3 {
+      margin-bottom: 0.5rem;
+    }
+    .contactList {
+      width: 100%;
+      margin: 1rem 0;
+      li {
+        width: 100%;
+        height: 3.2rem;
+        margin: 1rem 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1rem;
+        //  图标
+        .contactIcon {
+          width: 2.8rem;
+          height: 2.8rem;
+          text-align: center;
+          line-height: 2.8rem;
+          border-radius: 50%;
+          background-color: var(--color-bg-third);
+          cursor: pointer;
+        }
+        .contactInfo {
+          p {
+            font-size: 0.875rem;
+          }
+          div,
+          a {
+            color: var(--color-h-primary);
+            font-weight: 600;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+h2,
+h3 {
+  font-weight: 600;
+  color: var(--color-h-primary);
+}
+p {
+  line-height: 1.8;
+  white-space: pre-wrap; //支持空格和自动换行
+  word-break: break-word; // 长单词或URL地址自动换行
+}
+li {
+  list-style: none;
 }

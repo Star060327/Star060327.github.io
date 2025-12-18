@@ -1,9 +1,12 @@
 :root {
-  --color-bg-primary: #fcfdff;
-  --color-bg-secondary: #f3f6ff;
-  --color-text-primary: #4b5563;
+  --color-bg-primary: #fcfdff; //头、底的背景颜色
+  --color-bg-secondary: #fcfdff; //卡片的颜色
+  --bg-gradient: linear-gradient(to bottom, #f0f6ff, #f9f5ff); //渐变大背景
+  --color-bg-third: #fdf2f8; //关于我气泡的背景颜色
+  --color-text-primary: #4b5563; //主要文字颜色
   --color-text-secondary: #0bb3f0;
+  --color-h-primary: #1f2937; //标题
   --color-border: #e8e8e8;
   --color-primary: #1890ff;
-  --color-primary-hover: #b0e4e6;
+  --color-primary-hover: #eed2ee;
 }
