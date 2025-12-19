@@ -2,9 +2,8 @@ import styles from './index.module.scss';
 import React from 'react';
 import logo from '@/assets/images/kitty-logo.jpg';
 import { MoonOutlined, SunOutlined, DatabaseFilled } from '@ant-design/icons';
-import classNames from 'classnames';
 import useTheme from '../../hooks/useTheme.ts';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import type { MenuProps } from 'antd';
 import { Dropdown, Space } from 'antd';
 type Props = {
@@ -13,8 +12,6 @@ type Props = {
 
 export default function CommonLayout(props: Props) {
   const navigate = useNavigate();
-  const location = useLocation();
-  const isActive = (path: string) => location.pathname === path; // 路由路径是否激活
   const [width, setWidth] = useState<number>(window.innerWidth); // 窗口宽度
   const { theme, toggleTheme } = useTheme();
   const items: MenuProps['items'] = [
@@ -69,7 +66,6 @@ export default function CommonLayout(props: Props) {
             <ul className={styles.right}>
               <li>
                 <a
-                  className={classNames({ [styles.active]: isActive('/') })}
                   onClick={(e) => handleClick(e, '/')}
                 >
                   首页
@@ -77,7 +73,6 @@ export default function CommonLayout(props: Props) {
               </li>
               <li>
                 <a
-                  className={classNames({ [styles.active]: isActive('/about') })}
                   onClick={(e) => handleClick(e, '/about')}
                 >
                   关于我
@@ -85,7 +80,6 @@ export default function CommonLayout(props: Props) {
               </li>
               <li>
                 <a
-                  className={classNames({ [styles.active]: isActive('/file') })}
                   onClick={(e) => handleClick(e, '/file')}
                 >
                   归档

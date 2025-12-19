@@ -14,13 +14,18 @@
   "homepage": "https://Star060327.github.io/<仓库名>",
   "dependencies": {
     "@ant-design/icons": "~6.1.0",
+    "@react-three/drei": "^10.7.7",
+    "@react-three/fiber": "^9.4.2",
+    "@types/three": "^0.182.0",
     "antd": "^6.1.1",
     "classnames": "^2.5.1",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-icons": "^5.5.0",
     "react-router-dom": "^7.9.4",
-    "sass": "^1.93.2"
+    "react-tagcloud": "^2.3.3",
+    "sass": "^1.93.2",
+    "three": "^0.182.0"
   },
   "devDependencies": {
     "@bit-ocean/auto-import": "^0.0.54",
@@ -28,6 +33,7 @@
     "@types/node": "^24.6.0",
     "@types/react": "^19.1.16",
     "@types/react-dom": "^19.1.9",
+    "@types/react-tagcloud": "^2.3.2",
     "@vitejs/plugin-react": "^5.0.4",
     "eslint": "^9.36.0",
     "eslint-config-prettier": "^10.1.8",

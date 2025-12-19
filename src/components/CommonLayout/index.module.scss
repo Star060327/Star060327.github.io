@@ -51,6 +51,10 @@
           color: var(--color-text-primary);
           font-weight: bold;
           padding-bottom: 0.2rem;
+          &:hover {
+            color: var(--color-primary-hover) !important;
+            border-bottom: 0.125rem solid var(--color-primary-hover);
+          }
         }
       }
     }
@@ -78,8 +82,4 @@ li {
 }
 a {
   text-decoration: none;
-}
-.active {
-  color: var(--color-primary-hover) !important;
-  border-bottom: 0.125rem solid var(--color-primary-hover);
 }

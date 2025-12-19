@@ -2,7 +2,38 @@ import styles from './index.module.scss';
 import CommonLayout from '../../components/CommonLayout';
 import avatar from '@/assets/images/avatar.jpg';
 import { GithubOutlined, WechatWorkOutlined } from '@ant-design/icons';
+import { TagCloud } from 'react-tagcloud'
+
+const data = [
+  { value: 'JavaScript', count: 36 },
+  { value: 'React', count: 36 },
+  { value: 'Nodejs', count: 36 },
+  { value: 'HTML5', count: 36 },
+  { value: 'CSS3', count: 36 },
+  { value: 'Webpack', count: 36 },
+  { value: 'ECMAScript', count: 36 },
+  { value: 'TypeScript', count: 36 },
+  {value: 'Vite', count: 36},
+  {value:'Vue.js', count: 36},
+  {value:'github',count: 36},
+  {value:'git',count: 36},
+]
+//淡入淡出渲染
+const customRenderer = (tag: { value: string, count: number }, size: number, color: string) => (
+  <span
+    key={tag.value}
+    className={styles.tag}
+    style={{
+      animationDelay: `${Math.random() * 2}s`,
+      fontSize: `${size / 2}em`,
+      border: `2px solid ${color}`,
+    }}
+  >
+    {tag.value}
+  </span>
+)
 export default function About() {
+  
   return (
     <>
       <CommonLayout>
@@ -33,7 +64,11 @@ export default function About() {
               </ul>
             </div>
           </div>
-          <div className={styles.skills}></div>
+          {/* 技术栈部分 */}
+          <div className={styles.skills}>
+            <h3>技术栈</h3>
+              <TagCloud tags={data} minSize={1} maxSize={5} renderer={customRenderer} />
+          </div>
           {/* 联系页 */}
           <div className={styles.contact}>
             <h3>联系我</h3>
