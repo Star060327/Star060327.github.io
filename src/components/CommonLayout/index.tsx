@@ -65,25 +65,13 @@ export default function CommonLayout(props: Props) {
           {width > 768 && (
             <ul className={styles.right}>
               <li>
-                <a
-                  onClick={(e) => handleClick(e, '/')}
-                >
-                  首页
-                </a>
+                <a onClick={(e) => handleClick(e, '/')}>首页</a>
               </li>
               <li>
-                <a
-                  onClick={(e) => handleClick(e, '/about')}
-                >
-                  关于我
-                </a>
+                <a onClick={(e) => handleClick(e, '/about')}>关于我</a>
               </li>
               <li>
-                <a
-                  onClick={(e) => handleClick(e, '/file')}
-                >
-                  归档
-                </a>
+                <a onClick={(e) => handleClick(e, '/file')}>归档</a>
               </li>
               {theme === 'light' && (
                 <li>

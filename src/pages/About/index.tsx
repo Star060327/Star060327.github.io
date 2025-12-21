@@ -2,8 +2,10 @@ import styles from './index.module.scss';
 import CommonLayout from '../../components/CommonLayout';
 import avatar from '@/assets/images/avatar.jpg';
 import { GithubOutlined, WechatWorkOutlined } from '@ant-design/icons';
-import { TagCloud } from 'react-tagcloud'
-
+import { TagCloud } from 'react-tagcloud';
+import gsap from 'gsap';
+import { useRef, useEffect } from 'react';
+import useScrollRestore from '@/hooks/useScrollRestore';
 const data = [
   { value: 'JavaScript', count: 36 },
   { value: 'React', count: 36 },
@@ -13,27 +15,41 @@ const data = [
   { value: 'Webpack', count: 36 },
   { value: 'ECMAScript', count: 36 },
   { value: 'TypeScript', count: 36 },
-  {value: 'Vite', count: 36},
-  {value:'Vue.js', count: 36},
-  {value:'github',count: 36},
-  {value:'git',count: 36},
-]
+  { value: 'Vite', count: 36 },
+  { value: 'Vue.js', count: 36 },
+  { value: 'github', count: 36 },
+  { value: 'git', count: 36 }
+];
 //淡入淡出渲染
-const customRenderer = (tag: { value: string, count: number }, size: number, color: string) => (
+const customRenderer = (tag: { value: string; count: number }, size: number, color: string) => (
   <span
     key={tag.value}
     className={styles.tag}
     style={{
       animationDelay: `${Math.random() * 2}s`,
       fontSize: `${size / 2}em`,
-      border: `2px solid ${color}`,
+      border: `2px solid ${color}`
     }}
   >
     {tag.value}
   </span>
-)
+);
 export default function About() {
-  
+  const ulRef = useRef<HTMLUListElement>(null);
+  useScrollRestore();
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    if (ulRef.current) {
+      gsap.from(ulRef.current.children, {
+        opacity: 0,
+        y: 20,
+        stagger: 0.2,
+        duration: 1.0,
+        ease: 'sine.out',
+        delay: 0.3
+      });
+    }
+  });
   return (
     <>
       <CommonLayout>
@@ -55,7 +71,7 @@ export default function About() {
                 欢迎来到我的个人博客！在这里，我会分享我的日常生活、技术、前端开发等等。希望我的分享能够给你带来一些快乐和灵感！
               </p>
               <h3>关于我</h3>
-              <ul className={styles.selfMainList}>
+              <ul className={styles.selfMainList} ref={ulRef}>
                 <li>天理24届在读</li>
                 <li>intp</li>
                 <li>热爱前端</li>
@@ -67,7 +83,7 @@ export default function About() {
           {/* 技术栈部分 */}
           <div className={styles.skills}>
             <h3>技术栈</h3>
-              <TagCloud tags={data} minSize={1} maxSize={5} renderer={customRenderer} />
+            <TagCloud tags={data} minSize={1} maxSize={5} renderer={customRenderer} />
           </div>
           {/* 联系页 */}
           <div className={styles.contact}>

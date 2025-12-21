@@ -14,16 +14,16 @@
 }
 @keyframes blinker {
   50% {
-    opacity: 0.0;
+    opacity: 0;
   }
 }
 //动画样式
 .tag {
   animation: blinker 3s linear infinite;
   margin: 0.5rem;
-      padding: 0.5rem;
-      display: inline-block;
-      color: var(--color-text-primary);
+  padding: 0.5rem;
+  display: inline-block;
+  color: var(--color-text-primary);
 }
 .about {
   width: 100%;
