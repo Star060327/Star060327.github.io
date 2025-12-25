@@ -1,0 +1,158 @@
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: var(--color-h-primary);
+}
+.h1 {
+  font-size: 2rem;
+}
+.h2 {
+  font-size: 1.5rem;
+}
+.h3 {
+  font-size: 1.25rem;
+}
+.h4 {
+  font-size: 1rem;
+}
+.h5 {
+  font-size: 0.875rem;
+}
+.h6 {
+  font-size: 0.75rem;
+}
+.p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  word-break: break-word; /* 防止长单词溢出 */
+  white-space: pre-wrap; /* 保留换行符 */
+}
+.blockquote {
+  padding: 2rem;
+  border-left: 4px solid #6f4ac5;
+  background-color: var(--color-blockquote-bg);
+  margin-bottom: 1rem;
+  color: var(--color-text-primary);
+}
+/* 图片样式 */
+.img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin: 1rem auto;
+}
+// 表格容器
+.tableWrapper {
+  width: 100%;
+  overflow-x: auto;
+  // 隐藏滚动条
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--color-code-border);
+
+  /* 自定义滚动条样式 */
+  &::-webkit-scrollbar {
+    height: 10px; /* 稍微加高一点，更容易点击和看见 */
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 4px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--color-text-primary); /* 改用主要文字颜色，对比度更高 */
+    border-radius: 5px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+
+    &:hover {
+      background-color: var(--color-primary);
+    }
+  }
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.thead {
+  background-color: var(--color-code-head);
+  /* 圆角样式在 collapse 下可能失效，需要特殊处理 */
+  tr:first-child th:first-child {
+    border-top-left-radius: 0.5rem;
+  }
+  tr:first-child th:last-child {
+    border-top-right-radius: 0.5rem;
+  }
+}
+.tr {
+  border-bottom: 1px solid var(--color-code-border);
+  &:last-child {
+    border-bottom: none; /* 最后一行不需要底边框，避免与 wrapper 边框重叠 */
+  }
+}
+.strong {
+  font-weight: 700;
+  color: var(--color-h-primary); /* 使用主色调强调 */
+  margin: 0 0.2rem; /* 左右留一点空隙 */
+}
+.mark {
+  background-color: var(--color-blockquote-bg);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  background-color: #fff085;
+}
+.td,
+.th {
+  padding: 0.75rem 1rem; /* 增加内边距让表格更舒适 */
+  text-align: left;
+}
+.th {
+  font-weight: 700;
+  color: var(--color-h-primary); /* 确保表头文字颜色 */
+}
+.ul {
+  width: 100%;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  & > .li {
+    list-style-type: disc;
+    line-height: 2;
+    word-break: break-word; /* 防止长单词溢出 */
+  }
+}
+.ol {
+  width: 100%;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  & > .li {
+    list-style-type: decimal;
+    line-height: 1.8;
+    word-break: break-word; /* 防止长单词溢出 */
+  }
+}
+
+.a {
+  color: var(--color-text-secondary);
+  text-decoration: underline;
+}
+.hr {
+  margin: 2rem 0;
+  border: none;
+  height: 1px;
+  background-color: var(--color-code-border);
+}

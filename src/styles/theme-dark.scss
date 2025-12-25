@@ -1,5 +1,6 @@
 [data-theme='dark'] {
   --color-bg-primary: #151d2c;
+  --color-header-bg: rgba(0, 0, 0, 0.85); // 头部半透明背景
   --color-bg-secondary: #1e293b;
   --bg-gradient: linear-gradient(to bottom, #171734, #521b7f);
   --color-bg-third: #4d1b78;
@@ -9,4 +10,19 @@
   --color-border: #6b21a8;
   --color-primary: #40a9ff;
   --color-primary-hover: #eed2ee;
+
+  // 代码块相关
+  --color-code-bg: #2a184d; //代码块背景颜色
+  --color-code-head: #181736; //代码块标题颜色
+  --color-code-border: #314158;
+  --color-code-line: #464267; //代码块行号颜色
+  --color-code-copy-btn-bg: rgba(255, 255, 255, 0.1); // 复制按钮背景
+  --color-code-copy-btn-hover: rgba(255, 255, 255, 0.2); // 复制按钮悬停背景
+  --color-code-copy-icon: #a0a0b0; // 复制图标颜色
+  --color-code-copy-icon-hover: #ffffff; // 复制图标悬停颜色
+  --color-code-copy-success: #6f4ac5; // 复制成功颜色
+
+  // 引用块
+  --color-blockquote-bg: #2a184d; //引用块背景颜色
+  --color-blockquote-border: #6f4ac5; //引用块边框颜色
 }

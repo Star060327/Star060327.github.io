@@ -1,0 +1,60 @@
+.w {
+  padding: 2rem;
+  color: var(--color-text-primary);
+  @media screen and (min-width: 768px) {
+    width: 60%;
+    margin: 0 auto;
+  }
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  // 博客标题部分
+  .blog-header {
+    width: 100%;
+    .blog-meta {
+      height: 3rem;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      font-size: 0.875rem;
+      column-gap: 2rem;
+      color: var(--color-text-primary);
+      // 日期部分
+      .blog-meta-date {
+        color: #62748e;
+      }
+      // 技能标签部分
+      .blog-meta-skill {
+        padding: 0.2rem 1rem;
+        border-radius: 0.5rem;
+        background-color: var(--color-bg-third);
+        color: var(--color-text-secondary);
+        border: 1px solid var(--color-border);
+      }
+    }
+  }
+  // 博客内容区
+  .blog-content {
+    width: 100%;
+    padding: 2rem;
+    margin-top: 2rem;
+    // border: 1px solid #e5e5e5;
+    border-radius: 1rem;
+    background-color: var(--color-bg-secondary);
+    box-shadow:
+      0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.03),
+      -0.5rem -0.5rem 1rem rgba(0, 0, 0, 0.03);
+    overflow-x: hidden; // 防止内容溢出撑开页面
+
+    @media screen and (max-width: 768px) {
+      padding: 1rem; // 移动端减小 padding
+    }
+  }
+}
+
+h1 {
+  font-weight: 700;
+  color: var(--color-h-primary);
+}

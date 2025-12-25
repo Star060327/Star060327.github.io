@@ -1,6 +1,5 @@
 import styles from './index.module.scss';
 import React from 'react';
-import logo from '@/assets/images/kitty-logo.jpg';
 import { MoonOutlined, SunOutlined, DatabaseFilled } from '@ant-design/icons';
 import useTheme from '../../hooks/useTheme.ts';
 import { useNavigate } from 'react-router-dom';
@@ -58,8 +57,7 @@ export default function CommonLayout(props: Props) {
         {/* 头部 */}
         <header className={styles.top}>
           <div className={styles.left}>
-            <img src={logo} alt="logo" />
-            <h2>Star-Blog</h2>
+            <h2>🌟 Star-Blog</h2>
           </div>
           {/* PC端 */}
           {width > 768 && (

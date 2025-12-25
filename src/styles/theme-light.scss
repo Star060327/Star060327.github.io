@@ -1,12 +1,28 @@
 :root {
   --color-bg-primary: #fcfdff; //头、底的背景颜色
-  --color-bg-secondary: #fcfdff; //卡片的颜色
+  --color-header-bg: rgba(252, 253, 255, 0.7); // 头部半透明背景
+  --color-bg-secondary: #f5f9fb; //卡片的颜色
   --bg-gradient: linear-gradient(to bottom, #f0f6ff, #f9f5ff); //渐变大背景
   --color-bg-third: #fdf2f8; //关于我气泡的背景颜色
   --color-text-primary: #4b5563; //主要文字颜色
   --color-text-secondary: #b33bce;
-  --color-h-primary: #1f2937; //标题颜色
+  --color-h-primary: #0a0a0a; //标题颜色
   --color-border: #fbcfe8; //主页边框的颜色
   --color-primary: #1890ff;
   --color-primary-hover: #eed2ee; //导航栏激活态的颜色
+
+  // 代码块相关
+  --color-code-bg: #f8f5ff; //代码块背景颜色
+  --color-code-head: #f1f6ff; //代码块标题颜色
+  --color-code-border: #e5e5e5; //代码块边框颜色
+  --color-code-line: #e7e7f5; //代码块行号颜色
+  --color-code-copy-btn-bg: rgba(0, 0, 0, 0.05); // 复制按钮背景
+  --color-code-copy-btn-hover: rgba(0, 0, 0, 0.1); // 复制按钮悬停背景
+  --color-code-copy-icon: #6b7280; // 复制图标颜色
+  --color-code-copy-icon-hover: #111827; // 复制图标悬停颜色
+  --color-code-copy-success: #6f4ac5; // 复制成功颜色
+
+  // 引用块
+  --color-blockquote-bg: #eff0f8; //引用块背景颜色
+  --color-blockquote-border: #6f4ac5; //引用块边框颜色
 }

@@ -7,11 +7,13 @@ import { useRef, useEffect } from 'react';
 import useScrollRestore from '@/hooks/useScrollRestore';
 import avatar from '@/assets/images/avatar.jpg';
 import { data } from '@/utils/data.ts';
+import { useNavigate } from 'react-router-dom';
 gsap.registerPlugin(SplitText);
 
 const PAGESIZE = 6;
 
 export default function Layout(): React.ReactNode {
+  const navigate = useNavigate();
   //刷新位置不变
   useScrollRestore();
   // js动画  文字逐个出现
@@ -137,7 +139,7 @@ export default function Layout(): React.ReactNode {
               <ul className={styles['blog-content']}>
                 {currentData.map((item) => {
                   return (
-                    <li key={item.id}>
+                    <li key={item.id} onClick={() => navigate(item.path)}>
                       <h2>{item.title}</h2>
                       <div className={styles['blog-tag']}>
                         <div>{item.tag}</div>

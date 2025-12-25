@@ -30,5 +30,5 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["src", "auto-imports.d.ts"]
+  "include": ["src", "auto-imports.d.ts", "mdx.d.ts"]
 }
