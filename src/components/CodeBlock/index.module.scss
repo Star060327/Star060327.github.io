@@ -59,7 +59,7 @@
   .content {
     width: 100%;
     position: relative;
-    background-color: var(--color-code-bg);
+    // background-color: var(--color-code-bg);
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
     overflow: hidden; /* Ensure highlighting doesn't overflow */
@@ -103,8 +103,8 @@
         height: calc(0.9rem * 1.5);
 
         &.highlighted {
-          background-color: rgba(200, 200, 255, 0.1); /* Light highlight color */
-          border-left: 4px solid var(--color-code-line);
+          background-color: var(--color-code-line); /* Light highlight color */
+          border-left: 4px solid #6f4ac5;
         }
       }
     }

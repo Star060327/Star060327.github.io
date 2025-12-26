@@ -52,6 +52,7 @@ export default function Layout(): React.ReactNode {
   // 更新页数
   function updatePage(page: number) {
     setCurrent(page);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
   //当前页数的博客内容
   const currentData = data.slice((current - 1) * PAGESIZE, current * PAGESIZE);

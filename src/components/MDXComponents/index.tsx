@@ -1,6 +1,6 @@
 import { isValidElement, type ComponentPropsWithoutRef } from 'react';
 import type { MDXComponents } from 'mdx/types';
-// import { ImageOff } from 'lucide-react';
+import { ImageOff } from 'lucide-react';
 import CodeBlock from '../CodeBlock/CodeBlock';
 import styles from './index.module.scss';
 
@@ -47,7 +47,7 @@ const mdxComponents: MDXComponents = {
   },
   // 映射 blockquote 元素，添加引用样式
   blockquote: (props: ComponentPropsWithoutRef<'blockquote'>) => (
-    <blockquote {...props} className={styles.blockquote} />
+    <blockquote {...props} className={styles.blockquote}></blockquote>
   ),
   // 标题系列
   h1: (props: ComponentPropsWithoutRef<'h1'>) => <h1 {...props} className={styles.h1} />,
@@ -81,11 +81,48 @@ const mdxComponents: MDXComponents = {
   ol: (props: ComponentPropsWithoutRef<'ol'>) => <ol {...props} className={styles.ol} />,
   li: (props: ComponentPropsWithoutRef<'li'>) => <li {...props} className={styles.li} />,
   // 图片
-  img: (props: ComponentPropsWithoutRef<'img'>) => <img {...props} className={styles.img} />,
+  // 映射 img 元素，添加图片样式 支持懒加载
+  img: (props: ComponentPropsWithoutRef<'img'>) => {
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    const [error, setError] = useState(false);
+
+    if (error) {
+      return (
+        <div className={styles['img-error']}>
+          <ImageOff style={{ width: '24px', height: '24px', marginBottom: '8px' }} />
+          <span className={styles['img-error-text']}>图片加载失败</span>
+          <span className={styles['img-error-alt']} title={props.src}>
+            {props.alt || props.src?.split('/').pop() || 'Unknown Image'}
+          </span>
+        </div>
+      );
+    }
+
+    return (
+      <img
+        {...props}
+        onError={() => setError(true)}
+        loading="lazy"
+        className={styles.img}
+      />
+    );
+  },
   //链接
-  a: (props: ComponentPropsWithoutRef<'a'>) => (
-    <a {...props} className={styles.a} target="_blank" rel="noopener noreferrer" />
-  ),
+  a: (props: ComponentPropsWithoutRef<'a'>) => {
+    const { href } = props;
+    // 只有以 http 或 https 开头的链接才在新窗口打开
+    // 这样可以确保锚点链接 (#)、相对路径 (./)、绝对路径 (/) 都在当前窗口打开
+    const isExternal = href && (href.startsWith('http://') || href.startsWith('https://'));
+    
+    return (
+      <a 
+        {...props} 
+        target={isExternal ? "_blank" : undefined}
+        rel={isExternal ? "noopener noreferrer" : undefined}
+        className={styles.a}
+      />
+    );
+  },
   // 分割线
   hr: (props: ComponentPropsWithoutRef<'hr'>) => <hr {...props} className={styles.hr} />
 };

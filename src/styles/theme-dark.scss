@@ -12,7 +12,6 @@
   --color-primary-hover: #eed2ee;
 
   // 代码块相关
-  --color-code-bg: #2a184d; //代码块背景颜色
   --color-code-head: #181736; //代码块标题颜色
   --color-code-border: #314158;
   --color-code-line: #464267; //代码块行号颜色
@@ -25,4 +24,7 @@
   // 引用块
   --color-blockquote-bg: #2a184d; //引用块背景颜色
   --color-blockquote-border: #6f4ac5; //引用块边框颜色
+
+  //表格
+  --color-table-hover: #393847; //表格背景颜色
 }

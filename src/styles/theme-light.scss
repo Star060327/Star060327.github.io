@@ -12,7 +12,6 @@
   --color-primary-hover: #eed2ee; //导航栏激活态的颜色
 
   // 代码块相关
-  --color-code-bg: #f8f5ff; //代码块背景颜色
   --color-code-head: #f1f6ff; //代码块标题颜色
   --color-code-border: #e5e5e5; //代码块边框颜色
   --color-code-line: #e7e7f5; //代码块行号颜色
@@ -25,4 +24,7 @@
   // 引用块
   --color-blockquote-bg: #eff0f8; //引用块背景颜色
   --color-blockquote-border: #6f4ac5; //引用块边框颜色
+
+  //表格
+  --color-table-hover: #f3f4f6; //表格背景颜色
 }

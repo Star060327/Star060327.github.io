@@ -23,16 +23,29 @@ module.exports = {
   },
   plugins: ['react', '@typescript-eslint', 'auto-import'],
   rules: {
-    'react/react-in-jsx-scope': 'off',
-    '@typescript-eslint/explicit-function-return-type': 'off',
-    '@typescript-eslint/no-unused-vars': [
-      'error',
+   // 自定义规则（可根据需求调整）
+    "react/prop-types": "off", // TS 已做类型检查，关闭 prop-types
+    "@typescript-eslint/no-explicit-any": "warn", // 禁止 any 类型（警告级别）
+    "@typescript-eslint/no-unused-vars": ["error", { argsIgnorePattern: "^_" }], // 忽略以下划线开头的未使用变量
+    "react-refresh/only-export-components": [
+      "warn",
+      { allowConstantExport: true },
+    ], // 确保热更新正常
+    "import/order": [
+      "error",
       {
-        argsIgnorePattern: '^_',
-        varsIgnorePattern: '^_',
-        caughtErrorsIgnorePattern: '^_'
-      }
-    ]
+        // 规范导入顺序
+        groups: [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index",
+        ],
+        "newlines-between": "always",
+      },
+    ],
   },
   settings: {
     react: {

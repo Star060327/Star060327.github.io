@@ -71,58 +71,60 @@ export default function CommonLayout(props: Props) {
               <li>
                 <a onClick={(e) => handleClick(e, '/file')}>归档</a>
               </li>
-              {theme === 'light' && (
-                <li>
-                  <Button color="default" variant="filled" onClick={toggleTheme}>
+              <li>
+                <Button
+                  color="default"
+                  variant="filled"
+                  onClick={toggleTheme}
+                  style={{
+                    transition: 'all 0.5s',
+                    borderRadius: '50%',
+                    width: '2.5rem',
+                    height: '2.5rem',
+                    transform: theme === 'dark' ? 'rotate(180deg)' : 'rotate(0deg)'
+                  }}
+                >
+                  {theme === 'light' ? (
                     <MoonOutlined
                       style={{ fontSize: '1.25rem', color: 'var(--color-text-primary)' }}
                     />
-                  </Button>
-                </li>
-              )}
-              {theme === 'dark' && (
-                <li>
-                  <Button color="default" variant="filled" onClick={toggleTheme}>
+                  ) : (
                     <SunOutlined
                       style={{ fontSize: '1.25rem', color: 'var(--color-text-primary)' }}
                     />
-                  </Button>
-                </li>
-              )}
+                  )}
+                </Button>
+              </li>
             </ul>
           )}
           {/* 移动端 */}
           {width <= 768 && (
             <div>
               <ul className={styles.right}>
-                {theme === 'light' && (
-                  <li>
-                    <Button
-                      color="default"
-                      variant="filled"
-                      style={{ width: '2.5rem', height: '2.5rem' }}
-                      onClick={toggleTheme}
-                    >
+                <li>
+                  <Button
+                    color="default"
+                    variant="filled"
+                    style={{
+                      width: '2.5rem',
+                      height: '2.5rem',
+                      borderRadius: '50%',
+                      transition: 'all 0.5s',
+                      transform: theme === 'dark' ? 'rotate(180deg)' : 'rotate(0deg)'
+                    }}
+                    onClick={toggleTheme}
+                  >
+                    {theme === 'light' ? (
                       <MoonOutlined
                         style={{ fontSize: '1rem', color: 'var(--color-text-primary)' }}
                       />
-                    </Button>
-                  </li>
-                )}
-                {theme === 'dark' && (
-                  <li>
-                    <Button
-                      color="default"
-                      variant="filled"
-                      style={{ width: '2.5rem', height: '2.5rem' }}
-                      onClick={toggleTheme}
-                    >
+                    ) : (
                       <SunOutlined
                         style={{ fontSize: '1rem', color: 'var(--color-text-primary)' }}
                       />
-                    </Button>
-                  </li>
-                )}
+                    )}
+                  </Button>
+                </li>
                 <li>
                   <Space vertical>
                     <Space wrap>
