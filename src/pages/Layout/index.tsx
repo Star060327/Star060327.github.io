@@ -1,15 +1,65 @@
 import styles from './index.module.scss';
-import React from 'react';
+import React, { useState } from 'react';
 import CommonLayout from '../../components/CommonLayout';
-import gsap from 'gsap';
-import SplitText from 'gsap/SplitText';
+import { motion } from 'framer-motion';
+import Typewriter from '@/hooks/useTypewriter.tsx';
 import useScrollRestore from '@/hooks/useScrollRestore';
 import avatar from '@/assets/images/avatar.jpg';
 import { data } from '@/utils/data.ts';
 import { useNavigate } from 'react-router-dom';
-gsap.registerPlugin(SplitText);
+import { Pagination } from 'antd';
+import { DownOutlined } from '@ant-design/icons';
+import FloatingParticles from '@/components/FloatingParticles';
 
 const PAGESIZE = 6;
+
+function LayoutMain() {
+  const scrollToContent = () => {
+    const content = document.getElementById('content-start');
+    if (content) {
+      content.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  return (
+    <>
+      <div className={styles['layout-main']}>
+        <FloatingParticles />
+        <div className={styles['layout-main-content']}>
+          <div className={styles['layout-main-content-header']}>
+            <motion.h1
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+            >
+              Star'Blog
+            </motion.h1>
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.5, duration: 0.8 }}
+            >
+              <Typewriter 
+                text="种一棵树最好的时间是十年前，其次是现在。" 
+                speed={100}
+              />
+            </motion.p>
+          </div>
+        </div>
+        
+        <motion.div 
+          className={styles['scroll-indicator']}
+          onClick={scrollToContent}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 0.7 }}
+          transition={{ delay: 2, duration: 1 }}
+        >
+          <DownOutlined />
+        </motion.div>
+      </div>
+    </>
+  );
+}
 
 export default function Layout(): React.ReactNode {
   const navigate = useNavigate();
@@ -20,14 +70,21 @@ export default function Layout(): React.ReactNode {
   // 更新页数
   function updatePage(page: number) {
     setCurrent(page);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    // 滚动到博客列表顶部而不是页面顶部，保持用户体验
+    const content = document.getElementById('content-start');
+    if (content) {
+      content.scrollIntoView({ behavior: 'smooth' });
+    }
   }
   //当前页数的博客内容
   const currentData = data.slice((current - 1) * PAGESIZE, current * PAGESIZE);
+  
   return (
     <>
       <CommonLayout>
-        <div className={styles.layout}>
+        <div className={styles['layout-main-container']}>
+          <LayoutMain />
+        <div id="content-start" className={styles.layout}>
           {/* 博客部分 */}
           <div className={styles.blog}>
             {/* 总结 */}
@@ -103,7 +160,7 @@ export default function Layout(): React.ReactNode {
                     <li key={item.id} onClick={() => navigate(item.path)}>
                       <h2>{item.title}</h2>
                       <div className={styles['blog-tag']}>
-                        <div>{item.tags.join('')}</div>
+                        <div>{item.tags ? item.tags.join(', ') : item.tags}</div>
                         <span>{item.date}</span>
                       </div>
                       <p>{item.content}</p>
@@ -120,6 +177,7 @@ export default function Layout(): React.ReactNode {
               />
             </div>
           </div>
+        </div>
         </div>
       </CommonLayout>
     </>
