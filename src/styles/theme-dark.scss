@@ -1,6 +1,6 @@
 [data-theme='dark'] {
   --color-bg-primary: #151d2c;
-  --color-header-bg: rgba(0, 0, 0, 0.85); // 头部半透明背景
+  --color-header-bg: rgba(0, 0, 0, 0.99); // 头部半透明背景
   --color-bg-secondary: #1e293b;
   --bg-gradient: linear-gradient(to bottom, #171734, #521b7f);
   --color-bg-third: #4d1b78;
@@ -27,4 +27,10 @@
 
   //表格
   --color-table-hover: #393847; //表格背景颜色
+
+  // 时间轴
+  --color-timeline-line: #374151; // 时间轴线颜色
+  --color-timeline-dot-bg: #1f2937; // 时间轴点背景色
+  --color-timeline-dot-border: #4b5563; // 时间轴点边框色
+  --color-timeline-year: #f3f4f6; // 年份文字颜色
 }

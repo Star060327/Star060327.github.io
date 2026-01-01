@@ -1,4 +1,279 @@
-.file {
-  padding: 0;
-  font-weight: normal;
+.file-container {
+  width: 100%;
+  min-height: 80vh;
+  padding: 4rem 1rem;
+  display: flex;
+  justify-content: center;
+
+  .w {
+    width: 1000px;
+    max-width: 100%;
+    
+    // 头部区域
+    .header {
+      text-align: center;
+      margin-bottom: 4rem;
+
+      h1 {
+        font-size: 2.5rem;
+        font-weight: 800;
+        margin-bottom: 1rem;
+        background: linear-gradient(135deg, var(--color-text-secondary) 0%, var(--color-primary) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .subtitle {
+        color: var(--color-text-primary);
+        font-size: 1.1rem;
+        opacity: 0.8;
+      }
+
+      // 统计卡片
+      .stats-container {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin-top: 2rem;
+
+        .stat-item {
+          background: var(--color-bg-secondary);
+          padding: 1rem 2rem;
+          border-radius: 1rem;
+          box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+          border: 1px solid var(--color-border);
+          
+          .count {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--color-text-secondary);
+            display: block;
+          }
+          
+          .label {
+            font-size: 0.875rem;
+            color: var(--color-text-primary);
+            margin-top: 0.25rem;
+          }
+        }
+      }
+    }
+
+    // 时间轴主体
+    .timeline {
+      position: relative;
+      padding-left: 2rem;
+
+      // 垂直线
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        background: var(--color-timeline-line);
+        border-radius: 1px;
+      }
+
+      // 年份组
+      .year-group {
+        margin-bottom: 3rem;
+        position: relative;
+
+        // 年份标题
+        .year-title {
+          font-size: 2rem;
+          font-weight: 800;
+          color: var(--color-timeline-year); // 使用新变量
+          margin-bottom: 2rem;
+          position: relative;
+          padding-left: 2rem;
+          opacity: 0.3;
+          font-family: 'Segoe UI', sans-serif;
+          
+          // 年份圆点
+          &::before {
+            content: '';
+            position: absolute;
+            left: -2.4rem;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 14px;
+            height: 14px;
+            background: var(--color-bg-primary);
+            border: 3px solid var(--color-text-secondary);
+            border-radius: 50%;
+            z-index: 2;
+          }
+        }
+
+        // 文章列表
+        .article-list {
+          display: flex;
+          flex-direction: column;
+          gap: 1.5rem;
+
+          .article-item {
+            position: relative;
+            padding-left: 2rem;
+            transition: all 0.3s ease;
+
+            // 文章圆点
+            &::before {
+              content: '';
+              position: absolute;
+              left: -2.3rem;
+              top: 1.5rem;
+              width: 10px;
+              height: 10px;
+              background: var(--color-timeline-dot-bg);
+              border: 2px solid var(--color-timeline-dot-border);
+              border-radius: 50%;
+              transition: all 0.3s ease;
+              z-index: 2;
+            }
+
+            // 文章卡片
+            .article-card {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              background: var(--color-bg-secondary);
+              padding: 1.25rem 1.5rem;
+              border-radius: 0.75rem;
+              border: 1px solid transparent;
+              cursor: pointer;
+              transition: all 0.3s ease;
+              box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+
+              .info {
+                flex: 1;
+                margin-right: 1rem;
+
+                .title {
+                  font-size: 1.1rem;
+                  font-weight: 600;
+                  color: var(--color-h-primary);
+                  margin-bottom: 0.5rem;
+                  transition: color 0.3s ease;
+                }
+
+                .meta {
+                  display: flex;
+                  gap: 1rem;
+                  font-size: 0.875rem;
+                  color: var(--color-text-primary);
+                  opacity: 0.8;
+
+                  .date {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.25rem;
+                  }
+
+                  .tag {
+                    color: var(--color-text-secondary);
+                    background: var(--color-bg-third);
+                    padding: 0.1rem 0.5rem;
+                    border-radius: 0.25rem;
+                    font-size: 0.75rem;
+                  }
+                }
+              }
+
+              .arrow {
+                color: var(--color-text-primary);
+                opacity: 0;
+                transform: translateX(-10px);
+                transition: all 0.3s ease;
+              }
+            }
+
+            // 悬停效果
+            &:hover {
+              &::before {
+                background: var(--color-text-secondary);
+                border-color: var(--color-text-secondary);
+                transform: scale(1.2);
+              }
+
+              .article-card {
+                transform: translateY(-2px);
+                box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+                border-color: var(--color-border);
+                background: var(--color-bg-primary);
+
+                .title {
+                  color: var(--color-text-secondary);
+                }
+
+                .arrow {
+                  opacity: 1;
+                  transform: translateX(0);
+                  color: var(--color-text-secondary);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    // 移动端适配
+    @media screen and (max-width: 768px) {
+      .header {
+        h1 {
+          font-size: 2rem;
+        }
+        
+        .stats-container {
+          flex-direction: row;
+          gap: 1rem;
+          
+          .stat-item {
+            padding: 0.75rem 1.5rem;
+          }
+        }
+      }
+
+      .timeline {
+        padding-left: 1.5rem;
+
+        .year-group {
+          .year-title {
+            font-size: 1.5rem;
+            &::before {
+              left: -1.9rem;
+            }
+          }
+
+          .article-list {
+            .article-item {
+              padding-left: 1rem;
+              
+              &::before {
+                left: -1.8rem;
+              }
+
+              .article-card {
+                padding: 1rem;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5rem;
+
+                .info {
+                  margin-right: 0;
+                }
+
+                .arrow {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

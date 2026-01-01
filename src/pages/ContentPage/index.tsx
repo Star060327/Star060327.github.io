@@ -169,6 +169,9 @@ const ContentPage: React.FC = () => {
       if (element) {
         // rAF优化
           requestAnimationFrame(() => {
+            console.log(window.scrollY);
+            console.log(element.getBoundingClientRect().top);
+            
             const top = element.getBoundingClientRect().top + window.scrollY - 100; // 减去头部高度
             window.scrollTo({
                 top,

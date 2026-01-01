@@ -8,27 +8,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  .top {
-    width: 100%;
-    margin-top: 2rem;
-    //最上面的标题
-    .h1 {
-      color: var(--color-text-secondary);
-      text-align: center;
-      font-weight: 700 !important;
-    }
-    //最上面的小段落
-    .p {
-      text-align: center;
-      color: var(--color-text-primary);
-      font-size: 0.875rem;
-    }
-  }
 
   // 博客部分
   .blog {
     width: 80%;
-    margin: 0 auto;
+    margin: 6.25rem auto;
     display: flex;
     // 响应式布局
     @media screen and (min-width: 768px) {

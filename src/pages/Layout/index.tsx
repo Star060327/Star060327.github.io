@@ -3,7 +3,6 @@ import React from 'react';
 import CommonLayout from '../../components/CommonLayout';
 import gsap from 'gsap';
 import SplitText from 'gsap/SplitText';
-import { useRef, useEffect } from 'react';
 import useScrollRestore from '@/hooks/useScrollRestore';
 import avatar from '@/assets/images/avatar.jpg';
 import { data } from '@/utils/data.ts';
@@ -16,37 +15,6 @@ export default function Layout(): React.ReactNode {
   const navigate = useNavigate();
   //刷新位置不变
   useScrollRestore();
-  // js动画  文字逐个出现
-  const h1Ref = useRef<HTMLHeadingElement>(null);
-  const pRef = useRef<HTMLParagraphElement>(null);
-  useEffect(() => {
-    if (typeof window === 'undefined') return;
-    document.fonts.ready.then(() => {
-      //创建SplitText实例
-      if (h1Ref.current) {
-        const split1 = new SplitText(h1Ref.current, { type: 'words', addTags: true });
-        // 从以下状态回到当前状态
-        gsap.from(split1.words, {
-          opacity: 0,
-          y: 20, // 文字从下往上出现
-          stagger: 0.1, // 每个元素的动画开始时间比前一个晚0.1s
-          duration: 0.5, //每个元素的动画持续时间
-          ease: 'sine.out' //缓动函数
-        });
-      }
-      if (pRef.current) {
-        const split2 = new SplitText(pRef.current, { type: 'words', addTags: true });
-        gsap.from(split2.words, {
-          opacity: 0,
-          y: 20,
-          stagger: 0.1,
-          duration: 0.5,
-          ease: 'sine.out',
-          delay: 0.3 //
-        });
-      }
-    });
-  });
   // 分页
   const [current, setCurrent] = useState(1);
   // 更新页数
@@ -60,14 +28,6 @@ export default function Layout(): React.ReactNode {
     <>
       <CommonLayout>
         <div className={styles.layout}>
-          <div className={styles.top}>
-            <h1 className={styles.h1} ref={h1Ref}>
-              博客文章
-            </h1>
-            <p className={styles.p} ref={pRef}>
-              记录生活 记录成长 记录进步
-            </p>
-          </div>
           {/* 博客部分 */}
           <div className={styles.blog}>
             {/* 总结 */}
@@ -143,7 +103,7 @@ export default function Layout(): React.ReactNode {
                     <li key={item.id} onClick={() => navigate(item.path)}>
                       <h2>{item.title}</h2>
                       <div className={styles['blog-tag']}>
-                        <div>{item.tag}</div>
+                        <div>{item.tags.join('')}</div>
                         <span>{item.date}</span>
                       </div>
                       <p>{item.content}</p>
