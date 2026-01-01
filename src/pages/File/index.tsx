@@ -5,6 +5,7 @@ import { data } from '@/utils/data';
 import { useNavigate } from 'react-router-dom';
 import { RightOutlined, CalendarOutlined, TagOutlined } from '@ant-design/icons';
 import { useMemo } from 'react';
+import Typewriter from '@/hooks/useTypewriter.tsx';
 
 // 定义归档数据结构
 type ArchiveData = {
@@ -54,7 +55,7 @@ export default function File() {
           {/* 头部统计区域 */}
           <div className={styles.header}>
             <h1>文章归档</h1>
-            <p className={styles.subtitle}>时间的足迹，成长的见证</p>
+            <p className={styles.subtitle}><Typewriter text="时间的足迹，成长的见证" /></p>
             
             <div className={styles['stats-container']}>
               <div className={styles['stat-item']}>
@@ -88,8 +89,7 @@ export default function File() {
                               {item.date}
                             </span>
                             <span className={styles.tag}>
-                              <TagOutlined />
-                              {item.tags.join(', ')}
+                              <TagOutlined /> {item.tags.join(', ')}
                             </span>
                           </div>
                         </div>
