@@ -10,9 +10,11 @@ import { useNavigate } from 'react-router-dom';
 import { Pagination } from 'antd';
 import { DownOutlined } from '@ant-design/icons';
 import FloatingParticles from '@/components/FloatingParticles';
-
+import aboutData from '@/utils/aboutData';
+import classifyData from '@/utils/classifyData';
 const PAGESIZE = 6;
 
+// 布局主内容
 function LayoutMain() {
   const scrollToContent = () => {
     const content = document.getElementById('content-start');
@@ -96,47 +98,23 @@ export default function Layout(): React.ReactNode {
                   <h2>徐维斌</h2>
                 </div>
                 <ul className={styles['sumup-top-list']}>
-                  <li>
-                    <span>54</span>
-                    <span>归档</span>
-                  </li>
-                  <li>
-                    <span>6</span>
-                    <span>分类</span>
-                  </li>
-                  <li>
-                    <span>7</span>
-                    <span>标签</span>
-                  </li>
+                  {aboutData.map((item) => (
+                    <li key={item.id}>
+                      <span>{item.count}</span>
+                      <span>{item.content}</span>
+                    </li>
+                  ))}
                 </ul>
               </header>
               <div className={styles['sumup-content']}>
                 <h3>分类</h3>
                 <ul>
-                  <li>
-                    <span>css</span>
-                    <span>9</span>
+                 {classifyData.map((item) => (
+                  <li key={item.id}>
+                    <span>{item.title}</span>
+                    <span>{item.count}</span>
                   </li>
-                  <li>
-                    <span>css</span>
-                    <span>9</span>
-                  </li>
-                  <li>
-                    <span>css</span>
-                    <span>9</span>
-                  </li>
-                  <li>
-                    <span>css</span>
-                    <span>9</span>
-                  </li>
-                  <li>
-                    <span>css</span>
-                    <span>9</span>
-                  </li>
-                  <li>
-                    <span>css</span>
-                    <span>9</span>
-                  </li>
+                 ))}
                 </ul>
               </div>
               <footer className={styles['sumup-footer']}>

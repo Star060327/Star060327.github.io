@@ -49,6 +49,7 @@ export default function CommonLayout(props: Props) {
   function handleClick(e: React.MouseEvent<HTMLSpanElement>, path: string) {
     e.preventDefault();
     navigate(path);
+    
   }
 
   return (
