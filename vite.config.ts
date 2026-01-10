@@ -56,7 +56,7 @@ const rehypeMetaAsProps = () => {
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: 'https://star060327.github.io/myBlog/',
+  base: '/myBlog/',
   plugins: [
     {
       enforce: 'pre',
