@@ -1,4 +1,317 @@
-import{r as o,R as J,a as mn,u as So,j as G}from"./index-BR_q8tzi.js";import{I as it,L as Co,l as fn,u as tt,T as xo,c as ae,w as $o,a as gt,b as lt,d as Gn,F as yo,K as V,g as Tt,o as Qt,R as Xn,_ as Un,e as Ye,f as Eo,t as wo,h as Io,i as bt,j as xt,k as vt,m as at,n as Zt,p as kt,C as en,V as Mo,q as Ro,r as ht,s as Po,v as Oo,x as Bo,y as To,z as ut,A as gn,B as hn,D as zo,E as Z,G as Kn,H as No,J as Do,M as Ho,N as Lo,O as jo,P as qn,Q as _o,S as Ao,U as Vo,W as Fo,X as Wo,Y as Go,Z as Xo,$ as bn,a0 as Uo,a1 as Ko,a2 as qo,a3 as vn,a4 as Sn,a5 as Yo}from"./index-BFRsOrW6.js";import{d as zt,T as Jo}from"./data-C7fG0xXe.js";import{u as Qo}from"./useScrollRestore-CJovq5Fo.js";import{a as Zo}from"./avatar-CGTAjrM5.js";import{F as ko}from"./index-Cykwi6Eb.js";import{m as Mt}from"./proxy-D6zHmpbh.js";const er="_layout_1oi9j_1",tr="_blog_1oi9j_15",nr="_sumup_1oi9j_94",je={"layout-main-container":"_layout-main-container_1oi9j_1",layout:er,blog:tr,"blog-left":"_blog-left_1oi9j_33","blog-content":"_blog-content_1oi9j_48","blog-tag":"_blog-tag_1oi9j_61",sumup:nr,"sumup-top":"_sumup-top_1oi9j_114","sumup-content":"_sumup-content_1oi9j_115","sumup-footer":"_sumup-footer_1oi9j_116","sumup-top-avatar":"_sumup-top-avatar_1oi9j_124","sumup-top-list":"_sumup-top-list_1oi9j_136","layout-main":"_layout-main_1oi9j_1","layout-main-content":"_layout-main-content_1oi9j_181","layout-main-content-header":"_layout-main-content-header_1oi9j_187","scroll-indicator":"_scroll-indicator_1oi9j_215"};var or={icon:{tag:"svg",attrs:{viewBox:"64 64 896 896",focusable:"false"},children:[{tag:"path",attrs:{d:"M912 190h-69.9c-9.8 0-19.1 4.5-25.1 12.2L404.7 724.5 207 474a32 32 0 00-25.1-12.2H112c-6.7 0-10.4 7.7-6.3 12.9l273.9 347c12.8 16.2 37.4 16.2 50.3 0l488.4-618.9c4.1-5.1.4-12.8-6.3-12.8z"}}]},name:"check",theme:"outlined"};function Nt(){return Nt=Object.assign?Object.assign.bind():function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e},Nt.apply(this,arguments)}const rr=(e,t)=>o.createElement(it,Nt({},e,{ref:t,icon:or})),lr=o.forwardRef(rr);var ir={icon:{tag:"svg",attrs:{"fill-rule":"evenodd",viewBox:"64 64 896 896",focusable:"false"},children:[{tag:"path",attrs:{d:"M512 64c247.4 0 448 200.6 448 448S759.4 960 512 960 64 759.4 64 512 264.6 64 512 64zm127.98 274.82h-.04l-.08.06L512 466.75 384.14 338.88c-.04-.05-.06-.06-.08-.06a.12.12 0 00-.07 0c-.03 0-.05.01-.09.05l-45.02 45.02a.2.2 0 00-.05.09.12.12 0 000 .07v.02a.27.27 0 00.06.06L466.75 512 338.88 639.86c-.05.04-.06.06-.06.08a.12.12 0 000 .07c0 .03.01.05.05.09l45.02 45.02a.2.2 0 00.09.05.12.12 0 00.07 0c.02 0 .04-.01.08-.05L512 557.25l127.86 127.87c.04.04.06.05.08.05a.12.12 0 00.07 0c.03 0 .05-.01.09-.05l45.02-45.02a.2.2 0 00.05-.09.12.12 0 000-.07v-.02a.27.27 0 00-.05-.06L557.25 512l127.87-127.86c.04-.04.05-.06.05-.08a.12.12 0 000-.07c0-.03-.01-.05-.05-.09l-45.02-45.02a.2.2 0 00-.09-.05.12.12 0 00-.07 0z"}}]},name:"close-circle",theme:"filled"};function Dt(){return Dt=Object.assign?Object.assign.bind():function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e},Dt.apply(this,arguments)}const ar=(e,t)=>o.createElement(it,Dt({},e,{ref:t,icon:ir})),sr=o.forwardRef(ar);var cr={icon:{tag:"svg",attrs:{"fill-rule":"evenodd",viewBox:"64 64 896 896",focusable:"false"},children:[{tag:"path",attrs:{d:"M799.86 166.31c.02 0 .04.02.08.06l57.69 57.7c.04.03.05.05.06.08a.12.12 0 010 .06c0 .03-.02.05-.06.09L569.93 512l287.7 287.7c.04.04.05.06.06.09a.12.12 0 010 .07c0 .02-.02.04-.06.08l-57.7 57.69c-.03.04-.05.05-.07.06a.12.12 0 01-.07 0c-.03 0-.05-.02-.09-.06L512 569.93l-287.7 287.7c-.04.04-.06.05-.09.06a.12.12 0 01-.07 0c-.02 0-.04-.02-.08-.06l-57.69-57.7c-.04-.03-.05-.05-.06-.07a.12.12 0 010-.07c0-.03.02-.05.06-.09L454.07 512l-287.7-287.7c-.04-.04-.05-.06-.06-.09a.12.12 0 010-.07c0-.02.02-.04.06-.08l57.7-57.69c.03-.04.05-.05.07-.06a.12.12 0 01.07 0c.03 0 .05.02.09.06L512 454.07l287.7-287.7c.04-.04.06-.05.09-.06a.12.12 0 01.07 0z"}}]},name:"close",theme:"outlined"};function Ht(){return Ht=Object.assign?Object.assign.bind():function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e},Ht.apply(this,arguments)}const ur=(e,t)=>o.createElement(it,Ht({},e,{ref:t,icon:cr})),dr=o.forwardRef(ur);var pr={icon:{tag:"svg",attrs:{viewBox:"64 64 896 896",focusable:"false"},children:[{tag:"path",attrs:{d:"M272.9 512l265.4-339.1c4.1-5.2.4-12.9-6.3-12.9h-77.3c-4.9 0-9.6 2.3-12.6 6.1L186.8 492.3a31.99 31.99 0 000 39.5l255.3 326.1c3 3.9 7.7 6.1 12.6 6.1H532c6.7 0 10.4-7.7 6.3-12.9L272.9 512zm304 0l265.4-339.1c4.1-5.2.4-12.9-6.3-12.9h-77.3c-4.9 0-9.6 2.3-12.6 6.1L490.8 492.3a31.99 31.99 0 000 39.5l255.3 326.1c3 3.9 7.7 6.1 12.6 6.1H836c6.7 0 10.4-7.7 6.3-12.9L576.9 512z"}}]},name:"double-left",theme:"outlined"};function Lt(){return Lt=Object.assign?Object.assign.bind():function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e},Lt.apply(this,arguments)}const mr=(e,t)=>o.createElement(it,Lt({},e,{ref:t,icon:pr})),Cn=o.forwardRef(mr);var fr={icon:{tag:"svg",attrs:{viewBox:"64 64 896 896",focusable:"false"},children:[{tag:"path",attrs:{d:"M533.2 492.3L277.9 166.1c-3-3.9-7.7-6.1-12.6-6.1H188c-6.7 0-10.4 7.7-6.3 12.9L447.1 512 181.7 851.1A7.98 7.98 0 00188 864h77.3c4.9 0 9.6-2.3 12.6-6.1l255.3-326.1c9.1-11.7 9.1-27.9 0-39.5zm304 0L581.9 166.1c-3-3.9-7.7-6.1-12.6-6.1H492c-6.7 0-10.4 7.7-6.3 12.9L751.1 512 485.7 851.1A7.98 7.98 0 00492 864h77.3c4.9 0 9.6-2.3 12.6-6.1l255.3-326.1c9.1-11.7 9.1-27.9 0-39.5z"}}]},name:"double-right",theme:"outlined"};function jt(){return jt=Object.assign?Object.assign.bind():function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e},jt.apply(this,arguments)}const gr=(e,t)=>o.createElement(it,jt({},e,{ref:t,icon:fr})),xn=o.forwardRef(gr);var hr={icon:{tag:"svg",attrs:{viewBox:"64 64 896 896",focusable:"false"},children:[{tag:"path",attrs:{d:"M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"}}]},name:"down",theme:"outlined"};function _t(){return _t=Object.assign?Object.assign.bind():function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e},_t.apply(this,arguments)}const br=(e,t)=>o.createElement(it,_t({},e,{ref:t,icon:hr})),Yn=o.forwardRef(br);var vr={icon:{tag:"svg",attrs:{viewBox:"64 64 896 896",focusable:"false"},children:[{tag:"path",attrs:{d:"M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0011.6 0l43.6-43.5a8.2 8.2 0 000-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z"}}]},name:"search",theme:"outlined"};function At(){return At=Object.assign?Object.assign.bind():function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e},At.apply(this,arguments)}const Sr=(e,t)=>o.createElement(it,At({},e,{ref:t,icon:vr})),Cr=o.forwardRef(Sr),xr=`accept acceptCharset accessKey action allowFullScreen allowTransparency
+import { r as o, R as J, a as mn, u as So, j as G } from './index-BR_q8tzi.js';
+import {
+  I as it,
+  L as Co,
+  l as fn,
+  u as tt,
+  T as xo,
+  c as ae,
+  w as $o,
+  a as gt,
+  b as lt,
+  d as Gn,
+  F as yo,
+  K as V,
+  g as Tt,
+  o as Qt,
+  R as Xn,
+  _ as Un,
+  e as Ye,
+  f as Eo,
+  t as wo,
+  h as Io,
+  i as bt,
+  j as xt,
+  k as vt,
+  m as at,
+  n as Zt,
+  p as kt,
+  C as en,
+  V as Mo,
+  q as Ro,
+  r as ht,
+  s as Po,
+  v as Oo,
+  x as Bo,
+  y as To,
+  z as ut,
+  A as gn,
+  B as hn,
+  D as zo,
+  E as Z,
+  G as Kn,
+  H as No,
+  J as Do,
+  M as Ho,
+  N as Lo,
+  O as jo,
+  P as qn,
+  Q as _o,
+  S as Ao,
+  U as Vo,
+  W as Fo,
+  X as Wo,
+  Y as Go,
+  Z as Xo,
+  $ as bn,
+  a0 as Uo,
+  a1 as Ko,
+  a2 as qo,
+  a3 as vn,
+  a4 as Sn,
+  a5 as Yo
+} from './index-BFRsOrW6.js';
+import { d as zt, T as Jo } from './data-C7fG0xXe.js';
+import { u as Qo } from './useScrollRestore-CJovq5Fo.js';
+import { a as Zo } from './avatar-CGTAjrM5.js';
+import { F as ko } from './index-Cykwi6Eb.js';
+import { m as Mt } from './proxy-D6zHmpbh.js';
+const er = '_layout_1oi9j_1',
+  tr = '_blog_1oi9j_15',
+  nr = '_sumup_1oi9j_94',
+  je = {
+    'layout-main-container': '_layout-main-container_1oi9j_1',
+    layout: er,
+    blog: tr,
+    'blog-left': '_blog-left_1oi9j_33',
+    'blog-content': '_blog-content_1oi9j_48',
+    'blog-tag': '_blog-tag_1oi9j_61',
+    sumup: nr,
+    'sumup-top': '_sumup-top_1oi9j_114',
+    'sumup-content': '_sumup-content_1oi9j_115',
+    'sumup-footer': '_sumup-footer_1oi9j_116',
+    'sumup-top-avatar': '_sumup-top-avatar_1oi9j_124',
+    'sumup-top-list': '_sumup-top-list_1oi9j_136',
+    'layout-main': '_layout-main_1oi9j_1',
+    'layout-main-content': '_layout-main-content_1oi9j_181',
+    'layout-main-content-header': '_layout-main-content-header_1oi9j_187',
+    'scroll-indicator': '_scroll-indicator_1oi9j_215'
+  };
+var or = {
+  icon: {
+    tag: 'svg',
+    attrs: { viewBox: '64 64 896 896', focusable: 'false' },
+    children: [
+      {
+        tag: 'path',
+        attrs: {
+          d: 'M912 190h-69.9c-9.8 0-19.1 4.5-25.1 12.2L404.7 724.5 207 474a32 32 0 00-25.1-12.2H112c-6.7 0-10.4 7.7-6.3 12.9l273.9 347c12.8 16.2 37.4 16.2 50.3 0l488.4-618.9c4.1-5.1.4-12.8-6.3-12.8z'
+        }
+      }
+    ]
+  },
+  name: 'check',
+  theme: 'outlined'
+};
+function Nt() {
+  return (
+    (Nt = Object.assign
+      ? Object.assign.bind()
+      : function (e) {
+          for (var t = 1; t < arguments.length; t++) {
+            var n = arguments[t];
+            for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r]);
+          }
+          return e;
+        }),
+    Nt.apply(this, arguments)
+  );
+}
+const rr = (e, t) => o.createElement(it, Nt({}, e, { ref: t, icon: or })),
+  lr = o.forwardRef(rr);
+var ir = {
+  icon: {
+    tag: 'svg',
+    attrs: { 'fill-rule': 'evenodd', viewBox: '64 64 896 896', focusable: 'false' },
+    children: [
+      {
+        tag: 'path',
+        attrs: {
+          d: 'M512 64c247.4 0 448 200.6 448 448S759.4 960 512 960 64 759.4 64 512 264.6 64 512 64zm127.98 274.82h-.04l-.08.06L512 466.75 384.14 338.88c-.04-.05-.06-.06-.08-.06a.12.12 0 00-.07 0c-.03 0-.05.01-.09.05l-45.02 45.02a.2.2 0 00-.05.09.12.12 0 000 .07v.02a.27.27 0 00.06.06L466.75 512 338.88 639.86c-.05.04-.06.06-.06.08a.12.12 0 000 .07c0 .03.01.05.05.09l45.02 45.02a.2.2 0 00.09.05.12.12 0 00.07 0c.02 0 .04-.01.08-.05L512 557.25l127.86 127.87c.04.04.06.05.08.05a.12.12 0 00.07 0c.03 0 .05-.01.09-.05l45.02-45.02a.2.2 0 00.05-.09.12.12 0 000-.07v-.02a.27.27 0 00-.05-.06L557.25 512l127.87-127.86c.04-.04.05-.06.05-.08a.12.12 0 000-.07c0-.03-.01-.05-.05-.09l-45.02-45.02a.2.2 0 00-.09-.05.12.12 0 00-.07 0z'
+        }
+      }
+    ]
+  },
+  name: 'close-circle',
+  theme: 'filled'
+};
+function Dt() {
+  return (
+    (Dt = Object.assign
+      ? Object.assign.bind()
+      : function (e) {
+          for (var t = 1; t < arguments.length; t++) {
+            var n = arguments[t];
+            for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r]);
+          }
+          return e;
+        }),
+    Dt.apply(this, arguments)
+  );
+}
+const ar = (e, t) => o.createElement(it, Dt({}, e, { ref: t, icon: ir })),
+  sr = o.forwardRef(ar);
+var cr = {
+  icon: {
+    tag: 'svg',
+    attrs: { 'fill-rule': 'evenodd', viewBox: '64 64 896 896', focusable: 'false' },
+    children: [
+      {
+        tag: 'path',
+        attrs: {
+          d: 'M799.86 166.31c.02 0 .04.02.08.06l57.69 57.7c.04.03.05.05.06.08a.12.12 0 010 .06c0 .03-.02.05-.06.09L569.93 512l287.7 287.7c.04.04.05.06.06.09a.12.12 0 010 .07c0 .02-.02.04-.06.08l-57.7 57.69c-.03.04-.05.05-.07.06a.12.12 0 01-.07 0c-.03 0-.05-.02-.09-.06L512 569.93l-287.7 287.7c-.04.04-.06.05-.09.06a.12.12 0 01-.07 0c-.02 0-.04-.02-.08-.06l-57.69-57.7c-.04-.03-.05-.05-.06-.07a.12.12 0 010-.07c0-.03.02-.05.06-.09L454.07 512l-287.7-287.7c-.04-.04-.05-.06-.06-.09a.12.12 0 010-.07c0-.02.02-.04.06-.08l57.7-57.69c.03-.04.05-.05.07-.06a.12.12 0 01.07 0c.03 0 .05.02.09.06L512 454.07l287.7-287.7c.04-.04.06-.05.09-.06a.12.12 0 01.07 0z'
+        }
+      }
+    ]
+  },
+  name: 'close',
+  theme: 'outlined'
+};
+function Ht() {
+  return (
+    (Ht = Object.assign
+      ? Object.assign.bind()
+      : function (e) {
+          for (var t = 1; t < arguments.length; t++) {
+            var n = arguments[t];
+            for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r]);
+          }
+          return e;
+        }),
+    Ht.apply(this, arguments)
+  );
+}
+const ur = (e, t) => o.createElement(it, Ht({}, e, { ref: t, icon: cr })),
+  dr = o.forwardRef(ur);
+var pr = {
+  icon: {
+    tag: 'svg',
+    attrs: { viewBox: '64 64 896 896', focusable: 'false' },
+    children: [
+      {
+        tag: 'path',
+        attrs: {
+          d: 'M272.9 512l265.4-339.1c4.1-5.2.4-12.9-6.3-12.9h-77.3c-4.9 0-9.6 2.3-12.6 6.1L186.8 492.3a31.99 31.99 0 000 39.5l255.3 326.1c3 3.9 7.7 6.1 12.6 6.1H532c6.7 0 10.4-7.7 6.3-12.9L272.9 512zm304 0l265.4-339.1c4.1-5.2.4-12.9-6.3-12.9h-77.3c-4.9 0-9.6 2.3-12.6 6.1L490.8 492.3a31.99 31.99 0 000 39.5l255.3 326.1c3 3.9 7.7 6.1 12.6 6.1H836c6.7 0 10.4-7.7 6.3-12.9L576.9 512z'
+        }
+      }
+    ]
+  },
+  name: 'double-left',
+  theme: 'outlined'
+};
+function Lt() {
+  return (
+    (Lt = Object.assign
+      ? Object.assign.bind()
+      : function (e) {
+          for (var t = 1; t < arguments.length; t++) {
+            var n = arguments[t];
+            for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r]);
+          }
+          return e;
+        }),
+    Lt.apply(this, arguments)
+  );
+}
+const mr = (e, t) => o.createElement(it, Lt({}, e, { ref: t, icon: pr })),
+  Cn = o.forwardRef(mr);
+var fr = {
+  icon: {
+    tag: 'svg',
+    attrs: { viewBox: '64 64 896 896', focusable: 'false' },
+    children: [
+      {
+        tag: 'path',
+        attrs: {
+          d: 'M533.2 492.3L277.9 166.1c-3-3.9-7.7-6.1-12.6-6.1H188c-6.7 0-10.4 7.7-6.3 12.9L447.1 512 181.7 851.1A7.98 7.98 0 00188 864h77.3c4.9 0 9.6-2.3 12.6-6.1l255.3-326.1c9.1-11.7 9.1-27.9 0-39.5zm304 0L581.9 166.1c-3-3.9-7.7-6.1-12.6-6.1H492c-6.7 0-10.4 7.7-6.3 12.9L751.1 512 485.7 851.1A7.98 7.98 0 00492 864h77.3c4.9 0 9.6-2.3 12.6-6.1l255.3-326.1c9.1-11.7 9.1-27.9 0-39.5z'
+        }
+      }
+    ]
+  },
+  name: 'double-right',
+  theme: 'outlined'
+};
+function jt() {
+  return (
+    (jt = Object.assign
+      ? Object.assign.bind()
+      : function (e) {
+          for (var t = 1; t < arguments.length; t++) {
+            var n = arguments[t];
+            for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r]);
+          }
+          return e;
+        }),
+    jt.apply(this, arguments)
+  );
+}
+const gr = (e, t) => o.createElement(it, jt({}, e, { ref: t, icon: fr })),
+  xn = o.forwardRef(gr);
+var hr = {
+  icon: {
+    tag: 'svg',
+    attrs: { viewBox: '64 64 896 896', focusable: 'false' },
+    children: [
+      {
+        tag: 'path',
+        attrs: {
+          d: 'M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z'
+        }
+      }
+    ]
+  },
+  name: 'down',
+  theme: 'outlined'
+};
+function _t() {
+  return (
+    (_t = Object.assign
+      ? Object.assign.bind()
+      : function (e) {
+          for (var t = 1; t < arguments.length; t++) {
+            var n = arguments[t];
+            for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r]);
+          }
+          return e;
+        }),
+    _t.apply(this, arguments)
+  );
+}
+const br = (e, t) => o.createElement(it, _t({}, e, { ref: t, icon: hr })),
+  Yn = o.forwardRef(br);
+var vr = {
+  icon: {
+    tag: 'svg',
+    attrs: { viewBox: '64 64 896 896', focusable: 'false' },
+    children: [
+      {
+        tag: 'path',
+        attrs: {
+          d: 'M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0011.6 0l43.6-43.5a8.2 8.2 0 000-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z'
+        }
+      }
+    ]
+  },
+  name: 'search',
+  theme: 'outlined'
+};
+function At() {
+  return (
+    (At = Object.assign
+      ? Object.assign.bind()
+      : function (e) {
+          for (var t = 1; t < arguments.length; t++) {
+            var n = arguments[t];
+            for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r]);
+          }
+          return e;
+        }),
+    At.apply(this, arguments)
+  );
+}
+const Sr = (e, t) => o.createElement(it, At({}, e, { ref: t, icon: vr })),
+  Cr = o.forwardRef(Sr),
+  xr = `accept acceptCharset accessKey action allowFullScreen allowTransparency
     alt async autoComplete autoFocus autoPlay capture cellPadding cellSpacing challenge
     charSet checked classID className colSpan cols content contentEditable contextMenu
     controls coords crossOrigin data dateTime default defer dir disabled download draggable
@@ -9,49 +322,5868 @@ import{r as o,R as J,a as mn,u as So,j as G}from"./index-BR_q8tzi.js";import{I a
     optimum pattern placeholder poster preload radioGroup readOnly rel required
     reversed role rowSpan rows sandbox scope scoped scrolling seamless selected
     shape size sizes span spellCheck src srcDoc srcLang srcSet start step style
-    summary tabIndex target title type useMap value width wmode wrap`,$r=`onCopy onCut onPaste onCompositionEnd onCompositionStart onCompositionUpdate onKeyDown
+    summary tabIndex target title type useMap value width wmode wrap`,
+  $r = `onCopy onCut onPaste onCompositionEnd onCompositionStart onCompositionUpdate onKeyDown
     onKeyPress onKeyUp onFocus onBlur onChange onInput onSubmit onClick onContextMenu onDoubleClick
     onDrag onDragEnd onDragEnter onDragExit onDragLeave onDragOver onDragStart onDrop onMouseDown
     onMouseEnter onMouseLeave onMouseMove onMouseOut onMouseOver onMouseUp onSelect onTouchCancel
     onTouchEnd onTouchMove onTouchStart onScroll onWheel onAbort onCanPlay onCanPlayThrough
     onDurationChange onEmptied onEncrypted onEnded onError onLoadedData onLoadedMetadata
-    onLoadStart onPause onPlay onPlaying onProgress onRateChange onSeeked onSeeking onStalled onSuspend onTimeUpdate onVolumeChange onWaiting onLoad onError`,yr=`${xr} ${$r}`.split(/[\s\n]+/),Er="aria-",wr="data-";function $n(e,t){return e.indexOf(t)===0}function $t(e,t=!1){let n;t===!1?n={aria:!0,data:!0,attr:!0}:t===!0?n={aria:!0}:n={...t};const r={};return Object.keys(e).forEach(l=>{(n.aria&&(l==="role"||$n(l,Er))||n.data&&$n(l,wr)||n.attr&&yr.includes(l))&&(r[l]=e[l])}),r}const Et=(e,t)=>{const n=o.useContext(Co),r=o.useMemo(()=>{const i=t||fn[e],a=n?.[e]??{};return{...typeof i=="function"?i():i,...a||{}}},[e,t,n]),l=o.useMemo(()=>{const i=n?.locale;return n?.exist&&!i?fn.locale:i},[n]);return[r,l]},Ir=()=>J.useReducer(e=>e+1,0),Mr=(e,t,n,r,l=!1,i,a)=>{const s=o.useMemo(()=>typeof n=="boolean"?{allowClear:n}:n&&typeof n=="object"?n:{allowClear:!1},[n]);return o.useMemo(()=>{const c=!l&&s.allowClear!==!1&&(t.length||i)&&!(a==="combobox"&&i==="");return{allowClear:c,clearIcon:c?s.clearIcon||r||"×":null}},[s,r,l,t.length,i,a])},Jn=o.createContext(null);function st(){return o.useContext(Jn)}function Rr(e=250){const t=o.useRef(null),n=o.useRef(null);o.useEffect(()=>()=>{window.clearTimeout(n.current)},[]);function r(l){(l||t.current===null)&&(t.current=l),window.clearTimeout(n.current),n.current=window.setTimeout(()=>{t.current=null},e)}return[()=>t.current,r]}function Qn(e,t){return e.filter(n=>n).some(n=>n.contains(t)||n===t)}function Pr(e,t,n,r){const l=tt(i=>{if(r)return;let a=i.target;a.shadowRoot&&i.composed&&(a=i.composedPath()[0]||a),i._ori_target&&(a=i._ori_target),t&&!Qn(e(),a)&&n(!1)});o.useEffect(()=>(window.addEventListener("mousedown",l),()=>window.removeEventListener("mousedown",l)),[l])}function Vt(){return Vt=Object.assign?Object.assign.bind():function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e},Vt.apply(this,arguments)}const Or=e=>{const t=e===!0?0:1;return{bottomLeft:{points:["tl","bl"],offset:[0,4],overflow:{adjustX:t,adjustY:1},htmlRegion:"scroll"},bottomRight:{points:["tr","br"],offset:[0,4],overflow:{adjustX:t,adjustY:1},htmlRegion:"scroll"},topLeft:{points:["bl","tl"],offset:[0,-4],overflow:{adjustX:t,adjustY:1},htmlRegion:"scroll"},topRight:{points:["br","tr"],offset:[0,-4],overflow:{adjustX:t,adjustY:1},htmlRegion:"scroll"}}},Br=(e,t)=>{const{prefixCls:n,disabled:r,visible:l,children:i,popupElement:a,animation:s,transitionName:c,popupStyle:u,popupClassName:f,direction:m="ltr",placement:d,builtinPlacements:p,popupMatchSelectWidth:g,popupRender:v,popupAlign:w,getPopupContainer:E,empty:$,onPopupVisibleChange:h,onPopupMouseEnter:y,onPopupMouseDown:H,onPopupBlur:L,...z}=e,B=`${n}-dropdown`;let x=a;v&&(x=v(a));const X=o.useMemo(()=>p||Or(g),[p,g]),U=s?`${B}-${s}`:c,T=typeof g=="number",ue=o.useMemo(()=>T?null:g===!1?"minWidth":"width",[g,T]);let oe=u;T&&(oe={...u,width:g});const de=o.useRef(null);return o.useImperativeHandle(t,()=>({getPopupElement:()=>de.current?.popupElement})),o.createElement(xo,Vt({},z,{showAction:h?["click"]:[],hideAction:h?["click"]:[],popupPlacement:d||(m==="rtl"?"bottomRight":"bottomLeft"),builtinPlacements:X,prefixCls:B,popupMotion:{motionName:U},popup:o.createElement("div",{onMouseEnter:y,onMouseDown:H,onBlur:L},x),ref:de,stretch:ue,popupAlign:w,popupVisible:l,getPopupContainer:E,popupClassName:ae(f,{[`${B}-empty`]:$}),popupStyle:oe,onPopupVisibleChange:h}),i)},Tr=o.forwardRef(Br);function yn(e,t){const{key:n}=e;let r;return"value"in e&&({value:r}=e),n??(r!==void 0?r:`rc-index-key-${t}`)}function Ft(e){return typeof e<"u"&&!Number.isNaN(e)}function Zn(e,t){const{label:n,value:r,options:l,groupLabel:i}=e||{},a=n||(t?"children":"label");return{label:a,value:r||"value",options:l||"options",groupLabel:i||a}}function zr(e,{fieldNames:t,childrenAsData:n}={}){const r=[],{label:l,value:i,options:a,groupLabel:s}=Zn(t,!1);function c(u,f){Array.isArray(u)&&u.forEach(m=>{if(f||!(a in m)){const d=m[i];r.push({key:yn(m,r.length),groupOption:f,data:m,label:m[l],value:d})}else{let d=m[s];d===void 0&&n&&(d=m.label),r.push({key:yn(m,r.length),group:!0,data:m,label:d}),c(m[a],!0)}})}return c(e,!1),r}function Wt(e){const t={...e};return"props"in t||Object.defineProperty(t,"props",{get(){return $o(!1,"Return type is option instead of Option instance. Please read value directly instead of reading from `props`."),t}}),t}const Nr=(e,t,n)=>{if(!t||!t.length)return null;let r=!1;const l=(a,[s,...c])=>{if(!s)return[a];const u=a.split(s);return r=r||u.length>1,u.reduce((f,m)=>[...f,...l(m,c)],[]).filter(Boolean)},i=l(e,t);return r?typeof n<"u"?i.slice(0,n):i:null};function Dr(e){const{visible:t,values:n}=e;if(!t)return null;const r=50;return o.createElement("span",{"aria-live":"polite",style:{width:0,height:0,position:"absolute",overflow:"hidden",opacity:0}},`${n.slice(0,r).map(({label:l,value:i})=>["number","string"].includes(typeof l)?l:i).join(", ")}`,n.length>r?", ...":null)}const Hr=e=>{const t=new MessageChannel;t.port1.onmessage=e,t.port2.postMessage(null)},tn=(e,t=1)=>{if(t<=0){e();return}Hr(()=>{tn(e,t-1)})};function Lr(e,t,n){const[r,l]=o.useState(!1);o.useEffect(()=>{l(!0)},[]);const[i,a]=gt(!1,e),c=n(r?i:!1),u=o.useRef(0),f=tt(d=>{t&&c!==d&&t(d),a(d)}),m=tt((d,p={})=>{const{cancelFun:g}=p;u.current+=1;const v=u.current,w=typeof d=="boolean"?d:!c;function E(){v===u.current&&!g?.()&&f(w)}w?E():tn(()=>{E()})});return[c,m]}function Rt(e){const{children:t,...n}=e;return t?o.createElement("div",n,t):null}const kn=o.createContext(null);function St(){return o.useContext(kn)}const eo=o.forwardRef((e,t)=>{const{onChange:n,onKeyDown:r,onBlur:l,style:i,syncWidth:a,value:s,className:c,autoComplete:u,...f}=e,{prefixCls:m,mode:d,onSearch:p,onSearchSubmit:g,onInputBlur:v,autoFocus:w,tokenWithEnter:E,placeholder:$,components:{input:h="input"}}=St(),{id:y,classNames:H,styles:L,open:z,activeDescendantId:B,role:x,disabled:X}=st()||{},U=ae(`${m}-input`,H?.input,c),T=o.useRef(!1),ue=o.useRef(null),oe=o.useRef(null);o.useImperativeHandle(t,()=>oe.current);const de=I=>{let{value:K}=I.target;if(E&&ue.current&&/[\r\n]/.test(ue.current)){const ie=ue.current.replace(/[\r\n]+$/,"").replace(/\r\n/g," ").replace(/[\r\n]/g," ");K=K.replace(ie,ue.current)}ue.current=null,p&&p(K,!0,T.current),n?.(I)},pe=I=>{const{key:K}=I,{value:ie}=I.currentTarget;K==="Enter"&&d==="tags"&&!T.current&&g&&g(ie),r?.(I)},j=I=>{v?.(),l?.(I)},D=()=>{T.current=!0},Q=I=>{if(T.current=!1,d!=="combobox"){const{value:K}=I.currentTarget;p?.(K,!0,!1)}},me=I=>{const{clipboardData:K}=I,ie=K?.getData("text");ue.current=ie||""},[ne,P]=o.useState(void 0);lt(()=>{const I=oe.current;if(a&&I){I.style.width="0px";const K=I.scrollWidth;P(K),I.style.width=""}},[a,s]);const N={id:y,type:d==="combobox"?"text":"search",...f,ref:oe,style:{...L?.input,...i,"--select-input-width":ne},autoFocus:w,autoComplete:u||"off",className:U,disabled:X,value:s||"",onChange:de,onKeyDown:pe,onBlur:j,onPaste:me,onCompositionStart:D,onCompositionEnd:Q,role:x||"combobox","aria-expanded":z||!1,"aria-haspopup":"listbox","aria-owns":z?`${y}_list`:void 0,"aria-autocomplete":"list","aria-controls":z?`${y}_list`:void 0,"aria-activedescendant":z?B:void 0};if(o.isValidElement(h)){const I=h.props||{},K={placeholder:e.placeholder||$,...N,...I};return Object.keys(I).forEach(ie=>{const we=I[ie];typeof we=="function"&&(K[ie]=(...O)=>{we(...O),N[ie]?.(...O)})}),K.ref=Gn(h.ref,N.ref),o.cloneElement(h,K)}const re=h;return o.createElement(re,N)});function to(e){const{prefixCls:t,placeholder:n,displayValues:r}=St(),{classNames:l,styles:i}=st(),{show:a=!0}=e;return r.length?null:o.createElement("div",{className:ae(`${t}-placeholder`,l?.placeholder),style:{visibility:a?"visible":"hidden",...i?.placeholder}},n)}const nn=o.createContext(null);function no(e){return Array.isArray(e)?e:e!==void 0?[e]:[]}function jr(e){return e!=null}function _r(e){return!e&&e!==0}function En(e){return["string","number"].includes(typeof e)}function Gt(e){let t;return e&&(En(e.title)?t=e.title.toString():En(e.label)&&(t=e.label.toString())),t}function Xt(){return Xt=Object.assign?Object.assign.bind():function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e},Xt.apply(this,arguments)}const Ar=o.forwardRef(({inputProps:e},t)=>{const{prefixCls:n,searchValue:r,activeValue:l,displayValues:i,maxLength:a,mode:s}=St(),{triggerOpen:c,title:u,showSearch:f,classNames:m,styles:d}=st(),p=o.useContext(nn),[g,v]=o.useState(!1),w=s==="combobox",E=i[0],$=o.useMemo(()=>w&&l&&!g&&c?l:f?r:"",[w,l,g,c,r,f]),h=o.useMemo(()=>{let y={className:`${n}-content-value`,style:{visibility:$?"hidden":"visible"}};if(E&&p?.flattenOptions){const H=p.flattenOptions.find(L=>L.value===E.value);if(H?.data){const{label:L,value:z,className:B,style:x,key:X,...U}=H.data;y={...y,...U,title:Gt(H.data),className:ae(y.className,B),style:{...y.style,...x}}}}return E&&!y.title&&(y.title=Gt(E)),u!==void 0&&(y.title=u),y},[E,p?.flattenOptions,n,$,u]);return o.useEffect(()=>{w&&v(!1)},[w,l]),o.createElement("div",{className:ae(`${n}-content`,m?.content),style:d?.content},E?o.createElement("div",h,E.label):o.createElement(to,{show:!$}),o.createElement(eo,Xt({ref:t},e,{value:$,maxLength:s==="combobox"?a:void 0,onChange:y=>{v(!0),e.onChange?.(y)}})))}),oo=e=>{const{className:t,style:n,customizeIcon:r,customizeIconProps:l,children:i,onMouseDown:a,onClick:s}=e,c=typeof r=="function"?r(l):r;return o.createElement("span",{className:t,onMouseDown:u=>{u.preventDefault(),a?.(u)},style:{userSelect:"none",WebkitUserSelect:"none",...n},unselectable:"on",onClick:s,"aria-hidden":!0},c!==void 0?c:o.createElement("span",{className:ae(t.split(/\s+/).map(u=>`${u}-icon`))},i))};function Ut(){return Ut=Object.assign?Object.assign.bind():function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e},Ut.apply(this,arguments)}function Vr(e){return e.key??e.value}const wn=e=>{e.preventDefault(),e.stopPropagation()},Fr=o.forwardRef(function({inputProps:t},n){const{prefixCls:r,displayValues:l,searchValue:i,mode:a,onSelectorRemove:s,removeIcon:c}=St(),{disabled:u,showSearch:f,triggerOpen:m,toggleOpen:d,autoClearSearchValue:p,tagRender:g,maxTagPlaceholder:v,maxTagTextLength:w,maxTagCount:E,classNames:$,styles:h}=st(),y=`${r}-selection-item`;let H=i;!m&&a==="multiple"&&p!==!1&&(H="");const L=f&&H||"",z=f&&!u,B=c??"×",x=v??(j=>`+ ${j.length} ...`),X=g,U=j=>{d(j)},T=j=>{s?.(j)},ue=(j,D,Q,me,ne)=>o.createElement("span",{title:Gt(j),className:ae(y,{[`${y}-disabled`]:Q},$?.item),style:h?.item},o.createElement("span",{className:ae(`${y}-content`,$?.itemContent),style:h?.itemContent},D),me&&o.createElement(oo,{className:ae(`${y}-remove`,$?.itemRemove),style:h?.itemRemove,onMouseDown:wn,onClick:ne,customizeIcon:B},"×")),oe=(j,D,Q,me,ne,P,N)=>{const re=I=>{wn(I),U(!m)};return o.createElement("span",{onMouseDown:re},X({label:D,value:j,index:N?.index,disabled:Q,closable:me,onClose:ne,isMaxTag:!!P}))},de=(j,D)=>{const{disabled:Q,label:me,value:ne}=j,P=!u&&!Q;let N=me;if(typeof w=="number"&&(typeof me=="string"||typeof me=="number")){const I=String(N);I.length>w&&(N=`${I.slice(0,w)}...`)}const re=I=>{I&&I.stopPropagation(),T(j)};return typeof X=="function"?oe(ne,N,Q,P,re,void 0,D):ue(j,N,Q,P,re)},pe=j=>{if(!l.length)return null;const D=typeof x=="function"?x(j):x;return typeof X=="function"?oe(void 0,D,!1,!1,void 0,!0):ue({title:D},D,!1)};return o.createElement(yo,{prefixCls:`${r}-content`,className:$?.content,style:h?.content,prefix:!l.length&&(!i||!m)?o.createElement(to,null):null,data:l,renderItem:de,renderRest:pe,suffix:o.createElement(eo,Ut({ref:n,disabled:u,readOnly:!z},t,{value:L||"",syncWidth:!0})),itemKey:Vr,maxCount:E})}),Wr=o.forwardRef(function(t,n){const{multiple:r,onInputKeyDown:l,tabIndex:i}=St(),a=st(),{showSearch:s}=a,u={...$t(a,{aria:!0}),onKeyDown:l,readOnly:!s,tabIndex:i};return r?o.createElement(Fr,{ref:n,inputProps:u}):o.createElement(Ar,{ref:n,inputProps:u})});function Gr(e){return e&&![V.ESC,V.SHIFT,V.BACKSPACE,V.TAB,V.WIN_KEY,V.ALT,V.META,V.WIN_KEY_RIGHT,V.CTRL,V.SEMICOLON,V.EQUALS,V.CAPS_LOCK,V.CONTEXT_MENU,V.UP,V.LEFT,V.RIGHT,V.F1,V.F2,V.F3,V.F4,V.F5,V.F6,V.F7,V.F8,V.F9,V.F10,V.F11,V.F12].includes(e)}function yt(){return yt=Object.assign?Object.assign.bind():function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e},yt.apply(this,arguments)}const Xr=["value","onChange","removeIcon","placeholder","maxTagCount","maxTagTextLength","maxTagPlaceholder","choiceTransitionName","onInputKeyDown","onPopupScroll","tabIndex","activeValue","onSelectorRemove","focused"],Ur=o.forwardRef(function(t,n){const{prefixCls:r,className:l,style:i,prefix:a,suffix:s,clearIcon:c,children:u,multiple:f,displayValues:m,placeholder:d,mode:p,searchValue:g,onSearch:v,onSearchSubmit:w,onInputBlur:E,maxLength:$,autoFocus:h,onMouseDown:y,onClearMouseDown:H,onInputKeyDown:L,onSelectorRemove:z,tokenWithEnter:B,components:x,...X}=t,{triggerOpen:U,toggleOpen:T,showSearch:ue,disabled:oe,loading:de,classNames:pe,styles:j}=st(),D=o.useRef(null),Q=o.useRef(null),me=tt(I=>{const{which:K}=I,ie=Q.current instanceof HTMLTextAreaElement;!ie&&U&&(K===V.UP||K===V.DOWN)&&I.preventDefault(),L&&L(I),!(ie&&!U&&~[V.UP,V.DOWN,V.LEFT,V.RIGHT].indexOf(K))&&Gr(K)&&T(!0)});o.useImperativeHandle(n,()=>({focus:I=>{(Q.current||D.current).focus?.(I)},blur:()=>{(Q.current||D.current).blur?.()},nativeElement:D.current}));const ne=tt(I=>{if(!oe){const K=Tt(Q.current);I.nativeEvent._ori_target=K,K&&I.target!==K&&!K.contains(I.target)&&I.preventDefault();const ie=U&&!f&&(p==="combobox"||ue);I.nativeEvent._select_lazy?U&&T(!1):(Q.current?.focus(),ie||T())}y?.(I)}),{root:P}=x,N=Qt(X,Xr),re={...t,onInputKeyDown:me};return P?o.isValidElement(P)?o.cloneElement(P,{...N,ref:Gn(P.ref,D)}):o.createElement(P,yt({},N,{ref:D})):o.createElement(kn.Provider,{value:re},o.createElement("div",yt({},N,{ref:D,className:l,style:i,onMouseDown:ne}),o.createElement(Rt,{className:ae(`${r}-prefix`,pe?.prefix),style:j?.prefix},a),o.createElement(Wr,{ref:Q}),o.createElement(Rt,{className:ae(`${r}-suffix`,{[`${r}-suffix-loading`]:de},pe?.suffix),style:j?.suffix},s),c&&o.createElement(Rt,{className:ae(`${r}-clear`,pe?.clear),style:j?.clear,onMouseDown:I=>{I.nativeEvent._select_lazy=!0,H?.(I)}},c),u))});function Kr(e,t,n){return o.useMemo(()=>{let{root:r,input:l}=e||{};return n&&(r=n()),t&&(l=t()),{root:r,input:l}},[e,t,n])}function Kt(){return Kt=Object.assign?Object.assign.bind():function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e},Kt.apply(this,arguments)}const qt=e=>e==="tags"||e==="multiple",qr=o.forwardRef((e,t)=>{const{id:n,prefixCls:r,className:l,styles:i,classNames:a,showSearch:s,tagRender:c,showScrollBar:u="optional",direction:f,omitDomProps:m,displayValues:d,onDisplayValuesChange:p,emptyOptions:g,notFoundContent:v="Not Found",onClear:w,maxCount:E,placeholder:$,mode:h,disabled:y,loading:H,getInputElement:L,getRawInputElement:z,open:B,defaultOpen:x,onPopupVisibleChange:X,activeValue:U,onActiveValueChange:T,activeDescendantId:ue,searchValue:oe,autoClearSearchValue:de,onSearch:pe,onSearchSplit:j,tokenSeparators:D,allowClear:Q,prefix:me,suffix:ne,suffixIcon:P,clearIcon:N,OptionList:re,animation:I,transitionName:K,popupStyle:ie,popupClassName:we,popupMatchSelectWidth:O,popupRender:F,popupAlign:se,placement:W,builtinPlacements:ce,getPopupContainer:te,showAction:A=[],onFocus:he,onBlur:Ce,onKeyUp:fe,onKeyDown:He,onMouseDown:Be,components:Te,...xe}=e,Ee=qt(h),$e=o.useRef(null),Ie=o.useRef(null),Me=o.useRef(null),[ve,Re]=o.useState(!1);o.useImperativeHandle(t,()=>({focus:$e.current?.focus,blur:$e.current?.blur,scrollTo:ee=>Me.current?.scrollTo(ee),nativeElement:Tt($e.current)}));const Pe=Kr(Te,L,z),ye=o.useMemo(()=>{if(h!=="combobox")return oe;const ee=d[0]?.value;return typeof ee=="string"||typeof ee=="number"?String(ee):""},[oe,h,d]),ze=h==="combobox"&&typeof L=="function"&&L()||null,Ue=!v&&g,[ge,k]=Lr(B,X,ee=>y||Ue?!1:ee),be=o.useMemo(()=>(D||[]).some(ee=>[`
-`,`\r
-`].includes(ee)),[D]),Ne=(ee,qe,Qe)=>{if(Ee&&Ft(E)&&d.length>=E)return;let Ze=!0,ke=ee;T?.(null);const pt=Nr(ee,D,Ft(E)?E-d.length:void 0),nt=Qe?null:pt;return h!=="combobox"&&nt&&(ke="",j?.(nt),k(!1),Ze=!1),pe&&ye!==ke&&pe(ke,{source:qe?"typing":"effect"}),ee&&qe&&Ze&&k(!0),Ze},Ke=ee=>{!ee||!ee.trim()||pe(ee,{source:"submit"})};o.useEffect(()=>{!ge&&!Ee&&h!=="combobox"&&Ne("",!1,!1)},[ge]),o.useEffect(()=>{y&&(k(!1),Re(!1))},[y,ge]);const[_e,Xe]=Rr(),De=o.useRef(!1),Ae=ee=>{const qe=_e(),{key:Qe}=ee,Ze=Qe==="Enter";if(Ze&&(h!=="combobox"&&ee.preventDefault(),ge||k(!0)),Xe(!!ye),Qe==="Backspace"&&!qe&&Ee&&!ye&&d.length){const ke=[...d];let pt=null;for(let nt=ke.length-1;nt>=0;nt-=1){const pn=ke[nt];if(!pn.disabled){ke.splice(nt,1),pt=pn;break}}pt&&p(ke,{type:"remove",values:[pt]})}ge&&(!Ze||!De.current)&&(Ze&&(De.current=!0),Me.current?.onKeyDown(ee)),He?.(ee)},We=(ee,...qe)=>{ge&&Me.current?.onKeyUp(ee,...qe),ee.key==="Enter"&&(De.current=!1),fe?.(ee,...qe)},Oe=tt(ee=>{const qe=d.filter(Qe=>Qe!==ee);p(qe,{type:"remove",values:[ee]})}),Ve=()=>{De.current=!1},Fe=()=>[Tt($e.current),Ie.current?.getPopupElement()];Pr(Fe,ge,k,!!Pe.root);const Le=o.useRef(!1),C=ee=>{Re(!0),y||(A.includes("focus")&&k(!0),he?.(ee))},q=()=>{ge&&!Le.current&&k(!1,{cancelFun:()=>Qn(Fe(),document.activeElement)})},b=ee=>{Re(!1),ye&&(h==="tags"?pe(ye,{source:"submit"}):h==="multiple"&&pe("",{source:"blur"})),q(),y||Ce?.(ee)},M=(ee,...qe)=>{const{target:Qe}=ee;Ie.current?.getPopupElement()?.contains(Qe)&&k&&k(!0),Be?.(ee,...qe),Le.current=!0,tn(()=>{Le.current=!1})},[,le]=o.useState({});function S(){le({})}let R;Pe.root&&(R=ee=>{k(ee)});const _=o.useMemo(()=>({...e,notFoundContent:v,open:ge,triggerOpen:ge,id:n,showSearch:s,multiple:Ee,toggleOpen:k,showScrollBar:u,styles:i,classNames:a}),[e,v,k,n,s,Ee,ge,u,i,a]),Y=o.useMemo(()=>{const ee=ne??P;return typeof ee=="function"?ee({searchValue:ye,open:ge,focused:ve,showSearch:s,loading:H}):ee},[ne,P,ye,ge,ve,s,H]),Se=()=>{w?.(),$e.current?.focus(),p([],{type:"clear",values:d}),Ne("",!1,!1)},{allowClear:Ge,clearIcon:Je}=Mr(r,d,Q,N,y,ye,h),ct=o.createElement(re,{ref:Me}),vo=ae(r,l,{[`${r}-focused`]:ve,[`${r}-multiple`]:Ee,[`${r}-single`]:!Ee,[`${r}-allow-clear`]:Ge,[`${r}-show-arrow`]:Y!=null,[`${r}-disabled`]:y,[`${r}-loading`]:H,[`${r}-open`]:ge,[`${r}-customize-input`]:ze,[`${r}-show-search`]:s});let It=o.createElement(Ur,Kt({},xe,{ref:$e,prefixCls:r,className:vo,focused:ve,prefix:me,suffix:Y,clearIcon:Je,multiple:Ee,mode:h,displayValues:d,placeholder:$,searchValue:ye,activeValue:U,onSearch:Ne,onSearchSubmit:Ke,onInputBlur:Ve,onFocus:C,onBlur:b,onClearMouseDown:Se,onKeyDown:Ae,onKeyUp:We,onSelectorRemove:Oe,tokenWithEnter:be,onMouseDown:M,components:Pe}));return It=o.createElement(Tr,{ref:Ie,disabled:y,prefixCls:r,visible:ge,popupElement:ct,animation:I,transitionName:K,popupStyle:ie,popupClassName:we,direction:f,popupMatchSelectWidth:O,popupRender:F,popupAlign:se,placement:W,builtinPlacements:ce,getPopupContainer:te,empty:g,onPopupVisibleChange:R,onPopupMouseEnter:S,onPopupMouseDown:M,onPopupBlur:q},It),o.createElement(Jn.Provider,{value:_},o.createElement(Dr,{visible:ve&&!ge,values:d}),It)}),on=()=>null;on.isSelectOptGroup=!0;const rn=()=>null;rn.isSelectOption=!0;const ro=o.forwardRef(({height:e,offsetY:t,offsetX:n,children:r,prefixCls:l,onInnerResize:i,innerProps:a,rtl:s,extra:c},u)=>{let f={},m={display:"flex",flexDirection:"column"};return t!==void 0&&(f={height:e,position:"relative",overflow:"hidden"},m={...m,transform:`translateY(${t}px)`,[s?"marginRight":"marginLeft"]:-n,position:"absolute",left:0,right:0,top:0}),o.createElement("div",{style:f},o.createElement(Xn,{onResize:({offsetHeight:d})=>{d&&i&&i()}},o.createElement("div",Un({style:m,className:ae({[`${l}-holder-inner`]:l}),ref:u},a),r,c)))});ro.displayName="Filler";function Yr({children:e,setRef:t}){const n=o.useCallback(r=>{t(r)},[]);return o.cloneElement(e,{ref:n})}function Jr(e,t,n,r,l,i,a,{getKey:s}){return e.slice(t,n+1).map((c,u)=>{const f=t+u,m=a(c,f,{style:{width:r},offsetX:l}),d=s(c);return o.createElement(Yr,{key:d,setRef:p=>i(c,p)},m)})}function Qr(e,t,n){const r=e.length,l=t.length;let i,a;if(r===0&&l===0)return null;r<l?(i=e,a=t):(i=t,a=e);const s={__EMPTY_ITEM__:!0};function c(m){return m!==void 0?n(m):s}let u=null,f=Math.abs(r-l)!==1;for(let m=0;m<a.length;m+=1){const d=c(i[m]),p=c(a[m]);if(d!==p){u=m,f=f||d!==c(a[m+1]);break}}return u===null?null:{index:u,multiple:f}}function Zr(e,t,n){const[r,l]=o.useState(e),[i,a]=o.useState(null);return o.useEffect(()=>{const s=Qr(r||[],e||[],t);s?.index!==void 0&&a(e[s.index]),l(e)},[e]),[i]}const In=typeof navigator=="object"&&/Firefox/i.test(navigator.userAgent),lo=((e,t,n,r)=>{const l=o.useRef(!1),i=o.useRef(null);function a(){clearTimeout(i.current),l.current=!0,i.current=setTimeout(()=>{l.current=!1},50)}const s=o.useRef({top:e,bottom:t,left:n,right:r});return s.current.top=e,s.current.bottom=t,s.current.left=n,s.current.right=r,(c,u,f=!1)=>{const m=c?u<0&&s.current.left||u>0&&s.current.right:u<0&&s.current.top||u>0&&s.current.bottom;return f&&m?(clearTimeout(i.current),l.current=!1):(!m||l.current)&&a(),!l.current&&m}});function kr(e,t,n,r,l,i,a){const s=o.useRef(0),c=o.useRef(null),u=o.useRef(null),f=o.useRef(!1),m=lo(t,n,r,l);function d($,h){if(Ye.cancel(c.current),m(!1,h))return;const y=$;if(!y._virtualHandled)y._virtualHandled=!0;else return;s.current+=h,u.current=h,In||y.preventDefault(),c.current=Ye(()=>{const H=f.current?10:1;a(s.current*H,!1),s.current=0})}function p($,h){a(h,!0),In||$.preventDefault()}const g=o.useRef(null),v=o.useRef(null);function w($){if(!e)return;Ye.cancel(v.current),v.current=Ye(()=>{g.current=null},2);const{deltaX:h,deltaY:y,shiftKey:H}=$;let L=h,z=y;(g.current==="sx"||!g.current&&H&&y&&!h)&&(L=y,z=0,g.current="sx");const B=Math.abs(L),x=Math.abs(z);g.current===null&&(g.current=i&&B>x?"x":"y"),g.current==="y"?d($,z):p($,L)}function E($){e&&(f.current=$.detail===u.current)}return[w,E]}function el(e,t,n,r){const[l,i]=o.useMemo(()=>[new Map,[]],[e,n.id,r]);return(s,c=s)=>{let u=l.get(s),f=l.get(c);if(u===void 0||f===void 0){const m=e.length;for(let d=i.length;d<m;d+=1){const p=e[d],g=t(p);l.set(g,d);const v=n.get(g)??r;if(i[d]=(i[d-1]||0)+v,g===s&&(u=d),g===c&&(f=d),u!==void 0&&f!==void 0)break}}return{top:i[u-1]||0,bottom:i[f]}}}class tl{maps;id=0;diffRecords=new Map;constructor(){this.maps=Object.create(null)}set(t,n){this.diffRecords.set(t,this.maps[t]),this.maps[t]=n,this.id+=1}get(t){return this.maps[t]}resetRecord(){this.diffRecords.clear()}getRecord(){return this.diffRecords}}function Mn(e){const t=parseFloat(e);return isNaN(t)?0:t}function nl(e,t,n){const[r,l]=o.useState(0),i=o.useRef(new Map),a=o.useRef(new tl),s=o.useRef(0);function c(){s.current+=1}function u(m=!1){c();const d=()=>{let p=!1;i.current.forEach((g,v)=>{if(g&&g.offsetParent){const{offsetHeight:w}=g,{marginTop:E,marginBottom:$}=getComputedStyle(g),h=Mn(E),y=Mn($),H=w+h+y;a.current.get(v)!==H&&(a.current.set(v,H),p=!0)}}),p&&l(g=>g+1)};if(m)d();else{s.current+=1;const p=s.current;Promise.resolve().then(()=>{p===s.current&&d()})}}function f(m,d){const p=e(m);i.current.get(p),d?(i.current.set(p,d),u()):i.current.delete(p)}return o.useEffect(()=>c,[]),[f,u,a.current,r]}const Rn=14/15;function ol(e,t,n){const r=o.useRef(!1),l=o.useRef(0),i=o.useRef(0),a=o.useRef(null),s=o.useRef(null);let c;const u=d=>{if(r.current){const p=Math.ceil(d.touches[0].pageX),g=Math.ceil(d.touches[0].pageY);let v=l.current-p,w=i.current-g;const E=Math.abs(v)>Math.abs(w);E?l.current=p:i.current=g;const $=n(E,E?v:w,!1,d);$&&d.preventDefault(),clearInterval(s.current),$&&(s.current=setInterval(()=>{E?v*=Rn:w*=Rn;const h=Math.floor(E?v:w);(!n(E,h,!0)||Math.abs(h)<=.1)&&clearInterval(s.current)},16))}},f=()=>{r.current=!1,c()},m=d=>{c(),d.touches.length===1&&!r.current&&(r.current=!0,l.current=Math.ceil(d.touches[0].pageX),i.current=Math.ceil(d.touches[0].pageY),a.current=d.target,a.current.addEventListener("touchmove",u,{passive:!1}),a.current.addEventListener("touchend",f,{passive:!0}))};c=()=>{a.current&&(a.current.removeEventListener("touchmove",u),a.current.removeEventListener("touchend",f))},lt(()=>(e&&t.current.addEventListener("touchstart",m,{passive:!0}),()=>{t.current?.removeEventListener("touchstart",m),c(),clearInterval(s.current)}),[e])}function Pn(e){return Math.floor(e**.5)}function Yt(e,t){return("touches"in e?e.touches[0]:e)[t?"pageX":"pageY"]-window[t?"scrollX":"scrollY"]}function rl(e,t,n){o.useEffect(()=>{const r=t.current;if(e&&r){let l=!1,i,a;const s=()=>{Ye.cancel(i)},c=()=>{s(),i=Ye(()=>{n(a),c()})},u=()=>{l=!1,s()},f=d=>{if(d.target.draggable||d.button!==0)return;const p=d;p._virtualHandled||(p._virtualHandled=!0,l=!0)},m=d=>{if(l){const p=Yt(d,!1),{top:g,bottom:v}=r.getBoundingClientRect();if(p<=g){const w=g-p;a=-Pn(w),c()}else if(p>=v){const w=p-v;a=Pn(w),c()}else s()}};return r.addEventListener("mousedown",f),r.ownerDocument.addEventListener("mouseup",u),r.ownerDocument.addEventListener("mousemove",m),r.ownerDocument.addEventListener("dragend",u),()=>{r.removeEventListener("mousedown",f),r.ownerDocument.removeEventListener("mouseup",u),r.ownerDocument.removeEventListener("mousemove",m),r.ownerDocument.removeEventListener("dragend",u),s()}}},[e])}const ll=10;function il(e,t,n,r,l,i,a,s){const c=o.useRef(),[u,f]=o.useState(null);return lt(()=>{if(u&&u.times<ll){if(!e.current){f(h=>({...h}));return}i();const{targetAlign:m,originAlign:d,index:p,offset:g}=u,v=e.current.clientHeight;let w=!1,E=m,$=null;if(v){const h=m||d;let y=0,H=0,L=0;const z=Math.min(t.length-1,p);for(let x=0;x<=z;x+=1){const X=l(t[x]);H=y;const U=n.get(X);L=H+(U===void 0?r:U),y=L}let B=h==="top"?g:v-g;for(let x=z;x>=0;x-=1){const X=l(t[x]),U=n.get(X);if(U===void 0){w=!0;break}if(B-=U,B<=0)break}switch(h){case"top":$=H-g;break;case"bottom":$=L-v+g;break;default:{const{scrollTop:x}=e.current,X=x+v;H<x?E="top":L>X&&(E="bottom")}}$!==null&&a($),$!==u.lastTop&&(w=!0)}w&&f({...u,times:u.times+1,targetAlign:E,lastTop:$})}},[u,e.current]),m=>{if(m==null){s();return}if(Ye.cancel(c.current),typeof m=="number")a(m);else if(m&&typeof m=="object"){let d;const{align:p}=m;"index"in m?{index:d}=m:d=t.findIndex(v=>l(v)===m.key);const{offset:g=0}=m;f({times:0,index:d,offset:g,originAlign:p})}}}const On=o.forwardRef((e,t)=>{const{prefixCls:n,rtl:r,scrollOffset:l,scrollRange:i,onStartMove:a,onStopMove:s,onScroll:c,horizontal:u,spinSize:f,containerSize:m,style:d,thumbStyle:p,showScrollBar:g}=e,[v,w]=o.useState(!1),[E,$]=o.useState(null),[h,y]=o.useState(null),H=!r,L=o.useRef(),z=o.useRef(),[B,x]=o.useState(g),X=o.useRef(),U=()=>{g===!0||g===!1||(clearTimeout(X.current),x(!0),X.current=setTimeout(()=>{x(!1)},3e3))},T=i-m||0,ue=m-f||0,oe=o.useMemo(()=>l===0||T===0?0:l/T*ue,[l,T,ue]),de=N=>{N.stopPropagation(),N.preventDefault()},pe=o.useRef({top:oe,dragging:v,pageY:E,startTop:h});pe.current={top:oe,dragging:v,pageY:E,startTop:h};const j=N=>{w(!0),$(Yt(N,u)),y(pe.current.top),a(),N.stopPropagation(),N.preventDefault()};o.useEffect(()=>{const N=K=>{K.preventDefault()},re=L.current,I=z.current;return re.addEventListener("touchstart",N,{passive:!1}),I.addEventListener("touchstart",j,{passive:!1}),()=>{re.removeEventListener("touchstart",N),I.removeEventListener("touchstart",j)}},[]);const D=o.useRef();D.current=T;const Q=o.useRef();Q.current=ue,o.useEffect(()=>{if(v){let N;const re=K=>{const{dragging:ie,pageY:we,startTop:O}=pe.current;Ye.cancel(N);const F=L.current.getBoundingClientRect(),se=m/(u?F.width:F.height);if(ie){const W=(Yt(K,u)-we)*se;let ce=O;!H&&u?ce-=W:ce+=W;const te=D.current,A=Q.current,he=A?ce/A:0;let Ce=Math.ceil(he*te);Ce=Math.max(Ce,0),Ce=Math.min(Ce,te),N=Ye(()=>{c(Ce,u)})}},I=()=>{w(!1),s()};return window.addEventListener("mousemove",re,{passive:!0}),window.addEventListener("touchmove",re,{passive:!0}),window.addEventListener("mouseup",I,{passive:!0}),window.addEventListener("touchend",I,{passive:!0}),()=>{window.removeEventListener("mousemove",re),window.removeEventListener("touchmove",re),window.removeEventListener("mouseup",I),window.removeEventListener("touchend",I),Ye.cancel(N)}}},[v]),o.useEffect(()=>(U(),()=>{clearTimeout(X.current)}),[l]),o.useImperativeHandle(t,()=>({delayHidden:U}));const me=`${n}-scrollbar`,ne={position:"absolute",visibility:B?null:"hidden"},P={position:"absolute",borderRadius:99,background:"var(--rc-virtual-list-scrollbar-bg, rgba(0, 0, 0, 0.5))",cursor:"pointer",userSelect:"none"};return u?(Object.assign(ne,{height:8,left:0,right:0,bottom:0}),Object.assign(P,{height:"100%",width:f,[H?"left":"right"]:oe})):(Object.assign(ne,{width:8,top:0,bottom:0,[H?"right":"left"]:0}),Object.assign(P,{width:"100%",height:f,top:oe})),o.createElement("div",{ref:L,className:ae(me,{[`${me}-horizontal`]:u,[`${me}-vertical`]:!u,[`${me}-visible`]:B}),style:{...ne,...d},onMouseDown:de,onMouseMove:U},o.createElement("div",{ref:z,className:ae(`${me}-thumb`,{[`${me}-thumb-moving`]:v}),style:{...P,...p},onMouseDown:j}))}),al=20;function Bn(e=0,t=0){let n=e/t*e;return isNaN(n)&&(n=0),n=Math.max(n,al),Math.floor(n)}const sl=[],cl={overflowY:"auto",overflowAnchor:"none"};function ul(e,t){const{prefixCls:n="rc-virtual-list",className:r,height:l,itemHeight:i,fullHeight:a=!0,style:s,data:c,children:u,itemKey:f,virtual:m,direction:d,scrollWidth:p,component:g="div",onScroll:v,onVirtualScroll:w,onVisibleChange:E,innerProps:$,extraRender:h,styles:y,showScrollBar:H="optional",...L}=e,z=o.useCallback(b=>typeof f=="function"?f(b):b?.[f],[f]),[B,x,X,U]=nl(z),T=!!(m!==!1&&l&&i),ue=o.useMemo(()=>Object.values(X.maps).reduce((b,M)=>b+M,0),[X.id,X.maps]),oe=T&&c&&(Math.max(i*c.length,ue)>l||!!p),de=d==="rtl",pe=ae(n,{[`${n}-rtl`]:de},r),j=c||sl,D=o.useRef(),Q=o.useRef(),me=o.useRef(),[ne,P]=o.useState(0),[N,re]=o.useState(0),[I,K]=o.useState(!1),ie=()=>{K(!0)},we=()=>{K(!1)},O={getKey:z};function F(b){P(M=>{let le;typeof b=="function"?le=b(M):le=b;const S=ve(le);return D.current.scrollTop=S,S})}const se=o.useRef({start:0,end:j.length}),W=o.useRef(),[ce]=Zr(j,z);W.current=ce;const{scrollHeight:te,start:A,end:he,offset:Ce}=o.useMemo(()=>{if(!T)return{scrollHeight:void 0,start:0,end:j.length-1,offset:void 0};if(!oe)return{scrollHeight:Q.current?.offsetHeight||0,start:0,end:j.length-1,offset:void 0};let b=0,M,le,S;const R=j.length;for(let _=0;_<R;_+=1){const Y=j[_],Se=z(Y),Ge=X.get(Se),Je=b+(Ge===void 0?i:Ge);Je>=ne&&M===void 0&&(M=_,le=b),Je>ne+l&&S===void 0&&(S=_),b=Je}return M===void 0&&(M=0,le=0,S=Math.ceil(l/i)),S===void 0&&(S=j.length-1),S=Math.min(S+1,j.length-1),{scrollHeight:b,start:M,end:S,offset:le}},[oe,T,ne,j,U,l]);se.current.start=A,se.current.end=he,o.useLayoutEffect(()=>{const b=X.getRecord();if(b.size===1){const M=Array.from(b.keys())[0],le=b.get(M),S=j[A];if(S&&le===void 0&&z(S)===M){const Y=X.get(M)-i;F(Se=>Se+Y)}}X.resetRecord()},[te]);const[fe,He]=o.useState({width:0,height:l}),Be=b=>{He({width:b.offsetWidth,height:b.offsetHeight})},Te=o.useRef(),xe=o.useRef(),Ee=o.useMemo(()=>Bn(fe.width,p),[fe.width,p]),$e=o.useMemo(()=>Bn(fe.height,te),[fe.height,te]),Ie=te-l,Me=o.useRef(Ie);Me.current=Ie;function ve(b){let M=b;return Number.isNaN(Me.current)||(M=Math.min(M,Me.current)),M=Math.max(M,0),M}const Re=ne<=0,Pe=ne>=Ie,ye=N<=0,ze=N>=p,Ue=lo(Re,Pe,ye,ze),ge=()=>({x:de?-N:N,y:ne}),k=o.useRef(ge()),be=tt(b=>{if(w){const M={...ge(),...b};(k.current.x!==M.x||k.current.y!==M.y)&&(w(M),k.current=M)}});function Ne(b,M){const le=b;M?(mn.flushSync(()=>{re(le)}),be()):F(le)}function Ke(b){const{scrollTop:M}=b.currentTarget;M!==ne&&F(M),v?.(b),be()}const _e=b=>{let M=b;const le=p?p-fe.width:0;return M=Math.max(M,0),M=Math.min(M,le),M},Xe=tt((b,M)=>{M?(mn.flushSync(()=>{re(le=>{const S=le+(de?-b:b);return _e(S)})}),be()):F(le=>le+b)}),[De,Ae]=kr(T,Re,Pe,ye,ze,!!p,Xe);ol(T,D,(b,M,le,S)=>{const R=S;return Ue(b,M,le)?!1:!R||!R._virtualHandled?(R&&(R._virtualHandled=!0),De({preventDefault(){},deltaX:b?M:0,deltaY:b?0:M}),!0):!1}),rl(oe,D,b=>{F(M=>M+b)}),lt(()=>{function b(le){const S=Re&&le.detail<0,R=Pe&&le.detail>0;T&&!S&&!R&&le.preventDefault()}const M=D.current;return M.addEventListener("wheel",De,{passive:!1}),M.addEventListener("DOMMouseScroll",Ae,{passive:!0}),M.addEventListener("MozMousePixelScroll",b,{passive:!1}),()=>{M.removeEventListener("wheel",De),M.removeEventListener("DOMMouseScroll",Ae),M.removeEventListener("MozMousePixelScroll",b)}},[T,Re,Pe]),lt(()=>{if(p){const b=_e(N);re(b),be({x:b})}},[fe.width,p]);const We=()=>{Te.current?.delayHidden(),xe.current?.delayHidden()},Oe=il(D,j,X,i,z,()=>x(!0),F,We);o.useImperativeHandle(t,()=>({nativeElement:me.current,getScrollInfo:ge,scrollTo:b=>{function M(le){return le&&typeof le=="object"&&("left"in le||"top"in le)}M(b)?(b.left!==void 0&&re(_e(b.left)),Oe(b.top)):Oe(b)}})),lt(()=>{if(E){const b=j.slice(A,he+1);E(b,j)}},[A,he,j]);const Ve=el(j,z,X,i),Fe=h?.({start:A,end:he,virtual:oe,offsetX:N,offsetY:Ce,rtl:de,getSize:Ve}),Le=Jr(j,A,he,p,N,B,u,O);let C=null;l&&(C={[a?"height":"maxHeight"]:l,...cl},T&&(C.overflowY="hidden",p&&(C.overflowX="hidden"),I&&(C.pointerEvents="none")));const q={};return de&&(q.dir="rtl"),o.createElement("div",Un({ref:me,style:{...s,position:"relative"},className:pe},q,L),o.createElement(Xn,{onResize:Be},o.createElement(g,{className:`${n}-holder`,style:C,ref:D,onScroll:Ke,onMouseEnter:We},o.createElement(ro,{prefixCls:n,height:te,offsetX:N,offsetY:Ce,scrollWidth:p,onInnerResize:x,ref:Q,innerProps:$,rtl:de,extra:Fe},Le))),oe&&te>l&&o.createElement(On,{ref:Te,prefixCls:n,scrollOffset:ne,scrollRange:te,rtl:de,onScroll:Ne,onStartMove:ie,onStopMove:we,spinSize:$e,containerSize:fe.height,style:y?.verticalScrollBar,thumbStyle:y?.verticalScrollBarThumb,showScrollBar:H}),oe&&p>fe.width&&o.createElement(On,{ref:xe,prefixCls:n,scrollOffset:N,scrollRange:p,rtl:de,onScroll:Ne,onStartMove:ie,onStopMove:we,spinSize:Ee,containerSize:fe.width,horizontal:!0,style:y?.horizontalScrollBar,thumbStyle:y?.horizontalScrollBarThumb,showScrollBar:H}))}const io=o.forwardRef(ul);io.displayName="List";function dl(){return/(mac\sos|macintosh)/i.test(navigator.appVersion)}function ft(){return ft=Object.assign?Object.assign.bind():function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e},ft.apply(this,arguments)}function Tn(e){return typeof e=="string"||typeof e=="number"}const pl=(e,t)=>{const{prefixCls:n,id:r,open:l,multiple:i,mode:a,searchValue:s,toggleOpen:c,notFoundContent:u,onPopupScroll:f,showScrollBar:m}=st(),{maxCount:d,flattenOptions:p,onActiveValue:g,defaultActiveFirstOption:v,onSelect:w,menuItemSelectedIcon:E,rawValues:$,fieldNames:h,virtual:y,direction:H,listHeight:L,listItemHeight:z,optionRender:B,classNames:x,styles:X}=o.useContext(nn),U=`${n}-item`,T=Eo(()=>p,[l,p],(O,F)=>F[0]&&O[1]!==F[1]),ue=o.useRef(null),oe=o.useMemo(()=>i&&Ft(d)&&$?.size>=d,[i,d,$?.size]),de=O=>{O.preventDefault()},pe=O=>{ue.current?.scrollTo(typeof O=="number"?{index:O}:O)},j=o.useCallback(O=>a==="combobox"?!1:$.has(O),[a,[...$].toString(),$.size]),D=(O,F=1)=>{const se=T.length;for(let W=0;W<se;W+=1){const ce=(O+W*F+se)%se,{group:te,data:A}=T[ce]||{};if(!te&&!A?.disabled&&(j(A.value)||!oe))return ce}return-1},[Q,me]=o.useState(()=>D(0)),ne=(O,F=!1)=>{me(O);const se={source:F?"keyboard":"mouse"},W=T[O];if(!W){g(null,-1,se);return}g(W.value,O,se)};o.useEffect(()=>{ne(v!==!1?D(0):-1)},[T.length,s]);const P=o.useCallback(O=>a==="combobox"?String(O).toLowerCase()===s.toLowerCase():$.has(O),[a,s,[...$].toString(),$.size]);o.useEffect(()=>{let O;if(!i&&l&&$.size===1){const F=Array.from($)[0],se=T.findIndex(({data:W})=>s?String(W.value).startsWith(s):W.value===F);se!==-1&&(ne(se),O=setTimeout(()=>{pe(se)}))}return l&&ue.current?.scrollTo(void 0),()=>clearTimeout(O)},[l,s]);const N=O=>{O!==void 0&&w(O,{selected:!$.has(O)}),i||c(!1)};if(o.useImperativeHandle(t,()=>({onKeyDown:O=>{const{which:F,ctrlKey:se}=O;switch(F){case V.N:case V.P:case V.UP:case V.DOWN:{let W=0;if(F===V.UP?W=-1:F===V.DOWN?W=1:dl()&&se&&(F===V.N?W=1:F===V.P&&(W=-1)),W!==0){const ce=D(Q+W,W);pe(ce),ne(ce,!0)}break}case V.TAB:case V.ENTER:{const W=T[Q];if(!W||W.data.disabled)return N(void 0);!oe||$.has(W.value)?N(W.value):N(void 0),l&&O.preventDefault();break}case V.ESC:c(!1),l&&O.stopPropagation()}},onKeyUp:()=>{},scrollTo:O=>{pe(O)}})),T.length===0)return o.createElement("div",{role:"listbox",id:`${r}_list`,className:`${U}-empty`,onMouseDown:de},u);const re=Object.keys(h).map(O=>h[O]),I=O=>O.label;function K(O,F){const{group:se}=O;return{role:se?"presentation":"option",id:`${r}_list_${F}`}}const ie=O=>{const F=T[O];if(!F)return null;const se=F.data||{},{value:W}=se,{group:ce}=F,te=$t(se,!0),A=I(F);return F?o.createElement("div",ft({"aria-label":typeof A=="string"&&!ce?A:null},te,{key:O},K(F,O),{"aria-selected":P(W)}),W):null},we={role:"listbox",id:`${r}_list`};return o.createElement(o.Fragment,null,y&&o.createElement("div",ft({},we,{style:{height:0,width:0,overflow:"hidden"}}),ie(Q-1),ie(Q),ie(Q+1)),o.createElement(io,{itemKey:"key",ref:ue,data:T,height:L,itemHeight:z,fullHeight:!1,onMouseDown:de,onScroll:f,virtual:y,direction:H,innerProps:y?null:we,showScrollBar:m,className:x?.popup?.list,style:X?.popup?.list},(O,F)=>{const{group:se,groupOption:W,data:ce,label:te,value:A}=O,{key:he}=ce;if(se){const Ue=ce.title??(Tn(te)?te.toString():void 0);return o.createElement("div",{className:ae(U,`${U}-group`,ce.className),title:Ue},te!==void 0?te:he)}const{disabled:Ce,title:fe,children:He,style:Be,className:Te,...xe}=ce,Ee=Qt(xe,re),$e=j(A),Ie=Ce||!$e&&oe,Me=`${U}-option`,ve=ae(U,Me,Te,x?.popup?.listItem,{[`${Me}-grouped`]:W,[`${Me}-active`]:Q===F&&!Ie,[`${Me}-disabled`]:Ie,[`${Me}-selected`]:$e}),Re=I(O),Pe=!E||typeof E=="function"||$e,ye=typeof Re=="number"?Re:Re||A;let ze=Tn(ye)?ye.toString():void 0;return fe!==void 0&&(ze=fe),o.createElement("div",ft({},$t(Ee),y?{}:K(O,F),{"aria-selected":y?void 0:P(A),className:ve,title:ze,onMouseMove:()=>{Q===F||Ie||ne(F)},onClick:()=>{Ie||N(A)},style:{...X?.popup?.listItem,...Be}}),o.createElement("div",{className:`${Me}-content`},typeof B=="function"?B(O,{index:F}):ye),o.isValidElement(E)||$e,Pe&&o.createElement(oo,{className:`${U}-option-state`,customizeIcon:E,customizeIconProps:{value:A,disabled:Ie,isSelected:$e}},$e?"✓":null))}))},ml=o.forwardRef(pl),fl=((e,t)=>{const n=o.useRef({values:new Map,options:new Map}),r=o.useMemo(()=>{const{values:i,options:a}=n.current,s=e.map(f=>f.label===void 0?{...f,label:i.get(f.value)?.label}:f),c=new Map,u=new Map;return s.forEach(f=>{c.set(f.value,f),u.set(f.value,t.get(f.value)||a.get(f.value))}),n.current.values=c,n.current.options=u,s},[e,t]),l=o.useCallback(i=>t.get(i)||n.current.options.get(i),[t]);return[r,l]});function Pt(e,t){return no(e).join("").toUpperCase().includes(t)}const gl=((e,t,n,r,l)=>o.useMemo(()=>{if(!n||r===!1)return e;const{options:i,label:a,value:s}=t,c=[],u=typeof r=="function",f=n.toUpperCase(),m=u?r:(p,g)=>l&&l.length?l.some(v=>Pt(g[v],f)):g[i]?Pt(g[a!=="children"?a:"label"],f):Pt(g[s],f),d=u?p=>Wt(p):p=>p;return e.forEach(p=>{if(p[i]){if(m(n,d(p)))c.push(p);else{const v=p[i].filter(w=>m(n,d(w)));v.length&&c.push({...p,[i]:v})}return}m(n,d(p))&&c.push(p)}),c},[e,r,l,n,t]));function hl(e){const{key:t,props:{children:n,value:r,...l}}=e;return{key:t,value:r!==void 0?r:t,children:n,...l}}function ao(e,t=!1){return wo(e).map((n,r)=>{if(!o.isValidElement(n)||!n.type)return null;const{type:{isSelectOptGroup:l},key:i,props:{children:a,...s}}=n;return t||!l?hl(n):{key:`__RC_SELECT_GRP__${i===null?r:i}__`,label:i,...s,options:ao(a)}}).filter(n=>n)}const bl=(e,t,n,r,l)=>o.useMemo(()=>{let i=e;!e&&(i=ao(t));const s=new Map,c=new Map,u=(m,d,p)=>{p&&typeof p=="string"&&m.set(d[p],d)},f=(m,d=!1)=>{for(let p=0;p<m.length;p+=1){const g=m[p];!g[n.options]||d?(s.set(g[n.value],g),u(c,g,n.label),r.forEach(v=>{u(c,g,v)}),u(c,g,l)):f(g[n.options],!0)}};return f(i),{options:i,valueOptions:s,labelOptions:c}},[e,t,n,r,l]);function zn(e){const t=o.useRef();return t.current=e,o.useCallback((...r)=>t.current(...r),[])}function vl(e,t,n){const{filterOption:r,searchValue:l,optionFilterProp:i,filterSort:a,onSearch:s,autoClearSearchValue:c}=t;return o.useMemo(()=>{const u=typeof e=="object",f={filterOption:r,searchValue:l,optionFilterProp:i,filterSort:a,onSearch:s,autoClearSearchValue:c,...u?e:{}};return[u||n==="combobox"||n==="tags"||n==="multiple"&&e===void 0?!0:e,f]},[n,e,r,l,i,a,s,c])}function Jt(){return Jt=Object.assign?Object.assign.bind():function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e},Jt.apply(this,arguments)}const Sl=["inputValue"];function Cl(e){return!e||typeof e!="object"}const xl=o.forwardRef((e,t)=>{const{id:n,mode:r,prefixCls:l="rc-select",backfill:i,fieldNames:a,showSearch:s,searchValue:c,onSearch:u,autoClearSearchValue:f,filterOption:m,optionFilterProp:d,filterSort:p,onSelect:g,onDeselect:v,onActive:w,popupMatchSelectWidth:E=!0,optionLabelProp:$,options:h,optionRender:y,children:H,defaultActiveFirstOption:L,menuItemSelectedIcon:z,virtual:B,direction:x,listHeight:X=200,listItemHeight:U=20,labelRender:T,value:ue,defaultValue:oe,labelInValue:de,onChange:pe,maxCount:j,classNames:D,styles:Q,...me}=e,ne={searchValue:c,onSearch:u,autoClearSearchValue:f,filterOption:m,optionFilterProp:d,filterSort:p},[P,N]=vl(s,ne,r),{filterOption:re,searchValue:I,optionFilterProp:K,filterSort:ie,onSearch:we,autoClearSearchValue:O=!0}=N,F=o.useMemo(()=>K?Array.isArray(K)?K:[K]:[],[K]),se=Io(n),W=qt(r),ce=!!(!h&&H),te=o.useMemo(()=>re===void 0&&r==="combobox"?!1:re,[re,r]),A=o.useMemo(()=>Zn(a,ce),[JSON.stringify(a),ce]),[he,Ce]=gt("",I),fe=he||"",He=bl(h,H,A,F,$),{valueOptions:Be,labelOptions:Te,options:xe}=He,Ee=o.useCallback(S=>no(S).map(_=>{let Y,Se,Ge,Je;Cl(_)?Y=_:(Se=_.label,Y=_.value);const ct=Be.get(Y);return ct&&(Se===void 0&&(Se=ct?.[$||A.label]),Ge=ct?.disabled,Je=ct?.title),{label:Se,value:Y,key:Y,disabled:Ge,title:Je}}),[A,$,Be]),[$e,Ie]=gt(oe,ue),Me=o.useMemo(()=>{const R=Ee(W&&$e===null?[]:$e);return r==="combobox"&&_r(R[0]?.value)?[]:R},[$e,Ee,r,W]),[ve,Re]=fl(Me,Be),Pe=o.useMemo(()=>{if(!r&&ve.length===1){const S=ve[0];if(S.value===null&&(S.label===null||S.label===void 0))return[]}return ve.map(S=>({...S,label:(typeof T=="function"?T(S):S.label)??S.value}))},[r,ve,T]),ye=o.useMemo(()=>new Set(ve.map(S=>S.value)),[ve]);o.useEffect(()=>{if(r==="combobox"){const S=ve[0]?.value;Ce(jr(S)?String(S):"")}},[ve]);const ze=zn((S,R)=>{const _=R??S;return{[A.value]:S,[A.label]:_}}),Ue=o.useMemo(()=>{if(r!=="tags")return xe;const S=[...xe],R=_=>Be.has(_);return[...ve].sort((_,Y)=>_.value<Y.value?-1:1).forEach(_=>{const Y=_.value;R(Y)||S.push(ze(Y,_.label))}),S},[ze,xe,Be,ve,r]),ge=gl(Ue,A,fe,te,F),k=o.useMemo(()=>{const S=R=>F.length?F.some(_=>R?.[_]===fe):R?.value===fe;return r!=="tags"||!fe||ge.some(R=>S(R))||ge.some(R=>R[A.value]===fe)?ge:[ze(fe),...ge]},[ze,F,r,ge,fe,A]),be=S=>[...S].sort((_,Y)=>ie(_,Y,{searchValue:fe})).map(_=>Array.isArray(_.options)?{..._,options:_.options.length>0?be(_.options):_.options}:_),Ne=o.useMemo(()=>ie?be(k):k,[k,ie,fe]),Ke=o.useMemo(()=>zr(Ne,{fieldNames:A,childrenAsData:ce}),[Ne,A,ce]),_e=S=>{const R=Ee(S);if(Ie(R),pe&&(R.length!==ve.length||R.some((_,Y)=>ve[Y]?.value!==_?.value))){const _=de?R.map(({label:Se,value:Ge})=>({label:Se,value:Ge})):R.map(Se=>Se.value),Y=R.map(Se=>Wt(Re(Se.value)));pe(W?_:_[0],W?Y:Y[0])}},[Xe,De]=o.useState(null),[Ae,We]=o.useState(0),Oe=L!==void 0?L:r!=="combobox",Ve=o.useRef(),Fe=o.useCallback((S,R,{source:_="keyboard"}={})=>{We(R),i&&r==="combobox"&&S!==null&&_==="keyboard"&&De(String(S));const Y=Promise.resolve().then(()=>{Ve.current===Y&&w?.(S)});Ve.current=Y},[i,r,w]),Le=(S,R,_)=>{const Y=()=>{const Se=Re(S);return[de?{label:Se?.[A.label],value:S}:S,Wt(Se)]};if(R&&g){const[Se,Ge]=Y();g(Se,Ge)}else if(!R&&v&&_!=="clear"){const[Se,Ge]=Y();v(Se,Ge)}},C=zn((S,R)=>{let _;const Y=W?R.selected:!0;Y?_=W?[...ve,S]:[S]:_=ve.filter(Se=>Se.value!==S),_e(_),Le(S,Y),r==="combobox"?De(""):(!qt||O)&&(Ce(""),De(""))}),q=(S,R)=>{_e(S);const{type:_,values:Y}=R;(_==="remove"||_==="clear")&&Y.forEach(Se=>{Le(Se.value,!1,_)})},b=(S,R)=>{if(Ce(S),De(null),R.source==="submit"){const _=(S||"").trim();if(_){const Y=Array.from(new Set([...ye,_]));_e(Y),Le(_,!0),Ce("")}return}R.source!=="blur"&&(r==="combobox"&&_e(S),we?.(S))},M=S=>{let R=S;r!=="tags"&&(R=S.map(Y=>Te.get(Y)?.value).filter(Y=>Y!==void 0));const _=Array.from(new Set([...ye,...R]));_e(_),_.forEach(Y=>{Le(Y,!0)})},le=o.useMemo(()=>({...He,flattenOptions:Ke,onActiveValue:Fe,defaultActiveFirstOption:Oe,onSelect:C,menuItemSelectedIcon:z,rawValues:ye,fieldNames:A,virtual:B!==!1&&E!==!1,direction:x,listHeight:X,listItemHeight:U,childrenAsData:ce,maxCount:j,optionRender:y,classNames:D,styles:Q}),[j,He,Ke,Fe,Oe,C,z,ye,A,B,E,x,X,U,ce,y,D,Q]);return o.createElement(nn.Provider,{value:le},o.createElement(qr,Jt({},me,{id:se,prefixCls:l,ref:t,omitDomProps:Sl,mode:r,classNames:D,styles:Q,displayValues:Pe,onDisplayValuesChange:q,maxCount:j,direction:x,showSearch:P,searchValue:fe,onSearch:b,autoClearSearchValue:O,onSearchSplit:M,popupMatchSelectWidth:E,OptionList:ml,emptyOptions:!Ke.length,activeValue:Xe,activeDescendantId:`${se}_list_${Ae}`})))}),ln=xl;ln.Option=rn;ln.OptGroup=on;const $l=()=>{const[,e]=bt(),[t]=Et("Empty"),r=new xt(e.colorBgBase).toHsl().l<.5?{opacity:.65}:{};return o.createElement("svg",{style:r,width:"184",height:"152",viewBox:"0 0 184 152",xmlns:"http://www.w3.org/2000/svg"},o.createElement("title",null,t?.description||"Empty"),o.createElement("g",{fill:"none",fillRule:"evenodd"},o.createElement("g",{transform:"translate(24 31.67)"},o.createElement("ellipse",{fillOpacity:".8",fill:"#F5F5F7",cx:"67.797",cy:"106.89",rx:"67.797",ry:"12.668"}),o.createElement("path",{d:"M122.034 69.674L98.109 40.229c-1.148-1.386-2.826-2.225-4.593-2.225h-51.44c-1.766 0-3.444.839-4.592 2.225L13.56 69.674v15.383h108.475V69.674z",fill:"#AEB8C2"}),o.createElement("path",{d:"M101.537 86.214L80.63 61.102c-1.001-1.207-2.507-1.867-4.048-1.867H31.724c-1.54 0-3.047.66-4.048 1.867L6.769 86.214v13.792h94.768V86.214z",fill:"url(#linearGradient-1)",transform:"translate(13.56)"}),o.createElement("path",{d:"M33.83 0h67.933a4 4 0 0 1 4 4v93.344a4 4 0 0 1-4 4H33.83a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4z",fill:"#F5F5F7"}),o.createElement("path",{d:"M42.678 9.953h50.237a2 2 0 0 1 2 2V36.91a2 2 0 0 1-2 2H42.678a2 2 0 0 1-2-2V11.953a2 2 0 0 1 2-2zM42.94 49.767h49.713a2.262 2.262 0 1 1 0 4.524H42.94a2.262 2.262 0 0 1 0-4.524zM42.94 61.53h49.713a2.262 2.262 0 1 1 0 4.525H42.94a2.262 2.262 0 0 1 0-4.525zM121.813 105.032c-.775 3.071-3.497 5.36-6.735 5.36H20.515c-3.238 0-5.96-2.29-6.734-5.36a7.309 7.309 0 0 1-.222-1.79V69.675h26.318c2.907 0 5.25 2.448 5.25 5.42v.04c0 2.971 2.37 5.37 5.277 5.37h34.785c2.907 0 5.277-2.421 5.277-5.393V75.1c0-2.972 2.343-5.426 5.25-5.426h26.318v33.569c0 .617-.077 1.216-.221 1.789z",fill:"#DCE0E6"})),o.createElement("path",{d:"M149.121 33.292l-6.83 2.65a1 1 0 0 1-1.317-1.23l1.937-6.207c-2.589-2.944-4.109-6.534-4.109-10.408C138.802 8.102 148.92 0 161.402 0 173.881 0 184 8.102 184 18.097c0 9.995-10.118 18.097-22.599 18.097-4.528 0-8.744-1.066-12.28-2.902z",fill:"#DCE0E6"}),o.createElement("g",{transform:"translate(149.65 15.383)",fill:"#FFF"},o.createElement("ellipse",{cx:"20.654",cy:"3.167",rx:"2.849",ry:"2.815"}),o.createElement("path",{d:"M5.698 5.63H0L2.898.704zM9.259.704h4.985V5.63H9.259z"}))))},yl=()=>{const[,e]=bt(),[t]=Et("Empty"),{colorFill:n,colorFillTertiary:r,colorFillQuaternary:l,colorBgContainer:i}=e,{borderColor:a,shadowColor:s,contentColor:c}=o.useMemo(()=>({borderColor:new xt(n).onBackground(i).toHexString(),shadowColor:new xt(r).onBackground(i).toHexString(),contentColor:new xt(l).onBackground(i).toHexString()}),[n,r,l,i]);return o.createElement("svg",{width:"64",height:"41",viewBox:"0 0 64 41",xmlns:"http://www.w3.org/2000/svg"},o.createElement("title",null,t?.description||"Empty"),o.createElement("g",{transform:"translate(0 1)",fill:"none",fillRule:"evenodd"},o.createElement("ellipse",{fill:s,cx:"32",cy:"33",rx:"32",ry:"7"}),o.createElement("g",{fillRule:"nonzero",stroke:a},o.createElement("path",{d:"M55 12.76L44.854 1.258C44.367.474 43.656 0 42.907 0H21.093c-.749 0-1.46.474-1.947 1.257L9 12.761V22h46v-9.24z"}),o.createElement("path",{d:"M41.613 15.931c0-1.605.994-2.93 2.227-2.931H55v18.137C55 33.26 53.68 35 52.05 35h-40.1C10.32 35 9 33.259 9 31.137V13h11.16c1.233 0 2.227 1.323 2.227 2.928v.022c0 1.605 1.005 2.901 2.237 2.901h14.752c1.232 0 2.237-1.308 2.237-2.913v-.007z",fill:c}))))},El=e=>{const{componentCls:t,margin:n,marginXS:r,marginXL:l,fontSize:i,lineHeight:a}=e;return{[t]:{marginInline:r,fontSize:i,lineHeight:a,textAlign:"center",[`${t}-image`]:{height:e.emptyImgHeight,marginBottom:r,opacity:e.opacityImage,img:{height:"100%"},svg:{maxWidth:"100%",height:"100%",margin:"auto"}},[`${t}-description`]:{color:e.colorTextDescription},[`${t}-footer`]:{marginTop:n},"&-normal":{marginBlock:l,color:e.colorTextDescription,[`${t}-description`]:{color:e.colorTextDescription},[`${t}-image`]:{height:e.emptyImgHeightMD}},"&-small":{marginBlock:r,color:e.colorTextDescription,[`${t}-image`]:{height:e.emptyImgHeightSM}}}}},wl=vt("Empty",e=>{const{componentCls:t,controlHeightLG:n,calc:r}=e,l=at(e,{emptyImgCls:`${t}-img`,emptyImgHeight:r(n).mul(2.5).equal(),emptyImgHeightMD:n,emptyImgHeightSM:r(n).mul(.875).equal()});return El(l)}),so=o.createElement($l,null),co=o.createElement(yl,null),rt=e=>{const{className:t,rootClassName:n,prefixCls:r,image:l,description:i,children:a,imageStyle:s,style:c,classNames:u,styles:f,...m}=e,{getPrefixCls:d,direction:p,className:g,style:v,classNames:w,styles:E,image:$}=Zt("empty"),h=d("empty",r),[y,H]=wl(h),[L,z]=kt([w,u],[E,f],{props:e}),[B]=Et("Empty"),x=typeof i<"u"?i:B?.description,X=typeof x=="string"?x:"empty",U=l??$??so;let T=null;return typeof U=="string"?T=o.createElement("img",{draggable:!1,alt:X,src:U}):T=U,o.createElement("div",{className:ae(y,H,h,g,{[`${h}-normal`]:U===co,[`${h}-rtl`]:p==="rtl"},t,n,L.root),style:{...z.root,...v,...c},...m},o.createElement("div",{className:ae(`${h}-image`,L.image),style:{...s,...z.image}},T),x&&o.createElement("div",{className:ae(`${h}-description`,L.description),style:z.description},x),a&&o.createElement("div",{className:ae(`${h}-footer`,L.footer),style:z.footer},a))};rt.PRESENTED_IMAGE_DEFAULT=so;rt.PRESENTED_IMAGE_SIMPLE=co;const Il=e=>{const{componentName:t}=e,{getPrefixCls:n}=o.useContext(en),r=n("empty");switch(t){case"Table":case"List":return J.createElement(rt,{image:rt.PRESENTED_IMAGE_SIMPLE});case"Select":case"TreeSelect":case"Cascader":case"Transfer":case"Mentions":return J.createElement(rt,{image:rt.PRESENTED_IMAGE_SIMPLE,className:`${r}-small`});case"Table.filter":return null;default:return J.createElement(rt,null)}},Ml=(e,t,n)=>{const{variant:r,[e]:l}=o.useContext(en),i=o.useContext(Mo),a=l?.variant;let s;typeof t<"u"?s=t:n===!1?s="borderless":s=i??a??r??"outlined";const c=Ro.includes(s);return[s,c]},Rl=e=>{const n={overflow:{adjustX:!0,adjustY:!0,shiftY:!0},htmlRegion:e==="scroll"?"scroll":"visible",dynamicInset:!0};return{bottomLeft:{...n,points:["tl","bl"],offset:[0,4]},bottomRight:{...n,points:["tr","br"],offset:[0,4]},topLeft:{...n,points:["bl","tl"],offset:[0,-4]},topRight:{...n,points:["br","tr"],offset:[0,-4]}}};function Pl(e,t){return e||Rl(t)}const Nn=e=>{const{optionHeight:t,optionFontSize:n,optionLineHeight:r,optionPadding:l}=e;return{position:"relative",display:"block",minHeight:t,padding:l,color:e.colorText,fontWeight:"normal",fontSize:n,lineHeight:r,boxSizing:"border-box"}},Ol=e=>{const{antCls:t,componentCls:n}=e,r=`${n}-item`,l=`&${t}-slide-up-enter${t}-slide-up-enter-active`,i=`&${t}-slide-up-appear${t}-slide-up-appear-active`,a=`&${t}-slide-up-leave${t}-slide-up-leave-active`,s=`${n}-dropdown-placement-`,c=`${r}-option-selected`;return[{[`${n}-dropdown`]:{...ut(e),position:"absolute",top:-9999,zIndex:e.zIndexPopup,boxSizing:"border-box",padding:e.paddingXXS,overflow:"hidden",fontSize:e.fontSize,fontVariant:"initial",backgroundColor:e.colorBgElevated,borderRadius:e.borderRadiusLG,outline:"none",boxShadow:e.boxShadowSecondary,[`
+    onLoadStart onPause onPlay onPlaying onProgress onRateChange onSeeked onSeeking onStalled onSuspend onTimeUpdate onVolumeChange onWaiting onLoad onError`,
+  yr = `${xr} ${$r}`.split(/[\s\n]+/),
+  Er = 'aria-',
+  wr = 'data-';
+function $n(e, t) {
+  return e.indexOf(t) === 0;
+}
+function $t(e, t = !1) {
+  let n;
+  t === !1
+    ? (n = { aria: !0, data: !0, attr: !0 })
+    : t === !0
+      ? (n = { aria: !0 })
+      : (n = { ...t });
+  const r = {};
+  return (
+    Object.keys(e).forEach((l) => {
+      ((n.aria && (l === 'role' || $n(l, Er))) ||
+        (n.data && $n(l, wr)) ||
+        (n.attr && yr.includes(l))) &&
+        (r[l] = e[l]);
+    }),
+    r
+  );
+}
+const Et = (e, t) => {
+    const n = o.useContext(Co),
+      r = o.useMemo(() => {
+        const i = t || fn[e],
+          a = n?.[e] ?? {};
+        return { ...(typeof i == 'function' ? i() : i), ...(a || {}) };
+      }, [e, t, n]),
+      l = o.useMemo(() => {
+        const i = n?.locale;
+        return n?.exist && !i ? fn.locale : i;
+      }, [n]);
+    return [r, l];
+  },
+  Ir = () => J.useReducer((e) => e + 1, 0),
+  Mr = (e, t, n, r, l = !1, i, a) => {
+    const s = o.useMemo(
+      () =>
+        typeof n == 'boolean'
+          ? { allowClear: n }
+          : n && typeof n == 'object'
+            ? n
+            : { allowClear: !1 },
+      [n]
+    );
+    return o.useMemo(() => {
+      const c = !l && s.allowClear !== !1 && (t.length || i) && !(a === 'combobox' && i === '');
+      return { allowClear: c, clearIcon: c ? s.clearIcon || r || '×' : null };
+    }, [s, r, l, t.length, i, a]);
+  },
+  Jn = o.createContext(null);
+function st() {
+  return o.useContext(Jn);
+}
+function Rr(e = 250) {
+  const t = o.useRef(null),
+    n = o.useRef(null);
+  o.useEffect(
+    () => () => {
+      window.clearTimeout(n.current);
+    },
+    []
+  );
+  function r(l) {
+    ((l || t.current === null) && (t.current = l),
+      window.clearTimeout(n.current),
+      (n.current = window.setTimeout(() => {
+        t.current = null;
+      }, e)));
+  }
+  return [() => t.current, r];
+}
+function Qn(e, t) {
+  return e.filter((n) => n).some((n) => n.contains(t) || n === t);
+}
+function Pr(e, t, n, r) {
+  const l = tt((i) => {
+    if (r) return;
+    let a = i.target;
+    (a.shadowRoot && i.composed && (a = i.composedPath()[0] || a),
+      i._ori_target && (a = i._ori_target),
+      t && !Qn(e(), a) && n(!1));
+  });
+  o.useEffect(
+    () => (
+      window.addEventListener('mousedown', l),
+      () => window.removeEventListener('mousedown', l)
+    ),
+    [l]
+  );
+}
+function Vt() {
+  return (
+    (Vt = Object.assign
+      ? Object.assign.bind()
+      : function (e) {
+          for (var t = 1; t < arguments.length; t++) {
+            var n = arguments[t];
+            for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r]);
+          }
+          return e;
+        }),
+    Vt.apply(this, arguments)
+  );
+}
+const Or = (e) => {
+    const t = e === !0 ? 0 : 1;
+    return {
+      bottomLeft: {
+        points: ['tl', 'bl'],
+        offset: [0, 4],
+        overflow: { adjustX: t, adjustY: 1 },
+        htmlRegion: 'scroll'
+      },
+      bottomRight: {
+        points: ['tr', 'br'],
+        offset: [0, 4],
+        overflow: { adjustX: t, adjustY: 1 },
+        htmlRegion: 'scroll'
+      },
+      topLeft: {
+        points: ['bl', 'tl'],
+        offset: [0, -4],
+        overflow: { adjustX: t, adjustY: 1 },
+        htmlRegion: 'scroll'
+      },
+      topRight: {
+        points: ['br', 'tr'],
+        offset: [0, -4],
+        overflow: { adjustX: t, adjustY: 1 },
+        htmlRegion: 'scroll'
+      }
+    };
+  },
+  Br = (e, t) => {
+    const {
+        prefixCls: n,
+        disabled: r,
+        visible: l,
+        children: i,
+        popupElement: a,
+        animation: s,
+        transitionName: c,
+        popupStyle: u,
+        popupClassName: f,
+        direction: m = 'ltr',
+        placement: d,
+        builtinPlacements: p,
+        popupMatchSelectWidth: g,
+        popupRender: v,
+        popupAlign: w,
+        getPopupContainer: E,
+        empty: $,
+        onPopupVisibleChange: h,
+        onPopupMouseEnter: y,
+        onPopupMouseDown: H,
+        onPopupBlur: L,
+        ...z
+      } = e,
+      B = `${n}-dropdown`;
+    let x = a;
+    v && (x = v(a));
+    const X = o.useMemo(() => p || Or(g), [p, g]),
+      U = s ? `${B}-${s}` : c,
+      T = typeof g == 'number',
+      ue = o.useMemo(() => (T ? null : g === !1 ? 'minWidth' : 'width'), [g, T]);
+    let oe = u;
+    T && (oe = { ...u, width: g });
+    const de = o.useRef(null);
+    return (
+      o.useImperativeHandle(t, () => ({ getPopupElement: () => de.current?.popupElement })),
+      o.createElement(
+        xo,
+        Vt({}, z, {
+          showAction: h ? ['click'] : [],
+          hideAction: h ? ['click'] : [],
+          popupPlacement: d || (m === 'rtl' ? 'bottomRight' : 'bottomLeft'),
+          builtinPlacements: X,
+          prefixCls: B,
+          popupMotion: { motionName: U },
+          popup: o.createElement('div', { onMouseEnter: y, onMouseDown: H, onBlur: L }, x),
+          ref: de,
+          stretch: ue,
+          popupAlign: w,
+          popupVisible: l,
+          getPopupContainer: E,
+          popupClassName: ae(f, { [`${B}-empty`]: $ }),
+          popupStyle: oe,
+          onPopupVisibleChange: h
+        }),
+        i
+      )
+    );
+  },
+  Tr = o.forwardRef(Br);
+function yn(e, t) {
+  const { key: n } = e;
+  let r;
+  return ('value' in e && ({ value: r } = e), n ?? (r !== void 0 ? r : `rc-index-key-${t}`));
+}
+function Ft(e) {
+  return typeof e < 'u' && !Number.isNaN(e);
+}
+function Zn(e, t) {
+  const { label: n, value: r, options: l, groupLabel: i } = e || {},
+    a = n || (t ? 'children' : 'label');
+  return { label: a, value: r || 'value', options: l || 'options', groupLabel: i || a };
+}
+function zr(e, { fieldNames: t, childrenAsData: n } = {}) {
+  const r = [],
+    { label: l, value: i, options: a, groupLabel: s } = Zn(t, !1);
+  function c(u, f) {
+    Array.isArray(u) &&
+      u.forEach((m) => {
+        if (f || !(a in m)) {
+          const d = m[i];
+          r.push({ key: yn(m, r.length), groupOption: f, data: m, label: m[l], value: d });
+        } else {
+          let d = m[s];
+          (d === void 0 && n && (d = m.label),
+            r.push({ key: yn(m, r.length), group: !0, data: m, label: d }),
+            c(m[a], !0));
+        }
+      });
+  }
+  return (c(e, !1), r);
+}
+function Wt(e) {
+  const t = { ...e };
+  return (
+    'props' in t ||
+      Object.defineProperty(t, 'props', {
+        get() {
+          return (
+            $o(
+              !1,
+              'Return type is option instead of Option instance. Please read value directly instead of reading from `props`.'
+            ),
+            t
+          );
+        }
+      }),
+    t
+  );
+}
+const Nr = (e, t, n) => {
+  if (!t || !t.length) return null;
+  let r = !1;
+  const l = (a, [s, ...c]) => {
+      if (!s) return [a];
+      const u = a.split(s);
+      return ((r = r || u.length > 1), u.reduce((f, m) => [...f, ...l(m, c)], []).filter(Boolean));
+    },
+    i = l(e, t);
+  return r ? (typeof n < 'u' ? i.slice(0, n) : i) : null;
+};
+function Dr(e) {
+  const { visible: t, values: n } = e;
+  if (!t) return null;
+  const r = 50;
+  return o.createElement(
+    'span',
+    {
+      'aria-live': 'polite',
+      style: { width: 0, height: 0, position: 'absolute', overflow: 'hidden', opacity: 0 }
+    },
+    `${n
+      .slice(0, r)
+      .map(({ label: l, value: i }) => (['number', 'string'].includes(typeof l) ? l : i))
+      .join(', ')}`,
+    n.length > r ? ', ...' : null
+  );
+}
+const Hr = (e) => {
+    const t = new MessageChannel();
+    ((t.port1.onmessage = e), t.port2.postMessage(null));
+  },
+  tn = (e, t = 1) => {
+    if (t <= 0) {
+      e();
+      return;
+    }
+    Hr(() => {
+      tn(e, t - 1);
+    });
+  };
+function Lr(e, t, n) {
+  const [r, l] = o.useState(!1);
+  o.useEffect(() => {
+    l(!0);
+  }, []);
+  const [i, a] = gt(!1, e),
+    c = n(r ? i : !1),
+    u = o.useRef(0),
+    f = tt((d) => {
+      (t && c !== d && t(d), a(d));
+    }),
+    m = tt((d, p = {}) => {
+      const { cancelFun: g } = p;
+      u.current += 1;
+      const v = u.current,
+        w = typeof d == 'boolean' ? d : !c;
+      function E() {
+        v === u.current && !g?.() && f(w);
+      }
+      w
+        ? E()
+        : tn(() => {
+            E();
+          });
+    });
+  return [c, m];
+}
+function Rt(e) {
+  const { children: t, ...n } = e;
+  return t ? o.createElement('div', n, t) : null;
+}
+const kn = o.createContext(null);
+function St() {
+  return o.useContext(kn);
+}
+const eo = o.forwardRef((e, t) => {
+  const {
+      onChange: n,
+      onKeyDown: r,
+      onBlur: l,
+      style: i,
+      syncWidth: a,
+      value: s,
+      className: c,
+      autoComplete: u,
+      ...f
+    } = e,
+    {
+      prefixCls: m,
+      mode: d,
+      onSearch: p,
+      onSearchSubmit: g,
+      onInputBlur: v,
+      autoFocus: w,
+      tokenWithEnter: E,
+      placeholder: $,
+      components: { input: h = 'input' }
+    } = St(),
+    {
+      id: y,
+      classNames: H,
+      styles: L,
+      open: z,
+      activeDescendantId: B,
+      role: x,
+      disabled: X
+    } = st() || {},
+    U = ae(`${m}-input`, H?.input, c),
+    T = o.useRef(!1),
+    ue = o.useRef(null),
+    oe = o.useRef(null);
+  o.useImperativeHandle(t, () => oe.current);
+  const de = (I) => {
+      let { value: K } = I.target;
+      if (E && ue.current && /[\r\n]/.test(ue.current)) {
+        const ie = ue.current
+          .replace(/[\r\n]+$/, '')
+          .replace(/\r\n/g, ' ')
+          .replace(/[\r\n]/g, ' ');
+        K = K.replace(ie, ue.current);
+      }
+      ((ue.current = null), p && p(K, !0, T.current), n?.(I));
+    },
+    pe = (I) => {
+      const { key: K } = I,
+        { value: ie } = I.currentTarget;
+      (K === 'Enter' && d === 'tags' && !T.current && g && g(ie), r?.(I));
+    },
+    j = (I) => {
+      (v?.(), l?.(I));
+    },
+    D = () => {
+      T.current = !0;
+    },
+    Q = (I) => {
+      if (((T.current = !1), d !== 'combobox')) {
+        const { value: K } = I.currentTarget;
+        p?.(K, !0, !1);
+      }
+    },
+    me = (I) => {
+      const { clipboardData: K } = I,
+        ie = K?.getData('text');
+      ue.current = ie || '';
+    },
+    [ne, P] = o.useState(void 0);
+  lt(() => {
+    const I = oe.current;
+    if (a && I) {
+      I.style.width = '0px';
+      const K = I.scrollWidth;
+      (P(K), (I.style.width = ''));
+    }
+  }, [a, s]);
+  const N = {
+    id: y,
+    type: d === 'combobox' ? 'text' : 'search',
+    ...f,
+    ref: oe,
+    style: { ...L?.input, ...i, '--select-input-width': ne },
+    autoFocus: w,
+    autoComplete: u || 'off',
+    className: U,
+    disabled: X,
+    value: s || '',
+    onChange: de,
+    onKeyDown: pe,
+    onBlur: j,
+    onPaste: me,
+    onCompositionStart: D,
+    onCompositionEnd: Q,
+    role: x || 'combobox',
+    'aria-expanded': z || !1,
+    'aria-haspopup': 'listbox',
+    'aria-owns': z ? `${y}_list` : void 0,
+    'aria-autocomplete': 'list',
+    'aria-controls': z ? `${y}_list` : void 0,
+    'aria-activedescendant': z ? B : void 0
+  };
+  if (o.isValidElement(h)) {
+    const I = h.props || {},
+      K = { placeholder: e.placeholder || $, ...N, ...I };
+    return (
+      Object.keys(I).forEach((ie) => {
+        const we = I[ie];
+        typeof we == 'function' &&
+          (K[ie] = (...O) => {
+            (we(...O), N[ie]?.(...O));
+          });
+      }),
+      (K.ref = Gn(h.ref, N.ref)),
+      o.cloneElement(h, K)
+    );
+  }
+  const re = h;
+  return o.createElement(re, N);
+});
+function to(e) {
+  const { prefixCls: t, placeholder: n, displayValues: r } = St(),
+    { classNames: l, styles: i } = st(),
+    { show: a = !0 } = e;
+  return r.length
+    ? null
+    : o.createElement(
+        'div',
+        {
+          className: ae(`${t}-placeholder`, l?.placeholder),
+          style: { visibility: a ? 'visible' : 'hidden', ...i?.placeholder }
+        },
+        n
+      );
+}
+const nn = o.createContext(null);
+function no(e) {
+  return Array.isArray(e) ? e : e !== void 0 ? [e] : [];
+}
+function jr(e) {
+  return e != null;
+}
+function _r(e) {
+  return !e && e !== 0;
+}
+function En(e) {
+  return ['string', 'number'].includes(typeof e);
+}
+function Gt(e) {
+  let t;
+  return (
+    e && (En(e.title) ? (t = e.title.toString()) : En(e.label) && (t = e.label.toString())),
+    t
+  );
+}
+function Xt() {
+  return (
+    (Xt = Object.assign
+      ? Object.assign.bind()
+      : function (e) {
+          for (var t = 1; t < arguments.length; t++) {
+            var n = arguments[t];
+            for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r]);
+          }
+          return e;
+        }),
+    Xt.apply(this, arguments)
+  );
+}
+const Ar = o.forwardRef(({ inputProps: e }, t) => {
+    const {
+        prefixCls: n,
+        searchValue: r,
+        activeValue: l,
+        displayValues: i,
+        maxLength: a,
+        mode: s
+      } = St(),
+      { triggerOpen: c, title: u, showSearch: f, classNames: m, styles: d } = st(),
+      p = o.useContext(nn),
+      [g, v] = o.useState(!1),
+      w = s === 'combobox',
+      E = i[0],
+      $ = o.useMemo(() => (w && l && !g && c ? l : f ? r : ''), [w, l, g, c, r, f]),
+      h = o.useMemo(() => {
+        let y = {
+          className: `${n}-content-value`,
+          style: { visibility: $ ? 'hidden' : 'visible' }
+        };
+        if (E && p?.flattenOptions) {
+          const H = p.flattenOptions.find((L) => L.value === E.value);
+          if (H?.data) {
+            const { label: L, value: z, className: B, style: x, key: X, ...U } = H.data;
+            y = {
+              ...y,
+              ...U,
+              title: Gt(H.data),
+              className: ae(y.className, B),
+              style: { ...y.style, ...x }
+            };
+          }
+        }
+        return (E && !y.title && (y.title = Gt(E)), u !== void 0 && (y.title = u), y);
+      }, [E, p?.flattenOptions, n, $, u]);
+    return (
+      o.useEffect(() => {
+        w && v(!1);
+      }, [w, l]),
+      o.createElement(
+        'div',
+        { className: ae(`${n}-content`, m?.content), style: d?.content },
+        E ? o.createElement('div', h, E.label) : o.createElement(to, { show: !$ }),
+        o.createElement(
+          eo,
+          Xt({ ref: t }, e, {
+            value: $,
+            maxLength: s === 'combobox' ? a : void 0,
+            onChange: (y) => {
+              (v(!0), e.onChange?.(y));
+            }
+          })
+        )
+      )
+    );
+  }),
+  oo = (e) => {
+    const {
+        className: t,
+        style: n,
+        customizeIcon: r,
+        customizeIconProps: l,
+        children: i,
+        onMouseDown: a,
+        onClick: s
+      } = e,
+      c = typeof r == 'function' ? r(l) : r;
+    return o.createElement(
+      'span',
+      {
+        className: t,
+        onMouseDown: (u) => {
+          (u.preventDefault(), a?.(u));
+        },
+        style: { userSelect: 'none', WebkitUserSelect: 'none', ...n },
+        unselectable: 'on',
+        onClick: s,
+        'aria-hidden': !0
+      },
+      c !== void 0
+        ? c
+        : o.createElement('span', { className: ae(t.split(/\s+/).map((u) => `${u}-icon`)) }, i)
+    );
+  };
+function Ut() {
+  return (
+    (Ut = Object.assign
+      ? Object.assign.bind()
+      : function (e) {
+          for (var t = 1; t < arguments.length; t++) {
+            var n = arguments[t];
+            for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r]);
+          }
+          return e;
+        }),
+    Ut.apply(this, arguments)
+  );
+}
+function Vr(e) {
+  return e.key ?? e.value;
+}
+const wn = (e) => {
+    (e.preventDefault(), e.stopPropagation());
+  },
+  Fr = o.forwardRef(function ({ inputProps: t }, n) {
+    const {
+        prefixCls: r,
+        displayValues: l,
+        searchValue: i,
+        mode: a,
+        onSelectorRemove: s,
+        removeIcon: c
+      } = St(),
+      {
+        disabled: u,
+        showSearch: f,
+        triggerOpen: m,
+        toggleOpen: d,
+        autoClearSearchValue: p,
+        tagRender: g,
+        maxTagPlaceholder: v,
+        maxTagTextLength: w,
+        maxTagCount: E,
+        classNames: $,
+        styles: h
+      } = st(),
+      y = `${r}-selection-item`;
+    let H = i;
+    !m && a === 'multiple' && p !== !1 && (H = '');
+    const L = (f && H) || '',
+      z = f && !u,
+      B = c ?? '×',
+      x = v ?? ((j) => `+ ${j.length} ...`),
+      X = g,
+      U = (j) => {
+        d(j);
+      },
+      T = (j) => {
+        s?.(j);
+      },
+      ue = (j, D, Q, me, ne) =>
+        o.createElement(
+          'span',
+          { title: Gt(j), className: ae(y, { [`${y}-disabled`]: Q }, $?.item), style: h?.item },
+          o.createElement(
+            'span',
+            { className: ae(`${y}-content`, $?.itemContent), style: h?.itemContent },
+            D
+          ),
+          me &&
+            o.createElement(
+              oo,
+              {
+                className: ae(`${y}-remove`, $?.itemRemove),
+                style: h?.itemRemove,
+                onMouseDown: wn,
+                onClick: ne,
+                customizeIcon: B
+              },
+              '×'
+            )
+        ),
+      oe = (j, D, Q, me, ne, P, N) => {
+        const re = (I) => {
+          (wn(I), U(!m));
+        };
+        return o.createElement(
+          'span',
+          { onMouseDown: re },
+          X({
+            label: D,
+            value: j,
+            index: N?.index,
+            disabled: Q,
+            closable: me,
+            onClose: ne,
+            isMaxTag: !!P
+          })
+        );
+      },
+      de = (j, D) => {
+        const { disabled: Q, label: me, value: ne } = j,
+          P = !u && !Q;
+        let N = me;
+        if (typeof w == 'number' && (typeof me == 'string' || typeof me == 'number')) {
+          const I = String(N);
+          I.length > w && (N = `${I.slice(0, w)}...`);
+        }
+        const re = (I) => {
+          (I && I.stopPropagation(), T(j));
+        };
+        return typeof X == 'function' ? oe(ne, N, Q, P, re, void 0, D) : ue(j, N, Q, P, re);
+      },
+      pe = (j) => {
+        if (!l.length) return null;
+        const D = typeof x == 'function' ? x(j) : x;
+        return typeof X == 'function' ? oe(void 0, D, !1, !1, void 0, !0) : ue({ title: D }, D, !1);
+      };
+    return o.createElement(yo, {
+      prefixCls: `${r}-content`,
+      className: $?.content,
+      style: h?.content,
+      prefix: !l.length && (!i || !m) ? o.createElement(to, null) : null,
+      data: l,
+      renderItem: de,
+      renderRest: pe,
+      suffix: o.createElement(
+        eo,
+        Ut({ ref: n, disabled: u, readOnly: !z }, t, { value: L || '', syncWidth: !0 })
+      ),
+      itemKey: Vr,
+      maxCount: E
+    });
+  }),
+  Wr = o.forwardRef(function (t, n) {
+    const { multiple: r, onInputKeyDown: l, tabIndex: i } = St(),
+      a = st(),
+      { showSearch: s } = a,
+      u = { ...$t(a, { aria: !0 }), onKeyDown: l, readOnly: !s, tabIndex: i };
+    return r
+      ? o.createElement(Fr, { ref: n, inputProps: u })
+      : o.createElement(Ar, { ref: n, inputProps: u });
+  });
+function Gr(e) {
+  return (
+    e &&
+    ![
+      V.ESC,
+      V.SHIFT,
+      V.BACKSPACE,
+      V.TAB,
+      V.WIN_KEY,
+      V.ALT,
+      V.META,
+      V.WIN_KEY_RIGHT,
+      V.CTRL,
+      V.SEMICOLON,
+      V.EQUALS,
+      V.CAPS_LOCK,
+      V.CONTEXT_MENU,
+      V.UP,
+      V.LEFT,
+      V.RIGHT,
+      V.F1,
+      V.F2,
+      V.F3,
+      V.F4,
+      V.F5,
+      V.F6,
+      V.F7,
+      V.F8,
+      V.F9,
+      V.F10,
+      V.F11,
+      V.F12
+    ].includes(e)
+  );
+}
+function yt() {
+  return (
+    (yt = Object.assign
+      ? Object.assign.bind()
+      : function (e) {
+          for (var t = 1; t < arguments.length; t++) {
+            var n = arguments[t];
+            for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r]);
+          }
+          return e;
+        }),
+    yt.apply(this, arguments)
+  );
+}
+const Xr = [
+    'value',
+    'onChange',
+    'removeIcon',
+    'placeholder',
+    'maxTagCount',
+    'maxTagTextLength',
+    'maxTagPlaceholder',
+    'choiceTransitionName',
+    'onInputKeyDown',
+    'onPopupScroll',
+    'tabIndex',
+    'activeValue',
+    'onSelectorRemove',
+    'focused'
+  ],
+  Ur = o.forwardRef(function (t, n) {
+    const {
+        prefixCls: r,
+        className: l,
+        style: i,
+        prefix: a,
+        suffix: s,
+        clearIcon: c,
+        children: u,
+        multiple: f,
+        displayValues: m,
+        placeholder: d,
+        mode: p,
+        searchValue: g,
+        onSearch: v,
+        onSearchSubmit: w,
+        onInputBlur: E,
+        maxLength: $,
+        autoFocus: h,
+        onMouseDown: y,
+        onClearMouseDown: H,
+        onInputKeyDown: L,
+        onSelectorRemove: z,
+        tokenWithEnter: B,
+        components: x,
+        ...X
+      } = t,
+      {
+        triggerOpen: U,
+        toggleOpen: T,
+        showSearch: ue,
+        disabled: oe,
+        loading: de,
+        classNames: pe,
+        styles: j
+      } = st(),
+      D = o.useRef(null),
+      Q = o.useRef(null),
+      me = tt((I) => {
+        const { which: K } = I,
+          ie = Q.current instanceof HTMLTextAreaElement;
+        (!ie && U && (K === V.UP || K === V.DOWN) && I.preventDefault(),
+          L && L(I),
+          !(ie && !U && ~[V.UP, V.DOWN, V.LEFT, V.RIGHT].indexOf(K)) && Gr(K) && T(!0));
+      });
+    o.useImperativeHandle(n, () => ({
+      focus: (I) => {
+        (Q.current || D.current).focus?.(I);
+      },
+      blur: () => {
+        (Q.current || D.current).blur?.();
+      },
+      nativeElement: D.current
+    }));
+    const ne = tt((I) => {
+        if (!oe) {
+          const K = Tt(Q.current);
+          ((I.nativeEvent._ori_target = K),
+            K && I.target !== K && !K.contains(I.target) && I.preventDefault());
+          const ie = U && !f && (p === 'combobox' || ue);
+          I.nativeEvent._select_lazy ? U && T(!1) : (Q.current?.focus(), ie || T());
+        }
+        y?.(I);
+      }),
+      { root: P } = x,
+      N = Qt(X, Xr),
+      re = { ...t, onInputKeyDown: me };
+    return P
+      ? o.isValidElement(P)
+        ? o.cloneElement(P, { ...N, ref: Gn(P.ref, D) })
+        : o.createElement(P, yt({}, N, { ref: D }))
+      : o.createElement(
+          kn.Provider,
+          { value: re },
+          o.createElement(
+            'div',
+            yt({}, N, { ref: D, className: l, style: i, onMouseDown: ne }),
+            o.createElement(Rt, { className: ae(`${r}-prefix`, pe?.prefix), style: j?.prefix }, a),
+            o.createElement(Wr, { ref: Q }),
+            o.createElement(
+              Rt,
+              {
+                className: ae(`${r}-suffix`, { [`${r}-suffix-loading`]: de }, pe?.suffix),
+                style: j?.suffix
+              },
+              s
+            ),
+            c &&
+              o.createElement(
+                Rt,
+                {
+                  className: ae(`${r}-clear`, pe?.clear),
+                  style: j?.clear,
+                  onMouseDown: (I) => {
+                    ((I.nativeEvent._select_lazy = !0), H?.(I));
+                  }
+                },
+                c
+              ),
+            u
+          )
+        );
+  });
+function Kr(e, t, n) {
+  return o.useMemo(() => {
+    let { root: r, input: l } = e || {};
+    return (n && (r = n()), t && (l = t()), { root: r, input: l });
+  }, [e, t, n]);
+}
+function Kt() {
+  return (
+    (Kt = Object.assign
+      ? Object.assign.bind()
+      : function (e) {
+          for (var t = 1; t < arguments.length; t++) {
+            var n = arguments[t];
+            for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r]);
+          }
+          return e;
+        }),
+    Kt.apply(this, arguments)
+  );
+}
+const qt = (e) => e === 'tags' || e === 'multiple',
+  qr = o.forwardRef((e, t) => {
+    const {
+        id: n,
+        prefixCls: r,
+        className: l,
+        styles: i,
+        classNames: a,
+        showSearch: s,
+        tagRender: c,
+        showScrollBar: u = 'optional',
+        direction: f,
+        omitDomProps: m,
+        displayValues: d,
+        onDisplayValuesChange: p,
+        emptyOptions: g,
+        notFoundContent: v = 'Not Found',
+        onClear: w,
+        maxCount: E,
+        placeholder: $,
+        mode: h,
+        disabled: y,
+        loading: H,
+        getInputElement: L,
+        getRawInputElement: z,
+        open: B,
+        defaultOpen: x,
+        onPopupVisibleChange: X,
+        activeValue: U,
+        onActiveValueChange: T,
+        activeDescendantId: ue,
+        searchValue: oe,
+        autoClearSearchValue: de,
+        onSearch: pe,
+        onSearchSplit: j,
+        tokenSeparators: D,
+        allowClear: Q,
+        prefix: me,
+        suffix: ne,
+        suffixIcon: P,
+        clearIcon: N,
+        OptionList: re,
+        animation: I,
+        transitionName: K,
+        popupStyle: ie,
+        popupClassName: we,
+        popupMatchSelectWidth: O,
+        popupRender: F,
+        popupAlign: se,
+        placement: W,
+        builtinPlacements: ce,
+        getPopupContainer: te,
+        showAction: A = [],
+        onFocus: he,
+        onBlur: Ce,
+        onKeyUp: fe,
+        onKeyDown: He,
+        onMouseDown: Be,
+        components: Te,
+        ...xe
+      } = e,
+      Ee = qt(h),
+      $e = o.useRef(null),
+      Ie = o.useRef(null),
+      Me = o.useRef(null),
+      [ve, Re] = o.useState(!1);
+    o.useImperativeHandle(t, () => ({
+      focus: $e.current?.focus,
+      blur: $e.current?.blur,
+      scrollTo: (ee) => Me.current?.scrollTo(ee),
+      nativeElement: Tt($e.current)
+    }));
+    const Pe = Kr(Te, L, z),
+      ye = o.useMemo(() => {
+        if (h !== 'combobox') return oe;
+        const ee = d[0]?.value;
+        return typeof ee == 'string' || typeof ee == 'number' ? String(ee) : '';
+      }, [oe, h, d]),
+      ze = (h === 'combobox' && typeof L == 'function' && L()) || null,
+      Ue = !v && g,
+      [ge, k] = Lr(B, X, (ee) => (y || Ue ? !1 : ee)),
+      be = o.useMemo(
+        () =>
+          (D || []).some((ee) =>
+            [
+              `
+`,
+              `\r
+`
+            ].includes(ee)
+          ),
+        [D]
+      ),
+      Ne = (ee, qe, Qe) => {
+        if (Ee && Ft(E) && d.length >= E) return;
+        let Ze = !0,
+          ke = ee;
+        T?.(null);
+        const pt = Nr(ee, D, Ft(E) ? E - d.length : void 0),
+          nt = Qe ? null : pt;
+        return (
+          h !== 'combobox' && nt && ((ke = ''), j?.(nt), k(!1), (Ze = !1)),
+          pe && ye !== ke && pe(ke, { source: qe ? 'typing' : 'effect' }),
+          ee && qe && Ze && k(!0),
+          Ze
+        );
+      },
+      Ke = (ee) => {
+        !ee || !ee.trim() || pe(ee, { source: 'submit' });
+      };
+    (o.useEffect(() => {
+      !ge && !Ee && h !== 'combobox' && Ne('', !1, !1);
+    }, [ge]),
+      o.useEffect(() => {
+        y && (k(!1), Re(!1));
+      }, [y, ge]));
+    const [_e, Xe] = Rr(),
+      De = o.useRef(!1),
+      Ae = (ee) => {
+        const qe = _e(),
+          { key: Qe } = ee,
+          Ze = Qe === 'Enter';
+        if (
+          (Ze && (h !== 'combobox' && ee.preventDefault(), ge || k(!0)),
+          Xe(!!ye),
+          Qe === 'Backspace' && !qe && Ee && !ye && d.length)
+        ) {
+          const ke = [...d];
+          let pt = null;
+          for (let nt = ke.length - 1; nt >= 0; nt -= 1) {
+            const pn = ke[nt];
+            if (!pn.disabled) {
+              (ke.splice(nt, 1), (pt = pn));
+              break;
+            }
+          }
+          pt && p(ke, { type: 'remove', values: [pt] });
+        }
+        (ge && (!Ze || !De.current) && (Ze && (De.current = !0), Me.current?.onKeyDown(ee)),
+          He?.(ee));
+      },
+      We = (ee, ...qe) => {
+        (ge && Me.current?.onKeyUp(ee, ...qe),
+          ee.key === 'Enter' && (De.current = !1),
+          fe?.(ee, ...qe));
+      },
+      Oe = tt((ee) => {
+        const qe = d.filter((Qe) => Qe !== ee);
+        p(qe, { type: 'remove', values: [ee] });
+      }),
+      Ve = () => {
+        De.current = !1;
+      },
+      Fe = () => [Tt($e.current), Ie.current?.getPopupElement()];
+    Pr(Fe, ge, k, !!Pe.root);
+    const Le = o.useRef(!1),
+      C = (ee) => {
+        (Re(!0), y || (A.includes('focus') && k(!0), he?.(ee)));
+      },
+      q = () => {
+        ge && !Le.current && k(!1, { cancelFun: () => Qn(Fe(), document.activeElement) });
+      },
+      b = (ee) => {
+        (Re(!1),
+          ye &&
+            (h === 'tags'
+              ? pe(ye, { source: 'submit' })
+              : h === 'multiple' && pe('', { source: 'blur' })),
+          q(),
+          y || Ce?.(ee));
+      },
+      M = (ee, ...qe) => {
+        const { target: Qe } = ee;
+        (Ie.current?.getPopupElement()?.contains(Qe) && k && k(!0),
+          Be?.(ee, ...qe),
+          (Le.current = !0),
+          tn(() => {
+            Le.current = !1;
+          }));
+      },
+      [, le] = o.useState({});
+    function S() {
+      le({});
+    }
+    let R;
+    Pe.root &&
+      (R = (ee) => {
+        k(ee);
+      });
+    const _ = o.useMemo(
+        () => ({
+          ...e,
+          notFoundContent: v,
+          open: ge,
+          triggerOpen: ge,
+          id: n,
+          showSearch: s,
+          multiple: Ee,
+          toggleOpen: k,
+          showScrollBar: u,
+          styles: i,
+          classNames: a
+        }),
+        [e, v, k, n, s, Ee, ge, u, i, a]
+      ),
+      Y = o.useMemo(() => {
+        const ee = ne ?? P;
+        return typeof ee == 'function'
+          ? ee({ searchValue: ye, open: ge, focused: ve, showSearch: s, loading: H })
+          : ee;
+      }, [ne, P, ye, ge, ve, s, H]),
+      Se = () => {
+        (w?.(), $e.current?.focus(), p([], { type: 'clear', values: d }), Ne('', !1, !1));
+      },
+      { allowClear: Ge, clearIcon: Je } = Mr(r, d, Q, N, y, ye, h),
+      ct = o.createElement(re, { ref: Me }),
+      vo = ae(r, l, {
+        [`${r}-focused`]: ve,
+        [`${r}-multiple`]: Ee,
+        [`${r}-single`]: !Ee,
+        [`${r}-allow-clear`]: Ge,
+        [`${r}-show-arrow`]: Y != null,
+        [`${r}-disabled`]: y,
+        [`${r}-loading`]: H,
+        [`${r}-open`]: ge,
+        [`${r}-customize-input`]: ze,
+        [`${r}-show-search`]: s
+      });
+    let It = o.createElement(
+      Ur,
+      Kt({}, xe, {
+        ref: $e,
+        prefixCls: r,
+        className: vo,
+        focused: ve,
+        prefix: me,
+        suffix: Y,
+        clearIcon: Je,
+        multiple: Ee,
+        mode: h,
+        displayValues: d,
+        placeholder: $,
+        searchValue: ye,
+        activeValue: U,
+        onSearch: Ne,
+        onSearchSubmit: Ke,
+        onInputBlur: Ve,
+        onFocus: C,
+        onBlur: b,
+        onClearMouseDown: Se,
+        onKeyDown: Ae,
+        onKeyUp: We,
+        onSelectorRemove: Oe,
+        tokenWithEnter: be,
+        onMouseDown: M,
+        components: Pe
+      })
+    );
+    return (
+      (It = o.createElement(
+        Tr,
+        {
+          ref: Ie,
+          disabled: y,
+          prefixCls: r,
+          visible: ge,
+          popupElement: ct,
+          animation: I,
+          transitionName: K,
+          popupStyle: ie,
+          popupClassName: we,
+          direction: f,
+          popupMatchSelectWidth: O,
+          popupRender: F,
+          popupAlign: se,
+          placement: W,
+          builtinPlacements: ce,
+          getPopupContainer: te,
+          empty: g,
+          onPopupVisibleChange: R,
+          onPopupMouseEnter: S,
+          onPopupMouseDown: M,
+          onPopupBlur: q
+        },
+        It
+      )),
+      o.createElement(
+        Jn.Provider,
+        { value: _ },
+        o.createElement(Dr, { visible: ve && !ge, values: d }),
+        It
+      )
+    );
+  }),
+  on = () => null;
+on.isSelectOptGroup = !0;
+const rn = () => null;
+rn.isSelectOption = !0;
+const ro = o.forwardRef(
+  (
+    {
+      height: e,
+      offsetY: t,
+      offsetX: n,
+      children: r,
+      prefixCls: l,
+      onInnerResize: i,
+      innerProps: a,
+      rtl: s,
+      extra: c
+    },
+    u
+  ) => {
+    let f = {},
+      m = { display: 'flex', flexDirection: 'column' };
+    return (
+      t !== void 0 &&
+        ((f = { height: e, position: 'relative', overflow: 'hidden' }),
+        (m = {
+          ...m,
+          transform: `translateY(${t}px)`,
+          [s ? 'marginRight' : 'marginLeft']: -n,
+          position: 'absolute',
+          left: 0,
+          right: 0,
+          top: 0
+        })),
+      o.createElement(
+        'div',
+        { style: f },
+        o.createElement(
+          Xn,
+          {
+            onResize: ({ offsetHeight: d }) => {
+              d && i && i();
+            }
+          },
+          o.createElement(
+            'div',
+            Un({ style: m, className: ae({ [`${l}-holder-inner`]: l }), ref: u }, a),
+            r,
+            c
+          )
+        )
+      )
+    );
+  }
+);
+ro.displayName = 'Filler';
+function Yr({ children: e, setRef: t }) {
+  const n = o.useCallback((r) => {
+    t(r);
+  }, []);
+  return o.cloneElement(e, { ref: n });
+}
+function Jr(e, t, n, r, l, i, a, { getKey: s }) {
+  return e.slice(t, n + 1).map((c, u) => {
+    const f = t + u,
+      m = a(c, f, { style: { width: r }, offsetX: l }),
+      d = s(c);
+    return o.createElement(Yr, { key: d, setRef: (p) => i(c, p) }, m);
+  });
+}
+function Qr(e, t, n) {
+  const r = e.length,
+    l = t.length;
+  let i, a;
+  if (r === 0 && l === 0) return null;
+  r < l ? ((i = e), (a = t)) : ((i = t), (a = e));
+  const s = { __EMPTY_ITEM__: !0 };
+  function c(m) {
+    return m !== void 0 ? n(m) : s;
+  }
+  let u = null,
+    f = Math.abs(r - l) !== 1;
+  for (let m = 0; m < a.length; m += 1) {
+    const d = c(i[m]),
+      p = c(a[m]);
+    if (d !== p) {
+      ((u = m), (f = f || d !== c(a[m + 1])));
+      break;
+    }
+  }
+  return u === null ? null : { index: u, multiple: f };
+}
+function Zr(e, t, n) {
+  const [r, l] = o.useState(e),
+    [i, a] = o.useState(null);
+  return (
+    o.useEffect(() => {
+      const s = Qr(r || [], e || [], t);
+      (s?.index !== void 0 && a(e[s.index]), l(e));
+    }, [e]),
+    [i]
+  );
+}
+const In = typeof navigator == 'object' && /Firefox/i.test(navigator.userAgent),
+  lo = (e, t, n, r) => {
+    const l = o.useRef(!1),
+      i = o.useRef(null);
+    function a() {
+      (clearTimeout(i.current),
+        (l.current = !0),
+        (i.current = setTimeout(() => {
+          l.current = !1;
+        }, 50)));
+    }
+    const s = o.useRef({ top: e, bottom: t, left: n, right: r });
+    return (
+      (s.current.top = e),
+      (s.current.bottom = t),
+      (s.current.left = n),
+      (s.current.right = r),
+      (c, u, f = !1) => {
+        const m = c
+          ? (u < 0 && s.current.left) || (u > 0 && s.current.right)
+          : (u < 0 && s.current.top) || (u > 0 && s.current.bottom);
+        return (
+          f && m ? (clearTimeout(i.current), (l.current = !1)) : (!m || l.current) && a(),
+          !l.current && m
+        );
+      }
+    );
+  };
+function kr(e, t, n, r, l, i, a) {
+  const s = o.useRef(0),
+    c = o.useRef(null),
+    u = o.useRef(null),
+    f = o.useRef(!1),
+    m = lo(t, n, r, l);
+  function d($, h) {
+    if ((Ye.cancel(c.current), m(!1, h))) return;
+    const y = $;
+    if (!y._virtualHandled) y._virtualHandled = !0;
+    else return;
+    ((s.current += h),
+      (u.current = h),
+      In || y.preventDefault(),
+      (c.current = Ye(() => {
+        const H = f.current ? 10 : 1;
+        (a(s.current * H, !1), (s.current = 0));
+      })));
+  }
+  function p($, h) {
+    (a(h, !0), In || $.preventDefault());
+  }
+  const g = o.useRef(null),
+    v = o.useRef(null);
+  function w($) {
+    if (!e) return;
+    (Ye.cancel(v.current),
+      (v.current = Ye(() => {
+        g.current = null;
+      }, 2)));
+    const { deltaX: h, deltaY: y, shiftKey: H } = $;
+    let L = h,
+      z = y;
+    (g.current === 'sx' || (!g.current && H && y && !h)) && ((L = y), (z = 0), (g.current = 'sx'));
+    const B = Math.abs(L),
+      x = Math.abs(z);
+    (g.current === null && (g.current = i && B > x ? 'x' : 'y'),
+      g.current === 'y' ? d($, z) : p($, L));
+  }
+  function E($) {
+    e && (f.current = $.detail === u.current);
+  }
+  return [w, E];
+}
+function el(e, t, n, r) {
+  const [l, i] = o.useMemo(() => [new Map(), []], [e, n.id, r]);
+  return (s, c = s) => {
+    let u = l.get(s),
+      f = l.get(c);
+    if (u === void 0 || f === void 0) {
+      const m = e.length;
+      for (let d = i.length; d < m; d += 1) {
+        const p = e[d],
+          g = t(p);
+        l.set(g, d);
+        const v = n.get(g) ?? r;
+        if (
+          ((i[d] = (i[d - 1] || 0) + v),
+          g === s && (u = d),
+          g === c && (f = d),
+          u !== void 0 && f !== void 0)
+        )
+          break;
+      }
+    }
+    return { top: i[u - 1] || 0, bottom: i[f] };
+  };
+}
+class tl {
+  maps;
+  id = 0;
+  diffRecords = new Map();
+  constructor() {
+    this.maps = Object.create(null);
+  }
+  set(t, n) {
+    (this.diffRecords.set(t, this.maps[t]), (this.maps[t] = n), (this.id += 1));
+  }
+  get(t) {
+    return this.maps[t];
+  }
+  resetRecord() {
+    this.diffRecords.clear();
+  }
+  getRecord() {
+    return this.diffRecords;
+  }
+}
+function Mn(e) {
+  const t = parseFloat(e);
+  return isNaN(t) ? 0 : t;
+}
+function nl(e, t, n) {
+  const [r, l] = o.useState(0),
+    i = o.useRef(new Map()),
+    a = o.useRef(new tl()),
+    s = o.useRef(0);
+  function c() {
+    s.current += 1;
+  }
+  function u(m = !1) {
+    c();
+    const d = () => {
+      let p = !1;
+      (i.current.forEach((g, v) => {
+        if (g && g.offsetParent) {
+          const { offsetHeight: w } = g,
+            { marginTop: E, marginBottom: $ } = getComputedStyle(g),
+            h = Mn(E),
+            y = Mn($),
+            H = w + h + y;
+          a.current.get(v) !== H && (a.current.set(v, H), (p = !0));
+        }
+      }),
+        p && l((g) => g + 1));
+    };
+    if (m) d();
+    else {
+      s.current += 1;
+      const p = s.current;
+      Promise.resolve().then(() => {
+        p === s.current && d();
+      });
+    }
+  }
+  function f(m, d) {
+    const p = e(m);
+    (i.current.get(p), d ? (i.current.set(p, d), u()) : i.current.delete(p));
+  }
+  return (o.useEffect(() => c, []), [f, u, a.current, r]);
+}
+const Rn = 14 / 15;
+function ol(e, t, n) {
+  const r = o.useRef(!1),
+    l = o.useRef(0),
+    i = o.useRef(0),
+    a = o.useRef(null),
+    s = o.useRef(null);
+  let c;
+  const u = (d) => {
+      if (r.current) {
+        const p = Math.ceil(d.touches[0].pageX),
+          g = Math.ceil(d.touches[0].pageY);
+        let v = l.current - p,
+          w = i.current - g;
+        const E = Math.abs(v) > Math.abs(w);
+        E ? (l.current = p) : (i.current = g);
+        const $ = n(E, E ? v : w, !1, d);
+        ($ && d.preventDefault(),
+          clearInterval(s.current),
+          $ &&
+            (s.current = setInterval(() => {
+              E ? (v *= Rn) : (w *= Rn);
+              const h = Math.floor(E ? v : w);
+              (!n(E, h, !0) || Math.abs(h) <= 0.1) && clearInterval(s.current);
+            }, 16)));
+      }
+    },
+    f = () => {
+      ((r.current = !1), c());
+    },
+    m = (d) => {
+      (c(),
+        d.touches.length === 1 &&
+          !r.current &&
+          ((r.current = !0),
+          (l.current = Math.ceil(d.touches[0].pageX)),
+          (i.current = Math.ceil(d.touches[0].pageY)),
+          (a.current = d.target),
+          a.current.addEventListener('touchmove', u, { passive: !1 }),
+          a.current.addEventListener('touchend', f, { passive: !0 })));
+    };
+  ((c = () => {
+    a.current &&
+      (a.current.removeEventListener('touchmove', u), a.current.removeEventListener('touchend', f));
+  }),
+    lt(
+      () => (
+        e && t.current.addEventListener('touchstart', m, { passive: !0 }),
+        () => {
+          (t.current?.removeEventListener('touchstart', m), c(), clearInterval(s.current));
+        }
+      ),
+      [e]
+    ));
+}
+function Pn(e) {
+  return Math.floor(e ** 0.5);
+}
+function Yt(e, t) {
+  return (
+    ('touches' in e ? e.touches[0] : e)[t ? 'pageX' : 'pageY'] - window[t ? 'scrollX' : 'scrollY']
+  );
+}
+function rl(e, t, n) {
+  o.useEffect(() => {
+    const r = t.current;
+    if (e && r) {
+      let l = !1,
+        i,
+        a;
+      const s = () => {
+          Ye.cancel(i);
+        },
+        c = () => {
+          (s(),
+            (i = Ye(() => {
+              (n(a), c());
+            })));
+        },
+        u = () => {
+          ((l = !1), s());
+        },
+        f = (d) => {
+          if (d.target.draggable || d.button !== 0) return;
+          const p = d;
+          p._virtualHandled || ((p._virtualHandled = !0), (l = !0));
+        },
+        m = (d) => {
+          if (l) {
+            const p = Yt(d, !1),
+              { top: g, bottom: v } = r.getBoundingClientRect();
+            if (p <= g) {
+              const w = g - p;
+              ((a = -Pn(w)), c());
+            } else if (p >= v) {
+              const w = p - v;
+              ((a = Pn(w)), c());
+            } else s();
+          }
+        };
+      return (
+        r.addEventListener('mousedown', f),
+        r.ownerDocument.addEventListener('mouseup', u),
+        r.ownerDocument.addEventListener('mousemove', m),
+        r.ownerDocument.addEventListener('dragend', u),
+        () => {
+          (r.removeEventListener('mousedown', f),
+            r.ownerDocument.removeEventListener('mouseup', u),
+            r.ownerDocument.removeEventListener('mousemove', m),
+            r.ownerDocument.removeEventListener('dragend', u),
+            s());
+        }
+      );
+    }
+  }, [e]);
+}
+const ll = 10;
+function il(e, t, n, r, l, i, a, s) {
+  const c = o.useRef(),
+    [u, f] = o.useState(null);
+  return (
+    lt(() => {
+      if (u && u.times < ll) {
+        if (!e.current) {
+          f((h) => ({ ...h }));
+          return;
+        }
+        i();
+        const { targetAlign: m, originAlign: d, index: p, offset: g } = u,
+          v = e.current.clientHeight;
+        let w = !1,
+          E = m,
+          $ = null;
+        if (v) {
+          const h = m || d;
+          let y = 0,
+            H = 0,
+            L = 0;
+          const z = Math.min(t.length - 1, p);
+          for (let x = 0; x <= z; x += 1) {
+            const X = l(t[x]);
+            H = y;
+            const U = n.get(X);
+            ((L = H + (U === void 0 ? r : U)), (y = L));
+          }
+          let B = h === 'top' ? g : v - g;
+          for (let x = z; x >= 0; x -= 1) {
+            const X = l(t[x]),
+              U = n.get(X);
+            if (U === void 0) {
+              w = !0;
+              break;
+            }
+            if (((B -= U), B <= 0)) break;
+          }
+          switch (h) {
+            case 'top':
+              $ = H - g;
+              break;
+            case 'bottom':
+              $ = L - v + g;
+              break;
+            default: {
+              const { scrollTop: x } = e.current,
+                X = x + v;
+              H < x ? (E = 'top') : L > X && (E = 'bottom');
+            }
+          }
+          ($ !== null && a($), $ !== u.lastTop && (w = !0));
+        }
+        w && f({ ...u, times: u.times + 1, targetAlign: E, lastTop: $ });
+      }
+    }, [u, e.current]),
+    (m) => {
+      if (m == null) {
+        s();
+        return;
+      }
+      if ((Ye.cancel(c.current), typeof m == 'number')) a(m);
+      else if (m && typeof m == 'object') {
+        let d;
+        const { align: p } = m;
+        'index' in m ? ({ index: d } = m) : (d = t.findIndex((v) => l(v) === m.key));
+        const { offset: g = 0 } = m;
+        f({ times: 0, index: d, offset: g, originAlign: p });
+      }
+    }
+  );
+}
+const On = o.forwardRef((e, t) => {
+    const {
+        prefixCls: n,
+        rtl: r,
+        scrollOffset: l,
+        scrollRange: i,
+        onStartMove: a,
+        onStopMove: s,
+        onScroll: c,
+        horizontal: u,
+        spinSize: f,
+        containerSize: m,
+        style: d,
+        thumbStyle: p,
+        showScrollBar: g
+      } = e,
+      [v, w] = o.useState(!1),
+      [E, $] = o.useState(null),
+      [h, y] = o.useState(null),
+      H = !r,
+      L = o.useRef(),
+      z = o.useRef(),
+      [B, x] = o.useState(g),
+      X = o.useRef(),
+      U = () => {
+        g === !0 ||
+          g === !1 ||
+          (clearTimeout(X.current),
+          x(!0),
+          (X.current = setTimeout(() => {
+            x(!1);
+          }, 3e3)));
+      },
+      T = i - m || 0,
+      ue = m - f || 0,
+      oe = o.useMemo(() => (l === 0 || T === 0 ? 0 : (l / T) * ue), [l, T, ue]),
+      de = (N) => {
+        (N.stopPropagation(), N.preventDefault());
+      },
+      pe = o.useRef({ top: oe, dragging: v, pageY: E, startTop: h });
+    pe.current = { top: oe, dragging: v, pageY: E, startTop: h };
+    const j = (N) => {
+      (w(!0), $(Yt(N, u)), y(pe.current.top), a(), N.stopPropagation(), N.preventDefault());
+    };
+    o.useEffect(() => {
+      const N = (K) => {
+          K.preventDefault();
+        },
+        re = L.current,
+        I = z.current;
+      return (
+        re.addEventListener('touchstart', N, { passive: !1 }),
+        I.addEventListener('touchstart', j, { passive: !1 }),
+        () => {
+          (re.removeEventListener('touchstart', N), I.removeEventListener('touchstart', j));
+        }
+      );
+    }, []);
+    const D = o.useRef();
+    D.current = T;
+    const Q = o.useRef();
+    ((Q.current = ue),
+      o.useEffect(() => {
+        if (v) {
+          let N;
+          const re = (K) => {
+              const { dragging: ie, pageY: we, startTop: O } = pe.current;
+              Ye.cancel(N);
+              const F = L.current.getBoundingClientRect(),
+                se = m / (u ? F.width : F.height);
+              if (ie) {
+                const W = (Yt(K, u) - we) * se;
+                let ce = O;
+                !H && u ? (ce -= W) : (ce += W);
+                const te = D.current,
+                  A = Q.current,
+                  he = A ? ce / A : 0;
+                let Ce = Math.ceil(he * te);
+                ((Ce = Math.max(Ce, 0)),
+                  (Ce = Math.min(Ce, te)),
+                  (N = Ye(() => {
+                    c(Ce, u);
+                  })));
+              }
+            },
+            I = () => {
+              (w(!1), s());
+            };
+          return (
+            window.addEventListener('mousemove', re, { passive: !0 }),
+            window.addEventListener('touchmove', re, { passive: !0 }),
+            window.addEventListener('mouseup', I, { passive: !0 }),
+            window.addEventListener('touchend', I, { passive: !0 }),
+            () => {
+              (window.removeEventListener('mousemove', re),
+                window.removeEventListener('touchmove', re),
+                window.removeEventListener('mouseup', I),
+                window.removeEventListener('touchend', I),
+                Ye.cancel(N));
+            }
+          );
+        }
+      }, [v]),
+      o.useEffect(
+        () => (
+          U(),
+          () => {
+            clearTimeout(X.current);
+          }
+        ),
+        [l]
+      ),
+      o.useImperativeHandle(t, () => ({ delayHidden: U })));
+    const me = `${n}-scrollbar`,
+      ne = { position: 'absolute', visibility: B ? null : 'hidden' },
+      P = {
+        position: 'absolute',
+        borderRadius: 99,
+        background: 'var(--rc-virtual-list-scrollbar-bg, rgba(0, 0, 0, 0.5))',
+        cursor: 'pointer',
+        userSelect: 'none'
+      };
+    return (
+      u
+        ? (Object.assign(ne, { height: 8, left: 0, right: 0, bottom: 0 }),
+          Object.assign(P, { height: '100%', width: f, [H ? 'left' : 'right']: oe }))
+        : (Object.assign(ne, { width: 8, top: 0, bottom: 0, [H ? 'right' : 'left']: 0 }),
+          Object.assign(P, { width: '100%', height: f, top: oe })),
+      o.createElement(
+        'div',
+        {
+          ref: L,
+          className: ae(me, {
+            [`${me}-horizontal`]: u,
+            [`${me}-vertical`]: !u,
+            [`${me}-visible`]: B
+          }),
+          style: { ...ne, ...d },
+          onMouseDown: de,
+          onMouseMove: U
+        },
+        o.createElement('div', {
+          ref: z,
+          className: ae(`${me}-thumb`, { [`${me}-thumb-moving`]: v }),
+          style: { ...P, ...p },
+          onMouseDown: j
+        })
+      )
+    );
+  }),
+  al = 20;
+function Bn(e = 0, t = 0) {
+  let n = (e / t) * e;
+  return (isNaN(n) && (n = 0), (n = Math.max(n, al)), Math.floor(n));
+}
+const sl = [],
+  cl = { overflowY: 'auto', overflowAnchor: 'none' };
+function ul(e, t) {
+  const {
+      prefixCls: n = 'rc-virtual-list',
+      className: r,
+      height: l,
+      itemHeight: i,
+      fullHeight: a = !0,
+      style: s,
+      data: c,
+      children: u,
+      itemKey: f,
+      virtual: m,
+      direction: d,
+      scrollWidth: p,
+      component: g = 'div',
+      onScroll: v,
+      onVirtualScroll: w,
+      onVisibleChange: E,
+      innerProps: $,
+      extraRender: h,
+      styles: y,
+      showScrollBar: H = 'optional',
+      ...L
+    } = e,
+    z = o.useCallback((b) => (typeof f == 'function' ? f(b) : b?.[f]), [f]),
+    [B, x, X, U] = nl(z),
+    T = !!(m !== !1 && l && i),
+    ue = o.useMemo(() => Object.values(X.maps).reduce((b, M) => b + M, 0), [X.id, X.maps]),
+    oe = T && c && (Math.max(i * c.length, ue) > l || !!p),
+    de = d === 'rtl',
+    pe = ae(n, { [`${n}-rtl`]: de }, r),
+    j = c || sl,
+    D = o.useRef(),
+    Q = o.useRef(),
+    me = o.useRef(),
+    [ne, P] = o.useState(0),
+    [N, re] = o.useState(0),
+    [I, K] = o.useState(!1),
+    ie = () => {
+      K(!0);
+    },
+    we = () => {
+      K(!1);
+    },
+    O = { getKey: z };
+  function F(b) {
+    P((M) => {
+      let le;
+      typeof b == 'function' ? (le = b(M)) : (le = b);
+      const S = ve(le);
+      return ((D.current.scrollTop = S), S);
+    });
+  }
+  const se = o.useRef({ start: 0, end: j.length }),
+    W = o.useRef(),
+    [ce] = Zr(j, z);
+  W.current = ce;
+  const {
+    scrollHeight: te,
+    start: A,
+    end: he,
+    offset: Ce
+  } = o.useMemo(() => {
+    if (!T) return { scrollHeight: void 0, start: 0, end: j.length - 1, offset: void 0 };
+    if (!oe)
+      return {
+        scrollHeight: Q.current?.offsetHeight || 0,
+        start: 0,
+        end: j.length - 1,
+        offset: void 0
+      };
+    let b = 0,
+      M,
+      le,
+      S;
+    const R = j.length;
+    for (let _ = 0; _ < R; _ += 1) {
+      const Y = j[_],
+        Se = z(Y),
+        Ge = X.get(Se),
+        Je = b + (Ge === void 0 ? i : Ge);
+      (Je >= ne && M === void 0 && ((M = _), (le = b)),
+        Je > ne + l && S === void 0 && (S = _),
+        (b = Je));
+    }
+    return (
+      M === void 0 && ((M = 0), (le = 0), (S = Math.ceil(l / i))),
+      S === void 0 && (S = j.length - 1),
+      (S = Math.min(S + 1, j.length - 1)),
+      { scrollHeight: b, start: M, end: S, offset: le }
+    );
+  }, [oe, T, ne, j, U, l]);
+  ((se.current.start = A),
+    (se.current.end = he),
+    o.useLayoutEffect(() => {
+      const b = X.getRecord();
+      if (b.size === 1) {
+        const M = Array.from(b.keys())[0],
+          le = b.get(M),
+          S = j[A];
+        if (S && le === void 0 && z(S) === M) {
+          const Y = X.get(M) - i;
+          F((Se) => Se + Y);
+        }
+      }
+      X.resetRecord();
+    }, [te]));
+  const [fe, He] = o.useState({ width: 0, height: l }),
+    Be = (b) => {
+      He({ width: b.offsetWidth, height: b.offsetHeight });
+    },
+    Te = o.useRef(),
+    xe = o.useRef(),
+    Ee = o.useMemo(() => Bn(fe.width, p), [fe.width, p]),
+    $e = o.useMemo(() => Bn(fe.height, te), [fe.height, te]),
+    Ie = te - l,
+    Me = o.useRef(Ie);
+  Me.current = Ie;
+  function ve(b) {
+    let M = b;
+    return (Number.isNaN(Me.current) || (M = Math.min(M, Me.current)), (M = Math.max(M, 0)), M);
+  }
+  const Re = ne <= 0,
+    Pe = ne >= Ie,
+    ye = N <= 0,
+    ze = N >= p,
+    Ue = lo(Re, Pe, ye, ze),
+    ge = () => ({ x: de ? -N : N, y: ne }),
+    k = o.useRef(ge()),
+    be = tt((b) => {
+      if (w) {
+        const M = { ...ge(), ...b };
+        (k.current.x !== M.x || k.current.y !== M.y) && (w(M), (k.current = M));
+      }
+    });
+  function Ne(b, M) {
+    const le = b;
+    M
+      ? (mn.flushSync(() => {
+          re(le);
+        }),
+        be())
+      : F(le);
+  }
+  function Ke(b) {
+    const { scrollTop: M } = b.currentTarget;
+    (M !== ne && F(M), v?.(b), be());
+  }
+  const _e = (b) => {
+      let M = b;
+      const le = p ? p - fe.width : 0;
+      return ((M = Math.max(M, 0)), (M = Math.min(M, le)), M);
+    },
+    Xe = tt((b, M) => {
+      M
+        ? (mn.flushSync(() => {
+            re((le) => {
+              const S = le + (de ? -b : b);
+              return _e(S);
+            });
+          }),
+          be())
+        : F((le) => le + b);
+    }),
+    [De, Ae] = kr(T, Re, Pe, ye, ze, !!p, Xe);
+  (ol(T, D, (b, M, le, S) => {
+    const R = S;
+    return Ue(b, M, le)
+      ? !1
+      : !R || !R._virtualHandled
+        ? (R && (R._virtualHandled = !0),
+          De({ preventDefault() {}, deltaX: b ? M : 0, deltaY: b ? 0 : M }),
+          !0)
+        : !1;
+  }),
+    rl(oe, D, (b) => {
+      F((M) => M + b);
+    }),
+    lt(() => {
+      function b(le) {
+        const S = Re && le.detail < 0,
+          R = Pe && le.detail > 0;
+        T && !S && !R && le.preventDefault();
+      }
+      const M = D.current;
+      return (
+        M.addEventListener('wheel', De, { passive: !1 }),
+        M.addEventListener('DOMMouseScroll', Ae, { passive: !0 }),
+        M.addEventListener('MozMousePixelScroll', b, { passive: !1 }),
+        () => {
+          (M.removeEventListener('wheel', De),
+            M.removeEventListener('DOMMouseScroll', Ae),
+            M.removeEventListener('MozMousePixelScroll', b));
+        }
+      );
+    }, [T, Re, Pe]),
+    lt(() => {
+      if (p) {
+        const b = _e(N);
+        (re(b), be({ x: b }));
+      }
+    }, [fe.width, p]));
+  const We = () => {
+      (Te.current?.delayHidden(), xe.current?.delayHidden());
+    },
+    Oe = il(D, j, X, i, z, () => x(!0), F, We);
+  (o.useImperativeHandle(t, () => ({
+    nativeElement: me.current,
+    getScrollInfo: ge,
+    scrollTo: (b) => {
+      function M(le) {
+        return le && typeof le == 'object' && ('left' in le || 'top' in le);
+      }
+      M(b) ? (b.left !== void 0 && re(_e(b.left)), Oe(b.top)) : Oe(b);
+    }
+  })),
+    lt(() => {
+      if (E) {
+        const b = j.slice(A, he + 1);
+        E(b, j);
+      }
+    }, [A, he, j]));
+  const Ve = el(j, z, X, i),
+    Fe = h?.({ start: A, end: he, virtual: oe, offsetX: N, offsetY: Ce, rtl: de, getSize: Ve }),
+    Le = Jr(j, A, he, p, N, B, u, O);
+  let C = null;
+  l &&
+    ((C = { [a ? 'height' : 'maxHeight']: l, ...cl }),
+    T &&
+      ((C.overflowY = 'hidden'), p && (C.overflowX = 'hidden'), I && (C.pointerEvents = 'none')));
+  const q = {};
+  return (
+    de && (q.dir = 'rtl'),
+    o.createElement(
+      'div',
+      Un({ ref: me, style: { ...s, position: 'relative' }, className: pe }, q, L),
+      o.createElement(
+        Xn,
+        { onResize: Be },
+        o.createElement(
+          g,
+          { className: `${n}-holder`, style: C, ref: D, onScroll: Ke, onMouseEnter: We },
+          o.createElement(
+            ro,
+            {
+              prefixCls: n,
+              height: te,
+              offsetX: N,
+              offsetY: Ce,
+              scrollWidth: p,
+              onInnerResize: x,
+              ref: Q,
+              innerProps: $,
+              rtl: de,
+              extra: Fe
+            },
+            Le
+          )
+        )
+      ),
+      oe &&
+        te > l &&
+        o.createElement(On, {
+          ref: Te,
+          prefixCls: n,
+          scrollOffset: ne,
+          scrollRange: te,
+          rtl: de,
+          onScroll: Ne,
+          onStartMove: ie,
+          onStopMove: we,
+          spinSize: $e,
+          containerSize: fe.height,
+          style: y?.verticalScrollBar,
+          thumbStyle: y?.verticalScrollBarThumb,
+          showScrollBar: H
+        }),
+      oe &&
+        p > fe.width &&
+        o.createElement(On, {
+          ref: xe,
+          prefixCls: n,
+          scrollOffset: N,
+          scrollRange: p,
+          rtl: de,
+          onScroll: Ne,
+          onStartMove: ie,
+          onStopMove: we,
+          spinSize: Ee,
+          containerSize: fe.width,
+          horizontal: !0,
+          style: y?.horizontalScrollBar,
+          thumbStyle: y?.horizontalScrollBarThumb,
+          showScrollBar: H
+        })
+    )
+  );
+}
+const io = o.forwardRef(ul);
+io.displayName = 'List';
+function dl() {
+  return /(mac\sos|macintosh)/i.test(navigator.appVersion);
+}
+function ft() {
+  return (
+    (ft = Object.assign
+      ? Object.assign.bind()
+      : function (e) {
+          for (var t = 1; t < arguments.length; t++) {
+            var n = arguments[t];
+            for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r]);
+          }
+          return e;
+        }),
+    ft.apply(this, arguments)
+  );
+}
+function Tn(e) {
+  return typeof e == 'string' || typeof e == 'number';
+}
+const pl = (e, t) => {
+    const {
+        prefixCls: n,
+        id: r,
+        open: l,
+        multiple: i,
+        mode: a,
+        searchValue: s,
+        toggleOpen: c,
+        notFoundContent: u,
+        onPopupScroll: f,
+        showScrollBar: m
+      } = st(),
+      {
+        maxCount: d,
+        flattenOptions: p,
+        onActiveValue: g,
+        defaultActiveFirstOption: v,
+        onSelect: w,
+        menuItemSelectedIcon: E,
+        rawValues: $,
+        fieldNames: h,
+        virtual: y,
+        direction: H,
+        listHeight: L,
+        listItemHeight: z,
+        optionRender: B,
+        classNames: x,
+        styles: X
+      } = o.useContext(nn),
+      U = `${n}-item`,
+      T = Eo(
+        () => p,
+        [l, p],
+        (O, F) => F[0] && O[1] !== F[1]
+      ),
+      ue = o.useRef(null),
+      oe = o.useMemo(() => i && Ft(d) && $?.size >= d, [i, d, $?.size]),
+      de = (O) => {
+        O.preventDefault();
+      },
+      pe = (O) => {
+        ue.current?.scrollTo(typeof O == 'number' ? { index: O } : O);
+      },
+      j = o.useCallback((O) => (a === 'combobox' ? !1 : $.has(O)), [a, [...$].toString(), $.size]),
+      D = (O, F = 1) => {
+        const se = T.length;
+        for (let W = 0; W < se; W += 1) {
+          const ce = (O + W * F + se) % se,
+            { group: te, data: A } = T[ce] || {};
+          if (!te && !A?.disabled && (j(A.value) || !oe)) return ce;
+        }
+        return -1;
+      },
+      [Q, me] = o.useState(() => D(0)),
+      ne = (O, F = !1) => {
+        me(O);
+        const se = { source: F ? 'keyboard' : 'mouse' },
+          W = T[O];
+        if (!W) {
+          g(null, -1, se);
+          return;
+        }
+        g(W.value, O, se);
+      };
+    o.useEffect(() => {
+      ne(v !== !1 ? D(0) : -1);
+    }, [T.length, s]);
+    const P = o.useCallback(
+      (O) => (a === 'combobox' ? String(O).toLowerCase() === s.toLowerCase() : $.has(O)),
+      [a, s, [...$].toString(), $.size]
+    );
+    o.useEffect(() => {
+      let O;
+      if (!i && l && $.size === 1) {
+        const F = Array.from($)[0],
+          se = T.findIndex(({ data: W }) => (s ? String(W.value).startsWith(s) : W.value === F));
+        se !== -1 &&
+          (ne(se),
+          (O = setTimeout(() => {
+            pe(se);
+          })));
+      }
+      return (l && ue.current?.scrollTo(void 0), () => clearTimeout(O));
+    }, [l, s]);
+    const N = (O) => {
+      (O !== void 0 && w(O, { selected: !$.has(O) }), i || c(!1));
+    };
+    if (
+      (o.useImperativeHandle(t, () => ({
+        onKeyDown: (O) => {
+          const { which: F, ctrlKey: se } = O;
+          switch (F) {
+            case V.N:
+            case V.P:
+            case V.UP:
+            case V.DOWN: {
+              let W = 0;
+              if (
+                (F === V.UP
+                  ? (W = -1)
+                  : F === V.DOWN
+                    ? (W = 1)
+                    : dl() && se && (F === V.N ? (W = 1) : F === V.P && (W = -1)),
+                W !== 0)
+              ) {
+                const ce = D(Q + W, W);
+                (pe(ce), ne(ce, !0));
+              }
+              break;
+            }
+            case V.TAB:
+            case V.ENTER: {
+              const W = T[Q];
+              if (!W || W.data.disabled) return N(void 0);
+              (!oe || $.has(W.value) ? N(W.value) : N(void 0), l && O.preventDefault());
+              break;
+            }
+            case V.ESC:
+              (c(!1), l && O.stopPropagation());
+          }
+        },
+        onKeyUp: () => {},
+        scrollTo: (O) => {
+          pe(O);
+        }
+      })),
+      T.length === 0)
+    )
+      return o.createElement(
+        'div',
+        { role: 'listbox', id: `${r}_list`, className: `${U}-empty`, onMouseDown: de },
+        u
+      );
+    const re = Object.keys(h).map((O) => h[O]),
+      I = (O) => O.label;
+    function K(O, F) {
+      const { group: se } = O;
+      return { role: se ? 'presentation' : 'option', id: `${r}_list_${F}` };
+    }
+    const ie = (O) => {
+        const F = T[O];
+        if (!F) return null;
+        const se = F.data || {},
+          { value: W } = se,
+          { group: ce } = F,
+          te = $t(se, !0),
+          A = I(F);
+        return F
+          ? o.createElement(
+              'div',
+              ft(
+                { 'aria-label': typeof A == 'string' && !ce ? A : null },
+                te,
+                { key: O },
+                K(F, O),
+                { 'aria-selected': P(W) }
+              ),
+              W
+            )
+          : null;
+      },
+      we = { role: 'listbox', id: `${r}_list` };
+    return o.createElement(
+      o.Fragment,
+      null,
+      y &&
+        o.createElement(
+          'div',
+          ft({}, we, { style: { height: 0, width: 0, overflow: 'hidden' } }),
+          ie(Q - 1),
+          ie(Q),
+          ie(Q + 1)
+        ),
+      o.createElement(
+        io,
+        {
+          itemKey: 'key',
+          ref: ue,
+          data: T,
+          height: L,
+          itemHeight: z,
+          fullHeight: !1,
+          onMouseDown: de,
+          onScroll: f,
+          virtual: y,
+          direction: H,
+          innerProps: y ? null : we,
+          showScrollBar: m,
+          className: x?.popup?.list,
+          style: X?.popup?.list
+        },
+        (O, F) => {
+          const { group: se, groupOption: W, data: ce, label: te, value: A } = O,
+            { key: he } = ce;
+          if (se) {
+            const Ue = ce.title ?? (Tn(te) ? te.toString() : void 0);
+            return o.createElement(
+              'div',
+              { className: ae(U, `${U}-group`, ce.className), title: Ue },
+              te !== void 0 ? te : he
+            );
+          }
+          const { disabled: Ce, title: fe, children: He, style: Be, className: Te, ...xe } = ce,
+            Ee = Qt(xe, re),
+            $e = j(A),
+            Ie = Ce || (!$e && oe),
+            Me = `${U}-option`,
+            ve = ae(U, Me, Te, x?.popup?.listItem, {
+              [`${Me}-grouped`]: W,
+              [`${Me}-active`]: Q === F && !Ie,
+              [`${Me}-disabled`]: Ie,
+              [`${Me}-selected`]: $e
+            }),
+            Re = I(O),
+            Pe = !E || typeof E == 'function' || $e,
+            ye = typeof Re == 'number' ? Re : Re || A;
+          let ze = Tn(ye) ? ye.toString() : void 0;
+          return (
+            fe !== void 0 && (ze = fe),
+            o.createElement(
+              'div',
+              ft({}, $t(Ee), y ? {} : K(O, F), {
+                'aria-selected': y ? void 0 : P(A),
+                className: ve,
+                title: ze,
+                onMouseMove: () => {
+                  Q === F || Ie || ne(F);
+                },
+                onClick: () => {
+                  Ie || N(A);
+                },
+                style: { ...X?.popup?.listItem, ...Be }
+              }),
+              o.createElement(
+                'div',
+                { className: `${Me}-content` },
+                typeof B == 'function' ? B(O, { index: F }) : ye
+              ),
+              o.isValidElement(E) || $e,
+              Pe &&
+                o.createElement(
+                  oo,
+                  {
+                    className: `${U}-option-state`,
+                    customizeIcon: E,
+                    customizeIconProps: { value: A, disabled: Ie, isSelected: $e }
+                  },
+                  $e ? '✓' : null
+                )
+            )
+          );
+        }
+      )
+    );
+  },
+  ml = o.forwardRef(pl),
+  fl = (e, t) => {
+    const n = o.useRef({ values: new Map(), options: new Map() }),
+      r = o.useMemo(() => {
+        const { values: i, options: a } = n.current,
+          s = e.map((f) => (f.label === void 0 ? { ...f, label: i.get(f.value)?.label } : f)),
+          c = new Map(),
+          u = new Map();
+        return (
+          s.forEach((f) => {
+            (c.set(f.value, f), u.set(f.value, t.get(f.value) || a.get(f.value)));
+          }),
+          (n.current.values = c),
+          (n.current.options = u),
+          s
+        );
+      }, [e, t]),
+      l = o.useCallback((i) => t.get(i) || n.current.options.get(i), [t]);
+    return [r, l];
+  };
+function Pt(e, t) {
+  return no(e).join('').toUpperCase().includes(t);
+}
+const gl = (e, t, n, r, l) =>
+  o.useMemo(() => {
+    if (!n || r === !1) return e;
+    const { options: i, label: a, value: s } = t,
+      c = [],
+      u = typeof r == 'function',
+      f = n.toUpperCase(),
+      m = u
+        ? r
+        : (p, g) =>
+            l && l.length
+              ? l.some((v) => Pt(g[v], f))
+              : g[i]
+                ? Pt(g[a !== 'children' ? a : 'label'], f)
+                : Pt(g[s], f),
+      d = u ? (p) => Wt(p) : (p) => p;
+    return (
+      e.forEach((p) => {
+        if (p[i]) {
+          if (m(n, d(p))) c.push(p);
+          else {
+            const v = p[i].filter((w) => m(n, d(w)));
+            v.length && c.push({ ...p, [i]: v });
+          }
+          return;
+        }
+        m(n, d(p)) && c.push(p);
+      }),
+      c
+    );
+  }, [e, r, l, n, t]);
+function hl(e) {
+  const {
+    key: t,
+    props: { children: n, value: r, ...l }
+  } = e;
+  return { key: t, value: r !== void 0 ? r : t, children: n, ...l };
+}
+function ao(e, t = !1) {
+  return wo(e)
+    .map((n, r) => {
+      if (!o.isValidElement(n) || !n.type) return null;
+      const {
+        type: { isSelectOptGroup: l },
+        key: i,
+        props: { children: a, ...s }
+      } = n;
+      return t || !l
+        ? hl(n)
+        : { key: `__RC_SELECT_GRP__${i === null ? r : i}__`, label: i, ...s, options: ao(a) };
+    })
+    .filter((n) => n);
+}
+const bl = (e, t, n, r, l) =>
+  o.useMemo(() => {
+    let i = e;
+    !e && (i = ao(t));
+    const s = new Map(),
+      c = new Map(),
+      u = (m, d, p) => {
+        p && typeof p == 'string' && m.set(d[p], d);
+      },
+      f = (m, d = !1) => {
+        for (let p = 0; p < m.length; p += 1) {
+          const g = m[p];
+          !g[n.options] || d
+            ? (s.set(g[n.value], g),
+              u(c, g, n.label),
+              r.forEach((v) => {
+                u(c, g, v);
+              }),
+              u(c, g, l))
+            : f(g[n.options], !0);
+        }
+      };
+    return (f(i), { options: i, valueOptions: s, labelOptions: c });
+  }, [e, t, n, r, l]);
+function zn(e) {
+  const t = o.useRef();
+  return ((t.current = e), o.useCallback((...r) => t.current(...r), []));
+}
+function vl(e, t, n) {
+  const {
+    filterOption: r,
+    searchValue: l,
+    optionFilterProp: i,
+    filterSort: a,
+    onSearch: s,
+    autoClearSearchValue: c
+  } = t;
+  return o.useMemo(() => {
+    const u = typeof e == 'object',
+      f = {
+        filterOption: r,
+        searchValue: l,
+        optionFilterProp: i,
+        filterSort: a,
+        onSearch: s,
+        autoClearSearchValue: c,
+        ...(u ? e : {})
+      };
+    return [
+      u || n === 'combobox' || n === 'tags' || (n === 'multiple' && e === void 0) ? !0 : e,
+      f
+    ];
+  }, [n, e, r, l, i, a, s, c]);
+}
+function Jt() {
+  return (
+    (Jt = Object.assign
+      ? Object.assign.bind()
+      : function (e) {
+          for (var t = 1; t < arguments.length; t++) {
+            var n = arguments[t];
+            for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r]);
+          }
+          return e;
+        }),
+    Jt.apply(this, arguments)
+  );
+}
+const Sl = ['inputValue'];
+function Cl(e) {
+  return !e || typeof e != 'object';
+}
+const xl = o.forwardRef((e, t) => {
+    const {
+        id: n,
+        mode: r,
+        prefixCls: l = 'rc-select',
+        backfill: i,
+        fieldNames: a,
+        showSearch: s,
+        searchValue: c,
+        onSearch: u,
+        autoClearSearchValue: f,
+        filterOption: m,
+        optionFilterProp: d,
+        filterSort: p,
+        onSelect: g,
+        onDeselect: v,
+        onActive: w,
+        popupMatchSelectWidth: E = !0,
+        optionLabelProp: $,
+        options: h,
+        optionRender: y,
+        children: H,
+        defaultActiveFirstOption: L,
+        menuItemSelectedIcon: z,
+        virtual: B,
+        direction: x,
+        listHeight: X = 200,
+        listItemHeight: U = 20,
+        labelRender: T,
+        value: ue,
+        defaultValue: oe,
+        labelInValue: de,
+        onChange: pe,
+        maxCount: j,
+        classNames: D,
+        styles: Q,
+        ...me
+      } = e,
+      ne = {
+        searchValue: c,
+        onSearch: u,
+        autoClearSearchValue: f,
+        filterOption: m,
+        optionFilterProp: d,
+        filterSort: p
+      },
+      [P, N] = vl(s, ne, r),
+      {
+        filterOption: re,
+        searchValue: I,
+        optionFilterProp: K,
+        filterSort: ie,
+        onSearch: we,
+        autoClearSearchValue: O = !0
+      } = N,
+      F = o.useMemo(() => (K ? (Array.isArray(K) ? K : [K]) : []), [K]),
+      se = Io(n),
+      W = qt(r),
+      ce = !!(!h && H),
+      te = o.useMemo(() => (re === void 0 && r === 'combobox' ? !1 : re), [re, r]),
+      A = o.useMemo(() => Zn(a, ce), [JSON.stringify(a), ce]),
+      [he, Ce] = gt('', I),
+      fe = he || '',
+      He = bl(h, H, A, F, $),
+      { valueOptions: Be, labelOptions: Te, options: xe } = He,
+      Ee = o.useCallback(
+        (S) =>
+          no(S).map((_) => {
+            let Y, Se, Ge, Je;
+            Cl(_) ? (Y = _) : ((Se = _.label), (Y = _.value));
+            const ct = Be.get(Y);
+            return (
+              ct &&
+                (Se === void 0 && (Se = ct?.[$ || A.label]), (Ge = ct?.disabled), (Je = ct?.title)),
+              { label: Se, value: Y, key: Y, disabled: Ge, title: Je }
+            );
+          }),
+        [A, $, Be]
+      ),
+      [$e, Ie] = gt(oe, ue),
+      Me = o.useMemo(() => {
+        const R = Ee(W && $e === null ? [] : $e);
+        return r === 'combobox' && _r(R[0]?.value) ? [] : R;
+      }, [$e, Ee, r, W]),
+      [ve, Re] = fl(Me, Be),
+      Pe = o.useMemo(() => {
+        if (!r && ve.length === 1) {
+          const S = ve[0];
+          if (S.value === null && (S.label === null || S.label === void 0)) return [];
+        }
+        return ve.map((S) => ({
+          ...S,
+          label: (typeof T == 'function' ? T(S) : S.label) ?? S.value
+        }));
+      }, [r, ve, T]),
+      ye = o.useMemo(() => new Set(ve.map((S) => S.value)), [ve]);
+    o.useEffect(() => {
+      if (r === 'combobox') {
+        const S = ve[0]?.value;
+        Ce(jr(S) ? String(S) : '');
+      }
+    }, [ve]);
+    const ze = zn((S, R) => {
+        const _ = R ?? S;
+        return { [A.value]: S, [A.label]: _ };
+      }),
+      Ue = o.useMemo(() => {
+        if (r !== 'tags') return xe;
+        const S = [...xe],
+          R = (_) => Be.has(_);
+        return (
+          [...ve]
+            .sort((_, Y) => (_.value < Y.value ? -1 : 1))
+            .forEach((_) => {
+              const Y = _.value;
+              R(Y) || S.push(ze(Y, _.label));
+            }),
+          S
+        );
+      }, [ze, xe, Be, ve, r]),
+      ge = gl(Ue, A, fe, te, F),
+      k = o.useMemo(() => {
+        const S = (R) => (F.length ? F.some((_) => R?.[_] === fe) : R?.value === fe);
+        return r !== 'tags' || !fe || ge.some((R) => S(R)) || ge.some((R) => R[A.value] === fe)
+          ? ge
+          : [ze(fe), ...ge];
+      }, [ze, F, r, ge, fe, A]),
+      be = (S) =>
+        [...S]
+          .sort((_, Y) => ie(_, Y, { searchValue: fe }))
+          .map((_) =>
+            Array.isArray(_.options)
+              ? { ..._, options: _.options.length > 0 ? be(_.options) : _.options }
+              : _
+          ),
+      Ne = o.useMemo(() => (ie ? be(k) : k), [k, ie, fe]),
+      Ke = o.useMemo(() => zr(Ne, { fieldNames: A, childrenAsData: ce }), [Ne, A, ce]),
+      _e = (S) => {
+        const R = Ee(S);
+        if (
+          (Ie(R), pe && (R.length !== ve.length || R.some((_, Y) => ve[Y]?.value !== _?.value)))
+        ) {
+          const _ = de
+              ? R.map(({ label: Se, value: Ge }) => ({ label: Se, value: Ge }))
+              : R.map((Se) => Se.value),
+            Y = R.map((Se) => Wt(Re(Se.value)));
+          pe(W ? _ : _[0], W ? Y : Y[0]);
+        }
+      },
+      [Xe, De] = o.useState(null),
+      [Ae, We] = o.useState(0),
+      Oe = L !== void 0 ? L : r !== 'combobox',
+      Ve = o.useRef(),
+      Fe = o.useCallback(
+        (S, R, { source: _ = 'keyboard' } = {}) => {
+          (We(R), i && r === 'combobox' && S !== null && _ === 'keyboard' && De(String(S)));
+          const Y = Promise.resolve().then(() => {
+            Ve.current === Y && w?.(S);
+          });
+          Ve.current = Y;
+        },
+        [i, r, w]
+      ),
+      Le = (S, R, _) => {
+        const Y = () => {
+          const Se = Re(S);
+          return [de ? { label: Se?.[A.label], value: S } : S, Wt(Se)];
+        };
+        if (R && g) {
+          const [Se, Ge] = Y();
+          g(Se, Ge);
+        } else if (!R && v && _ !== 'clear') {
+          const [Se, Ge] = Y();
+          v(Se, Ge);
+        }
+      },
+      C = zn((S, R) => {
+        let _;
+        const Y = W ? R.selected : !0;
+        (Y ? (_ = W ? [...ve, S] : [S]) : (_ = ve.filter((Se) => Se.value !== S)),
+          _e(_),
+          Le(S, Y),
+          r === 'combobox' ? De('') : (!qt || O) && (Ce(''), De('')));
+      }),
+      q = (S, R) => {
+        _e(S);
+        const { type: _, values: Y } = R;
+        (_ === 'remove' || _ === 'clear') &&
+          Y.forEach((Se) => {
+            Le(Se.value, !1, _);
+          });
+      },
+      b = (S, R) => {
+        if ((Ce(S), De(null), R.source === 'submit')) {
+          const _ = (S || '').trim();
+          if (_) {
+            const Y = Array.from(new Set([...ye, _]));
+            (_e(Y), Le(_, !0), Ce(''));
+          }
+          return;
+        }
+        R.source !== 'blur' && (r === 'combobox' && _e(S), we?.(S));
+      },
+      M = (S) => {
+        let R = S;
+        r !== 'tags' && (R = S.map((Y) => Te.get(Y)?.value).filter((Y) => Y !== void 0));
+        const _ = Array.from(new Set([...ye, ...R]));
+        (_e(_),
+          _.forEach((Y) => {
+            Le(Y, !0);
+          }));
+      },
+      le = o.useMemo(
+        () => ({
+          ...He,
+          flattenOptions: Ke,
+          onActiveValue: Fe,
+          defaultActiveFirstOption: Oe,
+          onSelect: C,
+          menuItemSelectedIcon: z,
+          rawValues: ye,
+          fieldNames: A,
+          virtual: B !== !1 && E !== !1,
+          direction: x,
+          listHeight: X,
+          listItemHeight: U,
+          childrenAsData: ce,
+          maxCount: j,
+          optionRender: y,
+          classNames: D,
+          styles: Q
+        }),
+        [j, He, Ke, Fe, Oe, C, z, ye, A, B, E, x, X, U, ce, y, D, Q]
+      );
+    return o.createElement(
+      nn.Provider,
+      { value: le },
+      o.createElement(
+        qr,
+        Jt({}, me, {
+          id: se,
+          prefixCls: l,
+          ref: t,
+          omitDomProps: Sl,
+          mode: r,
+          classNames: D,
+          styles: Q,
+          displayValues: Pe,
+          onDisplayValuesChange: q,
+          maxCount: j,
+          direction: x,
+          showSearch: P,
+          searchValue: fe,
+          onSearch: b,
+          autoClearSearchValue: O,
+          onSearchSplit: M,
+          popupMatchSelectWidth: E,
+          OptionList: ml,
+          emptyOptions: !Ke.length,
+          activeValue: Xe,
+          activeDescendantId: `${se}_list_${Ae}`
+        })
+      )
+    );
+  }),
+  ln = xl;
+ln.Option = rn;
+ln.OptGroup = on;
+const $l = () => {
+    const [, e] = bt(),
+      [t] = Et('Empty'),
+      r = new xt(e.colorBgBase).toHsl().l < 0.5 ? { opacity: 0.65 } : {};
+    return o.createElement(
+      'svg',
+      {
+        style: r,
+        width: '184',
+        height: '152',
+        viewBox: '0 0 184 152',
+        xmlns: 'http://www.w3.org/2000/svg'
+      },
+      o.createElement('title', null, t?.description || 'Empty'),
+      o.createElement(
+        'g',
+        { fill: 'none', fillRule: 'evenodd' },
+        o.createElement(
+          'g',
+          { transform: 'translate(24 31.67)' },
+          o.createElement('ellipse', {
+            fillOpacity: '.8',
+            fill: '#F5F5F7',
+            cx: '67.797',
+            cy: '106.89',
+            rx: '67.797',
+            ry: '12.668'
+          }),
+          o.createElement('path', {
+            d: 'M122.034 69.674L98.109 40.229c-1.148-1.386-2.826-2.225-4.593-2.225h-51.44c-1.766 0-3.444.839-4.592 2.225L13.56 69.674v15.383h108.475V69.674z',
+            fill: '#AEB8C2'
+          }),
+          o.createElement('path', {
+            d: 'M101.537 86.214L80.63 61.102c-1.001-1.207-2.507-1.867-4.048-1.867H31.724c-1.54 0-3.047.66-4.048 1.867L6.769 86.214v13.792h94.768V86.214z',
+            fill: 'url(#linearGradient-1)',
+            transform: 'translate(13.56)'
+          }),
+          o.createElement('path', {
+            d: 'M33.83 0h67.933a4 4 0 0 1 4 4v93.344a4 4 0 0 1-4 4H33.83a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4z',
+            fill: '#F5F5F7'
+          }),
+          o.createElement('path', {
+            d: 'M42.678 9.953h50.237a2 2 0 0 1 2 2V36.91a2 2 0 0 1-2 2H42.678a2 2 0 0 1-2-2V11.953a2 2 0 0 1 2-2zM42.94 49.767h49.713a2.262 2.262 0 1 1 0 4.524H42.94a2.262 2.262 0 0 1 0-4.524zM42.94 61.53h49.713a2.262 2.262 0 1 1 0 4.525H42.94a2.262 2.262 0 0 1 0-4.525zM121.813 105.032c-.775 3.071-3.497 5.36-6.735 5.36H20.515c-3.238 0-5.96-2.29-6.734-5.36a7.309 7.309 0 0 1-.222-1.79V69.675h26.318c2.907 0 5.25 2.448 5.25 5.42v.04c0 2.971 2.37 5.37 5.277 5.37h34.785c2.907 0 5.277-2.421 5.277-5.393V75.1c0-2.972 2.343-5.426 5.25-5.426h26.318v33.569c0 .617-.077 1.216-.221 1.789z',
+            fill: '#DCE0E6'
+          })
+        ),
+        o.createElement('path', {
+          d: 'M149.121 33.292l-6.83 2.65a1 1 0 0 1-1.317-1.23l1.937-6.207c-2.589-2.944-4.109-6.534-4.109-10.408C138.802 8.102 148.92 0 161.402 0 173.881 0 184 8.102 184 18.097c0 9.995-10.118 18.097-22.599 18.097-4.528 0-8.744-1.066-12.28-2.902z',
+          fill: '#DCE0E6'
+        }),
+        o.createElement(
+          'g',
+          { transform: 'translate(149.65 15.383)', fill: '#FFF' },
+          o.createElement('ellipse', { cx: '20.654', cy: '3.167', rx: '2.849', ry: '2.815' }),
+          o.createElement('path', { d: 'M5.698 5.63H0L2.898.704zM9.259.704h4.985V5.63H9.259z' })
+        )
+      )
+    );
+  },
+  yl = () => {
+    const [, e] = bt(),
+      [t] = Et('Empty'),
+      { colorFill: n, colorFillTertiary: r, colorFillQuaternary: l, colorBgContainer: i } = e,
+      {
+        borderColor: a,
+        shadowColor: s,
+        contentColor: c
+      } = o.useMemo(
+        () => ({
+          borderColor: new xt(n).onBackground(i).toHexString(),
+          shadowColor: new xt(r).onBackground(i).toHexString(),
+          contentColor: new xt(l).onBackground(i).toHexString()
+        }),
+        [n, r, l, i]
+      );
+    return o.createElement(
+      'svg',
+      { width: '64', height: '41', viewBox: '0 0 64 41', xmlns: 'http://www.w3.org/2000/svg' },
+      o.createElement('title', null, t?.description || 'Empty'),
+      o.createElement(
+        'g',
+        { transform: 'translate(0 1)', fill: 'none', fillRule: 'evenodd' },
+        o.createElement('ellipse', { fill: s, cx: '32', cy: '33', rx: '32', ry: '7' }),
+        o.createElement(
+          'g',
+          { fillRule: 'nonzero', stroke: a },
+          o.createElement('path', {
+            d: 'M55 12.76L44.854 1.258C44.367.474 43.656 0 42.907 0H21.093c-.749 0-1.46.474-1.947 1.257L9 12.761V22h46v-9.24z'
+          }),
+          o.createElement('path', {
+            d: 'M41.613 15.931c0-1.605.994-2.93 2.227-2.931H55v18.137C55 33.26 53.68 35 52.05 35h-40.1C10.32 35 9 33.259 9 31.137V13h11.16c1.233 0 2.227 1.323 2.227 2.928v.022c0 1.605 1.005 2.901 2.237 2.901h14.752c1.232 0 2.237-1.308 2.237-2.913v-.007z',
+            fill: c
+          })
+        )
+      )
+    );
+  },
+  El = (e) => {
+    const { componentCls: t, margin: n, marginXS: r, marginXL: l, fontSize: i, lineHeight: a } = e;
+    return {
+      [t]: {
+        marginInline: r,
+        fontSize: i,
+        lineHeight: a,
+        textAlign: 'center',
+        [`${t}-image`]: {
+          height: e.emptyImgHeight,
+          marginBottom: r,
+          opacity: e.opacityImage,
+          img: { height: '100%' },
+          svg: { maxWidth: '100%', height: '100%', margin: 'auto' }
+        },
+        [`${t}-description`]: { color: e.colorTextDescription },
+        [`${t}-footer`]: { marginTop: n },
+        '&-normal': {
+          marginBlock: l,
+          color: e.colorTextDescription,
+          [`${t}-description`]: { color: e.colorTextDescription },
+          [`${t}-image`]: { height: e.emptyImgHeightMD }
+        },
+        '&-small': {
+          marginBlock: r,
+          color: e.colorTextDescription,
+          [`${t}-image`]: { height: e.emptyImgHeightSM }
+        }
+      }
+    };
+  },
+  wl = vt('Empty', (e) => {
+    const { componentCls: t, controlHeightLG: n, calc: r } = e,
+      l = at(e, {
+        emptyImgCls: `${t}-img`,
+        emptyImgHeight: r(n).mul(2.5).equal(),
+        emptyImgHeightMD: n,
+        emptyImgHeightSM: r(n).mul(0.875).equal()
+      });
+    return El(l);
+  }),
+  so = o.createElement($l, null),
+  co = o.createElement(yl, null),
+  rt = (e) => {
+    const {
+        className: t,
+        rootClassName: n,
+        prefixCls: r,
+        image: l,
+        description: i,
+        children: a,
+        imageStyle: s,
+        style: c,
+        classNames: u,
+        styles: f,
+        ...m
+      } = e,
+      {
+        getPrefixCls: d,
+        direction: p,
+        className: g,
+        style: v,
+        classNames: w,
+        styles: E,
+        image: $
+      } = Zt('empty'),
+      h = d('empty', r),
+      [y, H] = wl(h),
+      [L, z] = kt([w, u], [E, f], { props: e }),
+      [B] = Et('Empty'),
+      x = typeof i < 'u' ? i : B?.description,
+      X = typeof x == 'string' ? x : 'empty',
+      U = l ?? $ ?? so;
+    let T = null;
+    return (
+      typeof U == 'string'
+        ? (T = o.createElement('img', { draggable: !1, alt: X, src: U }))
+        : (T = U),
+      o.createElement(
+        'div',
+        {
+          className: ae(
+            y,
+            H,
+            h,
+            g,
+            { [`${h}-normal`]: U === co, [`${h}-rtl`]: p === 'rtl' },
+            t,
+            n,
+            L.root
+          ),
+          style: { ...z.root, ...v, ...c },
+          ...m
+        },
+        o.createElement(
+          'div',
+          { className: ae(`${h}-image`, L.image), style: { ...s, ...z.image } },
+          T
+        ),
+        x &&
+          o.createElement(
+            'div',
+            { className: ae(`${h}-description`, L.description), style: z.description },
+            x
+          ),
+        a && o.createElement('div', { className: ae(`${h}-footer`, L.footer), style: z.footer }, a)
+      )
+    );
+  };
+rt.PRESENTED_IMAGE_DEFAULT = so;
+rt.PRESENTED_IMAGE_SIMPLE = co;
+const Il = (e) => {
+    const { componentName: t } = e,
+      { getPrefixCls: n } = o.useContext(en),
+      r = n('empty');
+    switch (t) {
+      case 'Table':
+      case 'List':
+        return J.createElement(rt, { image: rt.PRESENTED_IMAGE_SIMPLE });
+      case 'Select':
+      case 'TreeSelect':
+      case 'Cascader':
+      case 'Transfer':
+      case 'Mentions':
+        return J.createElement(rt, { image: rt.PRESENTED_IMAGE_SIMPLE, className: `${r}-small` });
+      case 'Table.filter':
+        return null;
+      default:
+        return J.createElement(rt, null);
+    }
+  },
+  Ml = (e, t, n) => {
+    const { variant: r, [e]: l } = o.useContext(en),
+      i = o.useContext(Mo),
+      a = l?.variant;
+    let s;
+    typeof t < 'u' ? (s = t) : n === !1 ? (s = 'borderless') : (s = i ?? a ?? r ?? 'outlined');
+    const c = Ro.includes(s);
+    return [s, c];
+  },
+  Rl = (e) => {
+    const n = {
+      overflow: { adjustX: !0, adjustY: !0, shiftY: !0 },
+      htmlRegion: e === 'scroll' ? 'scroll' : 'visible',
+      dynamicInset: !0
+    };
+    return {
+      bottomLeft: { ...n, points: ['tl', 'bl'], offset: [0, 4] },
+      bottomRight: { ...n, points: ['tr', 'br'], offset: [0, 4] },
+      topLeft: { ...n, points: ['bl', 'tl'], offset: [0, -4] },
+      topRight: { ...n, points: ['br', 'tr'], offset: [0, -4] }
+    };
+  };
+function Pl(e, t) {
+  return e || Rl(t);
+}
+const Nn = (e) => {
+    const { optionHeight: t, optionFontSize: n, optionLineHeight: r, optionPadding: l } = e;
+    return {
+      position: 'relative',
+      display: 'block',
+      minHeight: t,
+      padding: l,
+      color: e.colorText,
+      fontWeight: 'normal',
+      fontSize: n,
+      lineHeight: r,
+      boxSizing: 'border-box'
+    };
+  },
+  Ol = (e) => {
+    const { antCls: t, componentCls: n } = e,
+      r = `${n}-item`,
+      l = `&${t}-slide-up-enter${t}-slide-up-enter-active`,
+      i = `&${t}-slide-up-appear${t}-slide-up-appear-active`,
+      a = `&${t}-slide-up-leave${t}-slide-up-leave-active`,
+      s = `${n}-dropdown-placement-`,
+      c = `${r}-option-selected`;
+    return [
+      {
+        [`${n}-dropdown`]: {
+          ...ut(e),
+          position: 'absolute',
+          top: -9999,
+          zIndex: e.zIndexPopup,
+          boxSizing: 'border-box',
+          padding: e.paddingXXS,
+          overflow: 'hidden',
+          fontSize: e.fontSize,
+          fontVariant: 'initial',
+          backgroundColor: e.colorBgElevated,
+          borderRadius: e.borderRadiusLG,
+          outline: 'none',
+          boxShadow: e.boxShadowSecondary,
+          [`
           ${l}${s}bottomLeft,
           ${i}${s}bottomLeft
-        `]:{animationName:To},[`
+        `]: { animationName: To },
+          [`
           ${l}${s}topLeft,
           ${i}${s}topLeft,
           ${l}${s}topRight,
           ${i}${s}topRight
-        `]:{animationName:Bo},[`${a}${s}bottomLeft`]:{animationName:Oo},[`
+        `]: { animationName: Bo },
+          [`${a}${s}bottomLeft`]: { animationName: Oo },
+          [`
           ${a}${s}topLeft,
           ${a}${s}topRight
-        `]:{animationName:Po},"&-hidden":{display:"none"},[r]:{...Nn(e),cursor:"pointer",transition:`background ${e.motionDurationSlow} ease`,borderRadius:e.borderRadiusSM,"&-group":{color:e.colorTextDescription,fontSize:e.fontSizeSM,cursor:"default"},"&-option":{display:"flex","&-content":{flex:"auto",...ht},"&-state":{flex:"none",display:"flex",alignItems:"center"},[`&-active:not(${r}-option-disabled)`]:{backgroundColor:e.optionActiveBg},[`&-selected:not(${r}-option-disabled)`]:{color:e.optionSelectedColor,fontWeight:e.optionSelectedFontWeight,backgroundColor:e.optionSelectedBg,[`${r}-option-state`]:{color:e.colorPrimary}},"&-disabled":{[`&${r}-option-selected`]:{backgroundColor:e.colorBgContainerDisabled},color:e.colorTextDisabled,cursor:"not-allowed"},"&-grouped":{paddingInlineStart:e.calc(e.controlPaddingHorizontal).mul(2).equal()}},"&-empty":{...Nn(e),color:e.colorTextDisabled}},[`${c}:has(+ ${c})`]:{borderEndStartRadius:0,borderEndEndRadius:0,[`& + ${c}`]:{borderStartStartRadius:0,borderStartEndRadius:0}},"&-rtl":{direction:"rtl"}}},gn(e,"slide-up"),gn(e,"slide-down"),hn(e,"move-up"),hn(e,"move-down")]},Bl=e=>{const{componentCls:t}=e;return{[`&${t}-customize`]:{border:0,padding:0,fontSize:"inherit",lineHeight:"inherit",[`${t}-placeholder`]:{display:"none"},[`${t}-content`]:{margin:0,padding:0,"&-value":{display:"none"}}}}},Dn=4,Tl=e=>{const{componentCls:t,calc:n,iconCls:r,paddingXS:l,paddingXXS:i,INTERNAL_FIXED_ITEM_MARGIN:a,lineWidth:s,colorIcon:c,colorIconHover:u,inputPaddingHorizontalBase:f}=e;return{"&-multiple":{"--select-multi-item-background":e.multipleItemBg,"--select-multi-item-border-color":"transparent","--select-multi-item-border-radius":e.borderRadiusSM,"--select-multi-item-height":e.multipleItemHeight,"--select-multi-padding-base":"calc((var(--select-height) - var(--select-multi-item-height)) / 2)","--select-multi-padding-vertical":`calc(var(--select-multi-padding-base) - ${a} - ${s})`,"--select-multi-item-padding-horizontal":`calc(${f} - var(--select-multi-padding-vertical) - ${s} * 2)`,paddingBlock:"var(--select-multi-padding-vertical)",paddingInlineStart:`calc(var(--select-multi-padding-base) - ${s})`,[`${t}-prefix`]:{marginInlineStart:"var(--select-multi-item-padding-horizontal)"},[`${t}-prefix + ${t}-content`]:{[`${t}-placeholder`]:{insetInlineStart:0},[`${t}-content-item${t}-content-item-suffix`]:{marginInlineStart:0}},[`${t}-placeholder`]:{position:"absolute",lineHeight:"var(--select-line-height)",insetInlineStart:"var(--select-multi-item-padding-horizontal)",width:"calc(100% - var(--select-multi-item-padding-horizontal))",top:"50%",transform:"translateY(-50%)"},[`${t}-content`]:{flexWrap:"wrap",alignItems:"center",lineHeight:1,"&-item-prefix":{height:"var(--select-font-size)"},"&-item":{lineHeight:1,maxWidth:`calc(100% - ${Dn}px)`},[`${t}-content-item-prefix + ${t}-content-item-suffix,
-          ${t}-content-item-suffix:first-child`]:{marginInlineStart:"var(--select-multi-item-padding-horizontal)"},[`${t}-selection-item`]:{lineHeight:`calc(var(--select-multi-item-height) - ${s} * 2)`,border:`${s} solid var(--select-multi-item-border-color)`,display:"flex",marginBlock:a,marginInlineEnd:n(a).mul(2).equal(),background:"var(--select-multi-item-background)",borderRadius:"var(--select-multi-item-border-radius)",paddingInlineStart:l,paddingInlineEnd:i,transition:["height","line-height","padding"].map(m=>`${m} ${e.motionDurationSlow}`).join(","),"&-content":{...ht,marginInlineEnd:i},"&-remove":{...zo(),display:"inline-flex",alignItems:"center",color:c,fontWeight:"bold",fontSize:10,lineHeight:"inherit",cursor:"pointer",[`> ${r}`]:{verticalAlign:"-0.2em"},"&:hover":{color:u}}},[`${t}-input`]:{lineHeight:n(a).mul(2).add("var(--select-multi-item-height)").equal(),width:"calc(var(--select-input-width, 0) * 1px)",minWidth:Dn,maxWidth:"100%",transition:`line-height ${e.motionDurationSlow}`}},[`&${t}-sm`]:{"--select-multi-item-height":e.multipleItemHeightSM,"--select-multi-item-border-radius":e.borderRadiusXS},[`&${t}-lg`]:{"--select-multi-item-height":e.multipleItemHeightLG,"--select-multi-item-border-radius":e.borderRadius},[`&${t}-filled`]:{"--select-multi-item-border-color":e.colorSplit,"--select-multi-item-background":e.colorBgContainer,[`&${t}-disabled`]:{"--select-multi-item-border-color":"transparent"}}}}},Ot=(e,t)=>{const{componentCls:n}=e,{border:r,borderHover:l,borderActive:i,borderOutline:a}=t,s=t.background||e.selectorBg||e.colorBgContainer;return{"--select-border-color":r,"--select-background":s,"--select-color":t.color||e.colorText,[`&:not(${n}-disabled)`]:{"&:hover":{"--select-border-color":l,"--select-background":t.backgroundHover||s},[`&${n}-focused`]:{"--select-border-color":i,"--select-background":t.backgroundActive||s,boxShadow:`0 0 0 ${Z(e.controlOutlineWidth)} ${a}`}},[`&${n}-disabled`]:{"--select-border-color":t.borderDisabled||t.border,"--select-background":t.backgroundDisabled||t.background}}},Ct=(e,t,n,r={},l={},i)=>{const{componentCls:a}=e;return{[`&${a}-${t}`]:[Ot(e,n),{[`&${a}-status-error`]:Ot(e,{...n,color:r.color||e.colorError,...r}),[`&${a}-status-warning`]:Ot(e,{...n,color:l.color||e.colorWarning,...l})},i]}},zl=e=>{const{componentCls:t,calc:n,fontHeight:r,controlHeight:l,iconCls:i}=e;return{[t]:[{"--select-border-radius":e.borderRadius,"--select-border-color":"#000","--select-border-size":e.lineWidth,"--select-background":e.colorBgContainer,"--select-font-size":e.fontSize,"--select-line-height":e.lineHeight,"--select-font-height":r,"--select-color":e.colorText,"--select-height":l,"--select-padding-horizontal":n(e.paddingSM).sub(e.lineWidth).equal(),"--select-padding-vertical":"calc((var(--select-height) - var(--select-font-height)) / 2 - var(--select-border-size))",...ut(e,!0),display:"inline-flex",flexWrap:"nowrap",position:"relative",transition:`all ${e.motionDurationSlow}`,alignItems:"flex-start",outline:0,cursor:"pointer",borderRadius:"var(--select-border-radius)",borderWidth:"var(--select-border-size)",borderStyle:e.lineType,borderColor:"var(--select-border-color)",background:"var(--select-background)",fontSize:"var(--select-font-size)",lineHeight:"var(--select-line-height)",color:"var(--select-color)",paddingInline:"var(--select-padding-horizontal)",paddingBlock:"var(--select-padding-vertical)",[`${t}-prefix`]:{flex:"none",lineHeight:1},[`${t}-placeholder`]:{...ht,color:e.colorTextPlaceholder,pointerEvents:"none",zIndex:1},[`${t}-content`]:{flex:"auto",minWidth:0,position:"relative",display:"flex",marginInlineEnd:n(e.paddingXXS).mul(1.5).equal(),"&:before":{content:'"\\a0"',width:0,overflow:"hidden"},"&-value":{...ht,transition:`all ${e.motionDurationMid} ${e.motionEaseInOut}`,zIndex:1},"input[readonly]":{cursor:"inherit",caretColor:"transparent"}},[`&-open ${t}-content-value`]:{color:e.colorTextPlaceholder},[`${t}-suffix`]:{flex:"none",color:e.colorTextQuaternary,fontSize:e.fontSizeIcon,lineHeight:1,"> :not(:last-child)":{marginInlineEnd:e.marginXS}},[`${t}-prefix, ${t}-suffix`]:{alignSelf:"center",[i]:{verticalAlign:"top"}},"&-disabled":{background:e.colorBgContainerDisabled,color:e.colorTextDisabled,cursor:"not-allowed"},"&-sm":{"--select-height":e.controlHeightSM,"--select-padding-horizontal":n(e.paddingXS).sub(e.lineWidth).equal(),"--select-border-radius":e.borderRadiusSM},"&-lg":{"--select-height":e.controlHeightLG,"--select-font-size":e.fontSizeLG,"--select-line-height":e.lineHeightLG,"--select-font-height":e.fontHeightLG,"--select-border-radius":e.borderRadiusLG}},{[`&:not(${t}-customize)`]:{[`${t}-input`]:{outline:"none",background:"transparent",appearance:"none",border:0,margin:0,padding:0,color:"inherit","&::-webkit-search-cancel-button":{display:"none",appearance:"none"}}}},{[`&-single:not(${t}-customize)`]:{[`${t}-input`]:{position:"absolute",insetInline:0,insetBlock:"calc(var(--select-padding-vertical) * -1)",lineHeight:"calc(var(--select-font-height) + var(--select-padding-vertical) * 2)"},[`${t}-content`]:{alignSelf:"center"}}},Tl(e),Ct(e,"outlined",{border:e.colorBorder,borderHover:e.hoverBorderColor,borderActive:e.activeBorderColor,borderOutline:e.activeOutlineColor,borderDisabled:e.colorBorderDisabled},{border:e.colorError,borderHover:e.colorErrorHover,borderActive:e.colorError,borderOutline:e.colorErrorOutline},{border:e.colorWarning,borderHover:e.colorWarningHover,borderActive:e.colorWarning,borderOutline:e.colorWarningOutline}),Ct(e,"filled",{border:"transparent",borderHover:"transparent",borderActive:e.activeBorderColor,borderOutline:"transparent",borderDisabled:e.colorBorderDisabled,background:e.colorFillTertiary,backgroundHover:e.colorFillSecondary,backgroundActive:e.colorBgContainer},{background:e.colorErrorBg,backgroundHover:e.colorErrorBgHover,borderActive:e.colorError},{background:e.colorWarningBg,backgroundHover:e.colorWarningBgHover,borderActive:e.colorWarning}),Ct(e,"borderless",{border:"transparent",borderHover:"transparent",borderActive:"transparent",borderOutline:"transparent",background:"transparent"}),Ct(e,"underlined",{border:e.colorBorder,borderHover:e.hoverBorderColor,borderActive:e.activeBorderColor,borderOutline:"transparent"},{border:e.colorError,borderHover:e.colorErrorHover,borderActive:e.colorError},{border:e.colorWarning,borderHover:e.colorWarningHover,borderActive:e.colorWarning},{borderRadius:0,borderTopColor:"transparent",borderRightColor:"transparent",borderLeftColor:"transparent"}),Bl(e)]}},Nl=e=>{const{fontSize:t,lineHeight:n,lineWidth:r,controlHeight:l,controlHeightSM:i,controlHeightLG:a,paddingXXS:s,controlPaddingHorizontal:c,zIndexPopupBase:u,colorText:f,fontWeightStrong:m,controlItemBgActive:d,controlItemBgHover:p,colorBgContainer:g,colorFillSecondary:v,colorBgContainerDisabled:w,colorTextDisabled:E,colorPrimaryHover:$,colorPrimary:h,controlOutline:y}=e,H=s*2,L=r*2,z=Math.min(l-H,l-L),B=Math.min(i-H,i-L),x=Math.min(a-H,a-L);return{INTERNAL_FIXED_ITEM_MARGIN:Math.floor(s/2),zIndexPopup:u+50,optionSelectedColor:f,optionSelectedFontWeight:m,optionSelectedBg:d,optionActiveBg:p,optionPadding:`${(l-t*n)/2}px ${c}px`,optionFontSize:t,optionLineHeight:n,optionHeight:l,selectorBg:g,clearBg:g,singleItemHeightLG:a,multipleItemBg:v,multipleItemBorderColor:"transparent",multipleItemHeight:z,multipleItemHeightSM:B,multipleItemHeightLG:x,multipleSelectorBgDisabled:w,multipleItemColorDisabled:E,multipleItemBorderColorDisabled:"transparent",showArrowPaddingInlineEnd:Math.ceil(e.fontSize*1.25),hoverBorderColor:$,activeBorderColor:h,activeOutlineColor:y,selectAffixPadding:s}},Dl=e=>{const{antCls:t,componentCls:n,inputPaddingHorizontalBase:r}=e,l={[`${n}-clear`]:{opacity:1,background:e.colorBgBase,borderRadius:"50%"}};return{[n]:{...ut(e),[`${n}-selection-item`]:{flex:1,fontWeight:"normal",position:"relative",userSelect:"none",...ht,[`> ${t}-typography`]:{display:"inline"}},[`${n}-prefix`]:{flex:"none",marginInlineEnd:e.selectAffixPadding},[`${n}-clear`]:{position:"absolute",top:"50%",insetInlineStart:"auto",insetInlineEnd:r,zIndex:1,display:"inline-block",width:e.fontSizeIcon,height:e.fontSizeIcon,marginTop:e.calc(e.fontSizeIcon).mul(-1).div(2).equal(),color:e.colorTextQuaternary,fontSize:e.fontSizeIcon,fontStyle:"normal",lineHeight:1,textAlign:"center",textTransform:"none",cursor:"pointer",opacity:0,transition:`color ${e.motionDurationMid} ease, opacity ${e.motionDurationSlow} ease`,textRendering:"auto",transform:"translateZ(0)","&:before":{display:"block"},"&:hover":{color:e.colorIcon}},"@media(hover:none)":l,"&:hover":l},[`${n}-status`]:{"&-error, &-warning, &-success, &-validating":{[`&${n}-has-feedback`]:{[`${n}-clear`]:{insetInlineEnd:e.calc(r).add(e.fontSize).add(e.paddingXS).equal()}}}}}},Hl=e=>{const{componentCls:t}=e;return[{[t]:{[`&${t}-in-form-item`]:{width:"100%"}}},Dl(e),Ol(e),{[`${t}-rtl`]:{direction:"rtl"}},Kn(e,{focusElCls:`${t}-focused`})]},Ll=vt("Select",(e,{rootPrefixCls:t})=>{const n=at(e,{rootPrefixCls:t,inputPaddingHorizontalBase:e.calc(e.paddingSM).sub(e.lineWidth).equal(),multipleSelectItemHeight:e.multipleItemHeight,selectHeight:e.controlHeight});return[Hl(n),zl(n)]},Nl,{unitless:{optionLineHeight:!0,optionSelectedFontWeight:!0}});function jl({suffixIcon:e,clearIcon:t,menuItemSelectedIcon:n,removeIcon:r,loading:l,multiple:i,hasFeedback:a,showSuffixIcon:s,feedbackIcon:c,showArrow:u,componentName:f}){const m=t??o.createElement(sr,null),d=w=>e===null&&!a&&!u?null:o.createElement(o.Fragment,null,s!==!1&&w,a&&c);let p=null;e!==void 0?p=d(e):l?p=d(o.createElement(No,{spin:!0})):p=({open:w,showSearch:E})=>d(w&&E?o.createElement(Cr,null):o.createElement(Yn,null));let g=null;n!==void 0?g=n:i?g=o.createElement(lr,null):g=null;let v=null;return r!==void 0?v=r:v=o.createElement(dr,null),{clearIcon:m,suffixIcon:p,itemIcon:g,removeIcon:v}}function _l(e){return J.useMemo(()=>{if(e)return(...t)=>J.createElement(Do,{space:!0},e.apply(void 0,t))},[e])}function Al(e,t){return t!==void 0?t:e!==null}const uo="SECRET_COMBOBOX_MODE_DO_NOT_USE",Vl=(e,t)=>{const{prefixCls:n,bordered:r,className:l,rootClassName:i,getPopupContainer:a,popupClassName:s,dropdownClassName:c,listHeight:u=256,placement:f,listItemHeight:m,size:d,disabled:p,notFoundContent:g,status:v,builtinPlacements:w,dropdownMatchSelectWidth:E,popupMatchSelectWidth:$,direction:h,style:y,allowClear:H,variant:L,popupStyle:z,dropdownStyle:B,transitionName:x,tagRender:X,maxCount:U,prefix:T,dropdownRender:ue,popupRender:oe,onDropdownVisibleChange:de,onOpenChange:pe,styles:j,classNames:D,...Q}=e,{getPopupContainer:me,getPrefixCls:ne,renderEmpty:P,direction:N,virtual:re,popupMatchSelectWidth:I,popupOverflow:K}=o.useContext(en),{showSearch:ie,style:we,styles:O,className:F,classNames:se}=Zt("select"),[,W]=bt(),ce=m??W?.controlHeight,te=ne("select",n),A=ne(),he=h??N,{compactSize:Ce,compactItemClassnames:fe}=Ho(te,he),[He,Be]=Ml("select",L,r),Te=Lo(te),[xe,Ee]=Ll(te,Te),$e=o.useMemo(()=>{const{mode:R}=e;if(R!=="combobox")return R===uo?"combobox":R},[e.mode]),Ie=$e==="multiple"||$e==="tags",Me=Al(e.suffixIcon,e.showArrow),ve=$??E??I,Re=_l(oe||ue),Pe=pe||de,{status:ye,hasFeedback:ze,isFormItemInput:Ue,feedbackIcon:ge}=o.useContext(jo),k=Wo(ye,v);let be;g!==void 0?be=g:$e==="combobox"?be=null:be=P?.("Select")||o.createElement(Il,{componentName:"Select"});const{suffixIcon:Ne,itemIcon:Ke,removeIcon:_e,clearIcon:Xe}=jl({...Q,multiple:Ie,hasFeedback:ze,feedbackIcon:ge,showSuffixIcon:Me,componentName:"Select"}),De=H===!0?{clearIcon:Xe}:H,Ae=Qt(Q,["suffixIcon","itemIcon"]),We=qn(R=>d??Ce??R),Oe=o.useContext(_o),Ve=p??Oe,Fe={...e,variant:He,status:k,disabled:Ve,size:We},[Le,C]=kt([se,D],[O,j],{props:Fe},{popup:{_default:"root"}}),q=ae(Le.popup?.root,s,c,{[`${te}-dropdown-${he}`]:he==="rtl"},i,Ee,Te,xe),b={...C.popup?.root,...z??B},M=ae({[`${te}-lg`]:We==="large",[`${te}-sm`]:We==="small",[`${te}-rtl`]:he==="rtl",[`${te}-${He}`]:Be,[`${te}-in-form-item`]:Ue},Ao(te,k,ze),fe,F,l,Le.root,i,Ee,Te,xe),le=o.useMemo(()=>f!==void 0?f:he==="rtl"?"bottomRight":"bottomLeft",[f,he]),[S]=Vo("SelectLike",C.popup?.root?.zIndex??b?.zIndex);return o.createElement(ln,{ref:t,virtual:re,classNames:Le,styles:C,showSearch:ie,...Ae,style:{...C.root,...we,...y},popupMatchSelectWidth:ve,transitionName:Fo(A,"slide-up",x),builtinPlacements:Pl(w,K),listHeight:u,listItemHeight:ce,mode:$e,prefixCls:te,placement:le,direction:he,prefix:T,suffixIcon:Ne,menuItemSelectedIcon:Ke,removeIcon:_e,allowClear:De,notFoundContent:be,className:M,getPopupContainer:a||me,popupClassName:q,disabled:Ve,popupStyle:{...C.popup?.root,...b,zIndex:S},maxCount:Ie?U:void 0,tagRender:Ie?X:void 0,popupRender:Re,onPopupVisibleChange:Pe})},dt=o.forwardRef(Vl),Fl=Go(dt,"popupAlign");dt.SECRET_COMBOBOX_MODE_DO_NOT_USE=uo;dt.Option=rn;dt.OptGroup=on;dt._InternalPanelDoNotUseOrYouWillBeFired=Fl;const Wl=["xxl","xl","lg","md","sm","xs"],Gl=e=>({xs:`(max-width: ${e.screenXSMax}px)`,sm:`(min-width: ${e.screenSM}px)`,md:`(min-width: ${e.screenMD}px)`,lg:`(min-width: ${e.screenLG}px)`,xl:`(min-width: ${e.screenXL}px)`,xxl:`(min-width: ${e.screenXXL}px)`}),Xl=e=>{const t=e,n=[].concat(Wl).reverse();return n.forEach((r,l)=>{const i=r.toUpperCase(),a=`screen${i}Min`,s=`screen${i}`;if(!(t[a]<=t[s]))throw new Error(`${a}<=${s} fails : !(${t[a]}<=${t[s]})`);if(l<n.length-1){const c=`screen${i}Max`;if(!(t[s]<=t[c]))throw new Error(`${s}<=${c} fails : !(${t[s]}<=${t[c]})`);const f=`screen${n[l+1].toUpperCase()}Min`;if(!(t[c]<=t[f]))throw new Error(`${c}<=${f} fails : !(${t[c]}<=${t[f]})`)}}),e},Ul=()=>{const[,e]=bt(),t=Gl(Xl(e));return J.useMemo(()=>{const n=new Map;let r=-1,l={};return{responsiveMap:t,matchHandlers:{},dispatch(i){return l=i,n.forEach(a=>a(l)),n.size>=1},subscribe(i){return n.size||this.register(),r+=1,n.set(r,i),i(l),r},unsubscribe(i){n.delete(i),n.size||this.unregister()},register(){Object.entries(t).forEach(([i,a])=>{const s=({matches:u})=>{this.dispatch({...l,[i]:u})},c=window.matchMedia(a);typeof c?.addEventListener=="function"&&c.addEventListener("change",s),this.matchHandlers[a]={mql:c,listener:s},s(c)})},unregister(){Object.values(t).forEach(i=>{const a=this.matchHandlers[i];typeof a?.mql?.removeEventListener=="function"&&a.mql.removeEventListener("change",a?.listener)}),n.clear()}}},[t])};function Kl(e=!0,t={}){const n=o.useRef(t),[,r]=Ir(),l=Ul();return lt(()=>{const i=l.subscribe(a=>{n.current=a,e&&r()});return()=>l.unsubscribe(i)},[]),n.current}function an(e){return at(e,{inputAffixPadding:e.paddingXXS})}const sn=e=>{const{controlHeight:t,fontSize:n,lineHeight:r,lineWidth:l,controlHeightSM:i,controlHeightLG:a,fontSizeLG:s,lineHeightLG:c,paddingSM:u,controlPaddingHorizontalSM:f,controlPaddingHorizontal:m,colorFillAlter:d,colorPrimaryHover:p,colorPrimary:g,controlOutlineWidth:v,controlOutline:w,colorErrorOutline:E,colorWarningOutline:$,colorBgContainer:h,inputFontSize:y,inputFontSizeLG:H,inputFontSizeSM:L}=e,z=y||n,B=L||z,x=H||s,X=Math.round((t-z*r)/2*10)/10-l,U=Math.round((i-B*r)/2*10)/10-l,T=Math.ceil((a-x*c)/2*10)/10-l;return{paddingBlock:Math.max(X,0),paddingBlockSM:Math.max(U,0),paddingBlockLG:Math.max(T,0),paddingInline:u-l,paddingInlineSM:f-l,paddingInlineLG:m-l,addonBg:d,activeBorderColor:g,hoverBorderColor:p,activeShadow:`0 0 0 ${v}px ${w}`,errorActiveShadow:`0 0 0 ${v}px ${E}`,warningActiveShadow:`0 0 0 ${v}px ${$}`,hoverBg:h,activeBg:h,inputFontSize:z,inputFontSizeLG:x,inputFontSizeSM:B}},ql=e=>({borderColor:e.hoverBorderColor,backgroundColor:e.hoverBg}),wt=e=>({color:e.colorTextDisabled,backgroundColor:e.colorBgContainerDisabled,borderColor:e.colorBorder,boxShadow:"none",cursor:"not-allowed",opacity:1,"input[disabled], textarea[disabled]":{cursor:"not-allowed"},"&:hover:not([disabled])":{...ql(at(e,{hoverBorderColor:e.colorBorder,hoverBg:e.colorBgContainerDisabled}))}}),cn=(e,t)=>({background:e.colorBgContainer,borderWidth:e.lineWidth,borderStyle:e.lineType,borderColor:t.borderColor,"&:hover":{borderColor:t.hoverBorderColor,backgroundColor:e.hoverBg},"&:focus, &:focus-within":{borderColor:t.activeBorderColor,boxShadow:t.activeShadow,outline:0,backgroundColor:e.activeBg}}),Hn=(e,t)=>({[`&${e.componentCls}-status-${t.status}:not(${e.componentCls}-disabled)`]:{...cn(e,t),[`${e.componentCls}-prefix, ${e.componentCls}-suffix`]:{color:t.affixColor}},[`&${e.componentCls}-status-${t.status}${e.componentCls}-disabled`]:{borderColor:t.borderColor}}),Yl=(e,t)=>({"&-outlined":{...cn(e,{borderColor:e.colorBorder,hoverBorderColor:e.hoverBorderColor,activeBorderColor:e.activeBorderColor,activeShadow:e.activeShadow}),[`&${e.componentCls}-disabled, &[disabled]`]:{...wt(e)},...Hn(e,{status:"error",borderColor:e.colorError,hoverBorderColor:e.colorErrorBorderHover,activeBorderColor:e.colorError,activeShadow:e.errorActiveShadow,affixColor:e.colorError}),...Hn(e,{status:"warning",borderColor:e.colorWarning,hoverBorderColor:e.colorWarningBorderHover,activeBorderColor:e.colorWarning,activeShadow:e.warningActiveShadow,affixColor:e.colorWarning}),...t}}),Ln=(e,t)=>({[`&${e.componentCls}-group-wrapper-status-${t.status}`]:{[`${e.componentCls}-group-addon`]:{borderColor:t.addonBorderColor,color:t.addonColor}}}),Jl=e=>({"&-outlined":{[`${e.componentCls}-group`]:{"&-addon":{background:e.addonBg,border:`${Z(e.lineWidth)} ${e.lineType} ${e.colorBorder}`},"&-addon:first-child":{borderInlineEnd:0},"&-addon:last-child":{borderInlineStart:0}},...Ln(e,{status:"error",addonBorderColor:e.colorError,addonColor:e.colorErrorText}),...Ln(e,{status:"warning",addonBorderColor:e.colorWarning,addonColor:e.colorWarningText}),[`&${e.componentCls}-group-wrapper-disabled`]:{[`${e.componentCls}-group-addon`]:{...wt(e)}}}}),Ql=(e,t)=>{const{componentCls:n}=e;return{"&-borderless":{background:"transparent",border:"none","&:focus, &:focus-within":{outline:"none"},[`&${n}-disabled, &[disabled]`]:{color:e.colorTextDisabled,cursor:"not-allowed"},[`&${n}-status-error`]:{"&, & input, & textarea":{color:e.colorError}},[`&${n}-status-warning`]:{"&, & input, & textarea":{color:e.colorWarning}},...t}}},po=(e,t)=>({background:t.bg,borderWidth:e.lineWidth,borderStyle:e.lineType,borderColor:"transparent","input&, & input, textarea&, & textarea":{color:t?.inputColor??"unset"},"&:hover":{background:t.hoverBg},"&:focus, &:focus-within":{outline:0,borderColor:t.activeBorderColor,backgroundColor:e.activeBg}}),jn=(e,t)=>({[`&${e.componentCls}-status-${t.status}:not(${e.componentCls}-disabled)`]:{...po(e,t),[`${e.componentCls}-prefix, ${e.componentCls}-suffix`]:{color:t.affixColor}}}),Zl=(e,t)=>({"&-filled":{...po(e,{bg:e.colorFillTertiary,hoverBg:e.colorFillSecondary,activeBorderColor:e.activeBorderColor,inputColor:e.colorText}),[`&${e.componentCls}-disabled, &[disabled]`]:{...wt(e)},...jn(e,{status:"error",bg:e.colorErrorBg,hoverBg:e.colorErrorBgHover,activeBorderColor:e.colorError,inputColor:e.colorErrorText,affixColor:e.colorError}),...jn(e,{status:"warning",bg:e.colorWarningBg,hoverBg:e.colorWarningBgHover,activeBorderColor:e.colorWarning,inputColor:e.colorWarningText,affixColor:e.colorWarning}),...t}}),_n=(e,t)=>({[`&${e.componentCls}-group-wrapper-status-${t.status}`]:{[`${e.componentCls}-group-addon`]:{background:t.addonBg,color:t.addonColor}}}),kl=e=>({"&-filled":{[`${e.componentCls}-group-addon`]:{background:e.colorFillTertiary,"&:last-child":{position:"static"}},..._n(e,{status:"error",addonBg:e.colorErrorBg,addonColor:e.colorErrorText}),..._n(e,{status:"warning",addonBg:e.colorWarningBg,addonColor:e.colorWarningText}),[`&${e.componentCls}-group-wrapper-disabled`]:{[`${e.componentCls}-group`]:{"&-addon":{background:e.colorFillTertiary,color:e.colorTextDisabled},"&-addon:first-child":{borderInlineStart:`${Z(e.lineWidth)} ${e.lineType} ${e.colorBorder}`,borderTop:`${Z(e.lineWidth)} ${e.lineType} ${e.colorBorder}`,borderBottom:`${Z(e.lineWidth)} ${e.lineType} ${e.colorBorder}`},"&-addon:last-child":{borderInlineEnd:`${Z(e.lineWidth)} ${e.lineType} ${e.colorBorder}`,borderTop:`${Z(e.lineWidth)} ${e.lineType} ${e.colorBorder}`,borderBottom:`${Z(e.lineWidth)} ${e.lineType} ${e.colorBorder}`}}}}}),mo=(e,t)=>({background:e.colorBgContainer,borderWidth:`${Z(e.lineWidth)} 0`,borderStyle:`${e.lineType} none`,borderColor:`transparent transparent ${t.borderColor} transparent`,borderRadius:0,"&:hover":{borderColor:`transparent transparent ${t.hoverBorderColor} transparent`,backgroundColor:e.hoverBg},"&:focus, &:focus-within":{borderColor:`transparent transparent ${t.activeBorderColor} transparent`,outline:0,backgroundColor:e.activeBg}}),An=(e,t)=>({[`&${e.componentCls}-status-${t.status}:not(${e.componentCls}-disabled)`]:{...mo(e,t),[`${e.componentCls}-prefix, ${e.componentCls}-suffix`]:{color:t.affixColor}},[`&${e.componentCls}-status-${t.status}${e.componentCls}-disabled`]:{borderColor:`transparent transparent ${t.borderColor} transparent`}}),ei=(e,t)=>({"&-underlined":{...mo(e,{borderColor:e.colorBorder,hoverBorderColor:e.hoverBorderColor,activeBorderColor:e.activeBorderColor,activeShadow:e.activeShadow}),[`&${e.componentCls}-disabled, &[disabled]`]:{color:e.colorTextDisabled,boxShadow:"none",cursor:"not-allowed","&:hover":{borderColor:`transparent transparent ${e.colorBorder} transparent`}},"input[disabled], textarea[disabled]":{cursor:"not-allowed"},...An(e,{status:"error",borderColor:e.colorError,hoverBorderColor:e.colorErrorBorderHover,activeBorderColor:e.colorError,activeShadow:e.errorActiveShadow,affixColor:e.colorError}),...An(e,{status:"warning",borderColor:e.colorWarning,hoverBorderColor:e.colorWarningBorderHover,activeBorderColor:e.colorWarning,activeShadow:e.warningActiveShadow,affixColor:e.colorWarning}),...t}}),ti=e=>({"&::-moz-placeholder":{opacity:1},"&::placeholder":{color:e,userSelect:"none"},"&:placeholder-shown":{textOverflow:"ellipsis"}}),fo=e=>{const{paddingBlockLG:t,lineHeightLG:n,borderRadiusLG:r,paddingInlineLG:l}=e;return{padding:`${Z(t)} ${Z(l)}`,fontSize:e.inputFontSizeLG,lineHeight:n,borderRadius:r}},un=e=>({padding:`${Z(e.paddingBlockSM)} ${Z(e.paddingInlineSM)}`,fontSize:e.inputFontSizeSM,borderRadius:e.borderRadiusSM}),dn=(e,t={})=>({position:"relative",display:"inline-block",width:"100%",minWidth:0,padding:`${Z(e.paddingBlock)} ${Z(e.paddingInline)}`,color:e.colorText,fontSize:e.inputFontSize,lineHeight:e.lineHeight,borderRadius:e.borderRadius,transition:`all ${e.motionDurationMid}`,...ti(e.colorTextPlaceholder),"&-lg":{...fo(e),...t.largeStyle},"&-sm":{...un(e),...t.smallStyle},"&-rtl, &-textarea-rtl":{direction:"rtl"}}),ni=e=>{const{componentCls:t,antCls:n}=e;return{position:"relative",display:"table",width:"100%",borderCollapse:"separate",borderSpacing:0,"&[class*='col-']":{paddingInlineEnd:e.paddingXS,"&:last-child":{paddingInlineEnd:0}},[`&-lg ${t}, &-lg > ${t}-group-addon`]:{...fo(e)},[`&-sm ${t}, &-sm > ${t}-group-addon`]:{...un(e)},[`&-lg ${n}-select-single`]:{height:e.controlHeightLG},[`&-sm ${n}-select-single`]:{height:e.controlHeightSM},[`> ${t}`]:{display:"table-cell","&:not(:first-child):not(:last-child)":{borderRadius:0}},[`${t}-group`]:{"&-addon, &-wrap":{display:"table-cell",width:1,whiteSpace:"nowrap",verticalAlign:"middle","&:not(:first-child):not(:last-child)":{borderRadius:0}},"&-wrap > *":{display:"block !important"},"&-addon":{position:"relative",padding:`0 ${Z(e.paddingInline)}`,color:e.colorText,fontWeight:"normal",fontSize:e.inputFontSize,textAlign:"center",borderRadius:e.borderRadius,transition:`all ${e.motionDurationSlow}`,lineHeight:1,[`${n}-select`]:{margin:`${Z(e.calc(e.paddingBlock).add(1).mul(-1).equal())} ${Z(e.calc(e.paddingInline).mul(-1).equal())}`,[`&${n}-select-single:not(${n}-select-customize-input):not(${n}-pagination-size-changer)`]:{backgroundColor:"inherit",border:`${Z(e.lineWidth)} ${e.lineType} transparent`,boxShadow:"none"}},[`${n}-cascader-picker`]:{margin:`-9px ${Z(e.calc(e.paddingInline).mul(-1).equal())}`,backgroundColor:"transparent",[`${n}-cascader-input`]:{textAlign:"start",border:0,boxShadow:"none"}}}},[t]:{width:"100%",marginBottom:0,textAlign:"inherit","&:focus":{zIndex:1,borderInlineEndWidth:1},"&:hover":{zIndex:1,borderInlineEndWidth:1}},[`> ${t}:first-child, ${t}-group-addon:first-child`]:{borderStartEndRadius:0,borderEndEndRadius:0,[`${n}-select`]:{borderStartEndRadius:0,borderEndEndRadius:0}},[`> ${t}-affix-wrapper`]:{[`&:not(:first-child) ${t}`]:{borderStartStartRadius:0,borderEndStartRadius:0},[`&:not(:last-child) ${t}`]:{borderStartEndRadius:0,borderEndEndRadius:0}},[`> ${t}:last-child, ${t}-group-addon:last-child`]:{borderStartStartRadius:0,borderEndStartRadius:0,[`${n}-select`]:{borderStartStartRadius:0,borderEndStartRadius:0}},[`${t}-affix-wrapper`]:{"&:not(:last-child)":{borderStartEndRadius:0,borderEndEndRadius:0},"&:not(:first-child)":{borderStartStartRadius:0,borderEndStartRadius:0}},[`&${t}-group-compact`]:{display:"block",...Xo(),[`${t}-group-addon, ${t}-group-wrap, > ${t}`]:{"&:not(:first-child):not(:last-child)":{borderInlineEndWidth:e.lineWidth,"&:hover, &:focus":{zIndex:1}}},"& > *":{display:"inline-flex",float:"none",verticalAlign:"top",borderRadius:0},[`
+        `]: { animationName: Po },
+          '&-hidden': { display: 'none' },
+          [r]: {
+            ...Nn(e),
+            cursor: 'pointer',
+            transition: `background ${e.motionDurationSlow} ease`,
+            borderRadius: e.borderRadiusSM,
+            '&-group': { color: e.colorTextDescription, fontSize: e.fontSizeSM, cursor: 'default' },
+            '&-option': {
+              display: 'flex',
+              '&-content': { flex: 'auto', ...ht },
+              '&-state': { flex: 'none', display: 'flex', alignItems: 'center' },
+              [`&-active:not(${r}-option-disabled)`]: { backgroundColor: e.optionActiveBg },
+              [`&-selected:not(${r}-option-disabled)`]: {
+                color: e.optionSelectedColor,
+                fontWeight: e.optionSelectedFontWeight,
+                backgroundColor: e.optionSelectedBg,
+                [`${r}-option-state`]: { color: e.colorPrimary }
+              },
+              '&-disabled': {
+                [`&${r}-option-selected`]: { backgroundColor: e.colorBgContainerDisabled },
+                color: e.colorTextDisabled,
+                cursor: 'not-allowed'
+              },
+              '&-grouped': { paddingInlineStart: e.calc(e.controlPaddingHorizontal).mul(2).equal() }
+            },
+            '&-empty': { ...Nn(e), color: e.colorTextDisabled }
+          },
+          [`${c}:has(+ ${c})`]: {
+            borderEndStartRadius: 0,
+            borderEndEndRadius: 0,
+            [`& + ${c}`]: { borderStartStartRadius: 0, borderStartEndRadius: 0 }
+          },
+          '&-rtl': { direction: 'rtl' }
+        }
+      },
+      gn(e, 'slide-up'),
+      gn(e, 'slide-down'),
+      hn(e, 'move-up'),
+      hn(e, 'move-down')
+    ];
+  },
+  Bl = (e) => {
+    const { componentCls: t } = e;
+    return {
+      [`&${t}-customize`]: {
+        border: 0,
+        padding: 0,
+        fontSize: 'inherit',
+        lineHeight: 'inherit',
+        [`${t}-placeholder`]: { display: 'none' },
+        [`${t}-content`]: { margin: 0, padding: 0, '&-value': { display: 'none' } }
+      }
+    };
+  },
+  Dn = 4,
+  Tl = (e) => {
+    const {
+      componentCls: t,
+      calc: n,
+      iconCls: r,
+      paddingXS: l,
+      paddingXXS: i,
+      INTERNAL_FIXED_ITEM_MARGIN: a,
+      lineWidth: s,
+      colorIcon: c,
+      colorIconHover: u,
+      inputPaddingHorizontalBase: f
+    } = e;
+    return {
+      '&-multiple': {
+        '--select-multi-item-background': e.multipleItemBg,
+        '--select-multi-item-border-color': 'transparent',
+        '--select-multi-item-border-radius': e.borderRadiusSM,
+        '--select-multi-item-height': e.multipleItemHeight,
+        '--select-multi-padding-base':
+          'calc((var(--select-height) - var(--select-multi-item-height)) / 2)',
+        '--select-multi-padding-vertical': `calc(var(--select-multi-padding-base) - ${a} - ${s})`,
+        '--select-multi-item-padding-horizontal': `calc(${f} - var(--select-multi-padding-vertical) - ${s} * 2)`,
+        paddingBlock: 'var(--select-multi-padding-vertical)',
+        paddingInlineStart: `calc(var(--select-multi-padding-base) - ${s})`,
+        [`${t}-prefix`]: { marginInlineStart: 'var(--select-multi-item-padding-horizontal)' },
+        [`${t}-prefix + ${t}-content`]: {
+          [`${t}-placeholder`]: { insetInlineStart: 0 },
+          [`${t}-content-item${t}-content-item-suffix`]: { marginInlineStart: 0 }
+        },
+        [`${t}-placeholder`]: {
+          position: 'absolute',
+          lineHeight: 'var(--select-line-height)',
+          insetInlineStart: 'var(--select-multi-item-padding-horizontal)',
+          width: 'calc(100% - var(--select-multi-item-padding-horizontal))',
+          top: '50%',
+          transform: 'translateY(-50%)'
+        },
+        [`${t}-content`]: {
+          flexWrap: 'wrap',
+          alignItems: 'center',
+          lineHeight: 1,
+          '&-item-prefix': { height: 'var(--select-font-size)' },
+          '&-item': { lineHeight: 1, maxWidth: `calc(100% - ${Dn}px)` },
+          [`${t}-content-item-prefix + ${t}-content-item-suffix,
+          ${t}-content-item-suffix:first-child`]: {
+            marginInlineStart: 'var(--select-multi-item-padding-horizontal)'
+          },
+          [`${t}-selection-item`]: {
+            lineHeight: `calc(var(--select-multi-item-height) - ${s} * 2)`,
+            border: `${s} solid var(--select-multi-item-border-color)`,
+            display: 'flex',
+            marginBlock: a,
+            marginInlineEnd: n(a).mul(2).equal(),
+            background: 'var(--select-multi-item-background)',
+            borderRadius: 'var(--select-multi-item-border-radius)',
+            paddingInlineStart: l,
+            paddingInlineEnd: i,
+            transition: ['height', 'line-height', 'padding']
+              .map((m) => `${m} ${e.motionDurationSlow}`)
+              .join(','),
+            '&-content': { ...ht, marginInlineEnd: i },
+            '&-remove': {
+              ...zo(),
+              display: 'inline-flex',
+              alignItems: 'center',
+              color: c,
+              fontWeight: 'bold',
+              fontSize: 10,
+              lineHeight: 'inherit',
+              cursor: 'pointer',
+              [`> ${r}`]: { verticalAlign: '-0.2em' },
+              '&:hover': { color: u }
+            }
+          },
+          [`${t}-input`]: {
+            lineHeight: n(a).mul(2).add('var(--select-multi-item-height)').equal(),
+            width: 'calc(var(--select-input-width, 0) * 1px)',
+            minWidth: Dn,
+            maxWidth: '100%',
+            transition: `line-height ${e.motionDurationSlow}`
+          }
+        },
+        [`&${t}-sm`]: {
+          '--select-multi-item-height': e.multipleItemHeightSM,
+          '--select-multi-item-border-radius': e.borderRadiusXS
+        },
+        [`&${t}-lg`]: {
+          '--select-multi-item-height': e.multipleItemHeightLG,
+          '--select-multi-item-border-radius': e.borderRadius
+        },
+        [`&${t}-filled`]: {
+          '--select-multi-item-border-color': e.colorSplit,
+          '--select-multi-item-background': e.colorBgContainer,
+          [`&${t}-disabled`]: { '--select-multi-item-border-color': 'transparent' }
+        }
+      }
+    };
+  },
+  Ot = (e, t) => {
+    const { componentCls: n } = e,
+      { border: r, borderHover: l, borderActive: i, borderOutline: a } = t,
+      s = t.background || e.selectorBg || e.colorBgContainer;
+    return {
+      '--select-border-color': r,
+      '--select-background': s,
+      '--select-color': t.color || e.colorText,
+      [`&:not(${n}-disabled)`]: {
+        '&:hover': { '--select-border-color': l, '--select-background': t.backgroundHover || s },
+        [`&${n}-focused`]: {
+          '--select-border-color': i,
+          '--select-background': t.backgroundActive || s,
+          boxShadow: `0 0 0 ${Z(e.controlOutlineWidth)} ${a}`
+        }
+      },
+      [`&${n}-disabled`]: {
+        '--select-border-color': t.borderDisabled || t.border,
+        '--select-background': t.backgroundDisabled || t.background
+      }
+    };
+  },
+  Ct = (e, t, n, r = {}, l = {}, i) => {
+    const { componentCls: a } = e;
+    return {
+      [`&${a}-${t}`]: [
+        Ot(e, n),
+        {
+          [`&${a}-status-error`]: Ot(e, { ...n, color: r.color || e.colorError, ...r }),
+          [`&${a}-status-warning`]: Ot(e, { ...n, color: l.color || e.colorWarning, ...l })
+        },
+        i
+      ]
+    };
+  },
+  zl = (e) => {
+    const { componentCls: t, calc: n, fontHeight: r, controlHeight: l, iconCls: i } = e;
+    return {
+      [t]: [
+        {
+          '--select-border-radius': e.borderRadius,
+          '--select-border-color': '#000',
+          '--select-border-size': e.lineWidth,
+          '--select-background': e.colorBgContainer,
+          '--select-font-size': e.fontSize,
+          '--select-line-height': e.lineHeight,
+          '--select-font-height': r,
+          '--select-color': e.colorText,
+          '--select-height': l,
+          '--select-padding-horizontal': n(e.paddingSM).sub(e.lineWidth).equal(),
+          '--select-padding-vertical':
+            'calc((var(--select-height) - var(--select-font-height)) / 2 - var(--select-border-size))',
+          ...ut(e, !0),
+          display: 'inline-flex',
+          flexWrap: 'nowrap',
+          position: 'relative',
+          transition: `all ${e.motionDurationSlow}`,
+          alignItems: 'flex-start',
+          outline: 0,
+          cursor: 'pointer',
+          borderRadius: 'var(--select-border-radius)',
+          borderWidth: 'var(--select-border-size)',
+          borderStyle: e.lineType,
+          borderColor: 'var(--select-border-color)',
+          background: 'var(--select-background)',
+          fontSize: 'var(--select-font-size)',
+          lineHeight: 'var(--select-line-height)',
+          color: 'var(--select-color)',
+          paddingInline: 'var(--select-padding-horizontal)',
+          paddingBlock: 'var(--select-padding-vertical)',
+          [`${t}-prefix`]: { flex: 'none', lineHeight: 1 },
+          [`${t}-placeholder`]: {
+            ...ht,
+            color: e.colorTextPlaceholder,
+            pointerEvents: 'none',
+            zIndex: 1
+          },
+          [`${t}-content`]: {
+            flex: 'auto',
+            minWidth: 0,
+            position: 'relative',
+            display: 'flex',
+            marginInlineEnd: n(e.paddingXXS).mul(1.5).equal(),
+            '&:before': { content: '"\\a0"', width: 0, overflow: 'hidden' },
+            '&-value': {
+              ...ht,
+              transition: `all ${e.motionDurationMid} ${e.motionEaseInOut}`,
+              zIndex: 1
+            },
+            'input[readonly]': { cursor: 'inherit', caretColor: 'transparent' }
+          },
+          [`&-open ${t}-content-value`]: { color: e.colorTextPlaceholder },
+          [`${t}-suffix`]: {
+            flex: 'none',
+            color: e.colorTextQuaternary,
+            fontSize: e.fontSizeIcon,
+            lineHeight: 1,
+            '> :not(:last-child)': { marginInlineEnd: e.marginXS }
+          },
+          [`${t}-prefix, ${t}-suffix`]: { alignSelf: 'center', [i]: { verticalAlign: 'top' } },
+          '&-disabled': {
+            background: e.colorBgContainerDisabled,
+            color: e.colorTextDisabled,
+            cursor: 'not-allowed'
+          },
+          '&-sm': {
+            '--select-height': e.controlHeightSM,
+            '--select-padding-horizontal': n(e.paddingXS).sub(e.lineWidth).equal(),
+            '--select-border-radius': e.borderRadiusSM
+          },
+          '&-lg': {
+            '--select-height': e.controlHeightLG,
+            '--select-font-size': e.fontSizeLG,
+            '--select-line-height': e.lineHeightLG,
+            '--select-font-height': e.fontHeightLG,
+            '--select-border-radius': e.borderRadiusLG
+          }
+        },
+        {
+          [`&:not(${t}-customize)`]: {
+            [`${t}-input`]: {
+              outline: 'none',
+              background: 'transparent',
+              appearance: 'none',
+              border: 0,
+              margin: 0,
+              padding: 0,
+              color: 'inherit',
+              '&::-webkit-search-cancel-button': { display: 'none', appearance: 'none' }
+            }
+          }
+        },
+        {
+          [`&-single:not(${t}-customize)`]: {
+            [`${t}-input`]: {
+              position: 'absolute',
+              insetInline: 0,
+              insetBlock: 'calc(var(--select-padding-vertical) * -1)',
+              lineHeight: 'calc(var(--select-font-height) + var(--select-padding-vertical) * 2)'
+            },
+            [`${t}-content`]: { alignSelf: 'center' }
+          }
+        },
+        Tl(e),
+        Ct(
+          e,
+          'outlined',
+          {
+            border: e.colorBorder,
+            borderHover: e.hoverBorderColor,
+            borderActive: e.activeBorderColor,
+            borderOutline: e.activeOutlineColor,
+            borderDisabled: e.colorBorderDisabled
+          },
+          {
+            border: e.colorError,
+            borderHover: e.colorErrorHover,
+            borderActive: e.colorError,
+            borderOutline: e.colorErrorOutline
+          },
+          {
+            border: e.colorWarning,
+            borderHover: e.colorWarningHover,
+            borderActive: e.colorWarning,
+            borderOutline: e.colorWarningOutline
+          }
+        ),
+        Ct(
+          e,
+          'filled',
+          {
+            border: 'transparent',
+            borderHover: 'transparent',
+            borderActive: e.activeBorderColor,
+            borderOutline: 'transparent',
+            borderDisabled: e.colorBorderDisabled,
+            background: e.colorFillTertiary,
+            backgroundHover: e.colorFillSecondary,
+            backgroundActive: e.colorBgContainer
+          },
+          {
+            background: e.colorErrorBg,
+            backgroundHover: e.colorErrorBgHover,
+            borderActive: e.colorError
+          },
+          {
+            background: e.colorWarningBg,
+            backgroundHover: e.colorWarningBgHover,
+            borderActive: e.colorWarning
+          }
+        ),
+        Ct(e, 'borderless', {
+          border: 'transparent',
+          borderHover: 'transparent',
+          borderActive: 'transparent',
+          borderOutline: 'transparent',
+          background: 'transparent'
+        }),
+        Ct(
+          e,
+          'underlined',
+          {
+            border: e.colorBorder,
+            borderHover: e.hoverBorderColor,
+            borderActive: e.activeBorderColor,
+            borderOutline: 'transparent'
+          },
+          { border: e.colorError, borderHover: e.colorErrorHover, borderActive: e.colorError },
+          {
+            border: e.colorWarning,
+            borderHover: e.colorWarningHover,
+            borderActive: e.colorWarning
+          },
+          {
+            borderRadius: 0,
+            borderTopColor: 'transparent',
+            borderRightColor: 'transparent',
+            borderLeftColor: 'transparent'
+          }
+        ),
+        Bl(e)
+      ]
+    };
+  },
+  Nl = (e) => {
+    const {
+        fontSize: t,
+        lineHeight: n,
+        lineWidth: r,
+        controlHeight: l,
+        controlHeightSM: i,
+        controlHeightLG: a,
+        paddingXXS: s,
+        controlPaddingHorizontal: c,
+        zIndexPopupBase: u,
+        colorText: f,
+        fontWeightStrong: m,
+        controlItemBgActive: d,
+        controlItemBgHover: p,
+        colorBgContainer: g,
+        colorFillSecondary: v,
+        colorBgContainerDisabled: w,
+        colorTextDisabled: E,
+        colorPrimaryHover: $,
+        colorPrimary: h,
+        controlOutline: y
+      } = e,
+      H = s * 2,
+      L = r * 2,
+      z = Math.min(l - H, l - L),
+      B = Math.min(i - H, i - L),
+      x = Math.min(a - H, a - L);
+    return {
+      INTERNAL_FIXED_ITEM_MARGIN: Math.floor(s / 2),
+      zIndexPopup: u + 50,
+      optionSelectedColor: f,
+      optionSelectedFontWeight: m,
+      optionSelectedBg: d,
+      optionActiveBg: p,
+      optionPadding: `${(l - t * n) / 2}px ${c}px`,
+      optionFontSize: t,
+      optionLineHeight: n,
+      optionHeight: l,
+      selectorBg: g,
+      clearBg: g,
+      singleItemHeightLG: a,
+      multipleItemBg: v,
+      multipleItemBorderColor: 'transparent',
+      multipleItemHeight: z,
+      multipleItemHeightSM: B,
+      multipleItemHeightLG: x,
+      multipleSelectorBgDisabled: w,
+      multipleItemColorDisabled: E,
+      multipleItemBorderColorDisabled: 'transparent',
+      showArrowPaddingInlineEnd: Math.ceil(e.fontSize * 1.25),
+      hoverBorderColor: $,
+      activeBorderColor: h,
+      activeOutlineColor: y,
+      selectAffixPadding: s
+    };
+  },
+  Dl = (e) => {
+    const { antCls: t, componentCls: n, inputPaddingHorizontalBase: r } = e,
+      l = { [`${n}-clear`]: { opacity: 1, background: e.colorBgBase, borderRadius: '50%' } };
+    return {
+      [n]: {
+        ...ut(e),
+        [`${n}-selection-item`]: {
+          flex: 1,
+          fontWeight: 'normal',
+          position: 'relative',
+          userSelect: 'none',
+          ...ht,
+          [`> ${t}-typography`]: { display: 'inline' }
+        },
+        [`${n}-prefix`]: { flex: 'none', marginInlineEnd: e.selectAffixPadding },
+        [`${n}-clear`]: {
+          position: 'absolute',
+          top: '50%',
+          insetInlineStart: 'auto',
+          insetInlineEnd: r,
+          zIndex: 1,
+          display: 'inline-block',
+          width: e.fontSizeIcon,
+          height: e.fontSizeIcon,
+          marginTop: e.calc(e.fontSizeIcon).mul(-1).div(2).equal(),
+          color: e.colorTextQuaternary,
+          fontSize: e.fontSizeIcon,
+          fontStyle: 'normal',
+          lineHeight: 1,
+          textAlign: 'center',
+          textTransform: 'none',
+          cursor: 'pointer',
+          opacity: 0,
+          transition: `color ${e.motionDurationMid} ease, opacity ${e.motionDurationSlow} ease`,
+          textRendering: 'auto',
+          transform: 'translateZ(0)',
+          '&:before': { display: 'block' },
+          '&:hover': { color: e.colorIcon }
+        },
+        '@media(hover:none)': l,
+        '&:hover': l
+      },
+      [`${n}-status`]: {
+        '&-error, &-warning, &-success, &-validating': {
+          [`&${n}-has-feedback`]: {
+            [`${n}-clear`]: { insetInlineEnd: e.calc(r).add(e.fontSize).add(e.paddingXS).equal() }
+          }
+        }
+      }
+    };
+  },
+  Hl = (e) => {
+    const { componentCls: t } = e;
+    return [
+      { [t]: { [`&${t}-in-form-item`]: { width: '100%' } } },
+      Dl(e),
+      Ol(e),
+      { [`${t}-rtl`]: { direction: 'rtl' } },
+      Kn(e, { focusElCls: `${t}-focused` })
+    ];
+  },
+  Ll = vt(
+    'Select',
+    (e, { rootPrefixCls: t }) => {
+      const n = at(e, {
+        rootPrefixCls: t,
+        inputPaddingHorizontalBase: e.calc(e.paddingSM).sub(e.lineWidth).equal(),
+        multipleSelectItemHeight: e.multipleItemHeight,
+        selectHeight: e.controlHeight
+      });
+      return [Hl(n), zl(n)];
+    },
+    Nl,
+    { unitless: { optionLineHeight: !0, optionSelectedFontWeight: !0 } }
+  );
+function jl({
+  suffixIcon: e,
+  clearIcon: t,
+  menuItemSelectedIcon: n,
+  removeIcon: r,
+  loading: l,
+  multiple: i,
+  hasFeedback: a,
+  showSuffixIcon: s,
+  feedbackIcon: c,
+  showArrow: u,
+  componentName: f
+}) {
+  const m = t ?? o.createElement(sr, null),
+    d = (w) =>
+      e === null && !a && !u ? null : o.createElement(o.Fragment, null, s !== !1 && w, a && c);
+  let p = null;
+  e !== void 0
+    ? (p = d(e))
+    : l
+      ? (p = d(o.createElement(No, { spin: !0 })))
+      : (p = ({ open: w, showSearch: E }) =>
+          d(w && E ? o.createElement(Cr, null) : o.createElement(Yn, null)));
+  let g = null;
+  n !== void 0 ? (g = n) : i ? (g = o.createElement(lr, null)) : (g = null);
+  let v = null;
+  return (
+    r !== void 0 ? (v = r) : (v = o.createElement(dr, null)),
+    { clearIcon: m, suffixIcon: p, itemIcon: g, removeIcon: v }
+  );
+}
+function _l(e) {
+  return J.useMemo(() => {
+    if (e) return (...t) => J.createElement(Do, { space: !0 }, e.apply(void 0, t));
+  }, [e]);
+}
+function Al(e, t) {
+  return t !== void 0 ? t : e !== null;
+}
+const uo = 'SECRET_COMBOBOX_MODE_DO_NOT_USE',
+  Vl = (e, t) => {
+    const {
+        prefixCls: n,
+        bordered: r,
+        className: l,
+        rootClassName: i,
+        getPopupContainer: a,
+        popupClassName: s,
+        dropdownClassName: c,
+        listHeight: u = 256,
+        placement: f,
+        listItemHeight: m,
+        size: d,
+        disabled: p,
+        notFoundContent: g,
+        status: v,
+        builtinPlacements: w,
+        dropdownMatchSelectWidth: E,
+        popupMatchSelectWidth: $,
+        direction: h,
+        style: y,
+        allowClear: H,
+        variant: L,
+        popupStyle: z,
+        dropdownStyle: B,
+        transitionName: x,
+        tagRender: X,
+        maxCount: U,
+        prefix: T,
+        dropdownRender: ue,
+        popupRender: oe,
+        onDropdownVisibleChange: de,
+        onOpenChange: pe,
+        styles: j,
+        classNames: D,
+        ...Q
+      } = e,
+      {
+        getPopupContainer: me,
+        getPrefixCls: ne,
+        renderEmpty: P,
+        direction: N,
+        virtual: re,
+        popupMatchSelectWidth: I,
+        popupOverflow: K
+      } = o.useContext(en),
+      { showSearch: ie, style: we, styles: O, className: F, classNames: se } = Zt('select'),
+      [, W] = bt(),
+      ce = m ?? W?.controlHeight,
+      te = ne('select', n),
+      A = ne(),
+      he = h ?? N,
+      { compactSize: Ce, compactItemClassnames: fe } = Ho(te, he),
+      [He, Be] = Ml('select', L, r),
+      Te = Lo(te),
+      [xe, Ee] = Ll(te, Te),
+      $e = o.useMemo(() => {
+        const { mode: R } = e;
+        if (R !== 'combobox') return R === uo ? 'combobox' : R;
+      }, [e.mode]),
+      Ie = $e === 'multiple' || $e === 'tags',
+      Me = Al(e.suffixIcon, e.showArrow),
+      ve = $ ?? E ?? I,
+      Re = _l(oe || ue),
+      Pe = pe || de,
+      { status: ye, hasFeedback: ze, isFormItemInput: Ue, feedbackIcon: ge } = o.useContext(jo),
+      k = Wo(ye, v);
+    let be;
+    g !== void 0
+      ? (be = g)
+      : $e === 'combobox'
+        ? (be = null)
+        : (be = P?.('Select') || o.createElement(Il, { componentName: 'Select' }));
+    const {
+        suffixIcon: Ne,
+        itemIcon: Ke,
+        removeIcon: _e,
+        clearIcon: Xe
+      } = jl({
+        ...Q,
+        multiple: Ie,
+        hasFeedback: ze,
+        feedbackIcon: ge,
+        showSuffixIcon: Me,
+        componentName: 'Select'
+      }),
+      De = H === !0 ? { clearIcon: Xe } : H,
+      Ae = Qt(Q, ['suffixIcon', 'itemIcon']),
+      We = qn((R) => d ?? Ce ?? R),
+      Oe = o.useContext(_o),
+      Ve = p ?? Oe,
+      Fe = { ...e, variant: He, status: k, disabled: Ve, size: We },
+      [Le, C] = kt([se, D], [O, j], { props: Fe }, { popup: { _default: 'root' } }),
+      q = ae(Le.popup?.root, s, c, { [`${te}-dropdown-${he}`]: he === 'rtl' }, i, Ee, Te, xe),
+      b = { ...C.popup?.root, ...(z ?? B) },
+      M = ae(
+        {
+          [`${te}-lg`]: We === 'large',
+          [`${te}-sm`]: We === 'small',
+          [`${te}-rtl`]: he === 'rtl',
+          [`${te}-${He}`]: Be,
+          [`${te}-in-form-item`]: Ue
+        },
+        Ao(te, k, ze),
+        fe,
+        F,
+        l,
+        Le.root,
+        i,
+        Ee,
+        Te,
+        xe
+      ),
+      le = o.useMemo(
+        () => (f !== void 0 ? f : he === 'rtl' ? 'bottomRight' : 'bottomLeft'),
+        [f, he]
+      ),
+      [S] = Vo('SelectLike', C.popup?.root?.zIndex ?? b?.zIndex);
+    return o.createElement(ln, {
+      ref: t,
+      virtual: re,
+      classNames: Le,
+      styles: C,
+      showSearch: ie,
+      ...Ae,
+      style: { ...C.root, ...we, ...y },
+      popupMatchSelectWidth: ve,
+      transitionName: Fo(A, 'slide-up', x),
+      builtinPlacements: Pl(w, K),
+      listHeight: u,
+      listItemHeight: ce,
+      mode: $e,
+      prefixCls: te,
+      placement: le,
+      direction: he,
+      prefix: T,
+      suffixIcon: Ne,
+      menuItemSelectedIcon: Ke,
+      removeIcon: _e,
+      allowClear: De,
+      notFoundContent: be,
+      className: M,
+      getPopupContainer: a || me,
+      popupClassName: q,
+      disabled: Ve,
+      popupStyle: { ...C.popup?.root, ...b, zIndex: S },
+      maxCount: Ie ? U : void 0,
+      tagRender: Ie ? X : void 0,
+      popupRender: Re,
+      onPopupVisibleChange: Pe
+    });
+  },
+  dt = o.forwardRef(Vl),
+  Fl = Go(dt, 'popupAlign');
+dt.SECRET_COMBOBOX_MODE_DO_NOT_USE = uo;
+dt.Option = rn;
+dt.OptGroup = on;
+dt._InternalPanelDoNotUseOrYouWillBeFired = Fl;
+const Wl = ['xxl', 'xl', 'lg', 'md', 'sm', 'xs'],
+  Gl = (e) => ({
+    xs: `(max-width: ${e.screenXSMax}px)`,
+    sm: `(min-width: ${e.screenSM}px)`,
+    md: `(min-width: ${e.screenMD}px)`,
+    lg: `(min-width: ${e.screenLG}px)`,
+    xl: `(min-width: ${e.screenXL}px)`,
+    xxl: `(min-width: ${e.screenXXL}px)`
+  }),
+  Xl = (e) => {
+    const t = e,
+      n = [].concat(Wl).reverse();
+    return (
+      n.forEach((r, l) => {
+        const i = r.toUpperCase(),
+          a = `screen${i}Min`,
+          s = `screen${i}`;
+        if (!(t[a] <= t[s])) throw new Error(`${a}<=${s} fails : !(${t[a]}<=${t[s]})`);
+        if (l < n.length - 1) {
+          const c = `screen${i}Max`;
+          if (!(t[s] <= t[c])) throw new Error(`${s}<=${c} fails : !(${t[s]}<=${t[c]})`);
+          const f = `screen${n[l + 1].toUpperCase()}Min`;
+          if (!(t[c] <= t[f])) throw new Error(`${c}<=${f} fails : !(${t[c]}<=${t[f]})`);
+        }
+      }),
+      e
+    );
+  },
+  Ul = () => {
+    const [, e] = bt(),
+      t = Gl(Xl(e));
+    return J.useMemo(() => {
+      const n = new Map();
+      let r = -1,
+        l = {};
+      return {
+        responsiveMap: t,
+        matchHandlers: {},
+        dispatch(i) {
+          return ((l = i), n.forEach((a) => a(l)), n.size >= 1);
+        },
+        subscribe(i) {
+          return (n.size || this.register(), (r += 1), n.set(r, i), i(l), r);
+        },
+        unsubscribe(i) {
+          (n.delete(i), n.size || this.unregister());
+        },
+        register() {
+          Object.entries(t).forEach(([i, a]) => {
+            const s = ({ matches: u }) => {
+                this.dispatch({ ...l, [i]: u });
+              },
+              c = window.matchMedia(a);
+            (typeof c?.addEventListener == 'function' && c.addEventListener('change', s),
+              (this.matchHandlers[a] = { mql: c, listener: s }),
+              s(c));
+          });
+        },
+        unregister() {
+          (Object.values(t).forEach((i) => {
+            const a = this.matchHandlers[i];
+            typeof a?.mql?.removeEventListener == 'function' &&
+              a.mql.removeEventListener('change', a?.listener);
+          }),
+            n.clear());
+        }
+      };
+    }, [t]);
+  };
+function Kl(e = !0, t = {}) {
+  const n = o.useRef(t),
+    [, r] = Ir(),
+    l = Ul();
+  return (
+    lt(() => {
+      const i = l.subscribe((a) => {
+        ((n.current = a), e && r());
+      });
+      return () => l.unsubscribe(i);
+    }, []),
+    n.current
+  );
+}
+function an(e) {
+  return at(e, { inputAffixPadding: e.paddingXXS });
+}
+const sn = (e) => {
+    const {
+        controlHeight: t,
+        fontSize: n,
+        lineHeight: r,
+        lineWidth: l,
+        controlHeightSM: i,
+        controlHeightLG: a,
+        fontSizeLG: s,
+        lineHeightLG: c,
+        paddingSM: u,
+        controlPaddingHorizontalSM: f,
+        controlPaddingHorizontal: m,
+        colorFillAlter: d,
+        colorPrimaryHover: p,
+        colorPrimary: g,
+        controlOutlineWidth: v,
+        controlOutline: w,
+        colorErrorOutline: E,
+        colorWarningOutline: $,
+        colorBgContainer: h,
+        inputFontSize: y,
+        inputFontSizeLG: H,
+        inputFontSizeSM: L
+      } = e,
+      z = y || n,
+      B = L || z,
+      x = H || s,
+      X = Math.round(((t - z * r) / 2) * 10) / 10 - l,
+      U = Math.round(((i - B * r) / 2) * 10) / 10 - l,
+      T = Math.ceil(((a - x * c) / 2) * 10) / 10 - l;
+    return {
+      paddingBlock: Math.max(X, 0),
+      paddingBlockSM: Math.max(U, 0),
+      paddingBlockLG: Math.max(T, 0),
+      paddingInline: u - l,
+      paddingInlineSM: f - l,
+      paddingInlineLG: m - l,
+      addonBg: d,
+      activeBorderColor: g,
+      hoverBorderColor: p,
+      activeShadow: `0 0 0 ${v}px ${w}`,
+      errorActiveShadow: `0 0 0 ${v}px ${E}`,
+      warningActiveShadow: `0 0 0 ${v}px ${$}`,
+      hoverBg: h,
+      activeBg: h,
+      inputFontSize: z,
+      inputFontSizeLG: x,
+      inputFontSizeSM: B
+    };
+  },
+  ql = (e) => ({ borderColor: e.hoverBorderColor, backgroundColor: e.hoverBg }),
+  wt = (e) => ({
+    color: e.colorTextDisabled,
+    backgroundColor: e.colorBgContainerDisabled,
+    borderColor: e.colorBorder,
+    boxShadow: 'none',
+    cursor: 'not-allowed',
+    opacity: 1,
+    'input[disabled], textarea[disabled]': { cursor: 'not-allowed' },
+    '&:hover:not([disabled])': {
+      ...ql(at(e, { hoverBorderColor: e.colorBorder, hoverBg: e.colorBgContainerDisabled }))
+    }
+  }),
+  cn = (e, t) => ({
+    background: e.colorBgContainer,
+    borderWidth: e.lineWidth,
+    borderStyle: e.lineType,
+    borderColor: t.borderColor,
+    '&:hover': { borderColor: t.hoverBorderColor, backgroundColor: e.hoverBg },
+    '&:focus, &:focus-within': {
+      borderColor: t.activeBorderColor,
+      boxShadow: t.activeShadow,
+      outline: 0,
+      backgroundColor: e.activeBg
+    }
+  }),
+  Hn = (e, t) => ({
+    [`&${e.componentCls}-status-${t.status}:not(${e.componentCls}-disabled)`]: {
+      ...cn(e, t),
+      [`${e.componentCls}-prefix, ${e.componentCls}-suffix`]: { color: t.affixColor }
+    },
+    [`&${e.componentCls}-status-${t.status}${e.componentCls}-disabled`]: {
+      borderColor: t.borderColor
+    }
+  }),
+  Yl = (e, t) => ({
+    '&-outlined': {
+      ...cn(e, {
+        borderColor: e.colorBorder,
+        hoverBorderColor: e.hoverBorderColor,
+        activeBorderColor: e.activeBorderColor,
+        activeShadow: e.activeShadow
+      }),
+      [`&${e.componentCls}-disabled, &[disabled]`]: { ...wt(e) },
+      ...Hn(e, {
+        status: 'error',
+        borderColor: e.colorError,
+        hoverBorderColor: e.colorErrorBorderHover,
+        activeBorderColor: e.colorError,
+        activeShadow: e.errorActiveShadow,
+        affixColor: e.colorError
+      }),
+      ...Hn(e, {
+        status: 'warning',
+        borderColor: e.colorWarning,
+        hoverBorderColor: e.colorWarningBorderHover,
+        activeBorderColor: e.colorWarning,
+        activeShadow: e.warningActiveShadow,
+        affixColor: e.colorWarning
+      }),
+      ...t
+    }
+  }),
+  Ln = (e, t) => ({
+    [`&${e.componentCls}-group-wrapper-status-${t.status}`]: {
+      [`${e.componentCls}-group-addon`]: { borderColor: t.addonBorderColor, color: t.addonColor }
+    }
+  }),
+  Jl = (e) => ({
+    '&-outlined': {
+      [`${e.componentCls}-group`]: {
+        '&-addon': {
+          background: e.addonBg,
+          border: `${Z(e.lineWidth)} ${e.lineType} ${e.colorBorder}`
+        },
+        '&-addon:first-child': { borderInlineEnd: 0 },
+        '&-addon:last-child': { borderInlineStart: 0 }
+      },
+      ...Ln(e, { status: 'error', addonBorderColor: e.colorError, addonColor: e.colorErrorText }),
+      ...Ln(e, {
+        status: 'warning',
+        addonBorderColor: e.colorWarning,
+        addonColor: e.colorWarningText
+      }),
+      [`&${e.componentCls}-group-wrapper-disabled`]: {
+        [`${e.componentCls}-group-addon`]: { ...wt(e) }
+      }
+    }
+  }),
+  Ql = (e, t) => {
+    const { componentCls: n } = e;
+    return {
+      '&-borderless': {
+        background: 'transparent',
+        border: 'none',
+        '&:focus, &:focus-within': { outline: 'none' },
+        [`&${n}-disabled, &[disabled]`]: { color: e.colorTextDisabled, cursor: 'not-allowed' },
+        [`&${n}-status-error`]: { '&, & input, & textarea': { color: e.colorError } },
+        [`&${n}-status-warning`]: { '&, & input, & textarea': { color: e.colorWarning } },
+        ...t
+      }
+    };
+  },
+  po = (e, t) => ({
+    background: t.bg,
+    borderWidth: e.lineWidth,
+    borderStyle: e.lineType,
+    borderColor: 'transparent',
+    'input&, & input, textarea&, & textarea': { color: t?.inputColor ?? 'unset' },
+    '&:hover': { background: t.hoverBg },
+    '&:focus, &:focus-within': {
+      outline: 0,
+      borderColor: t.activeBorderColor,
+      backgroundColor: e.activeBg
+    }
+  }),
+  jn = (e, t) => ({
+    [`&${e.componentCls}-status-${t.status}:not(${e.componentCls}-disabled)`]: {
+      ...po(e, t),
+      [`${e.componentCls}-prefix, ${e.componentCls}-suffix`]: { color: t.affixColor }
+    }
+  }),
+  Zl = (e, t) => ({
+    '&-filled': {
+      ...po(e, {
+        bg: e.colorFillTertiary,
+        hoverBg: e.colorFillSecondary,
+        activeBorderColor: e.activeBorderColor,
+        inputColor: e.colorText
+      }),
+      [`&${e.componentCls}-disabled, &[disabled]`]: { ...wt(e) },
+      ...jn(e, {
+        status: 'error',
+        bg: e.colorErrorBg,
+        hoverBg: e.colorErrorBgHover,
+        activeBorderColor: e.colorError,
+        inputColor: e.colorErrorText,
+        affixColor: e.colorError
+      }),
+      ...jn(e, {
+        status: 'warning',
+        bg: e.colorWarningBg,
+        hoverBg: e.colorWarningBgHover,
+        activeBorderColor: e.colorWarning,
+        inputColor: e.colorWarningText,
+        affixColor: e.colorWarning
+      }),
+      ...t
+    }
+  }),
+  _n = (e, t) => ({
+    [`&${e.componentCls}-group-wrapper-status-${t.status}`]: {
+      [`${e.componentCls}-group-addon`]: { background: t.addonBg, color: t.addonColor }
+    }
+  }),
+  kl = (e) => ({
+    '&-filled': {
+      [`${e.componentCls}-group-addon`]: {
+        background: e.colorFillTertiary,
+        '&:last-child': { position: 'static' }
+      },
+      ..._n(e, { status: 'error', addonBg: e.colorErrorBg, addonColor: e.colorErrorText }),
+      ..._n(e, { status: 'warning', addonBg: e.colorWarningBg, addonColor: e.colorWarningText }),
+      [`&${e.componentCls}-group-wrapper-disabled`]: {
+        [`${e.componentCls}-group`]: {
+          '&-addon': { background: e.colorFillTertiary, color: e.colorTextDisabled },
+          '&-addon:first-child': {
+            borderInlineStart: `${Z(e.lineWidth)} ${e.lineType} ${e.colorBorder}`,
+            borderTop: `${Z(e.lineWidth)} ${e.lineType} ${e.colorBorder}`,
+            borderBottom: `${Z(e.lineWidth)} ${e.lineType} ${e.colorBorder}`
+          },
+          '&-addon:last-child': {
+            borderInlineEnd: `${Z(e.lineWidth)} ${e.lineType} ${e.colorBorder}`,
+            borderTop: `${Z(e.lineWidth)} ${e.lineType} ${e.colorBorder}`,
+            borderBottom: `${Z(e.lineWidth)} ${e.lineType} ${e.colorBorder}`
+          }
+        }
+      }
+    }
+  }),
+  mo = (e, t) => ({
+    background: e.colorBgContainer,
+    borderWidth: `${Z(e.lineWidth)} 0`,
+    borderStyle: `${e.lineType} none`,
+    borderColor: `transparent transparent ${t.borderColor} transparent`,
+    borderRadius: 0,
+    '&:hover': {
+      borderColor: `transparent transparent ${t.hoverBorderColor} transparent`,
+      backgroundColor: e.hoverBg
+    },
+    '&:focus, &:focus-within': {
+      borderColor: `transparent transparent ${t.activeBorderColor} transparent`,
+      outline: 0,
+      backgroundColor: e.activeBg
+    }
+  }),
+  An = (e, t) => ({
+    [`&${e.componentCls}-status-${t.status}:not(${e.componentCls}-disabled)`]: {
+      ...mo(e, t),
+      [`${e.componentCls}-prefix, ${e.componentCls}-suffix`]: { color: t.affixColor }
+    },
+    [`&${e.componentCls}-status-${t.status}${e.componentCls}-disabled`]: {
+      borderColor: `transparent transparent ${t.borderColor} transparent`
+    }
+  }),
+  ei = (e, t) => ({
+    '&-underlined': {
+      ...mo(e, {
+        borderColor: e.colorBorder,
+        hoverBorderColor: e.hoverBorderColor,
+        activeBorderColor: e.activeBorderColor,
+        activeShadow: e.activeShadow
+      }),
+      [`&${e.componentCls}-disabled, &[disabled]`]: {
+        color: e.colorTextDisabled,
+        boxShadow: 'none',
+        cursor: 'not-allowed',
+        '&:hover': { borderColor: `transparent transparent ${e.colorBorder} transparent` }
+      },
+      'input[disabled], textarea[disabled]': { cursor: 'not-allowed' },
+      ...An(e, {
+        status: 'error',
+        borderColor: e.colorError,
+        hoverBorderColor: e.colorErrorBorderHover,
+        activeBorderColor: e.colorError,
+        activeShadow: e.errorActiveShadow,
+        affixColor: e.colorError
+      }),
+      ...An(e, {
+        status: 'warning',
+        borderColor: e.colorWarning,
+        hoverBorderColor: e.colorWarningBorderHover,
+        activeBorderColor: e.colorWarning,
+        activeShadow: e.warningActiveShadow,
+        affixColor: e.colorWarning
+      }),
+      ...t
+    }
+  }),
+  ti = (e) => ({
+    '&::-moz-placeholder': { opacity: 1 },
+    '&::placeholder': { color: e, userSelect: 'none' },
+    '&:placeholder-shown': { textOverflow: 'ellipsis' }
+  }),
+  fo = (e) => {
+    const { paddingBlockLG: t, lineHeightLG: n, borderRadiusLG: r, paddingInlineLG: l } = e;
+    return {
+      padding: `${Z(t)} ${Z(l)}`,
+      fontSize: e.inputFontSizeLG,
+      lineHeight: n,
+      borderRadius: r
+    };
+  },
+  un = (e) => ({
+    padding: `${Z(e.paddingBlockSM)} ${Z(e.paddingInlineSM)}`,
+    fontSize: e.inputFontSizeSM,
+    borderRadius: e.borderRadiusSM
+  }),
+  dn = (e, t = {}) => ({
+    position: 'relative',
+    display: 'inline-block',
+    width: '100%',
+    minWidth: 0,
+    padding: `${Z(e.paddingBlock)} ${Z(e.paddingInline)}`,
+    color: e.colorText,
+    fontSize: e.inputFontSize,
+    lineHeight: e.lineHeight,
+    borderRadius: e.borderRadius,
+    transition: `all ${e.motionDurationMid}`,
+    ...ti(e.colorTextPlaceholder),
+    '&-lg': { ...fo(e), ...t.largeStyle },
+    '&-sm': { ...un(e), ...t.smallStyle },
+    '&-rtl, &-textarea-rtl': { direction: 'rtl' }
+  }),
+  ni = (e) => {
+    const { componentCls: t, antCls: n } = e;
+    return {
+      position: 'relative',
+      display: 'table',
+      width: '100%',
+      borderCollapse: 'separate',
+      borderSpacing: 0,
+      "&[class*='col-']": {
+        paddingInlineEnd: e.paddingXS,
+        '&:last-child': { paddingInlineEnd: 0 }
+      },
+      [`&-lg ${t}, &-lg > ${t}-group-addon`]: { ...fo(e) },
+      [`&-sm ${t}, &-sm > ${t}-group-addon`]: { ...un(e) },
+      [`&-lg ${n}-select-single`]: { height: e.controlHeightLG },
+      [`&-sm ${n}-select-single`]: { height: e.controlHeightSM },
+      [`> ${t}`]: {
+        display: 'table-cell',
+        '&:not(:first-child):not(:last-child)': { borderRadius: 0 }
+      },
+      [`${t}-group`]: {
+        '&-addon, &-wrap': {
+          display: 'table-cell',
+          width: 1,
+          whiteSpace: 'nowrap',
+          verticalAlign: 'middle',
+          '&:not(:first-child):not(:last-child)': { borderRadius: 0 }
+        },
+        '&-wrap > *': { display: 'block !important' },
+        '&-addon': {
+          position: 'relative',
+          padding: `0 ${Z(e.paddingInline)}`,
+          color: e.colorText,
+          fontWeight: 'normal',
+          fontSize: e.inputFontSize,
+          textAlign: 'center',
+          borderRadius: e.borderRadius,
+          transition: `all ${e.motionDurationSlow}`,
+          lineHeight: 1,
+          [`${n}-select`]: {
+            margin: `${Z(e.calc(e.paddingBlock).add(1).mul(-1).equal())} ${Z(e.calc(e.paddingInline).mul(-1).equal())}`,
+            [`&${n}-select-single:not(${n}-select-customize-input):not(${n}-pagination-size-changer)`]:
+              {
+                backgroundColor: 'inherit',
+                border: `${Z(e.lineWidth)} ${e.lineType} transparent`,
+                boxShadow: 'none'
+              }
+          },
+          [`${n}-cascader-picker`]: {
+            margin: `-9px ${Z(e.calc(e.paddingInline).mul(-1).equal())}`,
+            backgroundColor: 'transparent',
+            [`${n}-cascader-input`]: { textAlign: 'start', border: 0, boxShadow: 'none' }
+          }
+        }
+      },
+      [t]: {
+        width: '100%',
+        marginBottom: 0,
+        textAlign: 'inherit',
+        '&:focus': { zIndex: 1, borderInlineEndWidth: 1 },
+        '&:hover': { zIndex: 1, borderInlineEndWidth: 1 }
+      },
+      [`> ${t}:first-child, ${t}-group-addon:first-child`]: {
+        borderStartEndRadius: 0,
+        borderEndEndRadius: 0,
+        [`${n}-select`]: { borderStartEndRadius: 0, borderEndEndRadius: 0 }
+      },
+      [`> ${t}-affix-wrapper`]: {
+        [`&:not(:first-child) ${t}`]: { borderStartStartRadius: 0, borderEndStartRadius: 0 },
+        [`&:not(:last-child) ${t}`]: { borderStartEndRadius: 0, borderEndEndRadius: 0 }
+      },
+      [`> ${t}:last-child, ${t}-group-addon:last-child`]: {
+        borderStartStartRadius: 0,
+        borderEndStartRadius: 0,
+        [`${n}-select`]: { borderStartStartRadius: 0, borderEndStartRadius: 0 }
+      },
+      [`${t}-affix-wrapper`]: {
+        '&:not(:last-child)': { borderStartEndRadius: 0, borderEndEndRadius: 0 },
+        '&:not(:first-child)': { borderStartStartRadius: 0, borderEndStartRadius: 0 }
+      },
+      [`&${t}-group-compact`]: {
+        display: 'block',
+        ...Xo(),
+        [`${t}-group-addon, ${t}-group-wrap, > ${t}`]: {
+          '&:not(:first-child):not(:last-child)': {
+            borderInlineEndWidth: e.lineWidth,
+            '&:hover, &:focus': { zIndex: 1 }
+          }
+        },
+        '& > *': { display: 'inline-flex', float: 'none', verticalAlign: 'top', borderRadius: 0 },
+        [`
         & > ${t}-affix-wrapper,
         & > ${t}-number-affix-wrapper,
         & > ${n}-picker-range
-      `]:{display:"inline-flex"},"& > *:not(:last-child)":{marginInlineEnd:e.calc(e.lineWidth).mul(-1).equal(),borderInlineEndWidth:e.lineWidth},[t]:{float:"none"},[`& > ${n}-select,
+      `]: { display: 'inline-flex' },
+        '& > *:not(:last-child)': {
+          marginInlineEnd: e.calc(e.lineWidth).mul(-1).equal(),
+          borderInlineEndWidth: e.lineWidth
+        },
+        [t]: { float: 'none' },
+        [`& > ${n}-select,
       & > ${n}-select-auto-complete ${t},
       & > ${n}-cascader-picker ${t},
-      & > ${t}-group-wrapper ${t}`]:{borderInlineEndWidth:e.lineWidth,borderRadius:0,"&:hover, &:focus":{zIndex:1}},[`& > ${n}-select-focused`]:{zIndex:1},[`& > ${n}-select > ${n}-select-arrow`]:{zIndex:1},[`& > *:first-child,
+      & > ${t}-group-wrapper ${t}`]: {
+          borderInlineEndWidth: e.lineWidth,
+          borderRadius: 0,
+          '&:hover, &:focus': { zIndex: 1 }
+        },
+        [`& > ${n}-select-focused`]: { zIndex: 1 },
+        [`& > ${n}-select > ${n}-select-arrow`]: { zIndex: 1 },
+        [`& > *:first-child,
       & > ${n}-select:first-child,
       & > ${n}-select-auto-complete:first-child ${t},
-      & > ${n}-cascader-picker:first-child ${t}`]:{borderStartStartRadius:e.borderRadius,borderEndStartRadius:e.borderRadius},[`& > *:last-child,
+      & > ${n}-cascader-picker:first-child ${t}`]: {
+          borderStartStartRadius: e.borderRadius,
+          borderEndStartRadius: e.borderRadius
+        },
+        [`& > *:last-child,
       & > ${n}-select:last-child,
       & > ${n}-cascader-picker:last-child ${t},
-      & > ${n}-cascader-picker-focused:last-child ${t}`]:{borderInlineEndWidth:e.lineWidth,borderStartEndRadius:e.borderRadius,borderEndEndRadius:e.borderRadius},[`& > ${n}-select-auto-complete ${t}`]:{verticalAlign:"top"},[`${t}-group-wrapper + ${t}-group-wrapper`]:{marginInlineStart:e.calc(e.lineWidth).mul(-1).equal(),[`${t}-affix-wrapper`]:{}}}}},oi=e=>{const{componentCls:t,controlHeightSM:n,lineWidth:r,calc:l}=e,a=l(n).sub(l(r).mul(2)).sub(16).div(2).equal();return{[t]:{...ut(e),...dn(e),...Yl(e),...Zl(e),...Ql(e),...ei(e),'&[type="color"]':{height:e.controlHeight,[`&${t}-lg`]:{height:e.controlHeightLG},[`&${t}-sm`]:{height:n,paddingTop:a,paddingBottom:a}},'&[type="search"]::-webkit-search-cancel-button, &[type="search"]::-webkit-search-decoration':{appearance:"none"}}}},ri=e=>{const{componentCls:t}=e;return{[`${t}-clear-icon`]:{margin:0,padding:0,lineHeight:0,color:e.colorTextQuaternary,fontSize:e.fontSizeIcon,verticalAlign:-1,cursor:"pointer",transition:`color ${e.motionDurationSlow}`,border:"none",outline:"none",backgroundColor:"transparent","&:hover":{color:e.colorIcon},"&:active":{color:e.colorText},"&-hidden":{visibility:"hidden"},"&-has-suffix":{margin:`0 ${Z(e.inputAffixPadding)}`}}}},li=e=>{const{componentCls:t,inputAffixPadding:n,colorTextDescription:r,motionDurationSlow:l,colorIcon:i,colorIconHover:a,iconCls:s}=e,c=`${t}-affix-wrapper`,u=`${t}-affix-wrapper-disabled`;return{[c]:{...dn(e),display:"inline-flex","&-focused, &:focus":{zIndex:1},[`> input${t}`]:{padding:0},[`> input${t}, > textarea${t}`]:{fontSize:"inherit",border:"none",borderRadius:0,outline:"none",background:"transparent",color:"inherit","&::-ms-reveal":{display:"none"},"&:focus":{boxShadow:"none !important"}},"&::before":{display:"inline-block",width:0,visibility:"hidden",content:'"\\a0"'},[t]:{"&-prefix, &-suffix":{display:"flex",flex:"none",alignItems:"center","> *:not(:last-child)":{marginInlineEnd:e.paddingXS}},"&-show-count-suffix":{color:r,direction:"ltr"},"&-show-count-has-suffix":{marginInlineEnd:e.paddingXXS},"&-prefix":{marginInlineEnd:n},"&-suffix":{marginInlineStart:n}},...ri(e),[`${s}${t}-password-icon`]:{color:i,cursor:"pointer",transition:`all ${l}`,"&:hover":{color:a}}},[`${t}-underlined`]:{borderRadius:0},[u]:{[`${s}${t}-password-icon`]:{color:i,cursor:"not-allowed","&:hover":{color:i}}}}},ii=e=>{const{componentCls:t,borderRadiusLG:n,borderRadiusSM:r}=e;return{[`${t}-group`]:{...ut(e),...ni(e),"&-rtl":{direction:"rtl"},"&-wrapper":{display:"inline-block",width:"100%",textAlign:"start",verticalAlign:"top","&-rtl":{direction:"rtl"},"&-lg":{[`${t}-group-addon`]:{borderRadius:n,fontSize:e.inputFontSizeLG}},"&-sm":{[`${t}-group-addon`]:{borderRadius:r}},...Jl(e),...kl(e),[`&:not(${t}-compact-first-item):not(${t}-compact-last-item)${t}-compact-item`]:{[`${t}, ${t}-group-addon`]:{borderRadius:0}},[`&:not(${t}-compact-last-item)${t}-compact-first-item`]:{[`${t}, ${t}-group-addon`]:{borderStartEndRadius:0,borderEndEndRadius:0}},[`&:not(${t}-compact-first-item)${t}-compact-last-item`]:{[`${t}, ${t}-group-addon`]:{borderStartStartRadius:0,borderEndStartRadius:0}},[`&:not(${t}-compact-last-item)${t}-compact-item`]:{[`${t}-affix-wrapper`]:{borderStartEndRadius:0,borderEndEndRadius:0}},[`&:not(${t}-compact-first-item)${t}-compact-item`]:{[`${t}-affix-wrapper`]:{borderStartStartRadius:0,borderEndStartRadius:0}}}}}},ai=e=>{const{componentCls:t}=e;return{[`${t}-out-of-range`]:{[`&, & input, & textarea, ${t}-show-count-suffix, ${t}-data-count`]:{color:e.colorError}}}};vt(["Input","Shared"],e=>{const t=at(e,an(e));return[oi(t),li(t)]},sn,{resetFont:!1});vt(["Input","Component"],e=>{const t=at(e,an(e));return[ii(t),ai(t),Kn(t,{focus:!0,focusElCls:`${t.componentCls}-affix-wrapper-focused`})]},sn,{resetFont:!1});const si={items_per_page:"条/页",jump_to:"跳至",jump_to_confirm:"确定",page:"页",prev_page:"上一页",next_page:"下一页",prev_5:"向前 5 页",next_5:"向后 5 页",prev_3:"向前 3 页",next_3:"向后 3 页",page_size:"页码"},ci=[10,20,50,100],ui=e=>{const{pageSizeOptions:t=ci,locale:n,changeSize:r,pageSize:l,goButton:i,quickGo:a,rootPrefixCls:s,disabled:c,buildOptionText:u,showSizeChanger:f,sizeChangerRender:m}=e,[d,p]=J.useState(""),g=J.useMemo(()=>!d||Number.isNaN(d)?void 0:Number(d),[d]),v=typeof u=="function"?u:B=>`${B} ${n.items_per_page}`,w=B=>{const x=B.target.value;/^\d*$/.test(x)&&p(x)},E=B=>{i||d===""||(p(""),!(B.relatedTarget&&(B.relatedTarget.className.includes(`${s}-item-link`)||B.relatedTarget.className.includes(`${s}-item`)))&&a?.(g))},$=B=>{d!==""&&(B.keyCode===V.ENTER||B.type==="click")&&(p(""),a?.(g))},h=()=>t.some(B=>B.toString()===l.toString())?t:t.concat([l]).sort((B,x)=>{const X=Number.isNaN(Number(B))?0:Number(B),U=Number.isNaN(Number(x))?0:Number(x);return X-U}),y=`${s}-options`;if(!f&&!a)return null;let H=null,L=null,z=null;return f&&m&&(H=m({disabled:c,size:l,onSizeChange:B=>{r?.(Number(B))},"aria-label":n.page_size,className:`${y}-size-changer`,options:h().map(B=>({label:v(B),value:B}))})),a&&(i&&(z=typeof i=="boolean"?J.createElement("button",{type:"button",onClick:$,onKeyUp:$,disabled:c,className:`${y}-quick-jumper-button`},n.jump_to_confirm):J.createElement("span",{onClick:$,onKeyUp:$},i)),L=J.createElement("div",{className:`${y}-quick-jumper`},n.jump_to,J.createElement("input",{disabled:c,type:"text",value:d,onChange:w,onKeyUp:$,onBlur:E,"aria-label":n.page}),n.page,z)),J.createElement("li",{className:y},H,L)},mt=e=>{const{rootPrefixCls:t,page:n,active:r,className:l,style:i,showTitle:a,onClick:s,onKeyPress:c,itemRender:u}=e,f=`${t}-item`,m=ae(f,`${f}-${n}`,{[`${f}-active`]:r,[`${f}-disabled`]:!n},l),d=()=>{s(n)},p=v=>{c(v,s,n)},g=u(n,"page",J.createElement("a",{rel:"nofollow"},n));return g?J.createElement("li",{title:a?String(n):null,className:m,style:i,onClick:d,onKeyDown:p,tabIndex:0},g):null};function et(){return et=Object.assign?Object.assign.bind():function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e},et.apply(this,arguments)}const di=(e,t,n)=>n;function Vn(){}function Fn(e){const t=Number(e);return typeof t=="number"&&!Number.isNaN(t)&&isFinite(t)&&Math.floor(t)===t}function ot(e,t,n){const r=typeof e>"u"?t:e;return Math.floor((n-1)/r)+1}const pi=e=>{const{prefixCls:t="rc-pagination",selectPrefixCls:n="rc-select",className:r,classNames:l,styles:i,current:a,defaultCurrent:s=1,total:c=0,pageSize:u,defaultPageSize:f=10,onChange:m=Vn,hideOnSinglePage:d,align:p,showPrevNextJumpers:g=!0,showQuickJumper:v,showLessItems:w,showTitle:E=!0,onShowSizeChange:$=Vn,locale:h=si,style:y,totalBoundaryShowSizeChanger:H=50,disabled:L,simple:z,showTotal:B,showSizeChanger:x=c>H,sizeChangerRender:X,pageSizeOptions:U,itemRender:T=di,jumpPrevIcon:ue,jumpNextIcon:oe,prevIcon:de,nextIcon:pe}=e,j=J.useRef(null),[D,Q]=gt(f,u),[me,ne]=gt(s,a),P=Math.max(1,Math.min(me,ot(void 0,D,c))),[N,re]=J.useState(P);o.useEffect(()=>{re(P)},[P]);const I=Math.max(1,P-(w?3:5)),K=Math.min(ot(void 0,D,c),P+(w?3:5));function ie(C,q){let b=C||J.createElement("button",{type:"button","aria-label":q,className:`${t}-item-link`});return typeof C=="function"&&(b=J.createElement(C,e)),b}function we(C){const q=C.target.value,b=ot(void 0,D,c);let M;return q===""?M=q:Number.isNaN(Number(q))?M=N:q>=b?M=b:M=Number(q),M}function O(C){return Fn(C)&&C!==P&&Fn(c)&&c>0}const F=c>D?v:!1;function se(C){(C.keyCode===V.UP||C.keyCode===V.DOWN)&&C.preventDefault()}function W(C){const q=we(C);switch(q!==N&&re(q),C.keyCode){case V.ENTER:A(q);break;case V.UP:A(q-1);break;case V.DOWN:A(q+1);break}}function ce(C){A(we(C))}function te(C){const q=ot(C,D,c),b=P>q&&q!==0?q:P;Q(C),re(b),$?.(P,C),ne(b),m?.(b,C)}function A(C){if(O(C)&&!L){const q=ot(void 0,D,c);let b=C;return C>q?b=q:C<1&&(b=1),b!==N&&re(b),ne(b),m?.(b,D),b}return P}const he=P>1,Ce=P<ot(void 0,D,c);function fe(){he&&A(P-1)}function He(){Ce&&A(P+1)}function Be(){A(I)}function Te(){A(K)}function xe(C,q,...b){(C.key==="Enter"||C.charCode===V.ENTER||C.keyCode===V.ENTER)&&q(...b)}function Ee(C){xe(C,fe)}function $e(C){xe(C,He)}function Ie(C){xe(C,Be)}function Me(C){xe(C,Te)}function ve(C){const q=T(C,"prev",ie(de,"prev page"));return J.isValidElement(q)?J.cloneElement(q,{disabled:!he}):q}function Re(C){const q=T(C,"next",ie(pe,"next page"));return J.isValidElement(q)?J.cloneElement(q,{disabled:!Ce}):q}function Pe(C){(C.type==="click"||C.keyCode===V.ENTER)&&A(N)}let ye=null;const ze=$t(e,{aria:!0,data:!0}),Ue=B&&J.createElement("li",{className:`${t}-total-text`},B(c,[c===0?0:(P-1)*D+1,P*D>c?c:P*D]));let ge=null;const k=ot(void 0,D,c);if(d&&c<=D)return null;const be=[],Ne={rootPrefixCls:t,onClick:A,onKeyPress:xe,showTitle:E,itemRender:T,page:-1,className:l?.item,style:i?.item},Ke=P-1>0?P-1:0,_e=P+1<k?P+1:k,Xe=v&&v.goButton,De=typeof z=="object"?z.readOnly:!z;let Ae=Xe,We=null;z&&(Xe&&(typeof Xe=="boolean"?Ae=J.createElement("button",{type:"button",onClick:Pe,onKeyUp:Pe},h.jump_to_confirm):Ae=J.createElement("span",{onClick:Pe,onKeyUp:Pe},Xe),Ae=J.createElement("li",{title:E?`${h.jump_to}${P}/${k}`:null,className:`${t}-simple-pager`},Ae)),We=J.createElement("li",{title:E?`${P}/${k}`:null,className:ae(`${t}-simple-pager`,l?.item),style:i?.item},De?N:J.createElement("input",{type:"text","aria-label":h.jump_to,value:N,disabled:L,onKeyDown:se,onKeyUp:W,onChange:W,onBlur:ce,size:3}),J.createElement("span",{className:`${t}-slash`},"/"),k));const Oe=w?1:2;if(k<=3+Oe*2){k||be.push(J.createElement(mt,et({},Ne,{key:"noPager",page:1,className:`${t}-item-disabled`})));for(let C=1;C<=k;C+=1)be.push(J.createElement(mt,et({},Ne,{key:C,page:C,active:P===C})))}else{const C=w?h.prev_3:h.prev_5,q=w?h.next_3:h.next_5,b=T(I,"jump-prev",ie(ue,"prev page")),M=T(K,"jump-next",ie(oe,"next page"));g&&(ye=b?J.createElement("li",{title:E?C:null,key:"prev",onClick:Be,tabIndex:0,onKeyDown:Ie,className:ae(`${t}-jump-prev`,{[`${t}-jump-prev-custom-icon`]:!!ue})},b):null,ge=M?J.createElement("li",{title:E?q:null,key:"next",onClick:Te,tabIndex:0,onKeyDown:Me,className:ae(`${t}-jump-next`,{[`${t}-jump-next-custom-icon`]:!!oe})},M):null);let le=Math.max(1,P-Oe),S=Math.min(P+Oe,k);P-1<=Oe&&(S=1+Oe*2),k-P<=Oe&&(le=k-Oe*2);for(let R=le;R<=S;R+=1)be.push(J.createElement(mt,et({},Ne,{key:R,page:R,active:P===R})));if(P-1>=Oe*2&&P!==3&&(be[0]=J.cloneElement(be[0],{className:ae(`${t}-item-after-jump-prev`,be[0].props.className)}),be.unshift(ye)),k-P>=Oe*2&&P!==k-2){const R=be[be.length-1];be[be.length-1]=J.cloneElement(R,{className:ae(`${t}-item-before-jump-next`,R.props.className)}),be.push(ge)}le!==1&&be.unshift(J.createElement(mt,et({},Ne,{key:1,page:1}))),S!==k&&be.push(J.createElement(mt,et({},Ne,{key:k,page:k})))}let Ve=ve(Ke);if(Ve){const C=!he||!k;Ve=J.createElement("li",{title:E?h.prev_page:null,onClick:fe,tabIndex:C?null:0,onKeyDown:Ee,className:ae(`${t}-prev`,l?.item,{[`${t}-disabled`]:C}),style:i?.item,"aria-disabled":C},Ve)}let Fe=Re(_e);if(Fe){let C,q;z?(C=!Ce,q=he?0:null):(C=!Ce||!k,q=C?null:0),Fe=J.createElement("li",{title:E?h.next_page:null,onClick:He,tabIndex:q,onKeyDown:$e,className:ae(`${t}-next`,l?.item,{[`${t}-disabled`]:C}),style:i?.item,"aria-disabled":C},Fe)}const Le=ae(t,r,{[`${t}-start`]:p==="start",[`${t}-center`]:p==="center",[`${t}-end`]:p==="end",[`${t}-simple`]:z,[`${t}-disabled`]:L});return J.createElement("ul",et({className:Le,style:y,ref:j},ze),Ue,Ve,z?We:be,Fe,J.createElement(ui,{locale:h,rootPrefixCls:t,disabled:L,selectPrefixCls:n,changeSize:te,pageSize:D,pageSizeOptions:U,quickGo:F?A:null,goButton:Ae,showSizeChanger:x,sizeChangerRender:X}))},mi=e=>{const{componentCls:t}=e;return{[`${t}-disabled`]:{"&, &:hover":{cursor:"not-allowed",[`${t}-item-link`]:{color:e.colorTextDisabled,cursor:"not-allowed"}},"&:focus-visible":{cursor:"not-allowed",[`${t}-item-link`]:{color:e.colorTextDisabled,cursor:"not-allowed"}}},[`&${t}-disabled`]:{cursor:"not-allowed",[`${t}-item`]:{cursor:"not-allowed",backgroundColor:"transparent","&:hover, &:active":{backgroundColor:"transparent"},a:{color:e.colorTextDisabled,backgroundColor:"transparent",border:"none",cursor:"not-allowed"},"&-active":{borderColor:e.colorBorder,backgroundColor:e.itemActiveBgDisabled,"&:hover, &:active":{backgroundColor:e.itemActiveBgDisabled},a:{color:e.itemActiveColorDisabled}}},[`${t}-item-link`]:{color:e.colorTextDisabled,cursor:"not-allowed","&:hover, &:active":{backgroundColor:"transparent"},[`${t}-simple&`]:{backgroundColor:"transparent","&:hover, &:active":{backgroundColor:"transparent"}}},[`${t}-simple-pager`]:{color:e.colorTextDisabled},[`${t}-jump-prev, ${t}-jump-next`]:{[`${t}-item-link-icon`]:{opacity:0},[`${t}-item-ellipsis`]:{opacity:1}}}}},fi=e=>{const{componentCls:t}=e;return{[`&${t}-mini ${t}-total-text, &${t}-mini ${t}-simple-pager`]:{height:e.itemSizeSM,lineHeight:Z(e.itemSizeSM)},[`&${t}-mini ${t}-item`]:{minWidth:e.itemSizeSM,height:e.itemSizeSM,margin:0,lineHeight:Z(e.calc(e.itemSizeSM).sub(2).equal())},[`&${t}-mini ${t}-prev, &${t}-mini ${t}-next`]:{minWidth:e.itemSizeSM,height:e.itemSizeSM,margin:0,lineHeight:Z(e.itemSizeSM)},[`&${t}-mini:not(${t}-disabled)`]:{[`${t}-prev, ${t}-next`]:{[`&:hover ${t}-item-link`]:{backgroundColor:e.colorBgTextHover},[`&:active ${t}-item-link`]:{backgroundColor:e.colorBgTextActive},[`&${t}-disabled:hover ${t}-item-link`]:{backgroundColor:"transparent"}}},[`
+      & > ${n}-cascader-picker-focused:last-child ${t}`]: {
+          borderInlineEndWidth: e.lineWidth,
+          borderStartEndRadius: e.borderRadius,
+          borderEndEndRadius: e.borderRadius
+        },
+        [`& > ${n}-select-auto-complete ${t}`]: { verticalAlign: 'top' },
+        [`${t}-group-wrapper + ${t}-group-wrapper`]: {
+          marginInlineStart: e.calc(e.lineWidth).mul(-1).equal(),
+          [`${t}-affix-wrapper`]: {}
+        }
+      }
+    };
+  },
+  oi = (e) => {
+    const { componentCls: t, controlHeightSM: n, lineWidth: r, calc: l } = e,
+      a = l(n).sub(l(r).mul(2)).sub(16).div(2).equal();
+    return {
+      [t]: {
+        ...ut(e),
+        ...dn(e),
+        ...Yl(e),
+        ...Zl(e),
+        ...Ql(e),
+        ...ei(e),
+        '&[type="color"]': {
+          height: e.controlHeight,
+          [`&${t}-lg`]: { height: e.controlHeightLG },
+          [`&${t}-sm`]: { height: n, paddingTop: a, paddingBottom: a }
+        },
+        '&[type="search"]::-webkit-search-cancel-button, &[type="search"]::-webkit-search-decoration':
+          { appearance: 'none' }
+      }
+    };
+  },
+  ri = (e) => {
+    const { componentCls: t } = e;
+    return {
+      [`${t}-clear-icon`]: {
+        margin: 0,
+        padding: 0,
+        lineHeight: 0,
+        color: e.colorTextQuaternary,
+        fontSize: e.fontSizeIcon,
+        verticalAlign: -1,
+        cursor: 'pointer',
+        transition: `color ${e.motionDurationSlow}`,
+        border: 'none',
+        outline: 'none',
+        backgroundColor: 'transparent',
+        '&:hover': { color: e.colorIcon },
+        '&:active': { color: e.colorText },
+        '&-hidden': { visibility: 'hidden' },
+        '&-has-suffix': { margin: `0 ${Z(e.inputAffixPadding)}` }
+      }
+    };
+  },
+  li = (e) => {
+    const {
+        componentCls: t,
+        inputAffixPadding: n,
+        colorTextDescription: r,
+        motionDurationSlow: l,
+        colorIcon: i,
+        colorIconHover: a,
+        iconCls: s
+      } = e,
+      c = `${t}-affix-wrapper`,
+      u = `${t}-affix-wrapper-disabled`;
+    return {
+      [c]: {
+        ...dn(e),
+        display: 'inline-flex',
+        '&-focused, &:focus': { zIndex: 1 },
+        [`> input${t}`]: { padding: 0 },
+        [`> input${t}, > textarea${t}`]: {
+          fontSize: 'inherit',
+          border: 'none',
+          borderRadius: 0,
+          outline: 'none',
+          background: 'transparent',
+          color: 'inherit',
+          '&::-ms-reveal': { display: 'none' },
+          '&:focus': { boxShadow: 'none !important' }
+        },
+        '&::before': { display: 'inline-block', width: 0, visibility: 'hidden', content: '"\\a0"' },
+        [t]: {
+          '&-prefix, &-suffix': {
+            display: 'flex',
+            flex: 'none',
+            alignItems: 'center',
+            '> *:not(:last-child)': { marginInlineEnd: e.paddingXS }
+          },
+          '&-show-count-suffix': { color: r, direction: 'ltr' },
+          '&-show-count-has-suffix': { marginInlineEnd: e.paddingXXS },
+          '&-prefix': { marginInlineEnd: n },
+          '&-suffix': { marginInlineStart: n }
+        },
+        ...ri(e),
+        [`${s}${t}-password-icon`]: {
+          color: i,
+          cursor: 'pointer',
+          transition: `all ${l}`,
+          '&:hover': { color: a }
+        }
+      },
+      [`${t}-underlined`]: { borderRadius: 0 },
+      [u]: {
+        [`${s}${t}-password-icon`]: { color: i, cursor: 'not-allowed', '&:hover': { color: i } }
+      }
+    };
+  },
+  ii = (e) => {
+    const { componentCls: t, borderRadiusLG: n, borderRadiusSM: r } = e;
+    return {
+      [`${t}-group`]: {
+        ...ut(e),
+        ...ni(e),
+        '&-rtl': { direction: 'rtl' },
+        '&-wrapper': {
+          display: 'inline-block',
+          width: '100%',
+          textAlign: 'start',
+          verticalAlign: 'top',
+          '&-rtl': { direction: 'rtl' },
+          '&-lg': { [`${t}-group-addon`]: { borderRadius: n, fontSize: e.inputFontSizeLG } },
+          '&-sm': { [`${t}-group-addon`]: { borderRadius: r } },
+          ...Jl(e),
+          ...kl(e),
+          [`&:not(${t}-compact-first-item):not(${t}-compact-last-item)${t}-compact-item`]: {
+            [`${t}, ${t}-group-addon`]: { borderRadius: 0 }
+          },
+          [`&:not(${t}-compact-last-item)${t}-compact-first-item`]: {
+            [`${t}, ${t}-group-addon`]: { borderStartEndRadius: 0, borderEndEndRadius: 0 }
+          },
+          [`&:not(${t}-compact-first-item)${t}-compact-last-item`]: {
+            [`${t}, ${t}-group-addon`]: { borderStartStartRadius: 0, borderEndStartRadius: 0 }
+          },
+          [`&:not(${t}-compact-last-item)${t}-compact-item`]: {
+            [`${t}-affix-wrapper`]: { borderStartEndRadius: 0, borderEndEndRadius: 0 }
+          },
+          [`&:not(${t}-compact-first-item)${t}-compact-item`]: {
+            [`${t}-affix-wrapper`]: { borderStartStartRadius: 0, borderEndStartRadius: 0 }
+          }
+        }
+      }
+    };
+  },
+  ai = (e) => {
+    const { componentCls: t } = e;
+    return {
+      [`${t}-out-of-range`]: {
+        [`&, & input, & textarea, ${t}-show-count-suffix, ${t}-data-count`]: { color: e.colorError }
+      }
+    };
+  };
+vt(
+  ['Input', 'Shared'],
+  (e) => {
+    const t = at(e, an(e));
+    return [oi(t), li(t)];
+  },
+  sn,
+  { resetFont: !1 }
+);
+vt(
+  ['Input', 'Component'],
+  (e) => {
+    const t = at(e, an(e));
+    return [
+      ii(t),
+      ai(t),
+      Kn(t, { focus: !0, focusElCls: `${t.componentCls}-affix-wrapper-focused` })
+    ];
+  },
+  sn,
+  { resetFont: !1 }
+);
+const si = {
+    items_per_page: '条/页',
+    jump_to: '跳至',
+    jump_to_confirm: '确定',
+    page: '页',
+    prev_page: '上一页',
+    next_page: '下一页',
+    prev_5: '向前 5 页',
+    next_5: '向后 5 页',
+    prev_3: '向前 3 页',
+    next_3: '向后 3 页',
+    page_size: '页码'
+  },
+  ci = [10, 20, 50, 100],
+  ui = (e) => {
+    const {
+        pageSizeOptions: t = ci,
+        locale: n,
+        changeSize: r,
+        pageSize: l,
+        goButton: i,
+        quickGo: a,
+        rootPrefixCls: s,
+        disabled: c,
+        buildOptionText: u,
+        showSizeChanger: f,
+        sizeChangerRender: m
+      } = e,
+      [d, p] = J.useState(''),
+      g = J.useMemo(() => (!d || Number.isNaN(d) ? void 0 : Number(d)), [d]),
+      v = typeof u == 'function' ? u : (B) => `${B} ${n.items_per_page}`,
+      w = (B) => {
+        const x = B.target.value;
+        /^\d*$/.test(x) && p(x);
+      },
+      E = (B) => {
+        i ||
+          d === '' ||
+          (p(''),
+          !(
+            B.relatedTarget &&
+            (B.relatedTarget.className.includes(`${s}-item-link`) ||
+              B.relatedTarget.className.includes(`${s}-item`))
+          ) && a?.(g));
+      },
+      $ = (B) => {
+        d !== '' && (B.keyCode === V.ENTER || B.type === 'click') && (p(''), a?.(g));
+      },
+      h = () =>
+        t.some((B) => B.toString() === l.toString())
+          ? t
+          : t.concat([l]).sort((B, x) => {
+              const X = Number.isNaN(Number(B)) ? 0 : Number(B),
+                U = Number.isNaN(Number(x)) ? 0 : Number(x);
+              return X - U;
+            }),
+      y = `${s}-options`;
+    if (!f && !a) return null;
+    let H = null,
+      L = null,
+      z = null;
+    return (
+      f &&
+        m &&
+        (H = m({
+          disabled: c,
+          size: l,
+          onSizeChange: (B) => {
+            r?.(Number(B));
+          },
+          'aria-label': n.page_size,
+          className: `${y}-size-changer`,
+          options: h().map((B) => ({ label: v(B), value: B }))
+        })),
+      a &&
+        (i &&
+          (z =
+            typeof i == 'boolean'
+              ? J.createElement(
+                  'button',
+                  {
+                    type: 'button',
+                    onClick: $,
+                    onKeyUp: $,
+                    disabled: c,
+                    className: `${y}-quick-jumper-button`
+                  },
+                  n.jump_to_confirm
+                )
+              : J.createElement('span', { onClick: $, onKeyUp: $ }, i)),
+        (L = J.createElement(
+          'div',
+          { className: `${y}-quick-jumper` },
+          n.jump_to,
+          J.createElement('input', {
+            disabled: c,
+            type: 'text',
+            value: d,
+            onChange: w,
+            onKeyUp: $,
+            onBlur: E,
+            'aria-label': n.page
+          }),
+          n.page,
+          z
+        ))),
+      J.createElement('li', { className: y }, H, L)
+    );
+  },
+  mt = (e) => {
+    const {
+        rootPrefixCls: t,
+        page: n,
+        active: r,
+        className: l,
+        style: i,
+        showTitle: a,
+        onClick: s,
+        onKeyPress: c,
+        itemRender: u
+      } = e,
+      f = `${t}-item`,
+      m = ae(f, `${f}-${n}`, { [`${f}-active`]: r, [`${f}-disabled`]: !n }, l),
+      d = () => {
+        s(n);
+      },
+      p = (v) => {
+        c(v, s, n);
+      },
+      g = u(n, 'page', J.createElement('a', { rel: 'nofollow' }, n));
+    return g
+      ? J.createElement(
+          'li',
+          {
+            title: a ? String(n) : null,
+            className: m,
+            style: i,
+            onClick: d,
+            onKeyDown: p,
+            tabIndex: 0
+          },
+          g
+        )
+      : null;
+  };
+function et() {
+  return (
+    (et = Object.assign
+      ? Object.assign.bind()
+      : function (e) {
+          for (var t = 1; t < arguments.length; t++) {
+            var n = arguments[t];
+            for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r]);
+          }
+          return e;
+        }),
+    et.apply(this, arguments)
+  );
+}
+const di = (e, t, n) => n;
+function Vn() {}
+function Fn(e) {
+  const t = Number(e);
+  return typeof t == 'number' && !Number.isNaN(t) && isFinite(t) && Math.floor(t) === t;
+}
+function ot(e, t, n) {
+  const r = typeof e > 'u' ? t : e;
+  return Math.floor((n - 1) / r) + 1;
+}
+const pi = (e) => {
+    const {
+        prefixCls: t = 'rc-pagination',
+        selectPrefixCls: n = 'rc-select',
+        className: r,
+        classNames: l,
+        styles: i,
+        current: a,
+        defaultCurrent: s = 1,
+        total: c = 0,
+        pageSize: u,
+        defaultPageSize: f = 10,
+        onChange: m = Vn,
+        hideOnSinglePage: d,
+        align: p,
+        showPrevNextJumpers: g = !0,
+        showQuickJumper: v,
+        showLessItems: w,
+        showTitle: E = !0,
+        onShowSizeChange: $ = Vn,
+        locale: h = si,
+        style: y,
+        totalBoundaryShowSizeChanger: H = 50,
+        disabled: L,
+        simple: z,
+        showTotal: B,
+        showSizeChanger: x = c > H,
+        sizeChangerRender: X,
+        pageSizeOptions: U,
+        itemRender: T = di,
+        jumpPrevIcon: ue,
+        jumpNextIcon: oe,
+        prevIcon: de,
+        nextIcon: pe
+      } = e,
+      j = J.useRef(null),
+      [D, Q] = gt(f, u),
+      [me, ne] = gt(s, a),
+      P = Math.max(1, Math.min(me, ot(void 0, D, c))),
+      [N, re] = J.useState(P);
+    o.useEffect(() => {
+      re(P);
+    }, [P]);
+    const I = Math.max(1, P - (w ? 3 : 5)),
+      K = Math.min(ot(void 0, D, c), P + (w ? 3 : 5));
+    function ie(C, q) {
+      let b =
+        C ||
+        J.createElement('button', { type: 'button', 'aria-label': q, className: `${t}-item-link` });
+      return (typeof C == 'function' && (b = J.createElement(C, e)), b);
+    }
+    function we(C) {
+      const q = C.target.value,
+        b = ot(void 0, D, c);
+      let M;
+      return (
+        q === '' ? (M = q) : Number.isNaN(Number(q)) ? (M = N) : q >= b ? (M = b) : (M = Number(q)),
+        M
+      );
+    }
+    function O(C) {
+      return Fn(C) && C !== P && Fn(c) && c > 0;
+    }
+    const F = c > D ? v : !1;
+    function se(C) {
+      (C.keyCode === V.UP || C.keyCode === V.DOWN) && C.preventDefault();
+    }
+    function W(C) {
+      const q = we(C);
+      switch ((q !== N && re(q), C.keyCode)) {
+        case V.ENTER:
+          A(q);
+          break;
+        case V.UP:
+          A(q - 1);
+          break;
+        case V.DOWN:
+          A(q + 1);
+          break;
+      }
+    }
+    function ce(C) {
+      A(we(C));
+    }
+    function te(C) {
+      const q = ot(C, D, c),
+        b = P > q && q !== 0 ? q : P;
+      (Q(C), re(b), $?.(P, C), ne(b), m?.(b, C));
+    }
+    function A(C) {
+      if (O(C) && !L) {
+        const q = ot(void 0, D, c);
+        let b = C;
+        return (C > q ? (b = q) : C < 1 && (b = 1), b !== N && re(b), ne(b), m?.(b, D), b);
+      }
+      return P;
+    }
+    const he = P > 1,
+      Ce = P < ot(void 0, D, c);
+    function fe() {
+      he && A(P - 1);
+    }
+    function He() {
+      Ce && A(P + 1);
+    }
+    function Be() {
+      A(I);
+    }
+    function Te() {
+      A(K);
+    }
+    function xe(C, q, ...b) {
+      (C.key === 'Enter' || C.charCode === V.ENTER || C.keyCode === V.ENTER) && q(...b);
+    }
+    function Ee(C) {
+      xe(C, fe);
+    }
+    function $e(C) {
+      xe(C, He);
+    }
+    function Ie(C) {
+      xe(C, Be);
+    }
+    function Me(C) {
+      xe(C, Te);
+    }
+    function ve(C) {
+      const q = T(C, 'prev', ie(de, 'prev page'));
+      return J.isValidElement(q) ? J.cloneElement(q, { disabled: !he }) : q;
+    }
+    function Re(C) {
+      const q = T(C, 'next', ie(pe, 'next page'));
+      return J.isValidElement(q) ? J.cloneElement(q, { disabled: !Ce }) : q;
+    }
+    function Pe(C) {
+      (C.type === 'click' || C.keyCode === V.ENTER) && A(N);
+    }
+    let ye = null;
+    const ze = $t(e, { aria: !0, data: !0 }),
+      Ue =
+        B &&
+        J.createElement(
+          'li',
+          { className: `${t}-total-text` },
+          B(c, [c === 0 ? 0 : (P - 1) * D + 1, P * D > c ? c : P * D])
+        );
+    let ge = null;
+    const k = ot(void 0, D, c);
+    if (d && c <= D) return null;
+    const be = [],
+      Ne = {
+        rootPrefixCls: t,
+        onClick: A,
+        onKeyPress: xe,
+        showTitle: E,
+        itemRender: T,
+        page: -1,
+        className: l?.item,
+        style: i?.item
+      },
+      Ke = P - 1 > 0 ? P - 1 : 0,
+      _e = P + 1 < k ? P + 1 : k,
+      Xe = v && v.goButton,
+      De = typeof z == 'object' ? z.readOnly : !z;
+    let Ae = Xe,
+      We = null;
+    z &&
+      (Xe &&
+        (typeof Xe == 'boolean'
+          ? (Ae = J.createElement(
+              'button',
+              { type: 'button', onClick: Pe, onKeyUp: Pe },
+              h.jump_to_confirm
+            ))
+          : (Ae = J.createElement('span', { onClick: Pe, onKeyUp: Pe }, Xe)),
+        (Ae = J.createElement(
+          'li',
+          { title: E ? `${h.jump_to}${P}/${k}` : null, className: `${t}-simple-pager` },
+          Ae
+        ))),
+      (We = J.createElement(
+        'li',
+        {
+          title: E ? `${P}/${k}` : null,
+          className: ae(`${t}-simple-pager`, l?.item),
+          style: i?.item
+        },
+        De
+          ? N
+          : J.createElement('input', {
+              type: 'text',
+              'aria-label': h.jump_to,
+              value: N,
+              disabled: L,
+              onKeyDown: se,
+              onKeyUp: W,
+              onChange: W,
+              onBlur: ce,
+              size: 3
+            }),
+        J.createElement('span', { className: `${t}-slash` }, '/'),
+        k
+      )));
+    const Oe = w ? 1 : 2;
+    if (k <= 3 + Oe * 2) {
+      k ||
+        be.push(
+          J.createElement(
+            mt,
+            et({}, Ne, { key: 'noPager', page: 1, className: `${t}-item-disabled` })
+          )
+        );
+      for (let C = 1; C <= k; C += 1)
+        be.push(J.createElement(mt, et({}, Ne, { key: C, page: C, active: P === C })));
+    } else {
+      const C = w ? h.prev_3 : h.prev_5,
+        q = w ? h.next_3 : h.next_5,
+        b = T(I, 'jump-prev', ie(ue, 'prev page')),
+        M = T(K, 'jump-next', ie(oe, 'next page'));
+      g &&
+        ((ye = b
+          ? J.createElement(
+              'li',
+              {
+                title: E ? C : null,
+                key: 'prev',
+                onClick: Be,
+                tabIndex: 0,
+                onKeyDown: Ie,
+                className: ae(`${t}-jump-prev`, { [`${t}-jump-prev-custom-icon`]: !!ue })
+              },
+              b
+            )
+          : null),
+        (ge = M
+          ? J.createElement(
+              'li',
+              {
+                title: E ? q : null,
+                key: 'next',
+                onClick: Te,
+                tabIndex: 0,
+                onKeyDown: Me,
+                className: ae(`${t}-jump-next`, { [`${t}-jump-next-custom-icon`]: !!oe })
+              },
+              M
+            )
+          : null));
+      let le = Math.max(1, P - Oe),
+        S = Math.min(P + Oe, k);
+      (P - 1 <= Oe && (S = 1 + Oe * 2), k - P <= Oe && (le = k - Oe * 2));
+      for (let R = le; R <= S; R += 1)
+        be.push(J.createElement(mt, et({}, Ne, { key: R, page: R, active: P === R })));
+      if (
+        (P - 1 >= Oe * 2 &&
+          P !== 3 &&
+          ((be[0] = J.cloneElement(be[0], {
+            className: ae(`${t}-item-after-jump-prev`, be[0].props.className)
+          })),
+          be.unshift(ye)),
+        k - P >= Oe * 2 && P !== k - 2)
+      ) {
+        const R = be[be.length - 1];
+        ((be[be.length - 1] = J.cloneElement(R, {
+          className: ae(`${t}-item-before-jump-next`, R.props.className)
+        })),
+          be.push(ge));
+      }
+      (le !== 1 && be.unshift(J.createElement(mt, et({}, Ne, { key: 1, page: 1 }))),
+        S !== k && be.push(J.createElement(mt, et({}, Ne, { key: k, page: k }))));
+    }
+    let Ve = ve(Ke);
+    if (Ve) {
+      const C = !he || !k;
+      Ve = J.createElement(
+        'li',
+        {
+          title: E ? h.prev_page : null,
+          onClick: fe,
+          tabIndex: C ? null : 0,
+          onKeyDown: Ee,
+          className: ae(`${t}-prev`, l?.item, { [`${t}-disabled`]: C }),
+          style: i?.item,
+          'aria-disabled': C
+        },
+        Ve
+      );
+    }
+    let Fe = Re(_e);
+    if (Fe) {
+      let C, q;
+      (z ? ((C = !Ce), (q = he ? 0 : null)) : ((C = !Ce || !k), (q = C ? null : 0)),
+        (Fe = J.createElement(
+          'li',
+          {
+            title: E ? h.next_page : null,
+            onClick: He,
+            tabIndex: q,
+            onKeyDown: $e,
+            className: ae(`${t}-next`, l?.item, { [`${t}-disabled`]: C }),
+            style: i?.item,
+            'aria-disabled': C
+          },
+          Fe
+        )));
+    }
+    const Le = ae(t, r, {
+      [`${t}-start`]: p === 'start',
+      [`${t}-center`]: p === 'center',
+      [`${t}-end`]: p === 'end',
+      [`${t}-simple`]: z,
+      [`${t}-disabled`]: L
+    });
+    return J.createElement(
+      'ul',
+      et({ className: Le, style: y, ref: j }, ze),
+      Ue,
+      Ve,
+      z ? We : be,
+      Fe,
+      J.createElement(ui, {
+        locale: h,
+        rootPrefixCls: t,
+        disabled: L,
+        selectPrefixCls: n,
+        changeSize: te,
+        pageSize: D,
+        pageSizeOptions: U,
+        quickGo: F ? A : null,
+        goButton: Ae,
+        showSizeChanger: x,
+        sizeChangerRender: X
+      })
+    );
+  },
+  mi = (e) => {
+    const { componentCls: t } = e;
+    return {
+      [`${t}-disabled`]: {
+        '&, &:hover': {
+          cursor: 'not-allowed',
+          [`${t}-item-link`]: { color: e.colorTextDisabled, cursor: 'not-allowed' }
+        },
+        '&:focus-visible': {
+          cursor: 'not-allowed',
+          [`${t}-item-link`]: { color: e.colorTextDisabled, cursor: 'not-allowed' }
+        }
+      },
+      [`&${t}-disabled`]: {
+        cursor: 'not-allowed',
+        [`${t}-item`]: {
+          cursor: 'not-allowed',
+          backgroundColor: 'transparent',
+          '&:hover, &:active': { backgroundColor: 'transparent' },
+          a: {
+            color: e.colorTextDisabled,
+            backgroundColor: 'transparent',
+            border: 'none',
+            cursor: 'not-allowed'
+          },
+          '&-active': {
+            borderColor: e.colorBorder,
+            backgroundColor: e.itemActiveBgDisabled,
+            '&:hover, &:active': { backgroundColor: e.itemActiveBgDisabled },
+            a: { color: e.itemActiveColorDisabled }
+          }
+        },
+        [`${t}-item-link`]: {
+          color: e.colorTextDisabled,
+          cursor: 'not-allowed',
+          '&:hover, &:active': { backgroundColor: 'transparent' },
+          [`${t}-simple&`]: {
+            backgroundColor: 'transparent',
+            '&:hover, &:active': { backgroundColor: 'transparent' }
+          }
+        },
+        [`${t}-simple-pager`]: { color: e.colorTextDisabled },
+        [`${t}-jump-prev, ${t}-jump-next`]: {
+          [`${t}-item-link-icon`]: { opacity: 0 },
+          [`${t}-item-ellipsis`]: { opacity: 1 }
+        }
+      }
+    };
+  },
+  fi = (e) => {
+    const { componentCls: t } = e;
+    return {
+      [`&${t}-mini ${t}-total-text, &${t}-mini ${t}-simple-pager`]: {
+        height: e.itemSizeSM,
+        lineHeight: Z(e.itemSizeSM)
+      },
+      [`&${t}-mini ${t}-item`]: {
+        minWidth: e.itemSizeSM,
+        height: e.itemSizeSM,
+        margin: 0,
+        lineHeight: Z(e.calc(e.itemSizeSM).sub(2).equal())
+      },
+      [`&${t}-mini ${t}-prev, &${t}-mini ${t}-next`]: {
+        minWidth: e.itemSizeSM,
+        height: e.itemSizeSM,
+        margin: 0,
+        lineHeight: Z(e.itemSizeSM)
+      },
+      [`&${t}-mini:not(${t}-disabled)`]: {
+        [`${t}-prev, ${t}-next`]: {
+          [`&:hover ${t}-item-link`]: { backgroundColor: e.colorBgTextHover },
+          [`&:active ${t}-item-link`]: { backgroundColor: e.colorBgTextActive },
+          [`&${t}-disabled:hover ${t}-item-link`]: { backgroundColor: 'transparent' }
+        }
+      },
+      [`
     &${t}-mini ${t}-prev ${t}-item-link,
     &${t}-mini ${t}-next ${t}-item-link
-    `]:{backgroundColor:"transparent",borderColor:"transparent","&::after":{height:e.itemSizeSM,lineHeight:Z(e.itemSizeSM)}},[`&${t}-mini ${t}-jump-prev, &${t}-mini ${t}-jump-next`]:{height:e.itemSizeSM,marginInlineEnd:0,lineHeight:Z(e.itemSizeSM)},[`&${t}-mini ${t}-options`]:{marginInlineStart:e.paginationMiniOptionsMarginInlineStart,"&-size-changer":{top:e.miniOptionsSizeChangerTop},"&-quick-jumper":{height:e.itemSizeSM,lineHeight:Z(e.itemSizeSM),input:{...un(e),width:e.paginationMiniQuickJumperInputWidth,height:e.controlHeightSM}}}}},gi=e=>{const{componentCls:t}=e;return{[`&${t}-simple`]:{[`${t}-prev, ${t}-next`]:{height:e.itemSize,lineHeight:Z(e.itemSize),verticalAlign:"top",[`${t}-item-link`]:{height:e.itemSize,backgroundColor:"transparent",border:0,"&:hover":{backgroundColor:e.colorBgTextHover},"&:active":{backgroundColor:e.colorBgTextActive},"&::after":{height:e.itemSize,lineHeight:Z(e.itemSize)}}},[`${t}-simple-pager`]:{display:"inline-flex",alignItems:"center",height:e.itemSize,marginInlineEnd:e.marginXS,input:{boxSizing:"border-box",height:"100%",width:e.quickJumperInputWidth,padding:`0 ${Z(e.paginationItemPaddingInline)}`,textAlign:"center",backgroundColor:e.itemInputBg,border:`${Z(e.lineWidth)} ${e.lineType} ${e.colorBorder}`,borderRadius:e.borderRadius,outline:"none",transition:`border-color ${e.motionDurationMid}`,color:"inherit","&:hover":{borderColor:e.colorPrimary},"&:focus":{borderColor:e.colorPrimaryHover,boxShadow:`${Z(e.inputOutlineOffset)} 0 ${Z(e.controlOutlineWidth)} ${e.controlOutline}`},"&[disabled]":{color:e.colorTextDisabled,backgroundColor:e.colorBgContainerDisabled,borderColor:e.colorBorder,cursor:"not-allowed"}}},[`&${t}-disabled`]:{[`${t}-prev, ${t}-next`]:{[`${t}-item-link`]:{"&:hover, &:active":{backgroundColor:"transparent"}}}},[`&${t}-mini`]:{[`${t}-prev, ${t}-next`]:{height:e.itemSizeSM,lineHeight:Z(e.itemSizeSM),[`${t}-item-link`]:{height:e.itemSizeSM,"&::after":{height:e.itemSizeSM,lineHeight:Z(e.itemSizeSM)}}},[`${t}-simple-pager`]:{height:e.itemSizeSM,input:{width:e.paginationMiniQuickJumperInputWidth}}}}}},hi=e=>{const{componentCls:t}=e;return{[`${t}-jump-prev, ${t}-jump-next`]:{outline:0,[`${t}-item-container`]:{position:"relative",[`${t}-item-link-icon`]:{color:e.colorPrimary,fontSize:e.fontSizeSM,opacity:0,transition:`all ${e.motionDurationMid}`,"&-svg":{top:0,insetInlineEnd:0,bottom:0,insetInlineStart:0,margin:"auto"}},[`${t}-item-ellipsis`]:{position:"absolute",top:0,insetInlineEnd:0,bottom:0,insetInlineStart:0,display:"block",margin:"auto",color:e.colorTextDisabled,letterSpacing:e.paginationEllipsisLetterSpacing,textAlign:"center",textIndent:e.paginationEllipsisTextIndent,opacity:1,transition:`all ${e.motionDurationMid}`}},"&:hover":{[`${t}-item-link-icon`]:{opacity:1},[`${t}-item-ellipsis`]:{opacity:0}}},[`
+    `]: {
+        backgroundColor: 'transparent',
+        borderColor: 'transparent',
+        '&::after': { height: e.itemSizeSM, lineHeight: Z(e.itemSizeSM) }
+      },
+      [`&${t}-mini ${t}-jump-prev, &${t}-mini ${t}-jump-next`]: {
+        height: e.itemSizeSM,
+        marginInlineEnd: 0,
+        lineHeight: Z(e.itemSizeSM)
+      },
+      [`&${t}-mini ${t}-options`]: {
+        marginInlineStart: e.paginationMiniOptionsMarginInlineStart,
+        '&-size-changer': { top: e.miniOptionsSizeChangerTop },
+        '&-quick-jumper': {
+          height: e.itemSizeSM,
+          lineHeight: Z(e.itemSizeSM),
+          input: {
+            ...un(e),
+            width: e.paginationMiniQuickJumperInputWidth,
+            height: e.controlHeightSM
+          }
+        }
+      }
+    };
+  },
+  gi = (e) => {
+    const { componentCls: t } = e;
+    return {
+      [`&${t}-simple`]: {
+        [`${t}-prev, ${t}-next`]: {
+          height: e.itemSize,
+          lineHeight: Z(e.itemSize),
+          verticalAlign: 'top',
+          [`${t}-item-link`]: {
+            height: e.itemSize,
+            backgroundColor: 'transparent',
+            border: 0,
+            '&:hover': { backgroundColor: e.colorBgTextHover },
+            '&:active': { backgroundColor: e.colorBgTextActive },
+            '&::after': { height: e.itemSize, lineHeight: Z(e.itemSize) }
+          }
+        },
+        [`${t}-simple-pager`]: {
+          display: 'inline-flex',
+          alignItems: 'center',
+          height: e.itemSize,
+          marginInlineEnd: e.marginXS,
+          input: {
+            boxSizing: 'border-box',
+            height: '100%',
+            width: e.quickJumperInputWidth,
+            padding: `0 ${Z(e.paginationItemPaddingInline)}`,
+            textAlign: 'center',
+            backgroundColor: e.itemInputBg,
+            border: `${Z(e.lineWidth)} ${e.lineType} ${e.colorBorder}`,
+            borderRadius: e.borderRadius,
+            outline: 'none',
+            transition: `border-color ${e.motionDurationMid}`,
+            color: 'inherit',
+            '&:hover': { borderColor: e.colorPrimary },
+            '&:focus': {
+              borderColor: e.colorPrimaryHover,
+              boxShadow: `${Z(e.inputOutlineOffset)} 0 ${Z(e.controlOutlineWidth)} ${e.controlOutline}`
+            },
+            '&[disabled]': {
+              color: e.colorTextDisabled,
+              backgroundColor: e.colorBgContainerDisabled,
+              borderColor: e.colorBorder,
+              cursor: 'not-allowed'
+            }
+          }
+        },
+        [`&${t}-disabled`]: {
+          [`${t}-prev, ${t}-next`]: {
+            [`${t}-item-link`]: { '&:hover, &:active': { backgroundColor: 'transparent' } }
+          }
+        },
+        [`&${t}-mini`]: {
+          [`${t}-prev, ${t}-next`]: {
+            height: e.itemSizeSM,
+            lineHeight: Z(e.itemSizeSM),
+            [`${t}-item-link`]: {
+              height: e.itemSizeSM,
+              '&::after': { height: e.itemSizeSM, lineHeight: Z(e.itemSizeSM) }
+            }
+          },
+          [`${t}-simple-pager`]: {
+            height: e.itemSizeSM,
+            input: { width: e.paginationMiniQuickJumperInputWidth }
+          }
+        }
+      }
+    };
+  },
+  hi = (e) => {
+    const { componentCls: t } = e;
+    return {
+      [`${t}-jump-prev, ${t}-jump-next`]: {
+        outline: 0,
+        [`${t}-item-container`]: {
+          position: 'relative',
+          [`${t}-item-link-icon`]: {
+            color: e.colorPrimary,
+            fontSize: e.fontSizeSM,
+            opacity: 0,
+            transition: `all ${e.motionDurationMid}`,
+            '&-svg': { top: 0, insetInlineEnd: 0, bottom: 0, insetInlineStart: 0, margin: 'auto' }
+          },
+          [`${t}-item-ellipsis`]: {
+            position: 'absolute',
+            top: 0,
+            insetInlineEnd: 0,
+            bottom: 0,
+            insetInlineStart: 0,
+            display: 'block',
+            margin: 'auto',
+            color: e.colorTextDisabled,
+            letterSpacing: e.paginationEllipsisLetterSpacing,
+            textAlign: 'center',
+            textIndent: e.paginationEllipsisTextIndent,
+            opacity: 1,
+            transition: `all ${e.motionDurationMid}`
+          }
+        },
+        '&:hover': {
+          [`${t}-item-link-icon`]: { opacity: 1 },
+          [`${t}-item-ellipsis`]: { opacity: 0 }
+        }
+      },
+      [`
     ${t}-prev,
     ${t}-jump-prev,
     ${t}-jump-next
-    `]:{marginInlineEnd:e.marginXS},[`
+    `]: { marginInlineEnd: e.marginXS },
+      [`
     ${t}-prev,
     ${t}-next,
     ${t}-jump-prev,
     ${t}-jump-next
-    `]:{display:"inline-block",minWidth:e.itemSize,height:e.itemSize,color:e.colorText,fontFamily:e.fontFamily,lineHeight:Z(e.itemSize),textAlign:"center",verticalAlign:"middle",listStyle:"none",borderRadius:e.borderRadius,cursor:"pointer",transition:`all ${e.motionDurationMid}`},[`${t}-prev, ${t}-next`]:{outline:0,button:{color:e.colorText,cursor:"pointer",userSelect:"none"},[`${t}-item-link`]:{display:"block",width:"100%",height:"100%",padding:0,fontSize:e.fontSizeSM,textAlign:"center",backgroundColor:"transparent",border:`${Z(e.lineWidth)} ${e.lineType} transparent`,borderRadius:e.borderRadius,outline:"none",transition:`all ${e.motionDurationMid}`},[`&:hover ${t}-item-link`]:{backgroundColor:e.colorBgTextHover},[`&:active ${t}-item-link`]:{backgroundColor:e.colorBgTextActive},[`&${t}-disabled:hover`]:{[`${t}-item-link`]:{backgroundColor:"transparent"}}},[`${t}-slash`]:{marginInlineEnd:e.paginationSlashMarginInlineEnd,marginInlineStart:e.paginationSlashMarginInlineStart},[`${t}-options`]:{display:"inline-block",marginInlineStart:e.margin,verticalAlign:"middle","&-size-changer":{width:"auto"},"&-quick-jumper":{display:"inline-block",height:e.controlHeight,marginInlineStart:e.marginXS,lineHeight:Z(e.controlHeight),verticalAlign:"top",input:{...dn(e),...cn(e,{borderColor:e.colorBorder,hoverBorderColor:e.colorPrimaryHover,activeBorderColor:e.colorPrimary,activeShadow:e.activeShadow}),"&[disabled]":{...wt(e)},width:e.quickJumperInputWidth,height:e.controlHeight,boxSizing:"border-box",margin:0,marginInlineStart:e.marginXS,marginInlineEnd:e.marginXS}}}}},bi=e=>{const{componentCls:t}=e;return{[`${t}-item`]:{display:"inline-block",minWidth:e.itemSize,height:e.itemSize,marginInlineEnd:e.marginXS,fontFamily:e.fontFamily,lineHeight:Z(e.calc(e.itemSize).sub(2).equal()),textAlign:"center",verticalAlign:"middle",listStyle:"none",backgroundColor:e.itemBg,border:`${Z(e.lineWidth)} ${e.lineType} transparent`,borderRadius:e.borderRadius,outline:0,cursor:"pointer",userSelect:"none",a:{display:"block",padding:`0 ${Z(e.paginationItemPaddingInline)}`,color:e.colorText,"&:hover":{textDecoration:"none"}},[`&:not(${t}-item-active)`]:{"&:hover":{transition:`all ${e.motionDurationMid}`,backgroundColor:e.colorBgTextHover},"&:active":{backgroundColor:e.colorBgTextActive}},"&-active":{fontWeight:e.fontWeightStrong,backgroundColor:e.itemActiveBg,borderColor:e.colorPrimary,a:{color:e.itemActiveColor},"&:hover":{borderColor:e.colorPrimaryHover},"&:hover a":{color:e.itemActiveColorHover}}}}},vi=e=>{const{componentCls:t}=e;return{[t]:{...ut(e),display:"flex","&-start":{justifyContent:"start"},"&-center":{justifyContent:"center"},"&-end":{justifyContent:"end"},"ul, ol":{margin:0,padding:0,listStyle:"none"},"&::after":{display:"block",clear:"both",height:0,overflow:"hidden",visibility:"hidden",content:'""'},[`${t}-total-text`]:{display:"inline-block",height:e.itemSize,marginInlineEnd:e.marginXS,lineHeight:Z(e.calc(e.itemSize).sub(2).equal()),verticalAlign:"middle"},...bi(e),...hi(e),...gi(e),...fi(e),...mi(e),[`@media only screen and (max-width: ${e.screenLG}px)`]:{[`${t}-item`]:{"&-after-jump-prev, &-before-jump-next":{display:"none"}}},[`@media only screen and (max-width: ${e.screenSM}px)`]:{[`${t}-options`]:{display:"none"}}},[`&${e.componentCls}-rtl`]:{direction:"rtl"}}},Si=e=>{const{componentCls:t}=e;return{[`${t}:not(${t}-disabled)`]:{[`${t}-item`]:{...Uo(e)},[`${t}-jump-prev, ${t}-jump-next`]:{"&:focus-visible":{[`${t}-item-link-icon`]:{opacity:1},[`${t}-item-ellipsis`]:{opacity:0},...bn(e)}},[`${t}-prev, ${t}-next`]:{[`&:focus-visible ${t}-item-link`]:bn(e)}}}},go=e=>({itemBg:e.colorBgContainer,itemSize:e.controlHeight,itemSizeSM:e.controlHeightSM,itemActiveBg:e.colorBgContainer,itemActiveColor:e.colorPrimary,itemActiveColorHover:e.colorPrimaryHover,itemLinkBg:e.colorBgContainer,itemActiveColorDisabled:e.colorTextDisabled,itemActiveBgDisabled:e.controlItemBgActiveDisabled,itemInputBg:e.colorBgContainer,miniOptionsSizeChangerTop:0,...sn(e)}),ho=e=>at(e,{inputOutlineOffset:0,quickJumperInputWidth:e.calc(e.controlHeightLG).mul(1.25).equal(),paginationMiniOptionsMarginInlineStart:e.calc(e.marginXXS).div(2).equal(),paginationMiniQuickJumperInputWidth:e.calc(e.controlHeightLG).mul(1.1).equal(),paginationItemPaddingInline:e.calc(e.marginXXS).mul(1.5).equal(),paginationEllipsisLetterSpacing:e.calc(e.marginXXS).div(2).equal(),paginationSlashMarginInlineStart:e.marginSM,paginationSlashMarginInlineEnd:e.marginSM,paginationEllipsisTextIndent:"0.13em"},an(e)),Ci=vt("Pagination",e=>{const t=ho(e);return[vi(t),Si(t)]},go),xi=e=>{const{componentCls:t}=e;return{[`${t}${t}-bordered${t}-disabled:not(${t}-mini)`]:{"&, &:hover":{[`${t}-item-link`]:{borderColor:e.colorBorder}},"&:focus-visible":{[`${t}-item-link`]:{borderColor:e.colorBorder}},[`${t}-item, ${t}-item-link`]:{backgroundColor:e.colorBgContainerDisabled,borderColor:e.colorBorder,[`&:hover:not(${t}-item-active)`]:{backgroundColor:e.colorBgContainerDisabled,borderColor:e.colorBorder,a:{color:e.colorTextDisabled}},[`&${t}-item-active`]:{backgroundColor:e.itemActiveBgDisabled}},[`${t}-prev, ${t}-next`]:{"&:hover button":{backgroundColor:e.colorBgContainerDisabled,borderColor:e.colorBorder,color:e.colorTextDisabled},[`${t}-item-link`]:{backgroundColor:e.colorBgContainerDisabled,borderColor:e.colorBorder}}},[`${t}${t}-bordered:not(${t}-mini)`]:{[`${t}-prev, ${t}-next`]:{"&:hover button":{borderColor:e.colorPrimaryHover,backgroundColor:e.itemBg},[`${t}-item-link`]:{backgroundColor:e.itemLinkBg,borderColor:e.colorBorder},[`&:hover ${t}-item-link`]:{borderColor:e.colorPrimary,backgroundColor:e.itemBg,color:e.colorPrimary},[`&${t}-disabled`]:{[`${t}-item-link`]:{borderColor:e.colorBorder,color:e.colorTextDisabled}}},[`${t}-item`]:{backgroundColor:e.itemBg,border:`${Z(e.lineWidth)} ${e.lineType} ${e.colorBorder}`,[`&:hover:not(${t}-item-active)`]:{borderColor:e.colorPrimary,backgroundColor:e.itemBg,a:{color:e.colorPrimary}},"&-active":{borderColor:e.colorPrimary}}}}},$i=Ko(["Pagination","bordered"],e=>{const t=ho(e);return xi(t)},go);function Wn(e){return o.useMemo(()=>typeof e=="boolean"?[e,{}]:e&&typeof e=="object"?[!0,e]:[void 0,void 0],[e])}const yi=e=>{const{align:t,prefixCls:n,selectPrefixCls:r,className:l,rootClassName:i,style:a,size:s,locale:c,responsive:u,showSizeChanger:f,selectComponentClass:m,pageSizeOptions:d,styles:p,classNames:g,...v}=e,{xs:w}=Kl(u),[,E]=bt(),{getPrefixCls:$,direction:h,showSizeChanger:y,className:H,style:L,classNames:z,styles:B}=Zt("pagination"),x=$("pagination",n),[X,U]=Ci(x),T=qn(s),ue=T==="small"||!!(w&&!T&&u),oe={...e,size:T},[de,pe]=kt([z,g],[B,p],{props:oe}),[j]=Et("Pagination",qo),D={...j,...c},[Q,me]=Wn(f),[ne,P]=Wn(y),N=Q??ne,re=me??P,I=m||dt,K=o.useMemo(()=>d?d.map(W=>Number(W)):void 0,[d]),ie=W=>{const{disabled:ce,size:te,onSizeChange:A,"aria-label":he,className:Ce,options:fe}=W,{className:He,onChange:Be}=re||{},Te=fe.find(xe=>String(xe.value)===String(te))?.value;return o.createElement(I,{disabled:ce,showSearch:!0,popupMatchSelectWidth:!1,getPopupContainer:xe=>xe.parentNode,"aria-label":he,options:fe,...re,value:Te,onChange:(xe,Ee)=>{A?.(xe),Be?.(xe,Ee)},size:ue?"small":"middle",className:ae(Ce,He)})},we=o.useMemo(()=>{const W=o.createElement("span",{className:`${x}-item-ellipsis`},"•••"),ce=o.createElement("button",{className:`${x}-item-link`,type:"button",tabIndex:-1},h==="rtl"?o.createElement(Sn,null):o.createElement(vn,null)),te=o.createElement("button",{className:`${x}-item-link`,type:"button",tabIndex:-1},h==="rtl"?o.createElement(vn,null):o.createElement(Sn,null)),A=o.createElement("a",{className:`${x}-item-link`},o.createElement("div",{className:`${x}-item-container`},h==="rtl"?o.createElement(xn,{className:`${x}-item-link-icon`}):o.createElement(Cn,{className:`${x}-item-link-icon`}),W)),he=o.createElement("a",{className:`${x}-item-link`},o.createElement("div",{className:`${x}-item-container`},h==="rtl"?o.createElement(Cn,{className:`${x}-item-link-icon`}):o.createElement(xn,{className:`${x}-item-link-icon`}),W));return{prevIcon:ce,nextIcon:te,jumpPrevIcon:A,jumpNextIcon:he}},[h,x]),O=$("select",r),F=ae({[`${x}-${t}`]:!!t,[`${x}-mini`]:ue,[`${x}-rtl`]:h==="rtl",[`${x}-bordered`]:E.wireframe},H,l,i,de.root,X,U),se={...pe.root,...L,...a};return o.createElement(o.Fragment,null,E.wireframe&&o.createElement($i,{prefixCls:x}),o.createElement(pi,{...we,...v,styles:pe,classNames:de,style:se,prefixCls:x,selectPrefixCls:O,className:F,locale:D,pageSizeOptions:K,showSizeChanger:N,sizeChangerRender:ie}))},bo=[{id:0,title:"HTML",count:0},{id:1,title:"CSS",count:0},{id:2,title:"JavaScript",count:0},{id:3,title:"TypeScript",count:0},{id:4,title:"Vue",count:0},{id:5,title:"React",count:0},{id:6,title:"面试",count:0},{id:7,title:"md渲染",count:1}],Ei=[{id:0,count:zt.length,content:"归档"},{id:1,count:bo.length,content:"分类"},{id:2,count:0,content:"标签"}],Bt=6;function wi(){const e=()=>{const t=document.getElementById("content-start");t&&t.scrollIntoView({behavior:"smooth"})};return G.jsx(G.Fragment,{children:G.jsxs("div",{className:je["layout-main"],children:[G.jsx(ko,{}),G.jsx("div",{className:je["layout-main-content"],children:G.jsxs("div",{className:je["layout-main-content-header"],children:[G.jsx(Mt.h1,{initial:{opacity:0,y:30},animate:{opacity:1,y:0},transition:{duration:.8,ease:"easeOut"},children:"Star'Blog"}),G.jsx(Mt.p,{initial:{opacity:0},animate:{opacity:1},transition:{delay:.5,duration:.8},children:G.jsx(Jo,{text:"种一棵树最好的时间是十年前，其次是现在。",speed:100})})]})}),G.jsx(Mt.div,{className:je["scroll-indicator"],onClick:e,initial:{opacity:0},animate:{opacity:.7},transition:{delay:2,duration:1},children:G.jsx(Yn,{})})]})})}function zi(){const e=So();Qo();const[t,n]=o.useState(1);function r(i){n(i);const a=document.getElementById("content-start");a&&a.scrollIntoView({behavior:"smooth"})}const l=zt.slice((t-1)*Bt,t*Bt);return G.jsx(G.Fragment,{children:G.jsx(Yo,{children:G.jsxs("div",{className:je["layout-main-container"],children:[G.jsx(wi,{}),G.jsx("div",{id:"content-start",className:je.layout,children:G.jsxs("div",{className:je.blog,children:[G.jsxs("div",{className:je.sumup,children:[G.jsxs("header",{className:je["sumup-top"],children:[G.jsxs("div",{className:je["sumup-top-avatar"],children:[G.jsx("img",{src:Zo,alt:"头像"}),G.jsx("h2",{children:"徐维斌"})]}),G.jsx("ul",{className:je["sumup-top-list"],children:Ei.map(i=>G.jsxs("li",{children:[G.jsx("span",{children:i.count}),G.jsx("span",{children:i.content})]},i.id))})]}),G.jsxs("div",{className:je["sumup-content"],children:[G.jsx("h3",{children:"分类"}),G.jsx("ul",{children:bo.map(i=>G.jsxs("li",{children:[G.jsx("span",{children:i.title}),G.jsx("span",{children:i.count})]},i.id))})]}),G.jsxs("footer",{className:je["sumup-footer"],children:[G.jsx("h3",{children:"标签"}),G.jsxs("ul",{children:[G.jsx("li",{children:"js"}),G.jsx("li",{children:"js"}),G.jsx("li",{children:"js"}),G.jsx("li",{children:"js"}),G.jsx("li",{children:"js"}),G.jsx("li",{children:"js"}),G.jsx("li",{children:"js"})]})]})]}),G.jsxs("div",{className:je["blog-left"],children:[G.jsx("ul",{className:je["blog-content"],children:l.map(i=>G.jsxs("li",{onClick:()=>e(i.path),children:[G.jsx("h2",{children:i.title}),G.jsxs("div",{className:je["blog-tag"],children:[G.jsx("div",{children:i.tags?i.tags.join(", "):i.tags}),G.jsx("span",{children:i.date})]}),G.jsx("p",{children:i.content})]},i.id))}),G.jsx(yi,{align:"center",current:t,total:zt.length,pageSize:Bt,onChange:r})]})]})})]})})})}export{zi as default};
+    `]: {
+        display: 'inline-block',
+        minWidth: e.itemSize,
+        height: e.itemSize,
+        color: e.colorText,
+        fontFamily: e.fontFamily,
+        lineHeight: Z(e.itemSize),
+        textAlign: 'center',
+        verticalAlign: 'middle',
+        listStyle: 'none',
+        borderRadius: e.borderRadius,
+        cursor: 'pointer',
+        transition: `all ${e.motionDurationMid}`
+      },
+      [`${t}-prev, ${t}-next`]: {
+        outline: 0,
+        button: { color: e.colorText, cursor: 'pointer', userSelect: 'none' },
+        [`${t}-item-link`]: {
+          display: 'block',
+          width: '100%',
+          height: '100%',
+          padding: 0,
+          fontSize: e.fontSizeSM,
+          textAlign: 'center',
+          backgroundColor: 'transparent',
+          border: `${Z(e.lineWidth)} ${e.lineType} transparent`,
+          borderRadius: e.borderRadius,
+          outline: 'none',
+          transition: `all ${e.motionDurationMid}`
+        },
+        [`&:hover ${t}-item-link`]: { backgroundColor: e.colorBgTextHover },
+        [`&:active ${t}-item-link`]: { backgroundColor: e.colorBgTextActive },
+        [`&${t}-disabled:hover`]: { [`${t}-item-link`]: { backgroundColor: 'transparent' } }
+      },
+      [`${t}-slash`]: {
+        marginInlineEnd: e.paginationSlashMarginInlineEnd,
+        marginInlineStart: e.paginationSlashMarginInlineStart
+      },
+      [`${t}-options`]: {
+        display: 'inline-block',
+        marginInlineStart: e.margin,
+        verticalAlign: 'middle',
+        '&-size-changer': { width: 'auto' },
+        '&-quick-jumper': {
+          display: 'inline-block',
+          height: e.controlHeight,
+          marginInlineStart: e.marginXS,
+          lineHeight: Z(e.controlHeight),
+          verticalAlign: 'top',
+          input: {
+            ...dn(e),
+            ...cn(e, {
+              borderColor: e.colorBorder,
+              hoverBorderColor: e.colorPrimaryHover,
+              activeBorderColor: e.colorPrimary,
+              activeShadow: e.activeShadow
+            }),
+            '&[disabled]': { ...wt(e) },
+            width: e.quickJumperInputWidth,
+            height: e.controlHeight,
+            boxSizing: 'border-box',
+            margin: 0,
+            marginInlineStart: e.marginXS,
+            marginInlineEnd: e.marginXS
+          }
+        }
+      }
+    };
+  },
+  bi = (e) => {
+    const { componentCls: t } = e;
+    return {
+      [`${t}-item`]: {
+        display: 'inline-block',
+        minWidth: e.itemSize,
+        height: e.itemSize,
+        marginInlineEnd: e.marginXS,
+        fontFamily: e.fontFamily,
+        lineHeight: Z(e.calc(e.itemSize).sub(2).equal()),
+        textAlign: 'center',
+        verticalAlign: 'middle',
+        listStyle: 'none',
+        backgroundColor: e.itemBg,
+        border: `${Z(e.lineWidth)} ${e.lineType} transparent`,
+        borderRadius: e.borderRadius,
+        outline: 0,
+        cursor: 'pointer',
+        userSelect: 'none',
+        a: {
+          display: 'block',
+          padding: `0 ${Z(e.paginationItemPaddingInline)}`,
+          color: e.colorText,
+          '&:hover': { textDecoration: 'none' }
+        },
+        [`&:not(${t}-item-active)`]: {
+          '&:hover': {
+            transition: `all ${e.motionDurationMid}`,
+            backgroundColor: e.colorBgTextHover
+          },
+          '&:active': { backgroundColor: e.colorBgTextActive }
+        },
+        '&-active': {
+          fontWeight: e.fontWeightStrong,
+          backgroundColor: e.itemActiveBg,
+          borderColor: e.colorPrimary,
+          a: { color: e.itemActiveColor },
+          '&:hover': { borderColor: e.colorPrimaryHover },
+          '&:hover a': { color: e.itemActiveColorHover }
+        }
+      }
+    };
+  },
+  vi = (e) => {
+    const { componentCls: t } = e;
+    return {
+      [t]: {
+        ...ut(e),
+        display: 'flex',
+        '&-start': { justifyContent: 'start' },
+        '&-center': { justifyContent: 'center' },
+        '&-end': { justifyContent: 'end' },
+        'ul, ol': { margin: 0, padding: 0, listStyle: 'none' },
+        '&::after': {
+          display: 'block',
+          clear: 'both',
+          height: 0,
+          overflow: 'hidden',
+          visibility: 'hidden',
+          content: '""'
+        },
+        [`${t}-total-text`]: {
+          display: 'inline-block',
+          height: e.itemSize,
+          marginInlineEnd: e.marginXS,
+          lineHeight: Z(e.calc(e.itemSize).sub(2).equal()),
+          verticalAlign: 'middle'
+        },
+        ...bi(e),
+        ...hi(e),
+        ...gi(e),
+        ...fi(e),
+        ...mi(e),
+        [`@media only screen and (max-width: ${e.screenLG}px)`]: {
+          [`${t}-item`]: { '&-after-jump-prev, &-before-jump-next': { display: 'none' } }
+        },
+        [`@media only screen and (max-width: ${e.screenSM}px)`]: {
+          [`${t}-options`]: { display: 'none' }
+        }
+      },
+      [`&${e.componentCls}-rtl`]: { direction: 'rtl' }
+    };
+  },
+  Si = (e) => {
+    const { componentCls: t } = e;
+    return {
+      [`${t}:not(${t}-disabled)`]: {
+        [`${t}-item`]: { ...Uo(e) },
+        [`${t}-jump-prev, ${t}-jump-next`]: {
+          '&:focus-visible': {
+            [`${t}-item-link-icon`]: { opacity: 1 },
+            [`${t}-item-ellipsis`]: { opacity: 0 },
+            ...bn(e)
+          }
+        },
+        [`${t}-prev, ${t}-next`]: { [`&:focus-visible ${t}-item-link`]: bn(e) }
+      }
+    };
+  },
+  go = (e) => ({
+    itemBg: e.colorBgContainer,
+    itemSize: e.controlHeight,
+    itemSizeSM: e.controlHeightSM,
+    itemActiveBg: e.colorBgContainer,
+    itemActiveColor: e.colorPrimary,
+    itemActiveColorHover: e.colorPrimaryHover,
+    itemLinkBg: e.colorBgContainer,
+    itemActiveColorDisabled: e.colorTextDisabled,
+    itemActiveBgDisabled: e.controlItemBgActiveDisabled,
+    itemInputBg: e.colorBgContainer,
+    miniOptionsSizeChangerTop: 0,
+    ...sn(e)
+  }),
+  ho = (e) =>
+    at(
+      e,
+      {
+        inputOutlineOffset: 0,
+        quickJumperInputWidth: e.calc(e.controlHeightLG).mul(1.25).equal(),
+        paginationMiniOptionsMarginInlineStart: e.calc(e.marginXXS).div(2).equal(),
+        paginationMiniQuickJumperInputWidth: e.calc(e.controlHeightLG).mul(1.1).equal(),
+        paginationItemPaddingInline: e.calc(e.marginXXS).mul(1.5).equal(),
+        paginationEllipsisLetterSpacing: e.calc(e.marginXXS).div(2).equal(),
+        paginationSlashMarginInlineStart: e.marginSM,
+        paginationSlashMarginInlineEnd: e.marginSM,
+        paginationEllipsisTextIndent: '0.13em'
+      },
+      an(e)
+    ),
+  Ci = vt(
+    'Pagination',
+    (e) => {
+      const t = ho(e);
+      return [vi(t), Si(t)];
+    },
+    go
+  ),
+  xi = (e) => {
+    const { componentCls: t } = e;
+    return {
+      [`${t}${t}-bordered${t}-disabled:not(${t}-mini)`]: {
+        '&, &:hover': { [`${t}-item-link`]: { borderColor: e.colorBorder } },
+        '&:focus-visible': { [`${t}-item-link`]: { borderColor: e.colorBorder } },
+        [`${t}-item, ${t}-item-link`]: {
+          backgroundColor: e.colorBgContainerDisabled,
+          borderColor: e.colorBorder,
+          [`&:hover:not(${t}-item-active)`]: {
+            backgroundColor: e.colorBgContainerDisabled,
+            borderColor: e.colorBorder,
+            a: { color: e.colorTextDisabled }
+          },
+          [`&${t}-item-active`]: { backgroundColor: e.itemActiveBgDisabled }
+        },
+        [`${t}-prev, ${t}-next`]: {
+          '&:hover button': {
+            backgroundColor: e.colorBgContainerDisabled,
+            borderColor: e.colorBorder,
+            color: e.colorTextDisabled
+          },
+          [`${t}-item-link`]: {
+            backgroundColor: e.colorBgContainerDisabled,
+            borderColor: e.colorBorder
+          }
+        }
+      },
+      [`${t}${t}-bordered:not(${t}-mini)`]: {
+        [`${t}-prev, ${t}-next`]: {
+          '&:hover button': { borderColor: e.colorPrimaryHover, backgroundColor: e.itemBg },
+          [`${t}-item-link`]: { backgroundColor: e.itemLinkBg, borderColor: e.colorBorder },
+          [`&:hover ${t}-item-link`]: {
+            borderColor: e.colorPrimary,
+            backgroundColor: e.itemBg,
+            color: e.colorPrimary
+          },
+          [`&${t}-disabled`]: {
+            [`${t}-item-link`]: { borderColor: e.colorBorder, color: e.colorTextDisabled }
+          }
+        },
+        [`${t}-item`]: {
+          backgroundColor: e.itemBg,
+          border: `${Z(e.lineWidth)} ${e.lineType} ${e.colorBorder}`,
+          [`&:hover:not(${t}-item-active)`]: {
+            borderColor: e.colorPrimary,
+            backgroundColor: e.itemBg,
+            a: { color: e.colorPrimary }
+          },
+          '&-active': { borderColor: e.colorPrimary }
+        }
+      }
+    };
+  },
+  $i = Ko(
+    ['Pagination', 'bordered'],
+    (e) => {
+      const t = ho(e);
+      return xi(t);
+    },
+    go
+  );
+function Wn(e) {
+  return o.useMemo(
+    () =>
+      typeof e == 'boolean' ? [e, {}] : e && typeof e == 'object' ? [!0, e] : [void 0, void 0],
+    [e]
+  );
+}
+const yi = (e) => {
+    const {
+        align: t,
+        prefixCls: n,
+        selectPrefixCls: r,
+        className: l,
+        rootClassName: i,
+        style: a,
+        size: s,
+        locale: c,
+        responsive: u,
+        showSizeChanger: f,
+        selectComponentClass: m,
+        pageSizeOptions: d,
+        styles: p,
+        classNames: g,
+        ...v
+      } = e,
+      { xs: w } = Kl(u),
+      [, E] = bt(),
+      {
+        getPrefixCls: $,
+        direction: h,
+        showSizeChanger: y,
+        className: H,
+        style: L,
+        classNames: z,
+        styles: B
+      } = Zt('pagination'),
+      x = $('pagination', n),
+      [X, U] = Ci(x),
+      T = qn(s),
+      ue = T === 'small' || !!(w && !T && u),
+      oe = { ...e, size: T },
+      [de, pe] = kt([z, g], [B, p], { props: oe }),
+      [j] = Et('Pagination', qo),
+      D = { ...j, ...c },
+      [Q, me] = Wn(f),
+      [ne, P] = Wn(y),
+      N = Q ?? ne,
+      re = me ?? P,
+      I = m || dt,
+      K = o.useMemo(() => (d ? d.map((W) => Number(W)) : void 0), [d]),
+      ie = (W) => {
+        const {
+            disabled: ce,
+            size: te,
+            onSizeChange: A,
+            'aria-label': he,
+            className: Ce,
+            options: fe
+          } = W,
+          { className: He, onChange: Be } = re || {},
+          Te = fe.find((xe) => String(xe.value) === String(te))?.value;
+        return o.createElement(I, {
+          disabled: ce,
+          showSearch: !0,
+          popupMatchSelectWidth: !1,
+          getPopupContainer: (xe) => xe.parentNode,
+          'aria-label': he,
+          options: fe,
+          ...re,
+          value: Te,
+          onChange: (xe, Ee) => {
+            (A?.(xe), Be?.(xe, Ee));
+          },
+          size: ue ? 'small' : 'middle',
+          className: ae(Ce, He)
+        });
+      },
+      we = o.useMemo(() => {
+        const W = o.createElement('span', { className: `${x}-item-ellipsis` }, '•••'),
+          ce = o.createElement(
+            'button',
+            { className: `${x}-item-link`, type: 'button', tabIndex: -1 },
+            h === 'rtl' ? o.createElement(Sn, null) : o.createElement(vn, null)
+          ),
+          te = o.createElement(
+            'button',
+            { className: `${x}-item-link`, type: 'button', tabIndex: -1 },
+            h === 'rtl' ? o.createElement(vn, null) : o.createElement(Sn, null)
+          ),
+          A = o.createElement(
+            'a',
+            { className: `${x}-item-link` },
+            o.createElement(
+              'div',
+              { className: `${x}-item-container` },
+              h === 'rtl'
+                ? o.createElement(xn, { className: `${x}-item-link-icon` })
+                : o.createElement(Cn, { className: `${x}-item-link-icon` }),
+              W
+            )
+          ),
+          he = o.createElement(
+            'a',
+            { className: `${x}-item-link` },
+            o.createElement(
+              'div',
+              { className: `${x}-item-container` },
+              h === 'rtl'
+                ? o.createElement(Cn, { className: `${x}-item-link-icon` })
+                : o.createElement(xn, { className: `${x}-item-link-icon` }),
+              W
+            )
+          );
+        return { prevIcon: ce, nextIcon: te, jumpPrevIcon: A, jumpNextIcon: he };
+      }, [h, x]),
+      O = $('select', r),
+      F = ae(
+        {
+          [`${x}-${t}`]: !!t,
+          [`${x}-mini`]: ue,
+          [`${x}-rtl`]: h === 'rtl',
+          [`${x}-bordered`]: E.wireframe
+        },
+        H,
+        l,
+        i,
+        de.root,
+        X,
+        U
+      ),
+      se = { ...pe.root, ...L, ...a };
+    return o.createElement(
+      o.Fragment,
+      null,
+      E.wireframe && o.createElement($i, { prefixCls: x }),
+      o.createElement(pi, {
+        ...we,
+        ...v,
+        styles: pe,
+        classNames: de,
+        style: se,
+        prefixCls: x,
+        selectPrefixCls: O,
+        className: F,
+        locale: D,
+        pageSizeOptions: K,
+        showSizeChanger: N,
+        sizeChangerRender: ie
+      })
+    );
+  },
+  bo = [
+    { id: 0, title: 'HTML', count: 0 },
+    { id: 1, title: 'CSS', count: 0 },
+    { id: 2, title: 'JavaScript', count: 0 },
+    { id: 3, title: 'TypeScript', count: 0 },
+    { id: 4, title: 'Vue', count: 0 },
+    { id: 5, title: 'React', count: 0 },
+    { id: 6, title: '面试', count: 0 },
+    { id: 7, title: 'md渲染', count: 1 }
+  ],
+  Ei = [
+    { id: 0, count: zt.length, content: '归档' },
+    { id: 1, count: bo.length, content: '分类' },
+    { id: 2, count: 0, content: '标签' }
+  ],
+  Bt = 6;
+function wi() {
+  const e = () => {
+    const t = document.getElementById('content-start');
+    t && t.scrollIntoView({ behavior: 'smooth' });
+  };
+  return G.jsx(G.Fragment, {
+    children: G.jsxs('div', {
+      className: je['layout-main'],
+      children: [
+        G.jsx(ko, {}),
+        G.jsx('div', {
+          className: je['layout-main-content'],
+          children: G.jsxs('div', {
+            className: je['layout-main-content-header'],
+            children: [
+              G.jsx(Mt.h1, {
+                initial: { opacity: 0, y: 30 },
+                animate: { opacity: 1, y: 0 },
+                transition: { duration: 0.8, ease: 'easeOut' },
+                children: "Star'Blog"
+              }),
+              G.jsx(Mt.p, {
+                initial: { opacity: 0 },
+                animate: { opacity: 1 },
+                transition: { delay: 0.5, duration: 0.8 },
+                children: G.jsx(Jo, {
+                  text: '种一棵树最好的时间是十年前，其次是现在。',
+                  speed: 100
+                })
+              })
+            ]
+          })
+        }),
+        G.jsx(Mt.div, {
+          className: je['scroll-indicator'],
+          onClick: e,
+          initial: { opacity: 0 },
+          animate: { opacity: 0.7 },
+          transition: { delay: 2, duration: 1 },
+          children: G.jsx(Yn, {})
+        })
+      ]
+    })
+  });
+}
+function zi() {
+  const e = So();
+  Qo();
+  const [t, n] = o.useState(1);
+  function r(i) {
+    n(i);
+    const a = document.getElementById('content-start');
+    a && a.scrollIntoView({ behavior: 'smooth' });
+  }
+  const l = zt.slice((t - 1) * Bt, t * Bt);
+  return G.jsx(G.Fragment, {
+    children: G.jsx(Yo, {
+      children: G.jsxs('div', {
+        className: je['layout-main-container'],
+        children: [
+          G.jsx(wi, {}),
+          G.jsx('div', {
+            id: 'content-start',
+            className: je.layout,
+            children: G.jsxs('div', {
+              className: je.blog,
+              children: [
+                G.jsxs('div', {
+                  className: je.sumup,
+                  children: [
+                    G.jsxs('header', {
+                      className: je['sumup-top'],
+                      children: [
+                        G.jsxs('div', {
+                          className: je['sumup-top-avatar'],
+                          children: [
+                            G.jsx('img', { src: Zo, alt: '头像' }),
+                            G.jsx('h2', { children: '徐维斌' })
+                          ]
+                        }),
+                        G.jsx('ul', {
+                          className: je['sumup-top-list'],
+                          children: Ei.map((i) =>
+                            G.jsxs(
+                              'li',
+                              {
+                                children: [
+                                  G.jsx('span', { children: i.count }),
+                                  G.jsx('span', { children: i.content })
+                                ]
+                              },
+                              i.id
+                            )
+                          )
+                        })
+                      ]
+                    }),
+                    G.jsxs('div', {
+                      className: je['sumup-content'],
+                      children: [
+                        G.jsx('h3', { children: '分类' }),
+                        G.jsx('ul', {
+                          children: bo.map((i) =>
+                            G.jsxs(
+                              'li',
+                              {
+                                children: [
+                                  G.jsx('span', { children: i.title }),
+                                  G.jsx('span', { children: i.count })
+                                ]
+                              },
+                              i.id
+                            )
+                          )
+                        })
+                      ]
+                    }),
+                    G.jsxs('footer', {
+                      className: je['sumup-footer'],
+                      children: [
+                        G.jsx('h3', { children: '标签' }),
+                        G.jsxs('ul', {
+                          children: [
+                            G.jsx('li', { children: 'js' }),
+                            G.jsx('li', { children: 'js' }),
+                            G.jsx('li', { children: 'js' }),
+                            G.jsx('li', { children: 'js' }),
+                            G.jsx('li', { children: 'js' }),
+                            G.jsx('li', { children: 'js' }),
+                            G.jsx('li', { children: 'js' })
+                          ]
+                        })
+                      ]
+                    })
+                  ]
+                }),
+                G.jsxs('div', {
+                  className: je['blog-left'],
+                  children: [
+                    G.jsx('ul', {
+                      className: je['blog-content'],
+                      children: l.map((i) =>
+                        G.jsxs(
+                          'li',
+                          {
+                            onClick: () => e(i.path),
+                            children: [
+                              G.jsx('h2', { children: i.title }),
+                              G.jsxs('div', {
+                                className: je['blog-tag'],
+                                children: [
+                                  G.jsx('div', { children: i.tags ? i.tags.join(', ') : i.tags }),
+                                  G.jsx('span', { children: i.date })
+                                ]
+                              }),
+                              G.jsx('p', { children: i.content })
+                            ]
+                          },
+                          i.id
+                        )
+                      )
+                    }),
+                    G.jsx(yi, {
+                      align: 'center',
+                      current: t,
+                      total: zt.length,
+                      pageSize: Bt,
+                      onChange: r
+                    })
+                  ]
+                })
+              ]
+            })
+          })
+        ]
+      })
+    })
+  });
+}
+export { zi as default };

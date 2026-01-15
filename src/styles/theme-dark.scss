@@ -2,14 +2,14 @@
   --color-bg-primary: #151d2c;
   --color-header-bg: rgba(0, 0, 0, 0.99); // 头部半透明背景
   --color-bg-secondary: #1e293b;
-  --bg-gradient: linear-gradient(to bottom,#1a202c, #171734, #2a2a4a);
+  --bg-gradient: linear-gradient(to bottom, #1a202c, #171734, #2a2a4a);
   --color-bg-third: #4d1b78;
   --color-text-primary: #d1d5db;
   --color-text-secondary: #b33bce;
   --color-h-primary: #f9f5ff; //标题
   --color-border: #6b21a8;
   --color-primary: #40a9ff;
-  --color-primary-hover: #7f65f9;
+  --color-primary-hover: #8a61f8;
 
   // 代码块相关
   --color-code-head: #181736; //代码块标题颜色
@@ -33,4 +33,9 @@
   --color-timeline-dot-bg: #1f2937; // 时间轴点背景色
   --color-timeline-dot-border: #4b5563; // 时间轴点边框色
   --color-timeline-year: #f3f4f6; // 年份文字颜色
+
+  // 按钮
+  --color-btn-bg: #314158;
+
+  --color-page-active: var(--color-bg-third);
 }

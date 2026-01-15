@@ -1,10 +1,12 @@
 import styles from './index.module.scss';
 import React from 'react';
-import { MoonOutlined, SunOutlined, DatabaseFilled } from '@ant-design/icons';
 import useTheme from '../../hooks/useTheme.ts';
 import { useNavigate } from 'react-router-dom';
-import type { MenuProps } from 'antd';
-import { Dropdown, Space } from 'antd';
+import { Moon, Sun, TableOfContents } from 'lucide-react';
+import navigateData from '@/utils/naviagteData.ts';
+import type { NavigateData } from '@/utils/naviagteData.ts';
+import classNames from 'classnames'
+
 type Props = {
   children: React.ReactNode;
 };
@@ -13,32 +15,9 @@ export default function CommonLayout(props: Props) {
   const navigate = useNavigate();
   const [width, setWidth] = useState<number>(window.innerWidth); // 窗口宽度
   const { theme, toggleTheme } = useTheme();
-  const items: MenuProps['items'] = [
-    {
-      key: '1',
-      label: (
-        <a rel="noopener noreferrer" onClick={() => navigate('/')}>
-          首页
-        </a>
-      )
-    },
-    {
-      key: '2',
-      label: (
-        <a rel="noopener noreferrer" onClick={() => navigate('/about')}>
-          关于我
-        </a>
-      )
-    },
-    {
-      key: '3',
-      label: (
-        <a rel="noopener noreferrer" onClick={() => navigate('/file')}>
-          归档
-        </a>
-      )
-    }
-  ];
+  // 移动端是否展示导航标签
+  const [isShow, setIsShow] = useState<boolean>(false);
+
   function fn() {
     setWidth(window.innerWidth);
   }
@@ -48,9 +27,18 @@ export default function CommonLayout(props: Props) {
   });
   function handleClick(e: React.MouseEvent<HTMLSpanElement>, path: string) {
     e.preventDefault();
+    setIsShow(false)
     navigate(path);
-    
   }
+  useEffect(()=>{
+    function handleScroll(){
+       setIsShow(false)
+    }
+    window.addEventListener('scroll',handleScroll)
+    return ()=>{
+      window.removeEventListener('scroll',handleScroll)
+    }
+  })
 
   return (
     <>
@@ -58,43 +46,30 @@ export default function CommonLayout(props: Props) {
         {/* 头部 */}
         <header className={styles.top}>
           <div className={styles.left}>
-            <h2>🌟 Star-Blog</h2>
+            <h2 onClick={()=>{scrollTo({top:0});navigate('/')}}>🌟 Star-Blog</h2>
           </div>
           {/* PC端 */}
           {width > 768 && (
             <ul className={styles.right}>
+              {navigateData.map((item: NavigateData) => (
+                <li key={item.id}>
+                  <a onClick={(e) => handleClick(e, item.path)}>{item.title}</a>
+                </li>
+              ))}
               <li>
-                <a onClick={(e) => handleClick(e, '/')}>首页</a>
-              </li>
-              <li>
-                <a onClick={(e) => handleClick(e, '/about')}>关于我</a>
-              </li>
-              <li>
-                <a onClick={(e) => handleClick(e, '/file')}>归档</a>
-              </li>
-              <li>
-                <Button
-                  color="default"
-                  variant="filled"
+                <button
                   onClick={toggleTheme}
+                  className={styles.btn}
                   style={{
-                    transition: 'all 0.5s',
-                    borderRadius: '50%',
-                    width: '2.5rem',
-                    height: '2.5rem',
                     transform: theme === 'dark' ? 'rotate(180deg)' : 'rotate(0deg)'
                   }}
                 >
                   {theme === 'light' ? (
-                    <MoonOutlined
-                      style={{ fontSize: '1.25rem', color: 'var(--color-text-primary)' }}
-                    />
+                    <Moon style={{ color: 'var(--color-text-primary)', width: 20, height: 20 }} />
                   ) : (
-                    <SunOutlined
-                      style={{ fontSize: '1.25rem', color: 'var(--color-text-primary)' }}
-                    />
+                    <Sun style={{ color: 'var(--color-text-primary)', width: 20, height: 20 }} />
                   )}
-                </Button>
+                </button>
               </li>
             </ul>
           )}
@@ -103,50 +78,45 @@ export default function CommonLayout(props: Props) {
             <div>
               <ul className={styles.right}>
                 <li>
-                  <Button
-                    color="default"
-                    variant="filled"
+                  <button
+                    className={styles.btn}
                     style={{
-                      width: '2.5rem',
-                      height: '2.5rem',
-                      borderRadius: '50%',
-                      transition: 'all 0.5s',
                       transform: theme === 'dark' ? 'rotate(180deg)' : 'rotate(0deg)'
                     }}
                     onClick={toggleTheme}
                   >
                     {theme === 'light' ? (
-                      <MoonOutlined
-                        style={{ fontSize: '1rem', color: 'var(--color-text-primary)' }}
-                      />
+                      <Moon style={{ color: 'var(--color-text-primary)', width: 16, height: 16 }} />
                     ) : (
-                      <SunOutlined
-                        style={{ fontSize: '1rem', color: 'var(--color-text-primary)' }}
-                      />
+                      <Sun style={{ color: 'var(--color-text-primary)', width: 16, height: 16 }} />
                     )}
-                  </Button>
+                  </button>
                 </li>
                 <li>
-                  <Space vertical>
-                    <Space wrap>
-                      <Dropdown menu={{ items }} placement="bottom">
-                        <Button
-                          color="default"
-                          variant="filled"
-                          style={{ width: '2.5rem', height: '2.5rem' }}
-                        >
-                          <DatabaseFilled
-                            style={{ fontSize: '1.25rem', color: 'var(--color-text-primary)' }}
-                          />
-                        </Button>
-                      </Dropdown>
-                    </Space>
-                  </Space>
+                  <button
+                    className={styles.btn}
+                    style={{ transition: 'none' }}
+                    onClick={() => setIsShow(!isShow)}
+                  >
+                    <TableOfContents
+                      style={{ color: 'var(--color-text-primary)', width: 16, height: 16 }}
+                    />
+                  </button>
                 </li>
               </ul>
             </div>
           )}
         </header>
+        {width<=768&&
+          <div className={styles.mobile}>
+            <ul className={classNames(styles.navigator, isShow && styles.navigatorShow)}>
+                  {navigateData.map((item:NavigateData)=>(
+                     <li key={item.id+item.title+``}>
+                      <a onClick={(e) => handleClick(e, item.path)}>{item.title}</a>
+                    </li>
+                  ))}
+                </ul>
+          </div>}
         <main className={styles.main}>{props.children}</main>
         <footer className={styles.bottom}>
           <p>© 2025-2026 Star | 分享前端知识</p>

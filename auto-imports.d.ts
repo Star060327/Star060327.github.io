@@ -12,22 +12,17 @@ declare global {
   const Await: typeof import('@tanstack/react-router').Await
   const Block: typeof import('@tanstack/react-router').Block
   const BrowserUtils: typeof import('@bit-ocean/utils').BrowserUtils
-  const Button: typeof import('antd').Button
   const DateUtils: typeof import('@bit-ocean/utils').DateUtils
-  const Drawer: typeof import('antd').Drawer
   const Fragment: typeof import('react').Fragment
   const I18nUtils: typeof import('@bit-ocean/utils').I18nUtils
-  const Image: typeof import('antd').Image
   const IsUtils: typeof import('@bit-ocean/utils').IsUtils
   const LangUtils: typeof import('@bit-ocean/utils').LangUtils
   const Link: typeof import('@tanstack/react-router').Link
   const LoaderContext: typeof import('@tanstack/react-router').LoaderContext
   const MatchRoute: typeof import('@tanstack/react-router').MatchRoute
-  const Menu: typeof import('antd').Menu
   const MutationCache: typeof import('@tanstack/react-query').MutationCache
   const NotFoundRoute: typeof import('@tanstack/react-router').NotFoundRoute
   const Outlet: typeof import('@tanstack/react-router').Outlet
-  const Pagination: typeof import('antd').Pagination
   const QueryClient: typeof import('@tanstack/react-query').QueryClient
   const QueryClientProvider: typeof import('@tanstack/react-query').QueryClientProvider
   const ReactChart: typeof import('@bit-ocean/echarts').ReactChart

@@ -8,7 +8,7 @@
   .w {
     width: 1000px;
     max-width: 100%;
-    
+
     // 头部区域
     .header {
       text-align: center;
@@ -41,14 +41,14 @@
           border-radius: 1rem;
           box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
           border: 1px solid var(--color-border);
-          
+
           .count {
             font-size: 1.5rem;
             font-weight: 700;
             color: var(--color-text-secondary);
             display: block;
           }
-          
+
           .label {
             font-size: 0.875rem;
             color: var(--color-text-primary);
@@ -90,7 +90,7 @@
           padding-left: 2rem;
           opacity: 0.3;
           font-family: 'Segoe UI', sans-serif;
-          
+
           // 年份圆点
           &::before {
             content: '';
@@ -225,11 +225,11 @@
         h1 {
           font-size: 2rem;
         }
-        
+
         .stats-container {
           flex-direction: row;
           gap: 1rem;
-          
+
           .stat-item {
             padding: 0.75rem 1.5rem;
           }
@@ -250,7 +250,7 @@
           .article-list {
             .article-item {
               padding-left: 1rem;
-              
+
               &::before {
                 left: -1.8rem;
               }

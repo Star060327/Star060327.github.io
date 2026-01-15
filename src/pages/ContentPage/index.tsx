@@ -7,7 +7,10 @@ import styles from './index.module.scss';
 import { Navigate } from 'react-router-dom';
 import useScrollRestore from '@/hooks/useScrollRestore';
 import classNames from 'classnames';
-
+import { data } from '@/utils/data.ts';
+import type { Data } from '@/utils/data.ts';
+import {ArrowLeft} from 'lucide-react';
+import {useNavigate} from 'react-router-dom';
 // 定义 MDX 组件接受的 Props 类型
 type MDXProps = {
   components?: typeof mdxComponents;
@@ -21,61 +24,71 @@ type Heading = {
 
 // 动态导入组件
 const modules = import.meta.glob('../../posts/*.mdx');
-const lazyMdxComponents: Record<
-  string,
-  React.LazyExoticComponent<ComponentType<MDXProps>>
-> = {};
+const lazyMdxComponents: Record<string, React.LazyExoticComponent<ComponentType<MDXProps>>> = {};
 
 for (const path of Object.keys(modules)) {
   // 归一化路径，解决跨平台路径问题
   const normalizedPath = path.normalize('NFC');
   const key = normalizedPath.replace('../../posts/', '').replace('.mdx', '');
-  lazyMdxComponents[key] = lazy(modules[path] as () => Promise<{ default: ComponentType<MDXProps> }>);
+  lazyMdxComponents[key] = lazy(
+    modules[path] as () => Promise<{ default: ComponentType<MDXProps> }>
+  );
 }
 
 const ContentPage: React.FC = () => {
+  // 滚动位置不变
   useScrollRestore();
   const { '*': path } = useParams<string>();
+  const navigate=useNavigate()
   // 记录当前高亮的标题ID
   const [activeId, setActiveId] = useState<string>('');
   // 存储大纲数据
   const [headings, setHeadings] = useState<Heading[]>([]);
   const contentRef = useRef<HTMLDivElement>(null);
   const outlineRef = useRef<HTMLElement>(null);
+  const [activeData, setActiveData] = useState<Data | undefined>(
+    data.find((item: Data) => item.path === path)
+  );
 
   // 根据路径获取预创建的 lazy 组件
   // 同样需要解码路径
-  const MdxContent = path
-    ? lazyMdxComponents[decodeURIComponent(path).normalize('NFC')]
-    : null;
+  const MdxContent = path ? lazyMdxComponents[decodeURIComponent(path).normalize('NFC')] : null;
 
+  useEffect(() => {
+    const newPath = '/content/' + path;
+
+    setActiveData(data.find((item: Data) => item.path === newPath));
+    console.log(activeData);
+  }, [path]);
   // 提取标题
   useEffect(() => {
     // 只有在内容加载完成后才提取标题
     if (!contentRef.current) return;
     // 提取标题
     const extractHeadings = () => {
-      const elements = Array.from(
-        contentRef.current!.querySelectorAll('h1,h2,h3,h4,h5,h6')
-      ).map((item) => ({
-        id: item.id || `heading-${Math.random().toString(36).substring(2, 9)}`,
-        level: Number(item.nodeName.charAt(1)),
-        text: item.textContent || ''
-      }));
-      
+      const elements = Array.from(contentRef.current!.querySelectorAll('h1,h2,h3,h4,h5,h6')).map(
+        (item) => ({
+          id: item.id || `heading-${Math.random().toString(36).substring(2, 9)}`,
+          level: Number(item.nodeName.charAt(1)),
+          text: item.textContent || ''
+        })
+      );
+
       // 给没有ID的标题添加ID，以便锚点跳转
-      Array.from(contentRef.current!.querySelectorAll('h1,h2,h3,h4,h5,h6')).forEach((item, index) => {
-         if(!item.id) {
-             item.id = elements[index].id;
-         }
-      });
+      Array.from(contentRef.current!.querySelectorAll('h1,h2,h3,h4,h5,h6')).forEach(
+        (item, index) => {
+          if (!item.id) {
+            item.id = elements[index].id;
+          }
+        }
+      );
 
       // 只有当标题数量变化或内容变化时才更新（简单判断长度）
       setHeadings((prev) => {
-          if (prev.length === elements.length && prev.every((h, i) => h.text === elements[i].text)) {
-              return prev;
-          }
-          return elements;
+        if (prev.length === elements.length && prev.every((h, i) => h.text === elements[i].text)) {
+          return prev;
+        }
+        return elements;
       });
     };
 
@@ -127,20 +140,20 @@ const ContentPage: React.FC = () => {
     const scrollOutline = () => {
       if (!outlineRef.current) return;
       const activeItem = outlineRef.current.querySelector(`.${styles.active}`);
-      
+
       if (activeItem instanceof HTMLElement) {
         const container = outlineRef.current;
-        
+
         // 使用 getBoundingClientRect 计算位置，解决 offsetTop 受定位父级影响的问题
         const containerRect = container.getBoundingClientRect();
         const activeItemRect = activeItem.getBoundingClientRect();
-        
+
         // 计算激活项相对于容器顶部的距离（包含滚动条位置）
         const relativeTop = activeItemRect.top - containerRect.top + container.scrollTop;
-        
+
         // 计算目标滚动位置：使激活项居中
         const scrollTop = relativeTop - container.clientHeight / 2 + activeItem.clientHeight / 2;
-        
+
         container.scrollTo({
           top: Math.max(0, scrollTop),
           behavior: 'smooth'
@@ -155,30 +168,28 @@ const ContentPage: React.FC = () => {
     };
   }, [activeId]);
 
-  
-
   // 处理未找到内容的情况
   if (!MdxContent) {
     return <Navigate to="/not-found" />;
   }
   // 处理标题点击事件
   const handleAnchorClick = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
-      e.preventDefault();
-      setActiveId(id); // 立即高亮
-      const element = document.getElementById(id);
-      if (element) {
-        // rAF优化
-          requestAnimationFrame(() => {
-            console.log(window.scrollY);
-            console.log(element.getBoundingClientRect().top);
-            
-            const top = element.getBoundingClientRect().top + window.scrollY - 100; // 减去头部高度
-            window.scrollTo({
-                top,
-                behavior: 'smooth'
-            });
-          });
-      }
+    e.preventDefault();
+    setActiveId(id); // 立即高亮
+    const element = document.getElementById(id);
+    if (element) {
+      // rAF优化
+      requestAnimationFrame(() => {
+        console.log(window.scrollY);
+        console.log(element.getBoundingClientRect().top);
+
+        const top = element.getBoundingClientRect().top + window.scrollY - 100; // 减去头部高度
+        window.scrollTo({
+          top,
+          behavior: 'smooth'
+        });
+      });
+    }
   };
 
   return (
@@ -189,12 +200,19 @@ const ContentPage: React.FC = () => {
           {/* 公共的博客头 */}
           <header className={styles['blog-header']}>
             {/* 博客标题 */}
-            <h1>Markdown渲染</h1>
+            <h1>{activeData?.title}</h1>
             <div className={styles['blog-meta']}>
-              <span className={styles['blog-meta-date']}>2025-12-24</span>
-              <div className={styles['blog-meta-skill']}>技术</div>
+              <span className={styles['blog-meta-date']}>{activeData?.date}</span>
+              {activeData?.tags.map((item, index) => (
+                <div className={styles['blog-meta-skill']} key={item + index + ``}>
+                  {item}
+                </div>
+              ))}
             </div>
           </header>
+          <button className={styles['blog-back']} onClick={(e)=>{e.preventDefault();navigate('/')}}>
+              <ArrowLeft className={styles['blog-back-icon']} />
+          </button>
           {/* 核心博客内容 */}
           <div className={styles['blog-content']} ref={contentRef}>
             <Suspense fallback={<div className={styles.loading}>加载中...</div>}>
@@ -216,11 +234,7 @@ const ContentPage: React.FC = () => {
                     })}
                     style={{ paddingLeft: `${(h.level - 1) * 0.8}rem` }}
                   >
-                    <a
-                      href={`#${h.id}`}
-                      onClick={(e) => handleAnchorClick(e, h.id)}
-                      title={h.text}
-                    >
+                    <a href={`#${h.id}`} onClick={(e) => handleAnchorClick(e, h.id)} title={h.text}>
                       {h.text}
                     </a>
                   </li>

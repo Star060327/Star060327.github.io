@@ -4,7 +4,6 @@ import mdx from '@mdx-js/rollup';
 import react from '@vitejs/plugin-react';
 import AutoImport from 'unplugin-auto-import/vite';
 import { reactPresets } from '@bit-ocean/auto-import';
-import AntdResolver from 'unplugin-auto-import-antd';
 import remarkGfm from 'remark-gfm';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
@@ -13,7 +12,7 @@ import { visit } from 'unist-util-visit';
 
 // Custom plugin to parse ==text== to <mark>text</mark>
 const remarkMark = () => {
-  return (tree:any) => {
+  return (tree: any) => {
     visit(tree, 'text', (node, index, parent) => {
       const value = node.value;
       if (!value.includes('==')) return;
@@ -56,7 +55,6 @@ const rehypeMetaAsProps = () => {
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/myBlog/',
   plugins: [
     {
       enforce: 'pre',
@@ -68,8 +66,7 @@ export default defineConfig({
     react({ include: /\.(jsx|js|mdx|md|tsx|ts)$/ }),
     AutoImport({
       imports: reactPresets,
-      dts: 'auto-imports.d.ts',
-      resolvers: [AntdResolver()]
+      dts: 'auto-imports.d.ts'
     })
   ],
   resolve: {

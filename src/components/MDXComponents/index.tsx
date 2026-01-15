@@ -98,14 +98,7 @@ const mdxComponents: MDXComponents = {
       );
     }
 
-    return (
-      <img
-        {...props}
-        onError={() => setError(true)}
-        loading="lazy"
-        className={styles.img}
-      />
-    );
+    return <img {...props} onError={() => setError(true)} loading="lazy" className={styles.img} />;
   },
   //链接
   a: (props: ComponentPropsWithoutRef<'a'>) => {
@@ -113,12 +106,12 @@ const mdxComponents: MDXComponents = {
     // 只有以 http 或 https 开头的链接才在新窗口打开
     // 这样可以确保锚点链接 (#)、相对路径 (./)、绝对路径 (/) 都在当前窗口打开
     const isExternal = href && (href.startsWith('http://') || href.startsWith('https://'));
-    
+
     return (
-      <a 
-        {...props} 
-        target={isExternal ? "_blank" : undefined}
-        rel={isExternal ? "noopener noreferrer" : undefined}
+      <a
+        {...props}
+        target={isExternal ? '_blank' : undefined}
+        rel={isExternal ? 'noopener noreferrer' : undefined}
         className={styles.a}
       />
     );

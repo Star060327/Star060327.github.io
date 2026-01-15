@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const Typewriter: React.FC<{ text: string; speed?: number }> = ({ text, speed = 150 }) => {
   const [displayText, setDisplayText] = useState<string>('');
-  
+
   // 使用 useRef 存储这些不直接参与渲染的值，避免频繁触发 useEffect
   const indexRef = useRef(0);
   const lastTimestampRef = useRef(0);
@@ -26,8 +26,8 @@ const Typewriter: React.FC<{ text: string; speed?: number }> = ({ text, speed = 
         // 如果还有字符没打印完
         if (indexRef.current < text.length) {
           const nextChar = text[indexRef.current];
-          setDisplayText(prev => prev + nextChar);
-          
+          setDisplayText((prev) => prev + nextChar);
+
           indexRef.current += 1; // 直接操作 Ref 的值，不会触发重新渲染
           lastTimestampRef.current = now;
         }
@@ -46,11 +46,7 @@ const Typewriter: React.FC<{ text: string; speed?: number }> = ({ text, speed = 
   }, [text, speed]); // 只有 text 或 speed 变了才重置
 
   return (
-    <motion.span
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.5 }}
-    >
+    <motion.span initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
       {displayText}
     </motion.span>
   );

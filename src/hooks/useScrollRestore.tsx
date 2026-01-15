@@ -1,6 +1,8 @@
 import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 export default function useScrollRestore() {
+  const location = useLocation();
   useEffect(() => {
     if (typeof window === 'undefined') return;
     //1.恢复位置
@@ -33,5 +35,5 @@ export default function useScrollRestore() {
       //4.组件卸载时移除事件监听
       window.removeEventListener('scroll', throttle(handleScroll, 200));
     };
-  }, []);
+  }, [location.pathname]);
 }

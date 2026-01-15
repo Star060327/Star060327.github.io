@@ -3,7 +3,7 @@ import CommonLayout from '../../components/CommonLayout';
 import useScrollRestore from '@/hooks/useScrollRestore';
 import { data } from '@/utils/data';
 import { useNavigate } from 'react-router-dom';
-import { RightOutlined, CalendarOutlined, TagOutlined } from '@ant-design/icons';
+import { Calendar,Tag,ChevronRight } from 'lucide-react';
 import { useMemo } from 'react';
 import Typewriter from '@/hooks/useTypewriter.tsx';
 
@@ -20,13 +20,13 @@ export default function File() {
   // 处理数据，按年份分组
   const archiveList = useMemo(() => {
     const map = new Map<string, typeof data>();
-    
+
     // 按时间倒序排序
-    const sortedData = [...data].sort((a, b) => 
-      new Date(b.date).getTime() - new Date(a.date).getTime()
+    const sortedData = [...data].sort(
+      (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
     );
 
-    sortedData.forEach(item => {
+    sortedData.forEach((item) => {
       const year = item.date.split('-')[0];
       if (!map.has(year)) {
         map.set(year, []);
@@ -46,7 +46,7 @@ export default function File() {
   // 计算总文章数
   const totalPosts = data.length;
   // 计算总标签数（去重）
-  const totalTags = new Set(data.flatMap(item => item.tags)).size;
+  const totalTags = new Set(data.flatMap((item) => item.tags)).size;
 
   return (
     <CommonLayout>
@@ -55,8 +55,10 @@ export default function File() {
           {/* 头部统计区域 */}
           <div className={styles.header}>
             <h1>文章归档</h1>
-            <p className={styles.subtitle}><Typewriter text="时间的足迹，成长的见证" /></p>
-            
+            <p className={styles.subtitle}>
+              <Typewriter text="时间的足迹，成长的见证" />
+            </p>
+
             <div className={styles['stats-container']}>
               <div className={styles['stat-item']}>
                 <span className={styles.count}>{totalPosts}</span>
@@ -71,30 +73,27 @@ export default function File() {
 
           {/* 时间轴列表 */}
           <div className={styles.timeline}>
-            {archiveList.map(group => (
+            {archiveList.map((group) => (
               <div key={group.year} className={styles['year-group']}>
                 <div className={styles['year-title']}>{group.year}</div>
                 <div className={styles['article-list']}>
-                  {group.list.map(item => (
+                  {group.list.map((item) => (
                     <div key={item.id} className={styles['article-item']}>
-                      <div 
-                        className={styles['article-card']}
-                        onClick={() => navigate(item.path)}
-                      >
+                      <div className={styles['article-card']} onClick={() => navigate(item.path)}>
                         <div className={styles.info}>
                           <div className={styles.title}>{item.title}</div>
                           <div className={styles.meta}>
                             <span className={styles.date}>
-                              <CalendarOutlined />
+                              <Calendar style={{width: 16,height: 16}}/>
                               {item.date}
                             </span>
                             <span className={styles.tag}>
-                              <TagOutlined /> {item.tags.join(', ')}
+                              <Tag style={{width: 16,height: 16}}/> {item.tags.join(', ')}
                             </span>
                           </div>
                         </div>
                         <div className={styles.arrow}>
-                          <RightOutlined />
+                          <ChevronRight style={{width: 20,height: 20}}/>
                         </div>
                       </div>
                     </div>

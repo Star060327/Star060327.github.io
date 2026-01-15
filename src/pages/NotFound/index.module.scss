@@ -7,7 +7,11 @@
   align-items: center;
   position: relative;
   overflow: hidden;
-  background: radial-gradient(circle at 50% 50%, var(--color-bg-secondary) 0%, var(--color-bg-primary) 100%);
+  background: radial-gradient(
+    circle at 50% 50%,
+    var(--color-bg-secondary) 0%,
+    var(--color-bg-primary) 100%
+  );
   text-align: center;
   padding: 0 2rem;
 
@@ -28,7 +32,7 @@
     background-clip: text;
     color: transparent;
     text-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    
+
     @media (max-width: 768px) {
       font-size: 6rem;
     }
@@ -39,7 +43,7 @@
     color: var(--color-text-primary);
     font-weight: 600;
     margin: 0;
-    
+
     @media (max-width: 768px) {
       font-size: 1.5rem;
     }

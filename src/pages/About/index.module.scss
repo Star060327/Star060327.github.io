@@ -109,13 +109,17 @@
         .contactIcon {
           width: 2.8rem;
           height: 2.8rem;
-          text-align: center;
-          line-height: 2.8rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
           border-radius: 50%;
           background-color: var(--color-bg-third);
           cursor: pointer;
         }
         .contactInfo {
+          display: flex;
+          justify-content: center;
+          align-items: center;
           p {
             font-size: 0.875rem;
           }
