@@ -7,11 +7,12 @@ import useScrollRestore from '@/hooks/useScrollRestore';
 import avatar from '@/assets/images/avatar.jpg';
 import { data } from '@/utils/data.ts';
 import { useNavigate } from 'react-router-dom';
-import { ChevronDown,ChevronLeft,ChevronRight } from 'lucide-react';
+import { ChevronDown, ChevronLeft, ChevronRight } from 'lucide-react';
 import FloatingParticles from '@/components/FloatingParticles';
 import aboutData from '@/utils/aboutData';
 import classifyData from '@/utils/classifyData';
-import classNames from 'classnames'
+import classNames from 'classnames';
+import { Calendar } from 'lucide-react';
 
 const PAGESIZE = 6;
 
@@ -67,26 +68,25 @@ export default function Layout(): React.ReactNode {
   useScrollRestore();
   // 分页
   const [current, setCurrent] = useState(1);
-  const count=useRef(data.length<6?1:Math.ceil(data.length/PAGESIZE))
+  const count = useRef(data.length < 6 ? 1 : Math.ceil(data.length / PAGESIZE));
 
   // 更新页数
-  function updatePage(e:any,page: number) {
-     e.preventDefault();
+  function updatePage(page: number) {
     setCurrent(page);
-    requestAnimationFrame(()=>{
+    requestAnimationFrame(() => {
       // 滚动到博客列表顶部而不是页面顶部，保持用户体验
       const content = document.getElementById('content-start');
       if (content) {
         content.scrollIntoView({ behavior: 'smooth' });
       }
-    })
+    });
   }
   //当前页数的博客内容
   const currentData = data.slice((current - 1) * PAGESIZE, current * PAGESIZE);
 
-  function handleClassify(val:string){
-    if(val==='归档'){
-      navigate('/file')
+  function handleClassify(val: string) {
+    if (val === '归档') {
+      navigate('/file');
     }
   }
   return (
@@ -107,7 +107,10 @@ export default function Layout(): React.ReactNode {
                   </div>
                   <ul className={styles['sumup-top-list']}>
                     {aboutData.map((item) => (
-                      <li key={`${item.id}-${item.content}`} onClick={()=>handleClassify(item.content)}>
+                      <li
+                        key={`${item.id}-${item.content}`}
+                        onClick={() => handleClassify(item.content)}
+                      >
                         <span>{item.count}</span>
                         <span>{item.content}</span>
                       </li>
@@ -132,23 +135,50 @@ export default function Layout(): React.ReactNode {
                   {currentData.map((item) => {
                     return (
                       <li key={`${item.id}-${item.title}`} onClick={() => navigate(item.path)}>
-                        <h2>{item.title}</h2>
+                        <h3>{item.title}</h3>
                         <div className={styles['blog-tag']}>
                           <div>{item.tags ? item.tags.join(', ') : item.tags}</div>
-                          <span>{item.date}</span>
+                          <span className={styles.date}>
+                            <Calendar style={{ width: 16, height: 16 }} /> {item.date}
+                          </span>
                         </div>
-                        <p>{item.content}</p>
+                        <p>{item.excerpt}</p>
                       </li>
                     );
                   })}
                 </ul>
 
                 <ul className={styles.pagenation}>
-                  <li><button className={styles.btn} disabled={current===1} onClick={(e)=>updatePage(e,current-1)}><ChevronLeft className={styles.icon} /></button></li>
-                  {Array.from({length: count.current}).map((item,index)=>(
-    <li key={`${item}-${index}-${item}`} className={classNames((index+1===current)&&styles.activePage)} onClick={(e)=>updatePage(e,index+1)}>{index+1}</li>
-  ))}
-                  <li><button  className={styles.btn} disabled={current===count.current} onClick={(e)=>updatePage(e,current+1)}><ChevronRight className={styles.icon}/></button></li>
+                  <li>
+                    <button
+                      className={styles.btn}
+                      disabled={current === 1}
+                      onClick={() => updatePage(current - 1)}
+                    >
+                      <ChevronLeft className={styles.icon} />
+                    </button>
+                  </li>
+                  {Array.from({ length: count.current }).map((item, index) => (
+                    <li
+                      key={`${item}-${index}-${item}`}
+                      className={classNames(index + 1 === current && styles.activePage)}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        setCurrent(index + 1);
+                      }}
+                    >
+                      {index + 1}
+                    </li>
+                  ))}
+                  <li>
+                    <button
+                      className={styles.btn}
+                      disabled={current === count.current}
+                      onClick={() => updatePage(current + 1)}
+                    >
+                      <ChevronRight className={styles.icon} />
+                    </button>
+                  </li>
                 </ul>
               </div>
             </div>

@@ -9,8 +9,10 @@ import useScrollRestore from '@/hooks/useScrollRestore';
 import classNames from 'classnames';
 import { data } from '@/utils/data.ts';
 import type { Data } from '@/utils/data.ts';
-import {ArrowLeft} from 'lucide-react';
-import {useNavigate} from 'react-router-dom';
+import { ArrowLeft } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
+import { Calendar } from 'lucide-react';
+
 // 定义 MDX 组件接受的 Props 类型
 type MDXProps = {
   components?: typeof mdxComponents;
@@ -39,7 +41,7 @@ const ContentPage: React.FC = () => {
   // 滚动位置不变
   useScrollRestore();
   const { '*': path } = useParams<string>();
-  const navigate=useNavigate()
+  const navigate = useNavigate();
   // 记录当前高亮的标题ID
   const [activeId, setActiveId] = useState<string>('');
   // 存储大纲数据
@@ -202,7 +204,9 @@ const ContentPage: React.FC = () => {
             {/* 博客标题 */}
             <h1>{activeData?.title}</h1>
             <div className={styles['blog-meta']}>
-              <span className={styles['blog-meta-date']}>{activeData?.date}</span>
+              <span className={styles['blog-meta-date']}>
+                <Calendar style={{ width: 16, height: 16 }} /> {activeData?.date}
+              </span>
               {activeData?.tags.map((item, index) => (
                 <div className={styles['blog-meta-skill']} key={item + index + ``}>
                   {item}
@@ -210,8 +214,14 @@ const ContentPage: React.FC = () => {
               ))}
             </div>
           </header>
-          <button className={styles['blog-back']} onClick={(e)=>{e.preventDefault();navigate('/')}}>
-              <ArrowLeft className={styles['blog-back-icon']} />
+          <button
+            className={styles['blog-back']}
+            onClick={(e) => {
+              e.preventDefault();
+              navigate('/');
+            }}
+          >
+            <ArrowLeft className={styles['blog-back-icon']} />
           </button>
           {/* 核心博客内容 */}
           <div className={styles['blog-content']} ref={contentRef}>

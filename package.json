@@ -13,6 +13,7 @@
   },
   "homepage": "https://Star060327.github.io/<仓库名>",
   "dependencies": {
+    "@monaco-editor/react": "^4.7.0",
     "@react-three/drei": "^10.7.7",
     "@react-three/fiber": "^9.4.2",
     "@types/three": "^0.182.0",

@@ -1,0 +1,62 @@
+.preview-content {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-top-right-radius: 1rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  .preview-iframe {
+    width: 100%;
+    flex: 1; // 占满剩余空间
+    .iframe {
+      width: 100%;
+      height: 100%;
+      border:none;
+      border-top-right-radius: 1rem;
+    }
+  }
+
+  .preview-console {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #1e1e1e;
+    .preview-drag {
+      height: 100%;
+      width: 100%;
+      height: 0.8rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: row-resize;
+      border-top: 2px solid #333333;
+      .icon {
+        width: 14px;
+        height: 14px;
+        color: #9ea6b3;
+        
+      }
+      &:hover {
+        background-color: #dbeafe;
+        .icon {
+          color: #2b7fff;
+        }
+      }
+    }
+  }
+}
+.console-drag {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  cursor: col-resize;
+  background-color: transparent;
+  left: 0;
+  top: 0;
+  z-index: 999;
+}
+
+
+
+

@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import { Moon, Sun, TableOfContents } from 'lucide-react';
 import navigateData from '@/utils/naviagteData.ts';
 import type { NavigateData } from '@/utils/naviagteData.ts';
-import classNames from 'classnames'
+import classNames from 'classnames';
 
 type Props = {
   children: React.ReactNode;
@@ -27,18 +27,18 @@ export default function CommonLayout(props: Props) {
   });
   function handleClick(e: React.MouseEvent<HTMLSpanElement>, path: string) {
     e.preventDefault();
-    setIsShow(false)
+    setIsShow(false);
     navigate(path);
   }
-  useEffect(()=>{
-    function handleScroll(){
-       setIsShow(false)
+  useEffect(() => {
+    function handleScroll() {
+      setIsShow(false);
     }
-    window.addEventListener('scroll',handleScroll)
-    return ()=>{
-      window.removeEventListener('scroll',handleScroll)
-    }
-  })
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  });
 
   return (
     <>
@@ -46,7 +46,14 @@ export default function CommonLayout(props: Props) {
         {/* 头部 */}
         <header className={styles.top}>
           <div className={styles.left}>
-            <h2 onClick={()=>{scrollTo({top:0});navigate('/')}}>🌟 Star-Blog</h2>
+            <h2
+              onClick={() => {
+                scrollTo({ top: 0 });
+                navigate('/');
+              }}
+            >
+              🌟 Star-Blog
+            </h2>
           </div>
           {/* PC端 */}
           {width > 768 && (
@@ -107,16 +114,17 @@ export default function CommonLayout(props: Props) {
             </div>
           )}
         </header>
-        {width<=768&&
+        {width <= 768 && (
           <div className={styles.mobile}>
             <ul className={classNames(styles.navigator, isShow && styles.navigatorShow)}>
-                  {navigateData.map((item:NavigateData)=>(
-                     <li key={item.id+item.title+``}>
-                      <a onClick={(e) => handleClick(e, item.path)}>{item.title}</a>
-                    </li>
-                  ))}
-                </ul>
-          </div>}
+              {navigateData.map((item: NavigateData) => (
+                <li key={item.id + item.title + ``}>
+                  <a onClick={(e) => handleClick(e, item.path)}>{item.title}</a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
         <main className={styles.main}>{props.children}</main>
         <footer className={styles.bottom}>
           <p>© 2025-2026 Star | 分享前端知识</p>

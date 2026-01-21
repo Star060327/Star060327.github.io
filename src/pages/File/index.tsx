@@ -3,7 +3,7 @@ import CommonLayout from '../../components/CommonLayout';
 import useScrollRestore from '@/hooks/useScrollRestore';
 import { data } from '@/utils/data';
 import { useNavigate } from 'react-router-dom';
-import { Calendar,Tag,ChevronRight } from 'lucide-react';
+import { Calendar, Tag, ChevronRight } from 'lucide-react';
 import { useMemo } from 'react';
 import Typewriter from '@/hooks/useTypewriter.tsx';
 
@@ -84,16 +84,16 @@ export default function File() {
                           <div className={styles.title}>{item.title}</div>
                           <div className={styles.meta}>
                             <span className={styles.date}>
-                              <Calendar style={{width: 16,height: 16}}/>
+                              <Calendar style={{ width: 16, height: 16 }} />
                               {item.date}
                             </span>
                             <span className={styles.tag}>
-                              <Tag style={{width: 16,height: 16}}/> {item.tags.join(', ')}
+                              <Tag style={{ width: 16, height: 16 }} /> {item.tags.join(', ')}
                             </span>
                           </div>
                         </div>
                         <div className={styles.arrow}>
-                          <ChevronRight style={{width: 20,height: 20}}/>
+                          <ChevronRight style={{ width: 20, height: 20 }} />
                         </div>
                       </div>
                     </div>

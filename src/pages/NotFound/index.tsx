@@ -57,7 +57,7 @@ const NotFound: React.FC = () => {
             whileTap={{ scale: 0.95 }}
             transition={{ delay: 0.6 }}
           >
-           <House /> 返回首页
+            <House /> 返回首页
           </motion.button>
         </div>
       </div>
