@@ -17,7 +17,9 @@
     "@react-three/drei": "^10.7.7",
     "@react-three/fiber": "^9.4.2",
     "@types/three": "^0.182.0",
+    "@vue/compiler-sfc": "^3.5.27",
     "classnames": "^2.5.1",
+    "es-module-lexer": "^2.0.0",
     "framer-motion": "^12.23.26",
     "gsap": "^3.14.2",
     "highlight.js": "^11.11.1",
@@ -27,7 +29,8 @@
     "react-icons": "^5.5.0",
     "react-router-dom": "^7.9.4",
     "react-tagcloud": "^2.3.3",
-    "sass": "^1.93.2"
+    "sass": "^1.93.2",
+    "vue": "^3.5.27"
   },
   "devDependencies": {
     "@bit-ocean/auto-import": "^0.0.54",

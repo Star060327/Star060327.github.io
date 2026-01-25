@@ -9,7 +9,6 @@ import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 import path from 'path';
 import { visit } from 'unist-util-visit';
-
 // Custom plugin to parse ==text== to <mark>text</mark>
 const remarkMark = () => {
   return (tree: any) => {
