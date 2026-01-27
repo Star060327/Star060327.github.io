@@ -15,20 +15,71 @@ export interface Log {
 // 默认文件
 export const DEFAULT_FILES: File[] = [
   {
-    name: 'index.html',
-    content: `<h1>hello,React!</h1>`,
-    language: 'html'
+    name: 'main.jsx',
+    content: `import { createRoot } from 'react-dom/client'
+import App from './App.jsx'
+const root = createRoot(document.getElementById('root'))
+root.render(
+    <App />
+)`,
+    language: 'javascript'
   },
   {
-    name: 'index.css',
-    content: `h1 {
-      color: red;
-    }`,
-    language: 'css'
+    name: 'App.jsx',
+    content: `import Home from './Home.jsx'
+import Layout from './Layout.jsx'
+import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
+function App(){
+  return (
+    <Router initialEntries={['/']}>
+    <nav>
+      <Link to="/">Layout</Link> | <Link to="/home">home</Link>
+    </nav>
+    <Routes>
+      <Route path="/" element={<Layout />} />
+      <Route path="/home" element={<Home />} />
+    </Routes>
+  </Router>
+    )
+}
+export default App
+`,
+    language: 'javascript'
   },
   {
-    name: 'index.js',
-    content: `console.log('hello,React!')`,
+    name: 'Layout.jsx',
+    content: `import { create } from "zustand";
+
+const useCountStore = create((set) => ({
+  count: 0,
+  add: () => set((state) => ({ count: state.count + 1 })),
+  dec: () => set((state) => ({ count: state.count - 1 }))
+}));
+
+export default function Layout() {
+  // 正确：调用全局的 useCountStore Hooks，解构状态/方法
+  const { count, add, dec } = useCountStore();
+
+  return (
+    <div>
+      <p>当前计数：{count}</p>
+      <button onClick={add}>+1</button>
+      <button onClick={dec}>-1</button>
+    </div>
+  );
+}
+`,
+    language: 'javascript'
+  },
+  {
+    name: 'Home.jsx',
+    content: `export default function Home() {
+  return (
+    <div>
+      home
+    </div>
+  );
+}`,
     language: 'javascript'
   }
 ];
@@ -71,21 +122,24 @@ export function usePlayground({ defaultFiles = DEFAULT_FILES }: { defaultFiles?:
     [files, activeFileName]
   );
   // 更新文件内容
-  const updateFileContent=useCallback((fileName:string,content:string) => {
-    setFiles(prev => prev.map(f => f.name === fileName ? {...f, content} : f));
-  },[])
+  const updateFileContent = useCallback((fileName: string, content: string) => {
+    setFiles((prev) => prev.map((f) => (f.name === fileName ? { ...f, content } : f)));
+  }, []);
   // 重置文件列表
   const resetFiles = useCallback(() => {
     setFiles(defaultFiles);
   }, [defaultFiles]);
   // 日志部分
-  const [logs,setLogs]=useState<Log[]>([]);
+  const [logs, setLogs] = useState<Log[]>([]);
   // 添加日志
-  const addLog = useCallback((log: Log) => {
-    setLogs([...logs, {...log, timestamp: Date.now()}]);
-  }, [logs]);
+  const addLog = useCallback(
+    (log: Log) => {
+      setLogs([...logs, { ...log, timestamp: Date.now() }]);
+    },
+    [logs]
+  );
   // 删除
-  const clearLog= useCallback(() => {
+  const clearLog = useCallback(() => {
     setLogs([]);
   }, []);
   return {

@@ -2,7 +2,7 @@ import styles from './index.module.scss';
 import React from 'react';
 import { useRef, useEffect, useState } from 'react';
 import type { File, Log } from '../hooks/useVuePlayground';
-import Console from '../Console';
+import VueConsole from '../Console';
 import { GripHorizontal, ChevronLeft, ChevronRight, RotateCw } from 'lucide-react';
 import { generatePlaygroundHtml } from '../utils/vueCompiler';
 interface Prop {
@@ -15,9 +15,9 @@ interface Prop {
 
 const VuePreView: React.FC<Prop> = ({ files, logs, addLog, clearLog, showLog }) => {
   const [isDragging, setIsDragging] = useState(false);
-  const  [showInput,setShowInput] = useState(true);
+  const [showInput, setShowInput] = useState(true);
   const iframeRef = useRef(null);
-  const containerRef=useRef(null)
+  const containerRef = useRef(null);
   // iframe展示的内容
   const [srcDoc, setSrcDoc] = useState<string>('');
   // 唯一编号
@@ -54,22 +54,21 @@ const VuePreView: React.FC<Prop> = ({ files, logs, addLog, clearLog, showLog }) 
     const formattedPath = url.startsWith('/') ? url : `/${url}`;
     sendCommand('PUSH_ROUTE', { path: formattedPath });
     // 等待 iframe 准备好路由
-    if (routerReadyRef.current) {
+    if (routerReadyRef.current && urlRef.current !== url) {
       setUrl(formattedPath);
     }
     console.log('提交后的url：', url, formattedPath);
   };
 
-  useEffect(()=>{
-    const observer=new ResizeObserver((entries)=>{
-      for(const entry of entries){
-       
-        setShowInput(entry.contentRect.width>270);
+  useEffect(() => {
+    const observer = new ResizeObserver((entries) => {
+      for (const entry of entries) {
+        setShowInput(entry.contentRect.width > 270);
       }
-    })
+    });
     observer.observe(containerRef.current!);
-    return ()=>observer.disconnect();
-  },[])
+    return () => observer.disconnect();
+  }, []);
 
   // 同步更新 urlRef
   useEffect(() => {
@@ -158,14 +157,16 @@ const VuePreView: React.FC<Prop> = ({ files, logs, addLog, clearLog, showLog }) 
         <button className={styles['url-btn']} onClick={handleRefresh}>
           <RotateCw className={styles['url-icon']} />
         </button>
-       {showInput&& <form onSubmit={handleUrlSubmit}>
-          <input
-            type="text"
-            className={styles['url-input']}
-            value={url}
-            onChange={(e) => setUrl(e.target.value)}
-          />
-        </form>}
+        {showInput && (
+          <form onSubmit={handleUrlSubmit}>
+            <input
+              type="text"
+              className={styles['url-input']}
+              value={url}
+              onChange={(e) => setUrl(e.target.value)}
+            />
+          </form>
+        )}
       </div>
       <div className={styles['preview-iframe']}>
         <iframe
@@ -193,7 +194,7 @@ const VuePreView: React.FC<Prop> = ({ files, logs, addLog, clearLog, showLog }) 
             <GripHorizontal className={styles.icon} />
           </div>
           <div style={{ height: consoleHeight + 'px' }}>
-            <Console logs={logs} clearLog={clearLog}></Console>
+            <VueConsole logs={logs} clearLog={clearLog}></VueConsole>
           </div>
         </div>
       )}

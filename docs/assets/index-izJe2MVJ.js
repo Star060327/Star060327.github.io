@@ -1,1 +1,48 @@
-import{r as o,j as a}from"./index-PyI2GaQq.js";import{m as r}from"./proxy-BFWg7Ckl.js";const p=()=>{const[e,n]=o.useState([]);return o.useEffect(()=>{const t=Array.from({length:25}).map((d,i)=>({id:i,x:Math.random()*100,size:Math.random()*12+4,duration:Math.random()*20+10,delay:-Math.random()*30,opacity:Math.random()*.2+.1,type:"❄️"}));n(t)},[]),a.jsx("div",{style:{position:"absolute",top:0,left:0,width:"100%",height:"100%",overflow:"hidden",pointerEvents:"none",zIndex:1},children:e.map(t=>a.jsx(r.div,{style:{position:"absolute",left:`${t.x}%`,top:-20,opacity:t.opacity},animate:{y:["0vh","110vh"],rotate:[0,360],x:[0,(Math.random()-.5)*100,0]},transition:{duration:t.duration,repeat:1/0,delay:t.delay,ease:"linear"},children:t.type},t.id))})};export{p as F};
+import { r as o, j as a } from './index-PyI2GaQq.js';
+import { m as r } from './proxy-BFWg7Ckl.js';
+const p = () => {
+  const [e, n] = o.useState([]);
+  return (
+    o.useEffect(() => {
+      const t = Array.from({ length: 25 }).map((d, i) => ({
+        id: i,
+        x: Math.random() * 100,
+        size: Math.random() * 12 + 4,
+        duration: Math.random() * 20 + 10,
+        delay: -Math.random() * 30,
+        opacity: Math.random() * 0.2 + 0.1,
+        type: '❄️'
+      }));
+      n(t);
+    }, []),
+    a.jsx('div', {
+      style: {
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        width: '100%',
+        height: '100%',
+        overflow: 'hidden',
+        pointerEvents: 'none',
+        zIndex: 1
+      },
+      children: e.map((t) =>
+        a.jsx(
+          r.div,
+          {
+            style: { position: 'absolute', left: `${t.x}%`, top: -20, opacity: t.opacity },
+            animate: {
+              y: ['0vh', '110vh'],
+              rotate: [0, 360],
+              x: [0, (Math.random() - 0.5) * 100, 0]
+            },
+            transition: { duration: t.duration, repeat: 1 / 0, delay: t.delay, ease: 'linear' },
+            children: t.type
+          },
+          t.id
+        )
+      )
+    })
+  );
+};
+export { p as F };

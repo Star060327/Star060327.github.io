@@ -4,8 +4,8 @@ import { ImageOff } from 'lucide-react';
 import CodeBlock from '../CodeBlock/CodeBlock';
 import styles from './index.module.scss';
 import Playground from '../Playground/Playground';
-import VuePlayground from '../VuePlayground/VuePlayground'
-import ReactPlayground from '../ReactPlayground/ReactPlayground'
+import VuePlayground from '../VuePlayground/VuePlayground';
+import ReactPlayground from '../ReactPlayground/ReactPlayground';
 const mdxComponents: MDXComponents = {
   // playground 布局
   Playground,

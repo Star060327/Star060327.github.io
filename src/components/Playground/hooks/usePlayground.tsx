@@ -12,28 +12,222 @@ export interface Log {
   timestamp: number;
 }
 
-// 默认文件
-export const DEFAULT_FILES: File[] = [
-  {
-    name: 'index.html',
-    content: `<h1>hello,React!</h1>`,
-    language: 'html'
-  },
-  {
-    name: 'index.css',
-    content: `h1 {
+export const DEFAULT_LANGUAGE = 'html';
+
+// 获取默认文件
+const getDefaultFile = ({
+  defaultLanguage = DEFAULT_LANGUAGE
+}: {
+  defaultLanguage?: string;
+}): File[] => {
+  if (defaultLanguage === 'vue') {
+    return [
+      {
+        name: 'main.js',
+        content: `import { createApp } from 'vue'
+import router from './router.js'
+import App from './App.vue'
+import { createPinia } from 'pinia'
+const pinia = createPinia()
+const app = createApp(App)
+
+app.use(router)
+app.use(pinia)
+
+app.mount('#app')
+`,
+        language: 'javascript'
+      },
+      {
+        name: 'App.vue',
+        content: `<script setup>
+import { ref } from 'vue'
+</script>
+<template>
+  <nav>
+   <router-link to="/">Index</router-link> | 
+    <router-link to="/home">Home</router-link>
+  </nav>
+  <hr />
+  <router-view></router-view>
+</template>
+
+    `,
+        language: 'vue'
+      },
+      {
+        name: 'Layout.vue',
+        content: `<script setup>
+import { ref} from 'vue'
+import { storeToRefs } from 'pinia'
+import { useCountStore } from './store.js'
+const countStore = useCountStore() 
+const { sum } = storeToRefs(countStore) 
+const { increament } = countStore 
+</script>
+<template>
+    <div>
+      <h3>当前计数：{{sum}}</h3>
+      <button @click="increament(1)">点我+1</button>
+    </div>
+</template>`,
+        language: 'vue'
+      },
+      {
+        name: 'Home.vue',
+        content: `<script setup>
+import { ref } from 'vue'
+const inputValue = ref('')
+</script>
+<template>
+    <h1>home</h1>
+    <p>当前输入值：{{inputValue}}</p>
+    <input type="text" v-model="inputValue" />
+</template>`,
+        language: 'vue'
+      },
+
+      {
+        name: 'router.js',
+        content: `import {createRouter,createWebHashHistory} from 'vue-router'
+import Home from './Home.vue'
+import Layout from './Layout.vue'
+const router = createRouter({ 
+  history: createWebHashHistory(),//路由模式
+  routes: [  
+         //一个个的路由规则
+    {
+       path: '/',
+       component: Layout,
+       name: 'Layout'  //命名路由
+    },
+    {
+      path: '/home',
+      component: Home,
+      name: 'Home'  //命名路由
+    }
+     ]
+ })
+export default router
+`,
+        language: 'javascript'
+      },
+      {
+        name: 'store.js',
+        content: `import { defineStore } from 'pinia'
+import {ref} from 'vue'
+export const useCountStore = defineStore('count', () => {
+  const sum = ref(6)
+  function increament(value){
+    sum.value += value
+  }
+  return {sum,increament}
+})`,
+        language: 'javascript'
+      }
+    ];
+  } else if (defaultLanguage === 'react') {
+    return [
+      {
+        name: 'main.jsx',
+        content: `import { createRoot } from 'react-dom/client'
+import App from './App.jsx'
+const root = createRoot(document.getElementById('root'))
+root.render(
+    <App />
+)`,
+        language: 'javascript'
+      },
+      {
+        name: 'App.jsx',
+        content: `import Home from './Home.jsx'
+import Layout from './Layout.jsx'
+import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
+function App(){
+  return (
+    <Router initialEntries={['/']}>
+    <nav>
+      <Link to="/">Layout</Link> | <Link to="/home">home</Link>
+    </nav>
+    <Routes>
+      <Route path="/" element={<Layout />} />
+      <Route path="/home" element={<Home />} />
+    </Routes>
+  </Router>
+    )
+}
+export default App
+`,
+        language: 'javascript'
+      },
+      {
+        name: 'Layout.jsx',
+        content: `import { create } from "zustand";
+
+const useCountStore = create((set) => ({
+  count: 0,
+  add: () => set((state) => ({ count: state.count + 1 })),
+  dec: () => set((state) => ({ count: state.count - 1 }))
+}));
+
+export default function Layout() {
+  // 正确：调用全局的 useCountStore Hooks，解构状态/方法
+  const { count, add, dec } = useCountStore();
+
+  return (
+    <div>
+      <p>当前计数：{count}</p>
+      <button onClick={add}>+1</button>
+      <button onClick={dec}>-1</button>
+    </div>
+  );
+}
+`,
+        language: 'javascript'
+      },
+      {
+        name: 'Home.jsx',
+        content: `export default function Home() {
+  return (
+    <div>
+      home
+    </div>
+  );
+}`,
+        language: 'javascript'
+      }
+    ];
+  } else {
+    return [
+      {
+        name: 'index.html',
+        content: `<h1>hello,React!</h1>`,
+        language: 'html'
+      },
+      {
+        name: 'index.css',
+        content: `h1 {
       color: red;
     }`,
-    language: 'css'
-  },
-  {
-    name: 'index.js',
-    content: `console.log('hello,React!')`,
-    language: 'javascript'
+        language: 'css'
+      },
+      {
+        name: 'index.js',
+        content: `console.log('hello,React!')`,
+        language: 'javascript'
+      }
+    ];
   }
-];
+};
+export { getDefaultFile };
 
-export function usePlayground({ defaultFiles = DEFAULT_FILES }: { defaultFiles?: File[] }) {
+export function usePlayground({
+  defaultLanguage = DEFAULT_LANGUAGE,
+  defaultFiles = getDefaultFile({ defaultLanguage })
+}: {
+  defaultLanguage?: string;
+  defaultFiles?: File[];
+}) {
   // 状态：文件列表
   const [files, setFiles] = useState<File[]>(defaultFiles);
   const [activeFileName, setActiveFileName] = useState<string>(files[0].name || 'index.html');
@@ -71,21 +265,24 @@ export function usePlayground({ defaultFiles = DEFAULT_FILES }: { defaultFiles?:
     [files, activeFileName]
   );
   // 更新文件内容
-  const updateFileContent=useCallback((fileName:string,content:string) => {
-    setFiles(prev => prev.map(f => f.name === fileName ? {...f, content} : f));
-  },[])
+  const updateFileContent = useCallback((fileName: string, content: string) => {
+    setFiles((prev) => prev.map((f) => (f.name === fileName ? { ...f, content } : f)));
+  }, []);
   // 重置文件列表
   const resetFiles = useCallback(() => {
     setFiles(defaultFiles);
   }, [defaultFiles]);
   // 日志部分
-  const [logs,setLogs]=useState<Log[]>([]);
+  const [logs, setLogs] = useState<Log[]>([]);
   // 添加日志
-  const addLog = useCallback((log: Log) => {
-    setLogs([...logs, {...log, timestamp: Date.now()}]);
-  }, [logs]);
+  const addLog = useCallback(
+    (log: Log) => {
+      setLogs([...logs, { ...log, timestamp: Date.now() }]);
+    },
+    [logs]
+  );
   // 删除
-  const clearLog= useCallback(() => {
+  const clearLog = useCallback(() => {
     setLogs([]);
   }, []);
   return {

@@ -11,6 +11,7 @@ interface Prop {
   setActiveFileName: (fileName: string) => void;
   addFiles: ({ newFileName, language }: { newFileName: string; language: string }) => boolean;
   delFiles: (file: File) => void;
+  defaultLanguage: string;
 }
 
 const FileManager: React.FC<Prop> = ({
@@ -18,7 +19,8 @@ const FileManager: React.FC<Prop> = ({
   activeFileName,
   setActiveFileName,
   addFiles,
-  delFiles
+  delFiles,
+  defaultLanguage
 }) => {
   const [newFileName, setNewFileName] = useState<string>('');
   // 正在添加文件
@@ -31,13 +33,34 @@ const FileManager: React.FC<Prop> = ({
     if (!newFileName) return;
     const ext = newFileName.split('.').pop()?.toLowerCase();
     let language = 'text';
-    if (ext === 'html') language = 'html';
-    else if (ext === 'css') language = 'css';
-    else if (ext === 'js') language = 'javascript';
-    else {
-      alert('仅支持.html,.css,.js文件');
-      return;
+    // 处理vue的文件配置
+    if (defaultLanguage === 'vue') {
+      if (ext === 'vue') language = 'vue';
+      else if (ext === 'js') language = 'javascript';
+      else {
+        alert('仅支持.vue,.js文件');
+        return;
+      }
+    } else if (defaultLanguage === 'react') {
+      // 处理react的文件配置
+      if (ext === 'jsx') language = 'javascript';
+      else if (ext === 'css') language = 'css';
+      else if (ext === 'js') language = 'javascript';
+      else {
+        alert('仅支持.jsx,.css,.js文件');
+        return;
+      }
+    } else {
+      //纯html、css、js
+      if (ext === 'html') language = 'html';
+      else if (ext === 'css') language = 'css';
+      else if (ext === 'js') language = 'javascript';
+      else {
+        alert('仅支持.html,.css,.js文件');
+        return;
+      }
     }
+
     if (addFiles({ newFileName, language })) {
       setNewFileName('');
       setIsAdding(false);
@@ -58,7 +81,8 @@ const FileManager: React.FC<Prop> = ({
 
   // 图标
   const icon = (file: string) => {
-    if (file === 'html') return <FileCode style={{ color: '#e86102', width: 16, height: 16 }} />;
+    if (file === 'html' || file === 'vue')
+      return <FileCode style={{ color: '#e86102', width: 16, height: 16 }} />;
     if (file === 'css') return <FileCode style={{ color: '#2b7dfb', width: 16, height: 16 }} />;
     if (file === 'javascript')
       return <FileCode style={{ color: '#f0db4f', width: 16, height: 16 }} />;

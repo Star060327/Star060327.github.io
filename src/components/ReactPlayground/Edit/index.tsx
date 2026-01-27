@@ -8,14 +8,11 @@ import parserHtml from 'prettier/plugins/html';
 import parserCss from 'prettier/plugins/postcss';
 import parserBabel from 'prettier/plugins/babel';
 import * as estree from 'prettier/plugins/estree';
-
-
+import { handleEditorWillMount } from '../utils/handleEditorWillMount';
 interface Prop {
   activeFile: File;
   onChange: (content: string) => void;
 }
-
-
 
 // 格式化代码
 const formatCode = async (code: string, language: string) => {
@@ -36,7 +33,7 @@ const formatCode = async (code: string, language: string) => {
       parser,
       plugins,
       printWidth: 80,
-      tabWidth: 2,
+      tabWidth: 2
     });
   } catch (error) {
     console.error('Formatting failed:', error);
@@ -44,27 +41,23 @@ const formatCode = async (code: string, language: string) => {
   }
 };
 
-
-const ReactEdit: React.FC<Prop> = ({
-  activeFile,
-  onChange
-}) => {
-
+const ReactEdit: React.FC<Prop> = ({ activeFile, onChange }) => {
   // 编辑器实例
   const editorRef = useRef<any>(null);
   // monaco 实例
   const monacoRef = useRef<any>(null);
 
-  
+  const [isRegister, setIsRegister] = useState(false);
+
   // 编辑器挂载时，将内容设置为 activeFile.content
-  function handleEditorDidMount(editor:any, monaco:any):Monaco{
-     editorRef.current = editor;
+  function handleEditorDidMount(editor: any, monaco: any): Monaco {
+    editorRef.current = editor;
     monacoRef.current = monaco;
 
     // 配置 Monaco 编辑器
     monaco.languages.typescript.javascriptDefaults.setDiagnosticsOptions({
       noSemanticValidation: true,
-      noSyntaxValidation: false,
+      noSyntaxValidation: false
     });
 
     // 注册格式化器
@@ -77,10 +70,10 @@ const ReactEdit: React.FC<Prop> = ({
           return [
             {
               range: model.getFullModelRange(),
-              text: formatted,
-            },
+              text: formatted
+            }
           ];
-        },
+        }
       });
     };
 
@@ -88,7 +81,7 @@ const ReactEdit: React.FC<Prop> = ({
     registerFormatter('css');
     registerFormatter('javascript');
   }
-  // 当 activeFile.language 变化时，更新编辑器语言  
+  // 当 activeFile.language 变化时，更新编辑器语言
   useEffect(() => {
     if (monacoRef.current && editorRef.current) {
       const model = editorRef.current.getModel();
@@ -99,46 +92,49 @@ const ReactEdit: React.FC<Prop> = ({
   }, [activeFile.language]);
   return (
     <>
-    <div className={styles['edit-editor']}>
-          <Editor 
+      <div className={styles['edit-editor']}>
+        <Editor
           height="100%"
-                    language={activeFile.language}
-                    value={activeFile.content}
-                    theme="vue-dark"
-                    onChange={(val) => onChange(val || '')}
-                    onMount={handleEditorDidMount}
-                    options={{
-                      minimap: { enabled: false }, // 关闭小地图
-                      fontSize: 14,
-                      padding: { top: 16 },
-                      scrollBeyondLastLine: false,
-                      automaticLayout: true,
-                      formatOnPaste: true,
-                      formatOnType: true,
-                      scrollbar: {
-                        vertical: 'auto',
-                        horizontal: 'auto',
-                        alwaysConsumeMouseWheel: false
-                      },
-                      suggestOnTriggerCharacters: true, // 触发自动补全
-                      parameterHints: { enabled: true }, // 显示参数提示
-                      snippetSuggestions: 'bottom', // 显示代码片段建议
-                      wordBasedSuggestions: 'off', // 基于单词的建议
-                      lineNumbers: 'on', // 显示行号
-                      tabSize: 2, // 2 空格缩进
-                      wordWrap: 'on', // 自动换行
-                      folding: true, // 允许折叠代码块
-                      quickSuggestions: {
-                        other: true,
-                        comments: true,
-                        strings: true
-                      },
-                      renderWhitespace: 'none',
-                      // 允许在 Vue 文件中使用 Emmet
-                      tabCompletion: 'on'
-                    }}
-          />
-        </div>
+          path={activeFile.name}
+          language={activeFile.language}
+          value={activeFile.content}
+          theme="vue-dark"
+          onChange={(val) => onChange(val || '')}
+          beforeMount={(e) => handleEditorWillMount(e, isRegister, setIsRegister)}
+          onMount={handleEditorDidMount}
+          options={{
+            minimap: { enabled: false }, // 关闭小地图
+            fontSize: 14,
+            padding: { top: 16 },
+            scrollBeyondLastLine: false,
+            automaticLayout: true,
+            formatOnPaste: true,
+            formatOnType: true,
+            scrollbar: {
+              vertical: 'auto',
+              horizontal: 'auto',
+              alwaysConsumeMouseWheel: false
+            },
+            suggestOnTriggerCharacters: true, // 触发自动补全
+            parameterHints: { enabled: true }, // 显示参数提示
+            snippetSuggestions: 'top', // 显示代码片段建议
+            wordBasedSuggestions: 'off', // 基于单词的建议
+            lineNumbers: 'on', // 显示行号
+            tabSize: 2, // 2 空格缩进
+            wordWrap: 'on', // 自动换行
+            folding: true, // 允许折叠代码块
+            quickSuggestions: {
+              other: true,
+              comments: true,
+              strings: true
+            },
+            renderWhitespace: 'none',
+            // 允许在 Vue 文件中使用 Emmet
+            tabCompletion: 'on',
+            'semanticHighlighting.enabled': true
+          }}
+        />
+      </div>
     </>
   );
 };

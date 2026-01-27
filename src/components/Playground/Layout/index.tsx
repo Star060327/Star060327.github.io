@@ -4,11 +4,11 @@ import { useState, useEffect, useRef } from 'react';
 import { GripVertical } from 'lucide-react';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 
-const PlaygroundLayout: React.FC<{ maxHeight?: string; editComponent?: React.ReactNode; previewComponent?: React.ReactNode }> = ({
-  maxHeight = "800px",
-  editComponent,
-  previewComponent,
-}) => {
+const PlaygroundLayout: React.FC<{
+  maxHeight?: string;
+  editComponent?: React.ReactNode;
+  previewComponent?: React.ReactNode;
+}> = ({ maxHeight = '800px', editComponent, previewComponent }) => {
   // 分割比例
   const [radio, setRadio] = useState<number>(0.5);
   // 是否拖拽
@@ -51,7 +51,6 @@ const PlaygroundLayout: React.FC<{ maxHeight?: string; editComponent?: React.Rea
           {/* 编辑区 */}
           <div className={styles.edit} style={{ width: `${radio * 100}%` }}>
             {editComponent}
-           
           </div>
 
           {/* 拖拽区 */}
@@ -66,9 +65,9 @@ const PlaygroundLayout: React.FC<{ maxHeight?: string; editComponent?: React.Rea
           {/* 预览区 */}
           <div className={styles.preview}>
             {isDragging && (
-               <div className={styles['preview-drag']}  onMouseDown={(e) => e.preventDefault()} />
-             )}
-             {previewComponent}
+              <div className={styles['preview-drag']} onMouseDown={(e) => e.preventDefault()} />
+            )}
+            {previewComponent}
           </div>
         </main>
         {/* 展开更多 */}

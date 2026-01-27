@@ -31,11 +31,11 @@ const ReactFileManager: React.FC<Prop> = ({
     if (!newFileName) return;
     const ext = newFileName.split('.').pop()?.toLowerCase();
     let language = 'text';
-    if (ext === 'html') language = 'html';
+    if (ext === 'jsx') language = 'javascript';
     else if (ext === 'css') language = 'css';
     else if (ext === 'js') language = 'javascript';
     else {
-      alert('仅支持.html,.css,.js文件');
+      alert('仅支持.jsx,.css,.js文件');
       return;
     }
     if (addFiles({ newFileName, language })) {
@@ -58,7 +58,6 @@ const ReactFileManager: React.FC<Prop> = ({
 
   // 图标
   const icon = (file: string) => {
-    if (file === 'html') return <FileCode style={{ color: '#e86102', width: 16, height: 16 }} />;
     if (file === 'css') return <FileCode style={{ color: '#2b7dfb', width: 16, height: 16 }} />;
     if (file === 'javascript')
       return <FileCode style={{ color: '#f0db4f', width: 16, height: 16 }} />;

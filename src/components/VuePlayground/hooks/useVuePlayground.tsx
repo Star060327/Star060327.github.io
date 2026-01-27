@@ -29,8 +29,8 @@ app.use(pinia)
 app.mount('#app')
 `,
     language: 'javascript'
-  }
-  ,{
+  },
+  {
     name: 'App.vue',
     content: `<script setup>
 import { ref } from 'vue'
@@ -47,7 +47,7 @@ import { ref } from 'vue'
     `,
     language: 'vue'
   },
-{
+  {
     name: 'Layout.vue',
     content: `<script setup>
 import { ref} from 'vue'
@@ -78,7 +78,7 @@ const inputValue = ref('')
 </template>`,
     language: 'vue'
   },
-  
+
   {
     name: 'router.js',
     content: `import {createRouter,createWebHashHistory} from 'vue-router'
@@ -157,21 +157,24 @@ export function usePlayground({ defaultFiles = DEFAULT_FILES }: { defaultFiles?:
     [files, activeFileName]
   );
   // 更新文件内容
-  const updateFileContent=useCallback((fileName:string,content:string) => {
-    setFiles(prev => prev.map(f => f.name === fileName ? {...f, content} : f));
-  },[])
+  const updateFileContent = useCallback((fileName: string, content: string) => {
+    setFiles((prev) => prev.map((f) => (f.name === fileName ? { ...f, content } : f)));
+  }, []);
   // 重置文件列表
   const resetFiles = useCallback(() => {
     setFiles(defaultFiles);
   }, [defaultFiles]);
   // 日志部分
-  const [logs,setLogs]=useState<Log[]>([]);
+  const [logs, setLogs] = useState<Log[]>([]);
   // 添加日志
-  const addLog = useCallback((log: Log) => {
-    setLogs([...logs, {...log, timestamp: Date.now()}]);
-  }, [logs]);
+  const addLog = useCallback(
+    (log: Log) => {
+      setLogs([...logs, { ...log, timestamp: Date.now() }]);
+    },
+    [logs]
+  );
   // 删除
-  const clearLog= useCallback(() => {
+  const clearLog = useCallback(() => {
     setLogs([]);
   }, []);
   return {

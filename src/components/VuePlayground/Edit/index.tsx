@@ -15,8 +15,6 @@ interface Prop {
   onChange: (content: string) => void;
 }
 
-
-
 // 格式化代码
 const formatCode = async (code: string, language: string) => {
   try {
@@ -53,8 +51,6 @@ const VueEdit: React.FC<Prop> = ({ activeFile, onChange }) => {
   const editorRef = useRef<any>(null);
   // monaco 实例
   const monacoRef = useRef<any>(null);
-
-  
 
   // 编辑器挂载时，将内容设置为 activeFile.content
   function handleEditorDidMount(editor: any, monaco: any) {
