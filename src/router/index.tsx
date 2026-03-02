@@ -6,30 +6,30 @@ const File = lazy(() => import('../pages/File/index.tsx'));
 const ContentPage = lazy(() => import('../pages/ContentPage/index.tsx'));
 const NotFound = lazy(() => import('../pages/NotFound/index.tsx'));
 const routes = [
-  // {
-  //   path: '/',
-  //   element: (
-  //     <Suspense fallback={'加载中'}>
-  //       <Layout></Layout>
-  //     </Suspense>
-  //   )
-  // },
-  // {
-  //   path: 'about',
-  //   element: (
-  //     <Suspense fallback={'加载中'}>
-  //       <About></About>
-  //     </Suspense>
-  //   )
-  // },
-  // {
-  //   path: 'file',
-  //   element: (
-  //     <Suspense fallback={'加载中'}>
-  //       <File></File>
-  //     </Suspense>
-  //   )
-  // },
+  {
+    path: '/',
+    element: (
+      <Suspense fallback={'加载中'}>
+        <Layout></Layout>
+      </Suspense>
+    )
+  },
+  {
+    path: 'about',
+    element: (
+      <Suspense fallback={'加载中'}>
+        <About></About>
+      </Suspense>
+    )
+  },
+  {
+    path: 'file',
+    element: (
+      <Suspense fallback={'加载中'}>
+        <File></File>
+      </Suspense>
+    )
+  },
   {
     path: 'content/*',
     element: (

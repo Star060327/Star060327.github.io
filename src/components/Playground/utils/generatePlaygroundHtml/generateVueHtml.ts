@@ -174,6 +174,7 @@ window.__PLAYGROUND_INSTANCE_ID__ = "${vueId}";
     }, '*');
   }
 
+
   // 3. 核心挂载钩子
   window.initRouterSync = (router) => {
     window.v_router = router;
@@ -209,8 +210,42 @@ window.__PLAYGROUND_INSTANCE_ID__ = "${vueId}";
       setTimeout(sendReady, 0);
     }
   };
+   // 4. 全局点击拦截
+  document.addEventListener('click', function(e) {
+    const link = e.target.closest('a');
+    if (!link) return;
 
-  // 4. 禁止任何可能导致 SecurityError 的原生 History 操作
+    const href = link.getAttribute('href');
+    if (!href || href.startsWith('http') || href.startsWith('//') || href.startsWith('blob:')) {
+      return;
+    }
+
+    if (e.defaultPrevented) return;
+
+    e.preventDefault();
+    
+    const navigate = () => {
+      const router = window.v_router;
+      if (router) {
+        const path = href.startsWith('#') ? href.slice(1) : href;
+        if (router.navigate) {
+          router.navigate(path);
+        } else if (router.history) {
+          router.history.push(path);
+        }
+      } else {
+        // 修复2：修正为 Vue Router 提示，移除 React 相关内容
+        console.warn('Playground Router not found. Please ensure you are using vue-router.');
+      }
+    };
+
+    if (!window.v_router) {
+      setTimeout(navigate, 0);
+    } else {
+      navigate();
+    }
+  }); 
+ // 5. 禁止任何可能导致 SecurityError 的原生 History 操作
   // 核心修复：在使用 MemoryHistory 时，禁止所有对浏览器 History 的原生操作
   // 这能彻底防止 SecurityError 和 意外的 URL 变化
   (function() {
@@ -225,6 +260,7 @@ window.__PLAYGROUND_INSTANCE_ID__ = "${vueId}";
       // ignore errors if history is frozen
     }
   })();
+ 
 })();
 </script>
 `;

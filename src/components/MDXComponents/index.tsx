@@ -4,12 +4,10 @@ import { ImageOff } from 'lucide-react';
 import CodeBlock from '../CodeBlock/CodeBlock';
 import styles from './index.module.scss';
 import Playground from '../Playground/Playground';
-import VuePlayground from '../VuePlayground/VuePlayground';
 import ReactPlayground from '../ReactPlayground/ReactPlayground';
 const mdxComponents: MDXComponents = {
   // playground 布局
   Playground,
-  VuePlayground,
   ReactPlayground,
   // 映射 mark 元素，支持 ==高亮== 语法
   mark: (props: ComponentPropsWithoutRef<'mark'>) => <mark {...props} className={styles.mark} />,

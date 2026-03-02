@@ -33,7 +33,7 @@ const Playground: React.FC<PlaygroundProps> = ({
     logs,
     addLog,
     clearLog
-  } = usePlayground({ defaultFiles: initialFiles });
+  } = usePlayground({ defaultLanguage, defaultFiles: initialFiles });
   // 编辑组件
   const editContainerRef = useRef(null);
   const [isExpanding, setIsExpanding] = useState<boolean>(true);

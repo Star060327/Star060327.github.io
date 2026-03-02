@@ -64,6 +64,8 @@ const FileManager: React.FC<Prop> = ({
     if (addFiles({ newFileName, language })) {
       setNewFileName('');
       setIsAdding(false);
+    } else {
+      alert('File already exists');
     }
   }
   useEffect(() => {

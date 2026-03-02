@@ -47,9 +47,9 @@ const formatCode = async (code: string, language: string) => {
 };
 
 const Edit: React.FC<Prop> = ({ activeFile, onChange, defaultLanguage }) => {
-  // 编辑器实例
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const editorRef = useRef<any>(null);
-  // monaco 实例
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const monacoRef = useRef<any>(null);
 
   const isRegisterJs = useRef(false);
@@ -146,7 +146,8 @@ const Edit: React.FC<Prop> = ({ activeFile, onChange, defaultLanguage }) => {
             },
             renderWhitespace: 'none',
             // 允许在 Vue 文件中使用 Emmet
-            tabCompletion: 'on'
+            tabCompletion: 'on',
+            fixedOverflowWidgets: false
           }}
         />
       </div>

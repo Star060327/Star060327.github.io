@@ -19,7 +19,7 @@ export default function useScrollRestore() {
     };
     // 节流优化
     function throttle(fn: () => void, t: number) {
-      let timer: null | number = null;
+      let timer: number | null = null;
       return function () {
         if (!timer) {
           timer = setTimeout(() => {

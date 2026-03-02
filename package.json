@@ -13,6 +13,8 @@
   },
   "homepage": "https://Star060327.github.io/<仓库名>",
   "dependencies": {
+    "@codemirror/autocomplete": "^6.20.0",
+    "@codesandbox/sandpack-react": "^2.20.0",
     "@monaco-editor/react": "^4.7.0",
     "@react-three/drei": "^10.7.7",
     "@react-three/fiber": "^9.4.2",

@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from 'react';
 import { GripVertical } from 'lucide-react';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 
-const ReactPlaygroundLayout: React.FC<{
+const PlaygroundLayout: React.FC<{
   maxHeight?: string;
   editComponent?: React.ReactNode;
   previewComponent?: React.ReactNode;
@@ -86,4 +86,4 @@ const ReactPlaygroundLayout: React.FC<{
     </>
   );
 };
-export default ReactPlaygroundLayout;
+export default PlaygroundLayout;
