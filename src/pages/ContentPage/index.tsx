@@ -194,6 +194,12 @@ const ContentPage: React.FC = () => {
     }
   };
 
+  // 返回首页函数
+  function goBack() {
+    navigate('/');
+  }
+
+
   return (
     <CommonLayout>
       <div className={styles['blog-container']}>
@@ -218,7 +224,7 @@ const ContentPage: React.FC = () => {
             className={styles['blog-back']}
             onClick={(e) => {
               e.preventDefault();
-              navigate('/');
+              goBack();
             }}
           >
             <ArrowLeft className={styles['blog-back-icon']} />

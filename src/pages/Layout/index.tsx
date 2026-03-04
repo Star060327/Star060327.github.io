@@ -6,7 +6,7 @@ import Typewriter from '@/hooks/useTypewriter.tsx';
 import useScrollRestore from '@/hooks/useScrollRestore';
 import avatar from '@/assets/images/avatar.jpg';
 import { data } from '@/utils/data.ts';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate , useLocation} from 'react-router-dom';
 import { ChevronDown, ChevronLeft, ChevronRight } from 'lucide-react';
 import FloatingParticles from '@/components/FloatingParticles';
 import aboutData from '@/utils/aboutData';
@@ -64,6 +64,7 @@ function LayoutMain() {
 
 export default function Layout(): React.ReactNode {
   const navigate = useNavigate();
+  const location = useLocation();
   //刷新位置不变
   useScrollRestore();
   // 分页
@@ -89,6 +90,28 @@ export default function Layout(): React.ReactNode {
       navigate('/file');
     }
   }
+  // sessionStorage保存当前的位置，刷新后恢复
+  function restoreScrollPosition() {
+    // 记录位置
+    sessionStorage.setItem('curPosition', window.scrollY.toString());
+  }
+
+   useEffect(() => {
+    if (location.pathname === '/') {
+    const position = sessionStorage.getItem('curPosition');
+    
+    if (position) {
+      setTimeout(() => {
+        window.scrollTo({
+          top: Number(position),
+          behavior: 'smooth'
+        });
+      }, 0); // 把延迟从0改成100ms，确保DOM完全渲染
+    } 
+  } 
+}, [location.pathname]);
+
+
   return (
     <>
       <CommonLayout>
@@ -134,7 +157,10 @@ export default function Layout(): React.ReactNode {
                 <ul className={styles['blog-content']}>
                   {currentData.map((item) => {
                     return (
-                      <li key={`${item.id}-${item.title}`} onClick={() => navigate(item.path)}>
+                      <li key={`${item.id}-${item.title}`} onClick={() => {
+                        navigate(item.path)
+                        restoreScrollPosition()
+                      }}>
                         <h3>{item.title}</h3>
                         <div className={styles['blog-tag']}>
                           <div>{item.tags ? item.tags.join(', ') : item.tags}</div>
