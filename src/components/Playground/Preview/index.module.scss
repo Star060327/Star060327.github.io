@@ -16,7 +16,9 @@
     background-color: #252526;
     border-top-right-radius: 1rem;
     overflow-x: auto;
-
+    @media screen and (max-width: 768px) {
+      border-top-right-radius: 0;
+    }
     .url-btn {
       width: 1.5rem;
       height: 1.5rem;

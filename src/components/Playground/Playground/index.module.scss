@@ -4,6 +4,9 @@
 }
 
 .edit-header {
+  @media screen and (max-width: 768px) {
+    border-top-right-radius: 1rem;
+  }
   width: 100%;
   height: 3.2rem;
   background-color: #252526;

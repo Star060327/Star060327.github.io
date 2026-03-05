@@ -262,7 +262,7 @@ export function usePlayground({
       setFiles(files.filter((item) => item.name !== file.name));
       setActiveFileName(files[0].name);
     },
-    [files, activeFileName]
+    [files]
   );
   // 更新文件内容
   const updateFileContent = useCallback((fileName: string, content: string) => {

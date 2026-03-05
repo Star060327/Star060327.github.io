@@ -68,7 +68,7 @@ const ContentPage: React.FC = () => {
     if (!contentRef.current) return;
     // 提取标题
     const extractHeadings = () => {
-      const elements = Array.from(contentRef.current!.querySelectorAll('h1,h2,h3,h4,h5,h6')).map(
+      const elements = Array.from(contentRef.current!.querySelectorAll('.prose h1,.prose h2,.prose h3')).map(
         (item) => ({
           id: item.id || `heading-${Math.random().toString(36).substring(2, 9)}`,
           level: Number(item.nodeName.charAt(1)),
@@ -77,7 +77,7 @@ const ContentPage: React.FC = () => {
       );
 
       // 给没有ID的标题添加ID，以便锚点跳转
-      Array.from(contentRef.current!.querySelectorAll('h1,h2,h3,h4,h5,h6')).forEach(
+      Array.from(contentRef.current!.querySelectorAll('.prose h1,.prose h2,.prose h3')).forEach(
         (item, index) => {
           if (!item.id) {
             item.id = elements[index].id;
@@ -204,7 +204,7 @@ const ContentPage: React.FC = () => {
     <CommonLayout>
       <div className={styles['blog-container']}>
         {/* 确定版心 */}
-        <div className={styles.w}>
+        <div className={`${styles.w} prose`}>
           {/* 公共的博客头 */}
           <header className={styles['blog-header']}>
             {/* 博客标题 */}

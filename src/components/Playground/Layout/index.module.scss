@@ -1,21 +1,35 @@
+.playground-outer {
+  width: 100%;
+    // 把间距放在外层，用 padding 代替 margin，彻底避免穿透
+  padding: 2rem 0;
+}
 .playground-layout {
   width: 100%;
-  margin: 1rem 0;
   border-radius: 1rem;
   border: 1px solid #000;
   display: flex;
   flex-direction: column;
   transition: height 0.3s ease-in-out;
+  vertical-align: top;
+  box-sizing: border-box;
   .main {
     width: 100%;
-    height: 100%;
-    display: flex;
+    height: calc(100% - 2.5rem);
     flex: 1;
+    display: flex;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
     // 编辑区
     .edit {
       background-color: #1e1e1e;
       border-top-left-radius: 1rem;
       border-right: 1px solid #333333;
+      @media screen and (max-width: 768px) {
+        width: 100%!important;
+        height: 50%;
+        border-top-right-radius: 1rem;
+      }
     }
 
     .edit-drag {
@@ -31,6 +45,9 @@
       &:hover {
         background-color: #2b7fff;
       }
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
     }
 
     .preview {
@@ -40,6 +57,7 @@
   }
   // 展开更多
   .show-more {
+    flex-shrink: 0;
     width: 100%;
     height: 2.5rem;
     background-color: #1e1e1e;

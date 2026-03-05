@@ -63,7 +63,7 @@ const Playground: React.FC<PlaygroundProps> = ({
       <header className={styles['edit-header']}>
         <div className={styles['edit-header-title']}>
           <CodeXml style={{ color: '#2b7dfb', width: 20, height: 20 }} />{' '}
-          {!isExpanding && <h3>Playground</h3>}
+          {!isExpanding && <h4 style={{color: '#fff'}}>Playground</h4>}
         </div>
         <div className={styles['edit-header-menu']}>
           <button className={styles.btn} onClick={handleCopy}>

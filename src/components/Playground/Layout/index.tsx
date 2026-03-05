@@ -40,12 +40,15 @@ const PlaygroundLayout: React.FC<{
     };
   }, [isDragging]);
 
+  useEffect(()=>{
+
+  })
   return (
-    <>
+    <div className={styles['playground-outer']}>
       <div
         className={styles['playground-layout']}
         ref={containerRef}
-        style={{ height: isExpanded ? maxHeight : '590px' }}
+        style={{ height: isExpanded ? maxHeight : '580px' }}
       >
         <main className={styles.main}>
           {/* 编辑区 */}
@@ -74,16 +77,16 @@ const PlaygroundLayout: React.FC<{
         <div className={styles['show-more']} onClick={() => setIsExpanded(!isExpanded)}>
           {!isExpanded ? (
             <>
-              <ChevronDown /> 展开更多
+              <ChevronDown style={{ width: '1rem', height: '1rem' }} /> <span>展开更多</span>
             </>
           ) : (
             <>
-              <ChevronUp /> 收起
+              <ChevronUp style={{ width: '1rem', height: '1rem' }} /> <span>收起</span>
             </>
           )}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 export default PlaygroundLayout;

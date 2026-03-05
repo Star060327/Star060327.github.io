@@ -52,21 +52,19 @@ const Edit: React.FC<Prop> = ({ activeFile, onChange, defaultLanguage }) => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const monacoRef = useRef<any>(null);
 
-  const isRegisterJs = useRef(false);
-  const isRegisterHtml = useRef(false);
-  const isRegisterReact = useRef(false);
-
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   function handleEditorWillMount(monaco: any) {
     if (defaultLanguage === 'html') {
-      handleHtmlEditorWillMount(monaco, isRegisterJs.current, isRegisterHtml.current);
+      handleHtmlEditorWillMount(monaco);
     } else if (defaultLanguage === 'vue') {
       handleVueEditorWillMount(monaco);
     } else if (defaultLanguage === 'react') {
-      handleReactEditorWillMount(monaco, isRegisterReact.current);
+      handleReactEditorWillMount(monaco);
     }
   }
 
   // 编辑器挂载时，将内容设置为 activeFile.content
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   function handleEditorDidMount(editor: any, monaco: any): Monaco {
     editorRef.current = editor;
     monacoRef.current = monaco;
@@ -81,6 +79,7 @@ const Edit: React.FC<Prop> = ({ activeFile, onChange, defaultLanguage }) => {
     const registerFormatter = (lang: string) => {
       monaco.languages.registerDocumentFormattingEditProvider(lang, {
         // 提供文档格式化编辑
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         async provideDocumentFormattingEdits(model: any) {
           const text = model.getValue();
           const formatted = await formatCode(text, lang);
@@ -114,7 +113,7 @@ const Edit: React.FC<Prop> = ({ activeFile, onChange, defaultLanguage }) => {
           height="100%"
           language={activeFile.language}
           value={activeFile.content}
-          theme="vue-dark"
+          theme="playground-dark"
           onChange={(val) => onChange(val || '')}
           beforeMount={handleEditorWillMount}
           onMount={handleEditorDidMount}
