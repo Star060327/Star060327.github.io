@@ -17,7 +17,7 @@ const classifyData: ClassifyData[] = [
   {
     id: 2,
     title: 'JavaScript',
-    count: 0
+    count: 1
   },
   {
     id: 3,
@@ -36,8 +36,8 @@ const classifyData: ClassifyData[] = [
   },
   {
     id: 6,
-    title: '面试',
-    count: 0
+    title: '技术',
+    count: 2
   },
   {
     id: 7,
