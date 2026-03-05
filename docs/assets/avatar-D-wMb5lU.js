@@ -1,2 +1,1 @@
-const a = '/assets/avatar-CBB-xuHm.jpg';
-export { a };
+const a="/assets/avatar-CBB-xuHm.jpg";export{a};
