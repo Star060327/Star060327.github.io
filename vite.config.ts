@@ -11,6 +11,7 @@ import path from 'path';
 import { visit } from 'unist-util-visit';
 // Custom plugin to parse ==text== to <mark>text</mark>
 const remarkMark = () => {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   return (tree: any) => {
     visit(tree, 'text', (node, index, parent) => {
       const value = node.value;
@@ -33,6 +34,7 @@ const remarkMark = () => {
           // Text outside ==
           return { type: 'text', value: part };
         })
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         .filter((n: any) => n.value !== '');
 
       parent.children.splice(index, 1, ...newNodes);
@@ -43,6 +45,7 @@ const remarkMark = () => {
 
 // Custom plugin to pass meta string as prop
 const rehypeMetaAsProps = () => {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   return (tree: any) => {
     visit(tree, 'element', (node) => {
       if (node.tagName === 'code' && node.data && node.data.meta) {
