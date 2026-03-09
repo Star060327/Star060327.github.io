@@ -1,4 +1,4 @@
-import{j as n}from"./index-NJjM6JL3.js";function i(e){const s={code:"code",h2:"h2",h3:"h3",li:"li",ol:"ol",p:"p",pre:"pre",strong:"strong",ul:"ul",...e.components};return n.jsxs(n.Fragment,{children:[n.jsx(s.p,{children:"在前端开发中，一次性渲染10万条数据会导致页面卡顿甚至崩溃，虚拟列表（Virtual List）和时间切片是解决该问题的核心方案。本文聚焦虚拟列表的实现原理、核心痛点及极致优化手段。"}),`
+import{j as n}from"./index-DH4KQgrb.js";import"./framework-Dfoqj1Wf.js";import"./md-fUmDZuW1.js";function i(e){const s={code:"code",h2:"h2",h3:"h3",li:"li",ol:"ol",p:"p",pre:"pre",strong:"strong",ul:"ul",...e.components};return n.jsxs(n.Fragment,{children:[n.jsx(s.p,{children:"在前端开发中，一次性渲染10万条数据会导致页面卡顿甚至崩溃，虚拟列表（Virtual List）和时间切片是解决该问题的核心方案。本文聚焦虚拟列表的实现原理、核心痛点及极致优化手段。"}),`
 `,n.jsx(s.h2,{children:"一、定高虚拟列表（基础版）"}),`
 `,n.jsxs(s.p,{children:["虚拟列表的核心是",n.jsx(s.strong,{children:"只渲染当前视野内的数据"}),"，通过计算滚动位置实现“假滚动”效果，核心逻辑："]}),`
 `,n.jsx(s.h3,{children:"核心实现要点"}),`
@@ -120,4 +120,4 @@ function updateListDOM(startIndex, endIndex) {
 }
 `})}),`
 `]}),`
-`]})]})}function r(e={}){const{wrapper:s}=e.components||{};return s?n.jsx(s,{...e,children:n.jsx(i,{...e})}):i(e)}export{r as default};
+`]})]})}function d(e={}){const{wrapper:s}=e.components||{};return s?n.jsx(s,{...e,children:n.jsx(i,{...e})}):i(e)}export{d as default};

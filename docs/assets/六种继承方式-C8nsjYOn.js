@@ -1,4 +1,4 @@
-import{j as n}from"./index-NJjM6JL3.js";function l(e){const o={code:"code",h2:"h2",li:"li",ol:"ol",p:"p",pre:"pre",strong:"strong",...e.components};return n.jsxs(n.Fragment,{children:[n.jsx(o.h2,{children:"原型链继承："}),`
+import{j as n}from"./index-DH4KQgrb.js";import"./framework-Dfoqj1Wf.js";import"./md-fUmDZuW1.js";function l(e){const o={code:"code",h2:"h2",li:"li",ol:"ol",p:"p",pre:"pre",strong:"strong",...e.components};return n.jsxs(n.Fragment,{children:[n.jsx(o.h2,{children:"原型链继承："}),`
 `,n.jsxs(o.p,{children:["原理：直接利用原型链特征实现的继承，让构造函数的prototype（它本质也是一个对象，也是有",n.jsx(o.strong,{children:"proto"}),"属性的）指向另一个构造函数的实例。仅通过修改构造函数的prototype"]}),`
 `,n.jsx(o.pre,{children:n.jsx(o.code,{className:"language-js",children:`function Person() {
   this.hand = 2;
@@ -158,4 +158,4 @@ Son.prototype = prototype // 将修改好的prototype填充son.prototype
 //1.自己构建一个变量接收父亲的prototype
 //2.变量加入了原型链，开始和son关联，直接constructor双向即可
 `})}),`
-`,n.jsx(o.p,{children:"继承的本质就是子类通过原型链继承父亲的方法，通过构造函数调用继承父类的属性"})]})}function s(e={}){const{wrapper:o}=e.components||{};return o?n.jsx(o,{...e,children:n.jsx(l,{...e})}):l(e)}export{s as default};
+`,n.jsx(o.p,{children:"继承的本质就是子类通过原型链继承父亲的方法，通过构造函数调用继承父类的属性"})]})}function r(e={}){const{wrapper:o}=e.components||{};return o?n.jsx(o,{...e,children:n.jsx(l,{...e})}):l(e)}export{r as default};

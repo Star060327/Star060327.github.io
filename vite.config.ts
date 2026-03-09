@@ -102,10 +102,8 @@ export default defineConfig({
         manualChunks: {
           // 拆分katex为单独的chunk
           katex: ['katex'],
-          compiler: ['vue/compiler-sfc','vue/compiler-dom'],
-          md: ['marked','remark-gfm','remark-math','rehype-katex','rehype-meta-as-props','highlight.js'],
-          framework: ['react','react-dom'],
-          utils: ['axios'],
+          md: ['remark-gfm','remark-math','rehype-katex','highlight.js'],
+          framework: ['react','react-dom']
         }
       }
     }
