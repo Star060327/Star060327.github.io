@@ -1,73 +1,63 @@
-# React + TypeScript + Vite
+# 个人博客系统
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+一个基于 React + Vite + TypeScript + SCSS 构建的现代化个人博客前端项目，专注于高性能、可维护性和良好的开发体验。
 
-Currently, two official plugins are available:
+## ✨ 技术栈
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+| 技术 | 版本要求 | 说明 |
+|------|----------|------|
+| React | ^18.2.0 | 核心前端框架 |
+| Vite | ^5.0.0 | 极速构建工具，替代 Webpack |
+| TypeScript | ^5.2.2 | 类型安全的 JavaScript 超集 |
+| SCSS | ^1.69.5 | CSS 预处理器，支持模块化样式 |
+| pnpm | ^8.0.0 | 高效的包管理工具（替代 npm/yarn） |
 
-## React Compiler
+## 🚀 快速开始
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 环境要求
+- Node.js ≥ 16.0.0（推荐 18+）
+- pnpm ≥ 8.0.0
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname
-      }
-      // other options...
-    }
-  }
-]);
+### 安装依赖
+```bash
+# 安装所有依赖（pnpm 会自动创建硬链接，节省磁盘空间）
+pnpm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 启动开发服务器
+```bash
+# 启动开发服务器，默认端口 5173
+pnpm dev
+pnpm dev --host
+# 启动后访问：http://localhost:5173
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x';
-import reactDom from 'eslint-plugin-react-dom';
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname
-      }
-      // other options...
-    }
-  }
-]);
 ```
+
+### 代码规范检查
+```bash
+# 格式化所有代码
+pnpm format
+
+# 检查代码质量
+pnpm lint
+```
+
+### 构建生产版本
+```bash
+# 构建优化后的生产版本
+pnpm build
+
+# 预览生产版本
+pnpm preview
+```
+
+
+## 核心功能
+✅ 响应式布局，适配PC端 / 移动端
+✅ 文章列表 / 详情页展示
+✅ 分类 /  归档功能
+✅ 暗黑模式切换
+✅ 代码高亮（Markdown 文章）
+✅ 大纲随文章滚动
+✅ 性能优化（路由懒加载、图片懒加载）
+✅ 类型安全（全 TS 开发）
