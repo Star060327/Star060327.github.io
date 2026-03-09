@@ -3,7 +3,8 @@
   --color-header-bg: rgba(0, 0, 0, 0.99); // 头部半透明背景
   --color-bg-secondary: #1e293b;
   --bg-gradient: linear-gradient(to bottom, #1a202c, #171734, #2a2a4a);
-  --color-bg-third: #4d1b78;
+  --color-bg-third: #2a2a4a;
+  --color-bg-fourth: var(--color-bg-third);
   --color-text-primary: #d1d5db;
   --color-text-secondary: #b33bce;
   --color-h-primary: #f9f5ff; //标题

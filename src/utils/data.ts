@@ -14,7 +14,8 @@ export const data: Data[] = [
     title: 'Markdown渲染',
     tags: ['md渲染'],
     date: '2025-12-24',
-    excerpt: '探索 Markdown 渲染的无限可能，从基础语法到高级扩展...',
+    excerpt:
+      '这篇文章展示了我们博客平台强大的 Markdown 渲染能力。让我们一起来看看各种元素的渲染效果！ 🚀',
     path: '/content/md'
   },
   {
@@ -22,7 +23,8 @@ export const data: Data[] = [
     title: '虚拟列表',
     tags: ['技术', 'React'],
     date: '2026-01-01',
-    excerpt: '深入理解虚拟列表原理，实现高性能长列表渲染...',
+    excerpt:
+      '在前端开发中，一次性渲染10万条数据会导致页面卡顿甚至崩溃，虚拟列表（Virtual List）和时间切片是解决该问题的核心方案。本文聚焦虚拟列表的实现原理、核心痛点及极致优化手段。',
     path: '/content/虚拟列表'
   },
   {
@@ -30,7 +32,7 @@ export const data: Data[] = [
     title: 'playground',
     tags: ['技术'],
     date: '2026-01-14',
-    excerpt: '展示我手写的playground',
+    excerpt: '',
     path: '/content/playground'
   },
   {
@@ -38,7 +40,8 @@ export const data: Data[] = [
     title: '六种继承方式',
     tags: ['JavaScript'],
     date: '2026-03-05',
-    excerpt: '六种继承方式的实现',
+    excerpt:
+      '原型链继承：原理：直接利用原型链特征实现的继承，让构造函数的prototype（它本质也是一个对象，也是有__proto__属性的）指向另一个构造函数的实例。仅通过修改构造函数的prototype',
     path: '/content/六种继承方式'
   }
 ];

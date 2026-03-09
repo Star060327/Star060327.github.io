@@ -1,6 +1,6 @@
 .playground-outer {
   width: 100%;
-    // 把间距放在外层，用 padding 代替 margin，彻底避免穿透
+  // 把间距放在外层，用 padding 代替 margin，彻底避免穿透
   padding: 2rem 0;
 }
 .playground-layout {
@@ -26,7 +26,7 @@
       border-top-left-radius: 1rem;
       border-right: 1px solid #333333;
       @media screen and (max-width: 768px) {
-        width: 100%!important;
+        width: 100% !important;
         height: 50%;
         border-top-right-radius: 1rem;
       }

@@ -32,7 +32,7 @@ const classifyData: ClassifyData[] = [
   {
     id: 5,
     title: 'React',
-    count: 0
+    count: 1
   },
   {
     id: 6,

@@ -45,7 +45,7 @@ const NotFound: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5 }}
           >
-            您寻找的页面可能已被移除、重命名或暂时不可用。 别担心，您可以返回首页继续探索。
+            您寻找的页面可能已被移除、重命名或尚未开发。 别担心，您可以返回首页继续探索。
           </motion.p>
 
           <motion.button

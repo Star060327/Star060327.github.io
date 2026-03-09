@@ -1,8 +1,8 @@
-import { type File } from "../../hooks/usePlayground";
-import { getVueTransformImports as transformImports } from "../transformImports";
-import { getVueCompiler as compileFile } from "../compilerFile";
-import type { CompiledFile, FileCache } from "../../types";
-import { IMPORT_VUE_MAP} from "./data";
+import { type File } from '../../hooks/usePlayground';
+import { getVueTransformImports as transformImports } from '../transformImports';
+import { getVueCompiler as compileFile } from '../compilerFile';
+import type { CompiledFile, FileCache } from '../../types';
+import { IMPORT_VUE_MAP } from './data';
 
 // 默认的 Import Map 配置
 const IMPORT_MAP: Record<string, string> = { ...IMPORT_VUE_MAP };
@@ -21,10 +21,10 @@ function revokeLater(url: string) {
 }
 
 function createEntryModuleCode(files: File[]) {
-  const hasRouter = files.some((f) => f.name === "router.js");
-  const hasAppVue = files.some((f) => f.name === "App.vue");
+  const hasRouter = files.some((f) => f.name === 'router.js');
+  const hasAppVue = files.some((f) => f.name === 'App.vue');
 
-  if (!hasAppVue) return "";
+  if (!hasAppVue) return '';
 
   return [
     `import { createApp } from "vue";`,
@@ -35,10 +35,10 @@ function createEntryModuleCode(files: File[]) {
     `const app = createApp(App);`,
     hasRouter ? `app.use(router);` : ``,
     `app.use(pinia);`,
-    `app.mount("#app");`,
+    `app.mount("#app");`
   ]
     .filter(Boolean)
-    .join("\n");
+    .join('\n');
 }
 
 // 缓存已编译的文件
@@ -46,11 +46,7 @@ const fileCache = new Map<string, CachedFile>();
 let routerShimUrl: string | null = null;
 
 // 组合成html
-export async function generateVueHtml(
-  files: File[],
-  vueId: string,
-  consoleScript: string,
-) {
+export async function generateVueHtml(files: File[], vueId: string, consoleScript: string) {
   const currentNames = new Set(files.map((f) => f.name));
   for (const [name, cached] of fileCache.entries()) {
     if (!currentNames.has(name)) {
@@ -59,7 +55,7 @@ export async function generateVueHtml(
     }
   }
 
-  const fileNamesKey = Array.from(currentNames).sort().join("|");
+  const fileNamesKey = Array.from(currentNames).sort().join('|');
 
   // 3. 转换 import 并生成 Blob URL（增量）
   const importMap: Record<string, string> = { ...IMPORT_MAP };
@@ -88,10 +84,10 @@ export const createRouter = (options) => {
   return router;
 };
 `;
-    const shimBlob = new Blob([routerShim], { type: "text/javascript" });
+    const shimBlob = new Blob([routerShim], { type: 'text/javascript' });
     routerShimUrl = URL.createObjectURL(shimBlob);
   }
-  importMap["vue-router"] = routerShimUrl;
+  importMap['vue-router'] = routerShimUrl;
 
   const transformPromises = files.map(async (file) => {
     const contentHash = hashContent(`${file.content}\n${fileNamesKey}`);
@@ -101,12 +97,9 @@ export const createRouter = (options) => {
       return;
     }
 
-    const compiled = (await compileFile(
-      file.name,
-      file.content,
-    )) as CompiledFile;
-    const rawCode = compiled.code ?? "";
-    const rawCss = compiled.css ?? "";
+    const compiled = (await compileFile(file.name, file.content)) as CompiledFile;
+    const rawCode = compiled.code ?? '';
+    const rawCss = compiled.css ?? '';
 
     let finalCode = rawCode;
     try {
@@ -115,7 +108,7 @@ export const createRouter = (options) => {
       finalCode = rawCode;
     }
 
-    const blob = new Blob([finalCode], { type: "text/javascript" });
+    const blob = new Blob([finalCode], { type: 'text/javascript' });
     const blobUrl = URL.createObjectURL(blob);
 
     if (cached) revokeLater(cached.blobUrl);
@@ -123,7 +116,7 @@ export const createRouter = (options) => {
       code: finalCode,
       css: rawCss,
       blobUrl,
-      hash: contentHash,
+      hash: contentHash
     });
     importMap[`src/${file.name}`] = blobUrl;
   });
@@ -131,27 +124,26 @@ export const createRouter = (options) => {
   await Promise.all(transformPromises);
 
   // 4. 确定入口脚本
-  let entryScript = "";
+  let entryScript = '';
   // 优先查找 main.js
-  if (fileCache.has("main.js")) {
-    entryScript = `<script type="module" src="${importMap["src/main.js"]}"></script>`;
+  if (fileCache.has('main.js')) {
+    entryScript = `<script type="module" src="${importMap['src/main.js']}"></script>`;
   } else {
     // 降级：查找 App.vue 并自动挂载
-    const appFile = files.find((f) => f.name === "App.vue") || files[0];
+    const appFile = files.find((f) => f.name === 'App.vue') || files[0];
     if (appFile) {
       const entryModuleCode = createEntryModuleCode(files);
-      if (!entryModuleCode) return "<h1>Error: No App.vue found</h1>";
+      if (!entryModuleCode) return '<h1>Error: No App.vue found</h1>';
       entryScript = `<script type="module">\n${entryModuleCode}\n</script>`;
     } else {
-      return "<h1>Error: No App.vue or main.js found</h1>";
+      return '<h1>Error: No App.vue or main.js found</h1>';
     }
   }
 
   // 5. 组装 HTML
   const allCss = Array.from(fileCache.values())
-    .map((f) => f.css || "")
-    .join("\n");
-
+    .map((f) => f.css || '')
+    .join('\n');
 
   const routerScript = `
 <script>

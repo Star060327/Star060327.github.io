@@ -40,9 +40,7 @@ const PlaygroundLayout: React.FC<{
     };
   }, [isDragging]);
 
-  useEffect(()=>{
-
-  })
+  useEffect(() => {});
   return (
     <div className={styles['playground-outer']}>
       <div

@@ -68,13 +68,13 @@ const ContentPage: React.FC = () => {
     if (!contentRef.current) return;
     // 提取标题
     const extractHeadings = () => {
-      const elements = Array.from(contentRef.current!.querySelectorAll('.prose h1,.prose h2,.prose h3')).map(
-        (item) => ({
-          id: item.id || `heading-${Math.random().toString(36).substring(2, 9)}`,
-          level: Number(item.nodeName.charAt(1)),
-          text: item.textContent || ''
-        })
-      );
+      const elements = Array.from(
+        contentRef.current!.querySelectorAll('.prose h1,.prose h2,.prose h3')
+      ).map((item) => ({
+        id: item.id || `heading-${Math.random().toString(36).substring(2, 9)}`,
+        level: Number(item.nodeName.charAt(1)),
+        text: item.textContent || ''
+      }));
 
       // 给没有ID的标题添加ID，以便锚点跳转
       Array.from(contentRef.current!.querySelectorAll('.prose h1,.prose h2,.prose h3')).forEach(
@@ -198,7 +198,6 @@ const ContentPage: React.FC = () => {
   function goBack() {
     navigate('/');
   }
-
 
   return (
     <CommonLayout>

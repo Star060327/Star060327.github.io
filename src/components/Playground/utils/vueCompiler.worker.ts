@@ -1,9 +1,4 @@
-import {
-  parse,
-  compileScript,
-  compileStyle,
-  compileTemplate,
-} from "@vue/compiler-sfc";
+import { parse, compileScript, compileStyle, compileTemplate } from '@vue/compiler-sfc';
 
 function hashString(input: string) {
   let hash = 0;
@@ -34,21 +29,21 @@ self.onmessage = (e: MessageEvent) => {
             id: scopeId,
             filename,
             source: s.content,
-            scoped: s.scoped,
-          }).code,
+            scoped: s.scoped
+          }).code
       )
-      .join("\n");
+      .join('\n');
 
     const hasScriptContent =
       (descriptor.script?.content?.trim()?.length ?? 0) > 0 ||
       (descriptor.scriptSetup?.content?.trim()?.length ?? 0) > 0;
-    const templateSource = descriptor.template?.content ?? "";
+    const templateSource = descriptor.template?.content ?? '';
     const hasTemplate = templateSource.trim().length > 0;
     const isScoped = descriptor.styles.some((s) => s.scoped);
 
     if (!hasScriptContent) {
       if (!hasTemplate) {
-        self.postMessage({ id, type: "SUCCESS", code: "export default {}", css });
+        self.postMessage({ id, type: 'SUCCESS', code: 'export default {}', css });
         return;
       }
 
@@ -56,7 +51,7 @@ self.onmessage = (e: MessageEvent) => {
         id: scopeId,
         filename,
         source: templateSource,
-        scoped: isScoped,
+        scoped: isScoped
       });
       if (templateResult.errors && templateResult.errors.length > 0) {
         throw new Error(String(templateResult.errors[0]));
@@ -66,22 +61,21 @@ self.onmessage = (e: MessageEvent) => {
         templateResult.code,
         `const __default__ = {};`,
         `__default__.render = render;`,
-        `export default __default__;`,
-      ].join("\n");
+        `export default __default__;`
+      ].join('\n');
 
-      self.postMessage({ id, type: "SUCCESS", code: templateModuleCode, css });
+      self.postMessage({ id, type: 'SUCCESS', code: templateModuleCode, css });
       return;
     }
 
     const scriptResult = compileScript(descriptor, {
       id: scopeId,
-      inlineTemplate: true,
+      inlineTemplate: true
     });
 
-    self.postMessage({ id, type: "SUCCESS", code: scriptResult.content, css });
+    self.postMessage({ id, type: 'SUCCESS', code: scriptResult.content, css });
   } catch (error) {
     const message = error instanceof Error ? error.message : String(error);
-    self.postMessage({ id, type: "ERROR", message });
+    self.postMessage({ id, type: 'ERROR', message });
   }
 };
-

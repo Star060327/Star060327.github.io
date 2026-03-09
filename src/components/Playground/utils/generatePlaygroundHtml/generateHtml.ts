@@ -1,10 +1,10 @@
-import { IMPORT_JS_MAP } from "./data";
+import { IMPORT_JS_MAP } from './data';
 
 export function generateHtml(
   htmlFile: string,
   cssFile: string,
   jsFile: string,
-  consoleScript: string,
+  consoleScript: string
 ) {
   const importMapTag = `
     <script type="importmap">

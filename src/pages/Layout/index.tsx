@@ -6,8 +6,8 @@ import Typewriter from '@/hooks/useTypewriter.tsx';
 import useScrollRestore from '@/hooks/useScrollRestore';
 import avatar from '@/assets/images/avatar.jpg';
 import { data } from '@/utils/data.ts';
-import { useNavigate , useLocation} from 'react-router-dom';
-import { ChevronDown, ChevronLeft, ChevronRight } from 'lucide-react';
+import { useNavigate, useLocation } from 'react-router-dom';
+import { ChevronDown, ChevronLeft, ChevronRight, BookOpen, FolderClosed } from 'lucide-react';
 import FloatingParticles from '@/components/FloatingParticles';
 import aboutData from '@/utils/aboutData';
 import classifyData from '@/utils/classifyData';
@@ -88,6 +88,8 @@ export default function Layout(): React.ReactNode {
   function handleClassify(val: string) {
     if (val === '归档') {
       navigate('/file');
+    } else {
+      navigate('/tag');
     }
   }
   // sessionStorage保存当前的位置，刷新后恢复
@@ -96,21 +98,20 @@ export default function Layout(): React.ReactNode {
     sessionStorage.setItem('curPosition', window.scrollY.toString());
   }
 
-   useEffect(() => {
+  useEffect(() => {
     if (location.pathname === '/') {
-    const position = sessionStorage.getItem('curPosition');
-    
-    if (position) {
-      setTimeout(() => {
-        window.scrollTo({
-          top: Number(position),
-          behavior: 'smooth'
-        });
-      }, 0); // 把延迟从0改成100ms，确保DOM完全渲染
-    } 
-  } 
-}, [location.pathname]);
+      const position = sessionStorage.getItem('curPosition');
 
+      if (position) {
+        setTimeout(() => {
+          window.scrollTo({
+            top: Number(position),
+            behavior: 'smooth'
+          });
+        }, 0); // 把延迟从0改成100ms，确保DOM完全渲染
+      }
+    }
+  }, [location.pathname]);
 
   return (
     <>
@@ -124,7 +125,7 @@ export default function Layout(): React.ReactNode {
               <div className={styles.sumup}>
                 {/* 总结头部 */}
                 <header className={styles['sumup-top']}>
-                  <div className={styles['sumup-top-avatar']}>
+                  <div className={styles['sumup-top-avatar']} onClick={() => navigate('/about')}>
                     <img src={avatar} alt="头像" />
                     <h2>徐维斌</h2>
                   </div>
@@ -141,7 +142,9 @@ export default function Layout(): React.ReactNode {
                   </ul>
                 </header>
                 <div className={styles['sumup-content']}>
-                  <h3>分类</h3>
+                  <h3>
+                    <FolderClosed /> 分类
+                  </h3>
                   <ul>
                     {classifyData.map((item) => (
                       <li key={`${item.id}-${item.title}`}>
@@ -157,18 +160,33 @@ export default function Layout(): React.ReactNode {
                 <ul className={styles['blog-content']}>
                   {currentData.map((item) => {
                     return (
-                      <li key={`${item.id}-${item.title}`} onClick={() => {
-                        navigate(item.path)
-                        restoreScrollPosition()
-                      }}>
-                        <h3>{item.title}</h3>
+                      <li
+                        key={`${item.id}-${item.title}`}
+                        onClick={() => {
+                          navigate(item.path);
+                          restoreScrollPosition();
+                        }}
+                      >
+                        <h2>{item.title}</h2>
                         <div className={styles['blog-tag']}>
-                          <div>{item.tags ? item.tags.join(', ') : item.tags}</div>
+                          {/* 文章标签部分 */}
+                          {item.tags.length > 0 && (
+                            <div className={styles.realTag}>
+                              {item.tags.map((tag) => (
+                                <span key={`${tag}-${tag}`}>{tag}</span>
+                              ))}
+                            </div>
+                          )}
                           <span className={styles.date}>
                             <Calendar style={{ width: 16, height: 16 }} /> {item.date}
                           </span>
                         </div>
-                        <p>{item.excerpt}</p>
+                        <p className={styles.excerpt}>{item.excerpt}</p>
+                        <div className={styles.bottom}>
+                          <span className={styles['read-more']}>
+                            <BookOpen style={{ width: 16, height: 16 }} /> 阅读更多 &gt;&gt;
+                          </span>
+                        </div>
                       </li>
                     );
                   })}

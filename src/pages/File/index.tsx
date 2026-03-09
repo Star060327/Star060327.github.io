@@ -3,7 +3,7 @@ import CommonLayout from '../../components/CommonLayout';
 import useScrollRestore from '@/hooks/useScrollRestore';
 import { data } from '@/utils/data';
 import { useNavigate } from 'react-router-dom';
-import { Calendar, Tag, ChevronRight } from 'lucide-react';
+import { Calendar, Tag, ChevronRight, Newspaper } from 'lucide-react';
 import { useMemo } from 'react';
 import Typewriter from '@/hooks/useTypewriter.tsx';
 
@@ -62,11 +62,15 @@ export default function File() {
             <div className={styles['stats-container']}>
               <div className={styles['stat-item']}>
                 <span className={styles.count}>{totalPosts}</span>
-                <span className={styles.label}>文章总数</span>
+                <span className={styles.label}>
+                  <Newspaper style={{ width: 14, height: 14 }} /> 文章总数
+                </span>
               </div>
               <div className={styles['stat-item']}>
                 <span className={styles.count}>{totalTags}</span>
-                <span className={styles.label}>标签总数</span>
+                <span className={styles.label}>
+                  <Tag style={{ width: 14, height: 14 }} /> 标签总数
+                </span>
               </div>
             </div>
           </div>

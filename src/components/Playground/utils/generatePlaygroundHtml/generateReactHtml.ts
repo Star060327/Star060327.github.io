@@ -1,9 +1,8 @@
-
-import { type File } from "../../hooks/usePlayground";
-import { getReactTransformImports as transformImports } from "../transformImports";
-import { getReactCompiler as compileFile } from "../compilerFile";
-import type { CompiledFile, FileCache } from "../../types";
-import { IMPORT_REACT_MAP } from "./data";
+import { type File } from '../../hooks/usePlayground';
+import { getReactTransformImports as transformImports } from '../transformImports';
+import { getReactCompiler as compileFile } from '../compilerFile';
+import type { CompiledFile, FileCache } from '../../types';
+import { IMPORT_REACT_MAP } from './data';
 
 //  定义 importmap 映射，将第三方库映射到 CDN 地址
 const IMPORT_MAP: Record<string, string> = { ...IMPORT_REACT_MAP };
@@ -19,9 +18,8 @@ function hashContent(input: string) {
 }
 
 function createEntryModuleCode(files: File[]) {
-  const entryApp =
-    files.find((f) => f.name === "App.jsx" || f.name === "App.tsx") || null;
-  if (!entryApp) return "";
+  const entryApp = files.find((f) => f.name === 'App.jsx' || f.name === 'App.tsx') || null;
+  if (!entryApp) return '';
 
   return [
     `import React from "react";`,
@@ -32,8 +30,8 @@ function createEntryModuleCode(files: File[]) {
     `const root = createRoot(el);`,
     `const App = AppModule.default ?? AppModule.App;`,
     `const Fallback = () => React.createElement("pre", { style: { padding: 16, whiteSpace: "pre-wrap" } }, "App 入口模块缺少可用导出（期望 default 或 App）。\\n\\n请检查 App 文件是否编译成功。");`,
-    `root.render(React.createElement(typeof App === "function" ? App : Fallback));`,
-  ].join("\n");
+    `root.render(React.createElement(typeof App === "function" ? App : Fallback));`
+  ].join('\n');
 }
 
 const fileCache = new Map<string, CachedFile>();
@@ -44,11 +42,7 @@ function revokeLater(url: string) {
 }
 
 // 组合成html
-export async function generateReactHtml(
-  files: File[],
-  reactId: string,
-  consoleScript: string,
-) {
+export async function generateReactHtml(files: File[], reactId: string, consoleScript: string) {
   const currentNames = new Set(files.map((f) => f.name));
   for (const [name, cached] of fileCache.entries()) {
     if (!currentNames.has(name)) {
@@ -128,10 +122,10 @@ export function HashRouter({ children, ...props }) {
   return React.createElement(ReactRouterDOM.RouterProvider, { router: routerRef.current });
 }
 `;
-    const shimBlob = new Blob([routerShim], { type: "text/javascript" });
+    const shimBlob = new Blob([routerShim], { type: 'text/javascript' });
     routerShimUrl = URL.createObjectURL(shimBlob);
   }
-  importMap["react-router-dom"] = routerShimUrl;
+  importMap['react-router-dom'] = routerShimUrl;
 
   const transformPromises = files.map(async (file) => {
     const contentHash = hashContent(file.content);
@@ -141,12 +135,9 @@ export function HashRouter({ children, ...props }) {
       return;
     }
 
-    const compiled = (await compileFile(
-      file.content,
-      file.name,
-    )) as CompiledFile;
-    const rawCode = compiled.code ?? "";
-    const rawCss = compiled.css ?? "";
+    const compiled = (await compileFile(file.content, file.name)) as CompiledFile;
+    const rawCode = compiled.code ?? '';
+    const rawCss = compiled.css ?? '';
 
     let finalCode = rawCode;
     try {
@@ -159,12 +150,11 @@ export function HashRouter({ children, ...props }) {
     // 1. 移除字符串
     // 2. 移除注释
     const codeSafe = finalCode
-      .replace(/("(\\.|[^"\\])*"|'(\\.|[^'\\])*'|`(\\.|[^`\\])*`)/g, "")
-      .replace(/\/\*[\s\S]*?\*\/|\/\/.*/g, "");
+      .replace(/("(\\.|[^"\\])*"|'(\\.|[^'\\])*'|`(\\.|[^`\\])*`)/g, '')
+      .replace(/\/\*[\s\S]*?\*\/|\/\/.*/g, '');
 
     const hasUncompiledJsx =
-      (file.name.endsWith(".jsx") || file.name.endsWith(".tsx")) &&
-      /<\s*[A-Za-z]/.test(codeSafe);
+      (file.name.endsWith('.jsx') || file.name.endsWith('.tsx')) && /<\s*[A-Za-z]/.test(codeSafe);
 
     if (hasUncompiledJsx) {
       finalCode = [
@@ -172,11 +162,11 @@ export function HashRouter({ children, ...props }) {
         `console.error("Playground 编译失败：${file.name}");`,
         `export default function __PlaygroundCompileError() {`,
         `  return React.createElement("pre", { style: { padding: 16, whiteSpace: "pre-wrap" } }, "编译失败：${file.name}\\n\\n请检查 JSX/语法是否正确。");`,
-        `}`,
-      ].join("\n");
+        `}`
+      ].join('\n');
     }
 
-    const blob = new Blob([finalCode], { type: "text/javascript" });
+    const blob = new Blob([finalCode], { type: 'text/javascript' });
     const blobUrl = URL.createObjectURL(blob);
 
     if (cached) revokeLater(cached.blobUrl);
@@ -184,7 +174,7 @@ export function HashRouter({ children, ...props }) {
       code: finalCode,
       css: rawCss,
       blobUrl,
-      hash: contentHash,
+      hash: contentHash
     });
     importMap[`src/${file.name}`] = blobUrl;
   });
@@ -192,34 +182,28 @@ export function HashRouter({ children, ...props }) {
   await Promise.all(transformPromises);
 
   // 4. 确定入口脚本
-  let entryScript = "";
+  let entryScript = '';
   // 优先查找 main.jsx 或 main.tsx
-  const entryFile = files.find(
-    (f) => f.name === "main.jsx" || f.name === "main.tsx",
-  );
+  const entryFile = files.find((f) => f.name === 'main.jsx' || f.name === 'main.tsx');
 
   if (entryFile && fileCache.has(entryFile.name)) {
     entryScript = `<script type="module" src="${importMap[`src/${entryFile.name}`]}"></script>`;
   } else {
     // 降级：查找 App.jsx 或 App.tsx 并自动挂载
-    const appFile =
-      files.find((f) => f.name === "App.jsx" || f.name === "App.tsx") ||
-      files[0];
+    const appFile = files.find((f) => f.name === 'App.jsx' || f.name === 'App.tsx') || files[0];
     if (appFile) {
       const entryModuleCode = createEntryModuleCode(files);
-      if (!entryModuleCode)
-        return "<h1>Error: No App.jsx or App.tsx found</h1>";
+      if (!entryModuleCode) return '<h1>Error: No App.jsx or App.tsx found</h1>';
       entryScript = `<script type="module">\n${entryModuleCode}\n</script>`;
     } else {
-      return "<h1>Error: No App.jsx or main.jsx found</h1>";
+      return '<h1>Error: No App.jsx or main.jsx found</h1>';
     }
   }
 
   // 5. 组装 HTML
   const allCss = Array.from(fileCache.values())
-    .map((f) => f.css || "")
-    .join("\n");
-
+    .map((f) => f.css || '')
+    .join('\n');
 
   const routerScript = `
 <script>

@@ -1,17 +1,17 @@
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function registerReactComments(editor: any, monaco: any) {
   // 仅针对 vue 语言生效
-  if (editor.getModel()?.getLanguageId() !== "jsx") return;
+  if (editor.getModel()?.getLanguageId() !== 'jsx') return;
   // 拦截默认注释行为
   editor.addAction({
-    id: "jsx-custom-comment",
-    label: "Toggle Comment",
+    id: 'jsx-custom-comment',
+    label: 'Toggle Comment',
     // 绑定快捷键 Ctrl+/ 和 Cmd+/
     keybindings: [monaco.KeyMod.CtrlCmd | monaco.KeyCode.Slash],
     // 优先级略高于默认值
     precondition: null,
     keybindingContext: null,
-    contextMenuGroupId: "navigation",
+    contextMenuGroupId: 'navigation',
     contextMenuOrder: 1.5,
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     run: (ed: any) => {
@@ -26,7 +26,7 @@ export function registerReactComments(editor: any, monaco: any) {
         const endLine = selection.endLineNumber; // 结束行号
 
         // 1. 判断上下文
-        let context = "script"; // 默认为 script
+        let context = 'script'; // 默认为 script
 
         // 简单的上下文推断：向上扫描寻找线索
         for (let i = startLine; i >= 1; i--) {
@@ -34,14 +34,14 @@ export function registerReactComments(editor: any, monaco: any) {
 
           // 如果找到 HTML 标签开头，或者是 return (，通常意味着进入了 JSX
           if (
-            lineContent.startsWith("<") ||
+            lineContent.startsWith('<') ||
             lineContent.match(/^return\s*\(\s*$/) ||
-            lineContent.endsWith("return (")
+            lineContent.endsWith('return (')
           ) {
-            context = "html";
+            context = 'html';
             // 进一步检查：如果行尾是 {，可能又进入了 JS 表达式
-            if (lineContent.endsWith("{")) {
-              context = "script";
+            if (lineContent.endsWith('{')) {
+              context = 'script';
             }
             break;
           }
@@ -50,11 +50,9 @@ export function registerReactComments(editor: any, monaco: any) {
           // 但是要注意 JSX 中的 } 也可能是表达式结束。
           // 这里主要依靠 function/const 等强关键字
           if (
-            lineContent.match(
-              /^(function|const|let|var|import|export|class|if|for|while|switch)/,
-            )
+            lineContent.match(/^(function|const|let|var|import|export|class|if|for|while|switch)/)
           ) {
-            context = "script";
+            context = 'script';
             break;
           }
 
@@ -65,23 +63,23 @@ export function registerReactComments(editor: any, monaco: any) {
         // 但对于简单的 Playground 代码，上面的 heuristic 已经比只有 function/return 强很多了。
 
         // 2. 根据上下文确定注释符号
-        let commentStart = "// ";
-        let commentEnd = "";
+        let commentStart = '// ';
+        let commentEnd = '';
 
-        if (context === "html") {
-          commentStart = "{/* ";
-          commentEnd = " */}";
+        if (context === 'html') {
+          commentStart = '{/* ';
+          commentEnd = ' */}';
         }
 
         // 3. 遍历选区内的每一行进行处理
         for (let i = startLine; i <= endLine; i++) {
           const lineContent = model.getLineContent(i);
-          const indent = lineContent.match(/^\s*/)?.[0] || ""; // 缩进
+          const indent = lineContent.match(/^\s*/)?.[0] || ''; // 缩进
           const trimmedContent = lineContent.trim();
 
           // 检查是否已注释
           const isCommented =
-            context === "html"
+            context === 'html'
               ? trimmedContent.startsWith(commentStart.trim()) &&
                 trimmedContent.endsWith(commentEnd.trim())
               : trimmedContent.startsWith(commentStart.trim());
@@ -89,18 +87,16 @@ export function registerReactComments(editor: any, monaco: any) {
           if (isCommented) {
             // --- 取消注释 ---
             let newText = lineContent;
-            if (context === "script") {
+            if (context === 'script') {
               // 移除 //
-              newText = lineContent
-                .replace(commentStart.trim(), "")
-                .replace(/^\s+/, indent);
+              newText = lineContent.replace(commentStart.trim(), '').replace(/^\s+/, indent);
             } else {
               // 移除 { /* */ }
               // 简单处理：移除开头和结尾的标记
               const inner = trimmedContent
                 .substring(
                   commentStart.trim().length,
-                  trimmedContent.length - commentEnd.trim().length,
+                  trimmedContent.length - commentEnd.trim().length
                 )
                 .trim();
               newText = indent + inner;
@@ -108,7 +104,7 @@ export function registerReactComments(editor: any, monaco: any) {
 
             edits.push({
               range: new monaco.Range(i, 1, i, lineContent.length + 1),
-              text: newText,
+              text: newText
             });
           } else {
             // --- 添加注释 ---
@@ -118,7 +114,7 @@ export function registerReactComments(editor: any, monaco: any) {
             const newText = indent + commentStart + trimmedContent + commentEnd;
             edits.push({
               range: new monaco.Range(i, 1, i, lineContent.length + 1),
-              text: newText,
+              text: newText
             });
           }
         }
@@ -126,8 +122,8 @@ export function registerReactComments(editor: any, monaco: any) {
 
       // 4. 执行编辑
       if (edits.length > 0) {
-        ed.executeEdits("jsx-custom-comment", edits);
+        ed.executeEdits('jsx-custom-comment', edits);
       }
-    },
+    }
   });
 }

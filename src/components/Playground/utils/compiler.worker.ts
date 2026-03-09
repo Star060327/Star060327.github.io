@@ -38,4 +38,3 @@ self.onmessage = async (e: MessageEvent) => {
     });
   }
 };
-
