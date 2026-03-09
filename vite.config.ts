@@ -9,6 +9,7 @@ import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 import path from 'path';
 import { visit } from 'unist-util-visit';
+import visualizer from 'rollup-plugin-visualizer';
 // Custom plugin to parse ==text== to <mark>text</mark>
 const remarkMark = () => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -69,6 +70,11 @@ export default defineConfig({
     AutoImport({
       imports: reactPresets,
       dts: 'auto-imports.d.ts'
+    }),
+    visualizer({
+      open: true,
+      gzipSize: true,
+      brotliSize: true
     })
   ],
   resolve: {
@@ -84,6 +90,12 @@ export default defineConfig({
     }
   },
   build: {
-    outDir: 'docs'
+    minify: 'esbuild', // 使用esbuild压缩
+    outDir: 'docs', //打包到/docs目录下
+    sourcemap: false,
+    modulePreload: {
+      polyfill: false
+    },
+    emptyOutDir: true, // 清空输出目录
   }
 });
