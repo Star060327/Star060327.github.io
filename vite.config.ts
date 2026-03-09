@@ -97,5 +97,17 @@ export default defineConfig({
       polyfill: false
     },
     emptyOutDir: true, // 清空输出目录
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          // 拆分katex为单独的chunk
+          katex: ['katex'],
+          compiler: ['vue/compiler-sfc','vue/compiler-dom'],
+          md: ['marked','remark-gfm','remark-math','rehype-katex','rehype-meta-as-props','highlight.js'],
+          framework: ['react','react-dom'],
+          utils: ['axios'],
+        }
+      }
+    }
   }
 });
