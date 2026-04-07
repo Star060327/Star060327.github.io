@@ -1,14 +1,14 @@
 import styles from './index.module.scss';
 import React, { useState } from 'react';
 import CommonLayout from '../../components/CommonLayout';
-import { motion } from 'framer-motion';
+import { lazy, Suspense } from 'react';
 import Typewriter from '@/hooks/useTypewriter.tsx';
 import useScrollRestore from '@/hooks/useScrollRestore';
 import avatar from '@/assets/images/avatar.jpg';
 import { data } from '@/utils/data.ts';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { ChevronDown, ChevronLeft, ChevronRight, BookOpen, FolderClosed } from 'lucide-react';
-import FloatingParticles from '@/components/FloatingParticles';
+const FloatingParticles = lazy(() => import('@/components/FloatingParticles'));
 import aboutData from '@/utils/aboutData';
 import classifyData from '@/utils/classifyData';
 import classNames from 'classnames';
@@ -28,35 +28,21 @@ function LayoutMain() {
   return (
     <>
       <div className={styles['layout-main']}>
-        <FloatingParticles />
+        <Suspense fallback={null}>
+          <FloatingParticles />
+        </Suspense>
         <div className={styles['layout-main-content']}>
           <div className={styles['layout-main-content-header']}>
-            <motion.h1
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, ease: 'easeOut' }}
-            >
-              Star'Blog
-            </motion.h1>
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.5, duration: 0.8 }}
-            >
+            <h1>Star'Blog</h1>
+            <p>
               <Typewriter text="种一棵树最好的时间是十年前，其次是现在。" speed={100} />
-            </motion.p>
+            </p>
           </div>
         </div>
 
-        <motion.div
-          className={styles['scroll-indicator']}
-          onClick={scrollToContent}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 0.7 }}
-          transition={{ delay: 2, duration: 1 }}
-        >
+        <div className={styles['scroll-indicator']} onClick={scrollToContent}>
           <ChevronDown />
-        </motion.div>
+        </div>
       </div>
     </>
   );
@@ -136,7 +122,7 @@ export default function Layout(): React.ReactNode {
                 {/* 总结头部 */}
                 <header className={styles['sumup-top']}>
                   <div className={styles['sumup-top-avatar']} onClick={() => navigate('/about')}>
-                    <img src={avatar} alt="头像" />
+                    <img src={avatar} alt="头像" loading="lazy" decoding="async" />
                     <h2>徐维斌</h2>
                   </div>
                   <ul className={styles['sumup-top-list']}>
