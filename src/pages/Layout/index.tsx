@@ -4,7 +4,7 @@ import CommonLayout from '../../components/CommonLayout';
 import { lazy, Suspense } from 'react';
 import Typewriter from '@/hooks/useTypewriter.tsx';
 import useScrollRestore from '@/hooks/useScrollRestore';
-import avatar from '@/assets/images/avatar.jpg';
+import avatar from '@/assets/images/avatar.webp';
 import { data } from '@/utils/data.ts';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { ChevronDown, ChevronLeft, ChevronRight, BookOpen, FolderClosed } from 'lucide-react';
