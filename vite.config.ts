@@ -102,7 +102,7 @@ export default defineConfig({
           katex: ['katex'],
           md: ['remark-gfm', 'remark-math', 'rehype-katex', 'highlight.js'],
           framework: ['react', 'react-dom'],
-          monaco: ['@monaco-editor/react', 'monaco-editor'],
+          monaco: ['@monaco-editor/react'],
           prettier: [
             'prettier/standalone',
             'prettier/plugins/html',
