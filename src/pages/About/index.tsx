@@ -1,6 +1,6 @@
 import styles from './index.module.scss';
 import CommonLayout from '../../components/CommonLayout';
-import avatar from '@/assets/images/avatar.jpg';
+import avatar from '@/assets/images/avatar.webp';
 import { MessageCircleMore } from 'lucide-react';
 // import {Git} from 'lucide-react'
 import { TagCloud } from 'react-tagcloud';
