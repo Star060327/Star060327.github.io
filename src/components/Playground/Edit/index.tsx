@@ -2,7 +2,7 @@ import styles from './index.module.scss';
 import React from 'react';
 import type { File } from '../hooks/usePlayground';
 import { useEffect, useRef } from 'react';
-import { Editor, type Monaco } from '@monaco-editor/react';
+import { Editor, type Monaco, loader } from '@monaco-editor/react';
 import prettier from 'prettier/standalone';
 import parserHtml from 'prettier/plugins/html';
 import parserCss from 'prettier/plugins/postcss';
@@ -18,6 +18,11 @@ interface Prop {
   onChange: (content: string) => void;
   defaultLanguage: string;
 }
+loader.config({
+  paths: {
+    vs: "https://cdn.staticfile.net/monaco-editor/0.45.0/min/vs",
+  },
+});
 
 // 格式化代码
 const formatCode = async (code: string, language: string) => {
