@@ -196,7 +196,7 @@ const ContentPage: React.FC = () => {
 
   // 返回首页函数
   function goBack() {
-    navigate('/');
+    navigate('/', { state: { scrollTo: 'content-start' } });
   }
 
   return (

@@ -93,17 +93,25 @@ export default defineConfig({
     minify: 'esbuild', // 使用esbuild压缩
     outDir: 'docs', //打包到/docs目录下
     sourcemap: false,
-    modulePreload: {
-      polyfill: false
-    },
+    modulePreload: false,
     emptyOutDir: true, // 清空输出目录
+    chunkSizeWarningLimit: 2500, // 2500kb
     rollupOptions: {
       output: {
         manualChunks: {
-          // 拆分katex为单独的chunk
           katex: ['katex'],
-          md: ['remark-gfm','remark-math','rehype-katex','highlight.js'],
-          framework: ['react','react-dom']
+          md: ['remark-gfm', 'remark-math', 'rehype-katex', 'highlight.js'],
+          framework: ['react', 'react-dom'],
+          monaco: ['@monaco-editor/react', 'monaco-editor'],
+          prettier: [
+            'prettier/standalone',
+            'prettier/plugins/html',
+            'prettier/plugins/postcss',
+            'prettier/plugins/babel',
+            'prettier/plugins/estree'
+          ],
+          motion: ['framer-motion'],
+          icons: ['lucide-react']
         }
       }
     }

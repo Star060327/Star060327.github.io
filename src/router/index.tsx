@@ -1,5 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom';
 import { lazy, Suspense } from 'react';
+import RouteLoader from '../components/RouteLoader';
 const Layout = lazy(() => import('../pages/Layout/index.tsx'));
 const About = lazy(() => import('../pages/About/index.tsx'));
 const File = lazy(() => import('../pages/File/index.tsx'));
@@ -9,7 +10,7 @@ const routes = [
   {
     path: '/',
     element: (
-      <Suspense fallback={'加载中'}>
+      <Suspense fallback={<RouteLoader />}>
         <Layout></Layout>
       </Suspense>
     )
@@ -17,7 +18,7 @@ const routes = [
   {
     path: 'about',
     element: (
-      <Suspense fallback={'加载中'}>
+      <Suspense fallback={<RouteLoader />}>
         <About></About>
       </Suspense>
     )
@@ -25,7 +26,7 @@ const routes = [
   {
     path: 'file',
     element: (
-      <Suspense fallback={'加载中'}>
+      <Suspense fallback={<RouteLoader />}>
         <File></File>
       </Suspense>
     )
@@ -33,7 +34,7 @@ const routes = [
   {
     path: 'content/*',
     element: (
-      <Suspense fallback={'加载中'}>
+      <Suspense fallback={<RouteLoader />}>
         <ContentPage></ContentPage>
       </Suspense>
     )
@@ -41,7 +42,7 @@ const routes = [
   {
     path: '*',
     element: (
-      <Suspense fallback={'加载中'}>
+      <Suspense fallback={<RouteLoader />}>
         <NotFound></NotFound>
       </Suspense>
     )

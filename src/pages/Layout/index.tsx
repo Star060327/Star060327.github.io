@@ -100,15 +100,25 @@ export default function Layout(): React.ReactNode {
 
   useEffect(() => {
     if (location.pathname === '/') {
+      const state = location.state as { scrollTo?: string } | null;
+      if (state?.scrollTo) {
+        setTimeout(() => {
+          const el = document.getElementById(state.scrollTo!);
+          if (el) {
+            el.scrollIntoView({ behavior: 'smooth' });
+          }
+        }, 0);
+        navigate('.', { replace: true, state: null });
+        return;
+      }
       const position = sessionStorage.getItem('curPosition');
-
       if (position) {
         setTimeout(() => {
           window.scrollTo({
             top: Number(position),
             behavior: 'smooth'
           });
-        }, 0); // 把延迟从0改成100ms，确保DOM完全渲染
+        }, 0);
       }
     }
   }, [location.pathname]);
