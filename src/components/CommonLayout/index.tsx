@@ -15,9 +15,7 @@ export default function CommonLayout(props: Props) {
   const navigate = useNavigate();
   const [width, setWidth] = useState<number>(window.innerWidth); // 窗口宽度
   const { theme, toggleTheme } = useTheme();
-  // 移动端是否展示导航标签
-  const [isShow, setIsShow] = useState<boolean>(false);
-
+  const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
   function fn() {
     setWidth(window.innerWidth);
   }
@@ -27,18 +25,9 @@ export default function CommonLayout(props: Props) {
   });
   function handleClick(e: React.MouseEvent<HTMLSpanElement>, path: string) {
     e.preventDefault();
-    setIsShow(false);
     navigate(path);
   }
-  useEffect(() => {
-    function handleScroll() {
-      setIsShow(false);
-    }
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  });
+
 
   return (
     <>
@@ -103,7 +92,7 @@ export default function CommonLayout(props: Props) {
                   <button
                     className={styles.btn}
                     style={{ transition: 'none' }}
-                    onClick={() => setIsShow(!isShow)}
+                    onClick={() => setIsModalOpen(true)}
                   >
                     <TableOfContents
                       style={{ color: 'var(--color-text-primary)', width: 16, height: 16 }}
@@ -114,9 +103,26 @@ export default function CommonLayout(props: Props) {
             </div>
           )}
         </header>
-        {width <= 768 && (
+        <main className={styles.main}>{props.children}</main>
+        <footer className={styles.bottom}>
+          <p>© 2025-2026 Star | 分享前端知识 🥰</p>
+          <p>本站由 React + Vite + TypeScript + SCSS 构建 🚀</p>
+        </footer>
+      </div>
+      {/* 遮罩层：始终渲染但用 CSS 控制显示隐藏，保证退场动画 */}
+      <div
+        className={classNames(styles['modal-overlay'], isModalOpen && styles['modal-overlay-show'])}
+        id="overlay"
+        onClick={() => setIsModalOpen(false)}
+      ></div>
+      {/* 抽屉 */}
+      <div
+        className={classNames(styles['modal-content'], isModalOpen && styles['modal-content-show'])}
+      >
+        <div className={styles['modal-header']}>
+          <h2>分类</h2>
           <div className={styles.mobile}>
-            <ul className={classNames(styles.navigator, isShow && styles.navigatorShow)}>
+            <ul className={classNames(styles.navigator)}>
               {navigateData.map((item: NavigateData) => (
                 <li key={item.id + item.title + ``}>
                   <a onClick={(e) => handleClick(e, item.path)}>{item.title}</a>
@@ -124,12 +130,7 @@ export default function CommonLayout(props: Props) {
               ))}
             </ul>
           </div>
-        )}
-        <main className={styles.main}>{props.children}</main>
-        <footer className={styles.bottom}>
-          <p>© 2025-2026 Star | 分享前端知识 🥰</p>
-          <p>本站由 React + Vite + TypeScript + SCSS 构建 🚀</p>
-        </footer>
+        </div>
       </div>
     </>
   );

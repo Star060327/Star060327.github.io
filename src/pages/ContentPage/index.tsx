@@ -38,7 +38,8 @@ for (const path of Object.keys(modules)) {
   );
 }
 
-const ContentPage: React.FC = () => {
+
+const ContentPage: React.FC = () => { 
   // 滚动位置不变
   useScrollRestore();
   const { '*': path } = useParams<string>();
@@ -266,6 +267,7 @@ const ContentPage: React.FC = () => {
           )}
         </div>
       </div>
+
     </CommonLayout>
   );
 };
