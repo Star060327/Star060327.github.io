@@ -12,6 +12,7 @@ import type { Data } from '@/utils/data.ts';
 import { ArrowLeft } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { Calendar } from 'lucide-react';
+import RouteLoader from '@/components/RouteLoader';
 
 // 定义 MDX 组件接受的 Props 类型
 type MDXProps = {
@@ -230,34 +231,40 @@ const ContentPage: React.FC = () => {
           </button>
           {/* 核心博客内容 */}
           <div className={styles['blog-content']} ref={contentRef}>
-            <Suspense fallback={<div className={styles.loading}>加载中...</div>}>
+            <Suspense fallback={<RouteLoader />}>
               <MdxContent components={mdxComponents} />
             </Suspense>
           </div>
         </div>
-        {/* 文章大纲 */}
-        {headings.length > 0 && (
-          <nav className={styles['blog-outline']} ref={outlineRef}>
-            <div className={styles['outline-title']}>目录</div>
-            <ul>
-              {headings.map((h: Heading) => {
-                return (
-                  <li
-                    key={h.id}
-                    className={classNames(styles['blog-outline-item'], {
-                      [styles['active']]: activeId === h.id
-                    })}
-                    style={{ paddingLeft: `${(h.level - 1) * 0.8}rem` }}
-                  >
-                    <a href={`#${h.id}`} onClick={(e) => handleAnchorClick(e, h.id)} title={h.text}>
-                      {h.text}
-                    </a>
-                  </li>
-                );
-              })}
-            </ul>
-          </nav>
-        )}
+        {/* 文章大纲占位/容器 */}
+        <div className={styles['blog-outline-wrapper']}>
+          {headings.length > 0 && (
+            <nav className={styles['blog-outline']} ref={outlineRef}>
+              <div className={styles['outline-title']}>目录</div>
+              <ul>
+                {headings.map((h: Heading) => {
+                  return (
+                    <li
+                      key={h.id}
+                      className={classNames(styles['blog-outline-item'], {
+                        [styles['active']]: activeId === h.id
+                      })}
+                      style={{ paddingLeft: `${(h.level - 1) * 0.8}rem` }}
+                    >
+                      <a
+                        href={`#${h.id}`}
+                        onClick={(e) => handleAnchorClick(e, h.id)}
+                        title={h.text}
+                      >
+                        {h.text}
+                      </a>
+                    </li>
+                  );
+                })}
+              </ul>
+            </nav>
+          )}
+        </div>
       </div>
     </CommonLayout>
   );

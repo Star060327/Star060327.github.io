@@ -60,7 +60,7 @@ export default function About() {
             {/* 头像部分 */}
             <div className={styles.selfTop}>
               <div className={styles.img}>
-                <img src={avatar} alt="avatar" />
+                <img src={avatar} alt="avatar" loading="lazy"/>
               </div>
               <h2>Star</h2>
               <p>热爱前端开发</p>
