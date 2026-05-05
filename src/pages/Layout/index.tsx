@@ -138,9 +138,9 @@ export default function Layout(): React.ReactNode {
                   </ul>
                 </header>
                 <div className={styles['sumup-content']}>
-                  <h3>
-                    <FolderClosed /> 分类
-                  </h3>
+                  <div className={styles['sumup-content-title']}>
+                    <FolderClosed /> <h3>分类</h3>
+                  </div>
                   <ul>
                     {classifyData.map((item) => (
                       <li key={`${item.id}-${item.title}`}>
@@ -173,15 +173,15 @@ export default function Layout(): React.ReactNode {
                               ))}
                             </div>
                           )}
-                          <span className={styles.date}>
-                            <Calendar style={{ width: 16, height: 16 }} /> {item.date}
-                          </span>
+                          <div className={styles.date}>
+                            <Calendar style={{ width: 16, height: 16 }} /> <span>{item.date}</span>
+                          </div>
                         </div>
                         <p className={styles.excerpt}>{item.excerpt}</p>
                         <div className={styles.bottom}>
-                          <span className={styles['read-more']}>
-                            <BookOpen style={{ width: 16, height: 16 }} /> 阅读更多 &gt;&gt;
-                          </span>
+                          <div className={styles['read-more']}>
+                            <BookOpen style={{ width: 16, height: 16 }} /> <span>阅读更多 &gt;&gt;</span>
+                          </div>
                         </div>
                       </li>
                     );

@@ -50,6 +50,9 @@
           }
 
           .label {
+            display: flex;
+            align-items: center;
+            gap: 0.2rem;
             font-size: 0.875rem;
             color: var(--color-text-primary);
             margin-top: 0.25rem;
@@ -172,6 +175,9 @@
                   }
 
                   .tag {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.25rem;
                     color: var(--color-text-secondary);
                     background: var(--color-bg-fourth);
                     padding: 0.1rem 0.5rem;

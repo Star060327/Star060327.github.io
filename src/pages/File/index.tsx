@@ -62,15 +62,15 @@ export default function File() {
             <div className={styles['stats-container']}>
               <div className={styles['stat-item']}>
                 <span className={styles.count}>{totalPosts}</span>
-                <span className={styles.label}>
-                  <Newspaper style={{ width: 14, height: 14 }} /> 文章总数
-                </span>
+                <div className={styles.label}>
+                  <Newspaper style={{ width: 14, height: 14 }} /> <span>文章总数</span>
+                </div>
               </div>
               <div className={styles['stat-item']}>
                 <span className={styles.count}>{totalTags}</span>
-                <span className={styles.label}>
-                  <Tag style={{ width: 14, height: 14 }} /> 标签总数
-                </span>
+                <div className={styles.label}>
+                  <Tag style={{ width: 14, height: 14 }} /> <span>标签总数</span>
+                </div>
               </div>
             </div>
           </div>
@@ -91,9 +91,9 @@ export default function File() {
                               <Calendar style={{ width: 16, height: 16 }} />
                               {item.date}
                             </span>
-                            <span className={styles.tag}>
-                              <Tag style={{ width: 16, height: 16 }} /> {item.tags.join(', ')}
-                            </span>
+                            <div className={styles.tag}>
+                              <Tag style={{ width: 16, height: 16 }} /> <span>{item.tags.join(', ')}</span>
+                            </div>
                           </div>
                         </div>
                         <div className={styles.arrow}>
