@@ -1,8 +1,8 @@
 import styles from './index.module.scss';
 import React from 'react';
 import useTheme from '../../hooks/useTheme.ts';
-import { useNavigate } from 'react-router-dom';
-import { Moon, Sun, TableOfContents } from 'lucide-react';
+import { useLocation, useNavigate } from 'react-router-dom';
+import { Moon, Sun, TableOfContents, X } from 'lucide-react';
 import navigateData from '@/utils/naviagteData.ts';
 import type { NavigateData } from '@/utils/naviagteData.ts';
 import classNames from 'classnames';
@@ -13,6 +13,7 @@ type Props = {
 
 export default function CommonLayout(props: Props) {
   const navigate = useNavigate();
+  const location = useLocation();
   const [width, setWidth] = useState<number>(window.innerWidth); // 窗口宽度
   const { theme, toggleTheme } = useTheme();
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
@@ -23,11 +24,29 @@ export default function CommonLayout(props: Props) {
     window.addEventListener('resize', fn); //检测窗口宽度变化
     return () => window.removeEventListener('resize', fn);
   });
-  function handleClick(e: React.MouseEvent<HTMLSpanElement>, path: string) {
+  function handleClick(e: React.MouseEvent<HTMLAnchorElement>, path: string) {
     e.preventDefault();
+    setIsModalOpen(false);
     navigate(path);
   }
 
+  useEffect(() => {
+    if (isModalOpen) {
+      document.body.style.overflow = 'hidden';
+      return;
+    }
+    document.body.style.overflow = '';
+  }, [isModalOpen]);
+
+  useEffect(() => {
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        setIsModalOpen(false);
+      }
+    };
+    window.addEventListener('keydown', onKeyDown);
+    return () => window.removeEventListener('keydown', onKeyDown);
+  }, []);
 
   return (
     <>
@@ -118,18 +137,29 @@ export default function CommonLayout(props: Props) {
       {/* 抽屉 */}
       <div
         className={classNames(styles['modal-content'], isModalOpen && styles['modal-content-show'])}
+        role="dialog"
+        aria-modal="true"
+        aria-hidden={!isModalOpen}
       >
         <div className={styles['modal-header']}>
-          <h2>分类</h2>
-          <div className={styles.mobile}>
-            <ul className={classNames(styles.navigator)}>
-              {navigateData.map((item: NavigateData) => (
-                <li key={item.id + item.title + ``}>
-                  <a onClick={(e) => handleClick(e, item.path)}>{item.title}</a>
-                </li>
-              ))}
-            </ul>
-          </div>
+          <h2>导航</h2>
+          <button className={styles['modal-close']} onClick={() => setIsModalOpen(false)}>
+            <X style={{ width: 18, height: 18 }} />
+          </button>
+        </div>
+        <div className={styles.mobile}>
+          <ul className={styles['modal-nav']}>
+            {navigateData.map((item: NavigateData) => (
+              <li key={item.id + item.title + ``}>
+                <a
+                  onClick={(e) => handleClick(e, item.path)}
+                  className={classNames(location.pathname === item.path && styles['active-link'])}
+                >
+                  {item.title}
+                </a>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </>

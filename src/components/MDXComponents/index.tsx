@@ -4,11 +4,12 @@ import { ImageOff } from 'lucide-react';
 import CodeBlock from '../CodeBlock/CodeBlock';
 import styles from './index.module.scss';
 const Playground = lazy(() => import('../Playground/Playground'));
+import RouteLoader from '../RouteLoader/index';
 
 const mdxComponents: MDXComponents = {
   // playground 布局
   Playground: (props) => (
-    <Suspense fallback={<div className={styles.playgroundLoading}>加载中...</div>}>
+    <Suspense fallback={<RouteLoader></RouteLoader>}>
       {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
       <Playground {...(props as any)} />
     </Suspense>
