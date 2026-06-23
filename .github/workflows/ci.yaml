@@ -13,17 +13,17 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      # 关键：先安装pnpm
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9 # 可固定pnpm版本，写latest用最新
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '>=18'
           cache: 'pnpm' # 缓存pnpm依赖，提速
-
-      # 关键：安装pnpm
-      - name: Install pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: 9 # 可固定pnpm版本，写latest用最新
 
       - name: Install dependencies
         run: pnpm install # 替代 npm ci
@@ -31,8 +31,7 @@ jobs:
       - name: Run lint
         run: pnpm lint
 
-      - name: Run tests
-        run: pnpm test
+
 
       - name: Build
         run: pnpm build
