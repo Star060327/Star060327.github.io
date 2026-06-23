@@ -1,4 +1,4 @@
-name: CI
+name: CI & Deploy
 
 on:
   push:
@@ -8,10 +8,14 @@ on:
 jobs:
   check:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       # 关键：先安装pnpm
       - name: Install pnpm
@@ -22,7 +26,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '>=18'
+          node-version: '22'
           cache: 'pnpm' # 缓存pnpm依赖，提速
 
       - name: Install dependencies
@@ -31,7 +35,12 @@ jobs:
       - name: Run lint
         run: pnpm lint
 
-
-
       - name: Build
         run: pnpm build
+
+      - name: Deploy to GitHub Pages
+        if: github.ref == 'refs/heads/main'
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'chore: auto build and deploy'
+          file_pattern: 'docs/*'
