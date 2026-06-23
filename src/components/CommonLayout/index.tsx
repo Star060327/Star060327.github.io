@@ -60,7 +60,7 @@ export default function CommonLayout(props: Props) {
                 navigate('/');
               }}
             >
-              🌟 Star-Blog
+              🌟 Star Blog
             </h2>
           </div>
           {/* PC端 */}
